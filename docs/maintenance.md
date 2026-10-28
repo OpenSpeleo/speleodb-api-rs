@@ -235,3 +235,58 @@ complete verification, and confirm this repository's original upstream is
 pushes require explicit user authorization. Publish child commits before a
 parent commit records their gitlink, and verify upstream reachability. Preserve
 all existing staging and stash entries throughout.
+
+## Renderer negotiation and actual staging contracts
+
+SpeleoDB negotiates a renderer before running a view. Its current staging
+configuration offers JSON and browsable HTML renderers. A download may therefore
+return binary bytes after JSON negotiation; asking only for
+`application/octet-stream` produces 406 before authentication, project lookup or
+empty-project handling. The `format=json` parameter filters renderer candidates
+but does not bypass Accept matching. DRF selects by media specificity and
+configured renderer order, and intentionally ignores quality values.
+
+Local negotiation fixtures reproduce the binary-only failure and preserve
+endpoint errors. The separate live suite uses the actual server as its oracle
+for JSON/HTML, media wildcards, parameters, specificity, renderer order, quality
+values and format filtering. It also checks authenticated JSON operations,
+401/403, 404, 422, direct ZIP/revision/blob bytes, and a real 302 GIS source
+handoff fetched anonymously. It performs no schema fetches or remote generation.
+These are read-only tests: CI neither creates projects nor changes locks/files.
+
+Configure these repository Actions secrets in each SDK repository:
+
+| Secret                           | Purpose                                                                                      |
+| -------------------------------- | -------------------------------------------------------------------------------------------- |
+| `TEST_SPELEODB_INSTANCE`         | `https://stage.speleodb.org`; live tests reject other hosts                                  |
+| `TEST_SPELEODB_OAUTH`            | Staging test account token with read access to the fixtures                                  |
+| `TEST_SPELEODB_PROJECT_ID`       | Dedicated `sdk-negotiation-populated` Compass project with a valid ZIP, commit and Git blobs |
+| `TEST_SPELEODB_EMPTY_PROJECT_ID` | Dedicated `sdk-negotiation-empty` Compass project without commits/artifacts                  |
+| `TEST_SPELEODB_GIS_LAYER_ID`     | Dedicated `sdk-negotiation-source` layer whose KML contains `SDK fixture`                    |
+
+The dedicated fixtures are provisioned once. Recreate them through SDK project
+creation, mutex acquisition, a minimal Compass ZIP upload, mutex release, and
+GIS KML source upload if staging is reset; then replace the corresponding
+secrets. The populated ZIP contains `compass.toml` and `test.mak`, and its
+`latest_commit.tree` must contain a blob. Use a staging test account and keep
+credentials out of source, command output and URLs. Signed storage is fetched
+with a separate client without API Authorization or cookies.
+
+Trusted pushes, tags and same-repository pull requests run the stage contract
+job. Missing secrets fail that job; they never turn a live run into a successful
+skip. Fork pull requests run deterministic tests without secrets. Publication
+waits for the stage contract job as well as ordinary verification.
+
+Rust live verification is explicit because its secrets are absent from ordinary
+local unit-test environments:
+
+```sh
+cargo test --test stage_negotiation --locked -- --ignored --test-threads=1
+```
+
+The local renderer regression is `cargo test --test negotiation --locked`.
+Generation derives default Accept from the selected success representation plus
+every supported declared error media type. The selected success representation
+stays first, and the generated successful response decoder remains unchanged.
+Explicit caller Accept wins, while request Content-Type safeguards and response
+decoding remain intact.

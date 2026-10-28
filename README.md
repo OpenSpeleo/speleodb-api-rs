@@ -7,7 +7,7 @@ import: `speleodb_api`. License: AGPL-3.0-only.
 
 ```toml
 [dependencies]
-speleodb-api = "0.1"
+speleodb-api = "0.1.1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 ```
 
@@ -30,6 +30,13 @@ supply cookies, `X-Session-Token`, and CSRF headers as required by the selected
 endpoint. Keep credentials out of logs and source code. Generated operations
 provide typed request, response, parameter and error types under `types` and
 `client`. Authentication session management remains the application's concern.
+
+Accept defaults include the selected success representation and declared error
+representations. This allows SpeleoDB to negotiate its renderer before returning
+binary data or a redirect, without masking authentication or lookup errors with
+HTTP 406. Explicit `.with_header("Accept", "…")` values take precedence,
+case-insensitively. Response decoding and its declared success type stay the
+same. Both buffered and streaming operations use this policy.
 
 `HttpClient::with_client(reqwest_client)` accepts a configured Reqwest transport
 for custom timeouts, TLS, proxies, cookies and redirect policy. The generated

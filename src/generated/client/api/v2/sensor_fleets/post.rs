@@ -311,11 +311,11 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/json");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req.header(reqwest::header::ACCEPT, "application/json");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -492,11 +492,11 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/json");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req.header(reqwest::header::ACCEPT, "application/json");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -676,11 +676,11 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/json");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req.header(reqwest::header::ACCEPT, "application/json");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();

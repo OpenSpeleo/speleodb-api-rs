@@ -1105,12 +1105,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -1231,12 +1234,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -1494,11 +1500,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -1772,11 +1779,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -2035,12 +2043,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -2163,12 +2174,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -2428,11 +2442,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -2708,11 +2723,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -2975,12 +2991,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -3101,15 +3120,19 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept")
-                && (__request_content_type_header.is_none()
-                    || !name.eq_ignore_ascii_case("content-type"))
+            if __request_content_type_header.is_none()
+                || !name.eq_ignore_ascii_case("content-type")
             {
                 req = req.header(name, value);
             }
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         if let Some(value) = __request_content_type_header {
             let mut headers = reqwest::header::HeaderMap::new();
             headers.insert(reqwest::header::CONTENT_TYPE, value);
@@ -3241,12 +3264,15 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -3529,15 +3555,19 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept")
-                && (__request_content_type_header.is_none()
-                    || !name.eq_ignore_ascii_case("content-type"))
+            if __request_content_type_header.is_none()
+                || !name.eq_ignore_ascii_case("content-type")
             {
                 req = req.header(name, value);
             }
         }
-        req = req
-            .header(reqwest::header::ACCEPT, "application/x-git-receive-pack-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(
+                    reqwest::header::ACCEPT,
+                    "application/x-git-receive-pack-result, text/plain",
+                );
+        }
         if let Some(value) = __request_content_type_header {
             let mut headers = reqwest::header::HeaderMap::new();
             headers.insert(reqwest::header::CONTENT_TYPE, value);
@@ -3806,11 +3836,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -4085,14 +4116,16 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept")
-                && (__request_content_type_header.is_none()
-                    || !name.eq_ignore_ascii_case("content-type"))
+            if __request_content_type_header.is_none()
+                || !name.eq_ignore_ascii_case("content-type")
             {
                 req = req.header(name, value);
             }
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         if let Some(value) = __request_content_type_header {
             let mut headers = reqwest::header::HeaderMap::new();
             headers.insert(reqwest::header::CONTENT_TYPE, value);
@@ -4377,11 +4410,12 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept") {
-                req = req.header(name, value);
-            }
+            req = req.header(name, value);
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         let response = req.send().await?;
         let status = response.status();
         let status_code = status.as_u16();
@@ -4664,14 +4698,16 @@ impl HttpClient {
             req = req.bearer_auth(api_key);
         }
         for (name, value) in &self.custom_headers {
-            if !name.eq_ignore_ascii_case("accept")
-                && (__request_content_type_header.is_none()
-                    || !name.eq_ignore_ascii_case("content-type"))
+            if __request_content_type_header.is_none()
+                || !name.eq_ignore_ascii_case("content-type")
             {
                 req = req.header(name, value);
             }
         }
-        req = req.header(reqwest::header::ACCEPT, "application/x-git-result");
+        if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+            req = req
+                .header(reqwest::header::ACCEPT, "application/x-git-result, text/plain");
+        }
         if let Some(value) = __request_content_type_header {
             let mut headers = reqwest::header::HeaderMap::new();
             headers.insert(reqwest::header::CONTENT_TYPE, value);

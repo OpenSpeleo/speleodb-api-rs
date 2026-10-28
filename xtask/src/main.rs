@@ -536,6 +536,18 @@ fn render(root: &Path) -> Result<BTreeMap<PathBuf, String>> {
         }
     }
     let result = generator.generate_all(&mut analysis)?;
+    let error_media: BTreeMap<_, std::collections::BTreeSet<_>> = analysis
+        .operation_responses
+        .iter()
+        .map(|(id, responses)| {
+            let media = responses
+                .iter()
+                .filter(|(status, _)| !status.starts_with('2'))
+                .flat_map(|(_, response)| response.representations.keys().cloned())
+                .collect();
+            (id.clone(), media)
+        })
+        .collect();
     let mut artifacts = generator.output_artifacts(&result);
     split::partition(
         &mut artifacts,
@@ -543,6 +555,7 @@ fn render(root: &Path) -> Result<BTreeMap<PathBuf, String>> {
         &text_forms,
         &scalar_forms,
         default_timeout_seconds,
+        &error_media,
     )?;
     Ok(artifacts)
 }
@@ -835,6 +848,101 @@ mod tests {
         }
         index["symbols"] = Value::Array(symbols);
         index
+    }
+
+    #[test]
+    fn every_generated_accept_covers_selected_success_and_supported_errors() {
+        use syn::visit::Visit;
+        struct Methods(BTreeMap<String, syn::ImplItemFn>);
+        impl<'ast> Visit<'ast> for Methods {
+            fn visit_impl_item_fn(&mut self, method: &'ast syn::ImplItemFn) {
+                self.0.insert(method.sig.ident.to_string(), method.clone());
+            }
+        }
+        #[derive(Default)]
+        struct Accepts(Vec<String>);
+        impl<'ast> Visit<'ast> for Accepts {
+            fn visit_expr_method_call(&mut self, call: &'ast syn::ExprMethodCall) {
+                use quote::ToTokens;
+                if call.method == "header"
+                    && call.args.first().is_some_and(|argument| {
+                        argument.to_token_stream().to_string() == "reqwest :: header :: ACCEPT"
+                    })
+                    && let Some(syn::Expr::Lit(syn::ExprLit {
+                        lit: syn::Lit::Str(value),
+                        ..
+                    })) = call.args.iter().nth(1)
+                {
+                    self.0.push(value.value());
+                }
+                syn::visit::visit_expr_method_call(self, call);
+            }
+        }
+        fn resolve<'a>(document: &'a Value, mut value: &'a Value) -> &'a Value {
+            while let Some(reference) = value.get("$ref").and_then(Value::as_str) {
+                value = document
+                    .pointer(reference.strip_prefix('#').unwrap())
+                    .unwrap();
+            }
+            value
+        }
+        let document = load_schema(&root()).unwrap();
+        let mut methods = Methods(BTreeMap::new());
+        for (path, bytes) in files(&root().join("src/generated/client")).unwrap() {
+            if path.extension().is_some_and(|extension| extension == "rs") {
+                methods.visit_file(&syn::parse_file(std::str::from_utf8(&bytes).unwrap()).unwrap());
+            }
+        }
+        let mut checked = 0;
+        for symbol in bindings()["symbols"].as_array().unwrap() {
+            if !symbol["path"]
+                .as_str()
+                .is_some_and(|path| path.starts_with("client::HttpClient::"))
+                || symbol["signature"]["asynchronous"].as_bool() != Some(true)
+            {
+                continue;
+            }
+            let operation = &symbol["operation"];
+            let Some(selected) = operation["response_media_type"].as_str() else {
+                continue;
+            };
+            let source = document
+                .pointer(operation["source_json_pointer"].as_str().unwrap())
+                .unwrap();
+            let errors: std::collections::BTreeSet<_> = source["responses"]
+                .as_object()
+                .unwrap()
+                .iter()
+                .filter(|(status, _)| !status.starts_with('2'))
+                .flat_map(|(_, response)| {
+                    resolve(&document, response)["content"]
+                        .as_object()
+                        .into_iter()
+                        .flat_map(|content| content.iter())
+                        .filter(|(media, representation)| {
+                            let schema = resolve(&document, &representation["schema"]);
+                            media.ends_with("/json")
+                                || media.ends_with("+json")
+                                || media.starts_with("text/")
+                                || media.as_str() == "application/octet-stream"
+                                || schema["format"] == "binary"
+                        })
+                        .map(|(media, _)| media)
+                })
+                .filter(|media| media.as_str() != selected)
+                .cloned()
+                .collect();
+            let expected = std::iter::once(selected.to_owned())
+                .chain(errors)
+                .collect::<Vec<_>>()
+                .join(", ");
+            let name = symbol["name"].as_str().unwrap();
+            let mut accepts = Accepts::default();
+            accepts.visit_impl_item_fn(&methods.0[name]);
+            assert_eq!(accepts.0, vec![expected], "Accept contract for {name}");
+            checked += 1;
+        }
+        assert!(checked > 0);
     }
 
     #[test]

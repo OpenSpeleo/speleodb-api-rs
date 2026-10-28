@@ -47,6 +47,13 @@ named resource and path-parameter directories, and named component-model
 modules. Never replace this layout with numbered chunks or monolithic
 client/model files.
 
+Generated Accept defaults must include the selected success representation and
+every supported declared error representation. Preserve caller Accept overrides
+without weakening multipart Content-Type guards. Keep the independent
+full-operation Accept inventory, local negotiation regression and actual staging
+contract tests; binary-only success headers can cause DRF to return 406 before a
+view performs authentication, lookup or file download.
+
 ## Development and verification
 
 Run commands directly from this repository using stable Rust with rustfmt and

@@ -231,6 +231,81 @@ fn type_name(ty: &Type) -> Option<String> {
     }
 }
 
+/// Keep the selected success representation while allowing the declared error
+/// renderers to negotiate before a view returns a binary response or redirect.
+fn configure_accept(method: &mut syn::ImplItemFn, accept: &str) -> Result<()> {
+    fn remove_guard(expression: &syn::Expr) -> (Option<syn::Expr>, usize) {
+        let expected: syn::Expr = parse_quote!(!name.eq_ignore_ascii_case("accept"));
+        if expression.to_token_stream().to_string() == expected.to_token_stream().to_string() {
+            return (None, 1);
+        }
+        if let syn::Expr::Binary(binary) = expression
+            && matches!(binary.op, syn::BinOp::And(_))
+        {
+            let (left, left_count) = remove_guard(&binary.left);
+            let (right, right_count) = remove_guard(&binary.right);
+            return (
+                match (left, right) {
+                    (Some(left), Some(right)) => Some(parse_quote!(#left && #right)),
+                    (left, right) => left.or(right),
+                },
+                left_count + right_count,
+            );
+        }
+        (Some(expression.clone()), 0)
+    }
+    let mut defaults = 0;
+    let mut guards = 0;
+    for statement in &mut method.block.stmts {
+        if let syn::Stmt::Expr(syn::Expr::ForLoop(loop_), _) = statement
+            && loop_.expr.to_token_stream().to_string()
+                == quote::quote!(&self.custom_headers).to_string()
+        {
+            let mut statements = Vec::new();
+            for mut statement in std::mem::take(&mut loop_.body.stmts) {
+                if let syn::Stmt::Expr(syn::Expr::If(condition), _) = &mut statement {
+                    let (remaining, count) = remove_guard(&condition.cond);
+                    guards += count;
+                    if count > 0 {
+                        if let Some(mut remaining) = remaining {
+                            while let syn::Expr::Paren(parentheses) = remaining {
+                                remaining = *parentheses.expr;
+                            }
+                            *condition.cond = remaining;
+                        } else {
+                            statements.extend(condition.then_branch.stmts.clone());
+                            continue;
+                        }
+                    }
+                }
+                statements.push(statement);
+            }
+            loop_.body.stmts = statements;
+        }
+        if let syn::Stmt::Expr(syn::Expr::Assign(assign), _) = statement
+            && let syn::Expr::MethodCall(call) = &*assign.right
+            && call.method == "header"
+            && call.args.first().is_some_and(|argument| {
+                argument.to_token_stream().to_string()
+                    == quote::quote!(reqwest::header::ACCEPT).to_string()
+            })
+        {
+            *statement = parse_quote! {
+                if !self.custom_headers.keys().any(|name| name.eq_ignore_ascii_case("accept")) {
+                    req = req.header(reqwest::header::ACCEPT, #accept);
+                }
+            };
+            defaults += 1;
+        }
+    }
+    ensure!(
+        defaults == 1 && guards == 1,
+        "Upstream Accept header shape changed for {}",
+        method.sig.ident
+    );
+    Ok(())
+}
+
 fn configure_default_transport(
     method: &mut syn::ImplItemFn,
     timeout_seconds: Option<u64>,
@@ -417,6 +492,7 @@ pub fn partition(
     text_forms: &BTreeSet<String>,
     scalar_forms: &BTreeMap<String, BTreeSet<String>>,
     default_timeout_seconds: Option<u64>,
+    error_media: &BTreeMap<String, BTreeSet<String>>,
 ) -> Result<()> {
     let bindings = artifacts
         .remove(&PathBuf::from("bindings.json"))
@@ -428,8 +504,35 @@ pub fn partition(
     let mut operations = BTreeMap::new();
     let mut text_methods = BTreeSet::new();
     let mut scalar_methods = BTreeMap::new();
+    let mut accept_headers = BTreeMap::new();
     for symbol in symbols {
         if let Some(operation) = symbol.get("operation").filter(|value| value.is_object()) {
+            if symbol["path"]
+                .as_str()
+                .is_some_and(|path| path.starts_with("client::HttpClient::"))
+                && symbol["signature"]["asynchronous"].as_bool() == Some(true)
+                && let Some(selected) = operation["response_media_type"].as_str()
+            {
+                let mut media = vec![selected.to_owned()];
+                if let Some(errors) = operation["operation_id"]
+                    .as_str()
+                    .and_then(|id| error_media.get(id))
+                {
+                    media.extend(
+                        errors
+                            .iter()
+                            .filter(|media| media.as_str() != selected)
+                            .cloned(),
+                    );
+                }
+                accept_headers.insert(
+                    symbol["name"]
+                        .as_str()
+                        .context("Missing method name")?
+                        .to_owned(),
+                    media.join(", "),
+                );
+            }
             if symbol["path"]
                 .as_str()
                 .is_some_and(|path| path.starts_with("client::HttpClient::"))
@@ -531,6 +634,11 @@ pub fn partition(
                     let members = std::mem::take(&mut implementation.items);
                     let mut methods: BTreeMap<Module, Vec<ImplItem>> = BTreeMap::new();
                     for mut member in members {
+                        if let ImplItem::Fn(method) = &mut member
+                            && let Some(accept) = accept_headers.get(&method.sig.ident.to_string())
+                        {
+                            configure_accept(method, accept)?;
+                        }
                         if let ImplItem::Fn(method) = &mut member
                             && method.sig.ident == "new"
                         {
@@ -667,6 +775,26 @@ pub fn partition(
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn accept_rewrite_preserves_request_content_type_guards_and_rejects_drift() {
+        let mut method: syn::ImplItemFn = parse_quote! {
+            async fn download(&self) {
+                for (name, value) in &self.custom_headers {
+                    if !name.eq_ignore_ascii_case("accept") && (__request_content_type_header.is_none() || !name.eq_ignore_ascii_case("content-type")) {
+                        req = req.header(name, value);
+                    }
+                }
+                req = req.header(reqwest::header::ACCEPT, "application/octet-stream");
+            }
+        };
+        configure_accept(&mut method, "application/octet-stream, application/json").unwrap();
+        let rewritten = method.to_token_stream().to_string();
+        assert!(rewritten.contains("__request_content_type_header . is_none"));
+        assert!(rewritten.contains("eq_ignore_ascii_case (\"content-type\")"));
+        assert!(rewritten.contains("application/octet-stream, application/json"));
+        assert!(configure_accept(&mut method, "application/json").is_err());
+    }
 
     #[test]
     fn default_transport_rejects_changed_upstream_initialization() {

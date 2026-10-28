@@ -81,9 +81,32 @@ jobs:
       - run: cargo publish --locked --dry-run
       - run: cargo xtask check
 
+  stage-contract:
+    if: >-
+      github.event_name == 'push' ||
+      github.event.pull_request.head.repo.full_name == github.repository
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TEST_SPELEODB_INSTANCE: ${{ secrets.TEST_SPELEODB_INSTANCE }}
+      TEST_SPELEODB_OAUTH: ${{ secrets.TEST_SPELEODB_OAUTH }}
+      TEST_SPELEODB_PROJECT_ID: ${{ secrets.TEST_SPELEODB_PROJECT_ID }}
+      TEST_SPELEODB_EMPTY_PROJECT_ID:
+        ${{ secrets.TEST_SPELEODB_EMPTY_PROJECT_ID }}
+      TEST_SPELEODB_GIS_LAYER_ID: ${{ secrets.TEST_SPELEODB_GIS_LAYER_ID }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Verify actual staging renderer and download contracts
+        run: >-
+          cargo test --test stage_negotiation --locked -- --ignored
+          --test-threads=1
+
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
-    needs: test
+    needs: [test, stage-contract]
     runs-on: ubuntu-latest
 
     timeout-minutes: 30
