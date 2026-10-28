@@ -1,0 +1,320 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppTokensRefreshPostApiError",
+    "operation": null,
+    "path": "client::AuthAppTokensRefreshPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthAppTokensRefreshPostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppTokensRefreshPostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::AuthAppTokensRefreshPostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::AuthAppTokensRefreshPostBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppTokensRefreshPostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthAppTokensRefreshPostRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::AuthAppTokensRefreshPostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < AuthAppTokensRefreshPostApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < AuthAppTokensRefreshPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::AuthAppTokensRefreshPostBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_tokens_refresh_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_tokens_refresh_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthAppTokensRefreshPostRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAppTokensRefreshPostApiError > >",
+      "rust": "async fn auth_app_tokens_refresh_post (& self , x_session_token : Option < impl AsRef < str > > , request : AuthAppTokensRefreshPostRequest) -> Result < () , ApiOpError < AuthAppTokensRefreshPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_tokens_refresh_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_tokens_refresh_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1tokens~1refresh/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_tokens_refresh_post",
+      "source_path": "/_allauth/app/v1/tokens/refresh",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_tokens_refresh_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppTokensRefreshPostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppTokensRefreshPostBuilder < '_ >",
+      "rust": "fn auth_app_tokens_refresh_post_builder (& self , request : AuthAppTokensRefreshPostRequest) -> AuthAppTokensRefreshPostBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "refresh_token",
+        "public": true,
+        "rust_type": "AuthRefreshToken",
+        "wire_name": "refresh_token"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppTokensRefreshPostRequest",
+    "operation": null,
+    "path": "types::AuthAppTokensRefreshPostRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_assetlinks",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_assetlinks",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1assetlinks.json/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_assetlinks",
+      "source_path": "/.well-known/assetlinks.json",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_assetlinks",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < WellKnownAssetlinksFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < WellKnownAssetlinksResponse , ApiOpError < WellKnownAssetlinksApiError > >",
+      "rust": "async fn well_known_assetlinks (& self , format : Option < WellKnownAssetlinksFormat >) -> Result < WellKnownAssetlinksResponse , ApiOpError < WellKnownAssetlinksApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_assetlinks_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_assetlinks",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1assetlinks.json/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_assetlinks",
+      "source_path": "/.well-known/assetlinks.json",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_assetlinks_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "WellKnownAssetlinksBuilder < '_ >",
+      "rust": "fn well_known_assetlinks_builder (& self) -> WellKnownAssetlinksBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownAssetlinksApiError",
+    "operation": null,
+    "path": "client::WellKnownAssetlinksApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < WellKnownAssetlinksFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAssetlinksBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_assetlinks",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1assetlinks.json/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_assetlinks",
+      "source_path": "/.well-known/assetlinks.json",
+      "webhook": false
+    },
+    "path": "client::WellKnownAssetlinksBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_assetlinks",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1assetlinks.json/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_assetlinks",
+      "source_path": "/.well-known/assetlinks.json",
+      "webhook": false
+    },
+    "path": "client::WellKnownAssetlinksBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "WellKnownAssetlinksFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : WellKnownAssetlinksFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_assetlinks",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1assetlinks.json/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_assetlinks",
+      "source_path": "/.well-known/assetlinks.json",
+      "webhook": false
+    },
+    "path": "client::WellKnownAssetlinksBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < WellKnownAssetlinksResponse , ApiOpError < WellKnownAssetlinksApiError > >",
+      "rust": "async fn send (self) -> Result < WellKnownAssetlinksResponse , ApiOpError < WellKnownAssetlinksApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownAssetlinksFormat",
+    "operation": null,
+    "path": "client::WellKnownAssetlinksFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::WellKnownAssetlinksFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "WellKnownAssetlinksResponse",
+    "operation": null,
+    "path": "types::WellKnownAssetlinksResponse",
+    "rust_type": "Vec < WellKnownAssetlinksResponseItem >",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "relation",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "relation"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "target",
+        "public": true,
+        "rust_type": "WellKnownAssetlinksResponseItemTarget",
+        "wire_name": "target"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAssetlinksResponseItem",
+    "operation": null,
+    "path": "types::WellKnownAssetlinksResponseItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "namespace",
+        "public": true,
+        "rust_type": "WellKnownAssetlinksResponseItemTargetNamespace",
+        "wire_name": "namespace"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "package_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "package_name"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "sha256_cert_fingerprints",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "sha256_cert_fingerprints"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAssetlinksResponseItemTarget",
+    "operation": null,
+    "path": "types::WellKnownAssetlinksResponseItemTarget",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownAssetlinksResponseItemTargetNamespace",
+    "operation": null,
+    "path": "types::WellKnownAssetlinksResponseItemTargetNamespace",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"android_app\")]"
+        ],
+        "fields": [],
+        "name": "AndroidApp",
+        "wire_name": "android_app"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::WellKnownAssetlinksResponseItemTargetNamespace::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,1993 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPartialUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2SensorFleetsPartialUpdateWithFormDataRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_sensor_fleets_partial_update_with_form_data (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPartialUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2SensorFleetsPartialUpdateWithFormDataRequest >) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPartialUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_partial_update_with_form_data_builder (& self , fleet_id : impl Into < String >) -> V2SensorFleetsPartialUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPartialUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < PatchedSensorFleetRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn v2_sensor_fleets_partial_update_with_json (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < PatchedSensorFleetRequest >) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPartialUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_partial_update_with_json_builder (& self , fleet_id : impl Into < String >) -> V2SensorFleetsPartialUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPartialUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < PatchedSensorFleetRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_sensor_fleets_partial_update_with_url_encoded (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPartialUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < PatchedSensorFleetRequest >) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_partial_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_partial_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPartialUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_partial_update_with_url_encoded_builder (& self , fleet_id : impl Into < String >) -> V2SensorFleetsPartialUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPartialUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPartialUpdateWithFormDataRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPartialUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPartialUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPartialUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn name (mut self , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsPartialUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2SensorFleetsPartialUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPartialUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < PatchedSensorFleetRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPartialUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPartialUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPartialUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn name (mut self , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "PatchedSensorFleetRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : PatchedSensorFleetRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPartialUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < PatchedSensorFleetRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPartialUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPartialUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPartialUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn name (mut self , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "PatchedSensorFleetRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : PatchedSensorFleetRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleet , ApiOpError < V2SensorFleetsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_sensor_fleets_partial_update",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPartialUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPartialUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "is_active",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "is_active"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPartialUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2SensorFleetsPartialUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

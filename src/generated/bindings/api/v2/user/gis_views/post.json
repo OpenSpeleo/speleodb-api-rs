@@ -1,0 +1,996 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_gis_views_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_gis_views_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2UserGisViewsCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2UserGisViewsCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < GISViewCreateUpdate , ApiOpError < V2UserGisViewsCreateApiError > >",
+      "rust": "async fn v2_user_gis_views_create (& self , format : Option < V2UserGisViewsCreateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2UserGisViewsCreateRequest) -> Result < GISViewCreateUpdate , ApiOpError < V2UserGisViewsCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_gis_views_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_gis_views_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "allow_precise_zoom",
+          "rust_type": "bool"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        },
+        {
+          "name": "projects",
+          "rust_type": "Vec < GISProjectViewInputRequest >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2UserGisViewsCreateBuilder < '_ >",
+      "rust": "fn v2_user_gis_views_create_builder (& self , allow_precise_zoom : bool , name : String , projects : Vec < GISProjectViewInputRequest >) -> V2UserGisViewsCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserGisViewsCreateApiError",
+    "operation": null,
+    "path": "client::V2UserGisViewsCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2UserGisViewsCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2UserGisViewsCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2UserGisViewsCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2UserGisViewsCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2UserGisViewsCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::geographic_bound",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geographic_bound",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound (mut self , geographic_bound : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::geographic_bound_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::geographic_bound_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2UserGisViewsCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2UserGisViewsCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < GISViewCreateUpdate , ApiOpError < V2UserGisViewsCreateApiError > >",
+      "rust": "async fn send (self) -> Result < GISViewCreateUpdate , ApiOpError < V2UserGisViewsCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_gis_views_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1gis_views~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_gis_views_create",
+      "source_path": "/api/v2/user/gis_views/",
+      "webhook": false
+    },
+    "path": "client::V2UserGisViewsCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserGisViewsCreateFormat",
+    "operation": null,
+    "path": "client::V2UserGisViewsCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2UserGisViewsCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "allow_precise_zoom",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "allow_precise_zoom"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 2,
+        "name": "geographic_bound",
+        "public": true,
+        "rust_type": "Option < Option < uuid :: Uuid > >",
+        "wire_name": "geographic_bound"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "projects",
+        "public": true,
+        "rust_type": "Vec < GISProjectViewInputRequest >",
+        "wire_name": "projects"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2UserGisViewsCreateRequest",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "allow_precise_zoom",
+          "rust_type": "bool"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        },
+        {
+          "name": "projects",
+          "rust_type": "Vec < GISProjectViewInputRequest >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2UserGisViewsCreateRequestBuilder",
+      "rust": "fn builder (allow_precise_zoom : bool , name : String , projects : Vec < GISProjectViewInputRequest >) -> V2UserGisViewsCreateRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "allow_precise_zoom",
+          "rust_type": "bool"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        },
+        {
+          "name": "projects",
+          "rust_type": "Vec < GISProjectViewInputRequest >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (allow_precise_zoom : bool , name : String , projects : Vec < GISProjectViewInputRequest >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2UserGisViewsCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2UserGisViewsCreateRequestBuilder",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2UserGisViewsCreateRequest",
+      "rust": "fn build (self) -> V2UserGisViewsCreateRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::geographic_bound",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geographic_bound",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound (mut self , geographic_bound : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound_absent",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::geographic_bound_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "geographic_bound_null",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::geographic_bound_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn geographic_bound_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2UserGisViewsCreateRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "allow_precise_zoom",
+          "rust_type": "bool"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        },
+        {
+          "name": "projects",
+          "rust_type": "Vec < GISProjectViewInputRequest >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (allow_precise_zoom : bool , name : String , projects : Vec < GISProjectViewInputRequest >) -> Self"
+    },
+    "variants": []
+  }
+]

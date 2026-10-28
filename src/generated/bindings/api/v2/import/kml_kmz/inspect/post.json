@@ -1,0 +1,901 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_import_kml_kmz_inspect_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_import_kml_kmz_inspect_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ImportKmlKmzInspectCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ImportKmlKmzInspectCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2ImportKmlKmzInspectCreateResponse , ApiOpError < V2ImportKmlKmzInspectCreateApiError > >",
+      "rust": "async fn v2_import_kml_kmz_inspect_create (& self , format : Option < V2ImportKmlKmzInspectCreateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ImportKmlKmzInspectCreateRequest) -> Result < V2ImportKmlKmzInspectCreateResponse , ApiOpError < V2ImportKmlKmzInspectCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_import_kml_kmz_inspect_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_import_kml_kmz_inspect_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ImportKmlKmzInspectCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ImportKmlKmzInspectCreateBuilder < '_ >",
+      "rust": "fn v2_import_kml_kmz_inspect_create_builder (& self , request : V2ImportKmlKmzInspectCreateRequest) -> V2ImportKmlKmzInspectCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzInspectCreateApiError",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzInspectCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "GISProcessingError",
+            "wire_name": null
+          }
+        ],
+        "name": "Status422",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ImportKmlKmzInspectCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ImportKmlKmzInspectCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzInspectCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzInspectCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ImportKmlKmzInspectCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ImportKmlKmzInspectCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzInspectCreateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ImportKmlKmzInspectCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ImportKmlKmzInspectCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzInspectCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2ImportKmlKmzInspectCreateResponse , ApiOpError < V2ImportKmlKmzInspectCreateApiError > >",
+      "rust": "async fn send (self) -> Result < V2ImportKmlKmzInspectCreateResponse , ApiOpError < V2ImportKmlKmzInspectCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_inspect_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1inspect~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_import_kml_kmz_inspect_create",
+      "source_path": "/api/v2/import/kml_kmz/inspect/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzInspectCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzInspectCreateFormat",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzInspectCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzInspectCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "file",
+        "public": true,
+        "rust_type": "MultipartFile",
+        "wire_name": "file"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateRequest",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "overlay",
+        "public": true,
+        "rust_type": "V2ImportKmlKmzInspectCreateResponseOverlay",
+        "wire_name": "overlay"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "places",
+        "public": true,
+        "rust_type": "V2ImportKmlKmzInspectCreateResponsePlaces",
+        "wire_name": "places"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "source_format",
+        "public": true,
+        "rust_type": "V2ImportKmlKmzInspectCreateResponseSourceFormat",
+        "wire_name": "source_format"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "source_placemarks",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "source_placemarks"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "suggested_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "suggested_name"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "warnings",
+        "public": true,
+        "rust_type": "Vec < V2ImportKmlKmzInspectCreateResponseWarningsItem >",
+        "wire_name": "warnings"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateResponse",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "feature_count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "feature_count"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "line_parts",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "line_parts"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "point_parts",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "point_parts"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "polygon_parts",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "polygon_parts"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "source_placemarks",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "source_placemarks"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateResponseOverlay",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseOverlay",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "duplicate_coordinate_count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "duplicate_coordinate_count"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "eligible_placemarks",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "eligible_placemarks"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "point_count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "point_count"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "skipped_placemarks",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "skipped_placemarks"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "unique_coordinate_count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "unique_coordinate_count"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateResponsePlaces",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponsePlaces",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzInspectCreateResponseSourceFormat",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseSourceFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"KML\")]"
+        ],
+        "fields": [],
+        "name": "Kml",
+        "wire_name": "KML"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KMZ\")]"
+        ],
+        "fields": [],
+        "name": "Kmz",
+        "wire_name": "KMZ"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseSourceFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "count"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "message",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "message"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "modes",
+        "public": true,
+        "rust_type": "Vec < V2ImportKmlKmzInspectCreateResponseWarningsItemModesItem >",
+        "wire_name": "modes"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzInspectCreateResponseWarningsItem",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseWarningsItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzInspectCreateResponseWarningsItemModesItem",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseWarningsItemModesItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"places\")]"
+        ],
+        "fields": [],
+        "name": "Places",
+        "wire_name": "places"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"overlay\")]"
+        ],
+        "fields": [],
+        "name": "Overlay",
+        "wire_name": "overlay"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzInspectCreateResponseWarningsItemModesItem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

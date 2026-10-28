@@ -1,0 +1,184 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "id",
+        "public": true,
+        "rust_type": "AuthFlowId",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "is_pending",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "is_pending"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "provider",
+        "public": true,
+        "rust_type": "Option < AuthProvider >",
+        "wire_name": "provider"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "types",
+        "public": true,
+        "rust_type": "Option < Vec < AuthAuthenticatorType > >",
+        "wire_name": "types"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthFlow",
+    "operation": null,
+    "path": "types::AuthFlow",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthFlowId",
+    "operation": null,
+    "path": "types::AuthFlowId",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"login\")]"
+        ],
+        "fields": [],
+        "name": "Login",
+        "wire_name": "login"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"login_by_code\")]"
+        ],
+        "fields": [],
+        "name": "LoginByCode",
+        "wire_name": "login_by_code"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"mfa_authenticate\")]"
+        ],
+        "fields": [],
+        "name": "MfaAuthenticate",
+        "wire_name": "mfa_authenticate"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"mfa_reauthenticate\")]"
+        ],
+        "fields": [],
+        "name": "MfaReauthenticate",
+        "wire_name": "mfa_reauthenticate"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"provider_redirect\")]"
+        ],
+        "fields": [],
+        "name": "ProviderRedirect",
+        "wire_name": "provider_redirect"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"provider_signup\")]"
+        ],
+        "fields": [],
+        "name": "ProviderSignup",
+        "wire_name": "provider_signup"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"provider_token\")]"
+        ],
+        "fields": [],
+        "name": "ProviderToken",
+        "wire_name": "provider_token"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"reauthenticate\")]"
+        ],
+        "fields": [],
+        "name": "Reauthenticate",
+        "wire_name": "reauthenticate"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"signup\")]"
+        ],
+        "fields": [],
+        "name": "Signup",
+        "wire_name": "signup"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"verify_email\")]"
+        ],
+        "fields": [],
+        "name": "VerifyEmail",
+        "wire_name": "verify_email"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"verify_phone\")]"
+        ],
+        "fields": [],
+        "name": "VerifyPhone",
+        "wire_name": "verify_phone"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::AuthFlowId::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,345 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_passkey_endpoints",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_passkey_endpoints",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1passkey-endpoints/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_passkey_endpoints",
+      "source_path": "/.well-known/passkey-endpoints",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_passkey_endpoints",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < WellKnownPasskeyEndpointsFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < WellKnownPasskeyEndpointsResponse , ApiOpError < WellKnownPasskeyEndpointsApiError > >",
+      "rust": "async fn well_known_passkey_endpoints (& self , format : Option < WellKnownPasskeyEndpointsFormat >) -> Result < WellKnownPasskeyEndpointsResponse , ApiOpError < WellKnownPasskeyEndpointsApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_passkey_endpoints_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_passkey_endpoints",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1passkey-endpoints/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_passkey_endpoints",
+      "source_path": "/.well-known/passkey-endpoints",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_passkey_endpoints_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "WellKnownPasskeyEndpointsBuilder < '_ >",
+      "rust": "fn well_known_passkey_endpoints_builder (& self) -> WellKnownPasskeyEndpointsBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownPasskeyEndpointsApiError",
+    "operation": null,
+    "path": "client::WellKnownPasskeyEndpointsApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < WellKnownPasskeyEndpointsFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownPasskeyEndpointsBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_passkey_endpoints",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1passkey-endpoints/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_passkey_endpoints",
+      "source_path": "/.well-known/passkey-endpoints",
+      "webhook": false
+    },
+    "path": "client::WellKnownPasskeyEndpointsBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_passkey_endpoints",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1passkey-endpoints/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_passkey_endpoints",
+      "source_path": "/.well-known/passkey-endpoints",
+      "webhook": false
+    },
+    "path": "client::WellKnownPasskeyEndpointsBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "WellKnownPasskeyEndpointsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : WellKnownPasskeyEndpointsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_passkey_endpoints",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1passkey-endpoints/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_passkey_endpoints",
+      "source_path": "/.well-known/passkey-endpoints",
+      "webhook": false
+    },
+    "path": "client::WellKnownPasskeyEndpointsBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < WellKnownPasskeyEndpointsResponse , ApiOpError < WellKnownPasskeyEndpointsApiError > >",
+      "rust": "async fn send (self) -> Result < WellKnownPasskeyEndpointsResponse , ApiOpError < WellKnownPasskeyEndpointsApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownPasskeyEndpointsFormat",
+    "operation": null,
+    "path": "client::WellKnownPasskeyEndpointsFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::WellKnownPasskeyEndpointsFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownPasskeyEndpointsResponse",
+    "operation": null,
+    "path": "types::WellKnownPasskeyEndpointsResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

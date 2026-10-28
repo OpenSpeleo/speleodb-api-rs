@@ -1,0 +1,71 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasBrowserAuthSessionGetApiError",
+    "operation": null,
+    "path": "client::AuthAliasBrowserAuthSessionGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_browser_auth_session_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_browser_auth_session_get",
+      "response_excluded_statuses": [
+        "401"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1browser~1v1~1auth~1session/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_browser_auth_session_get",
+      "source_path": "/api/auth/browser/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_browser_auth_session_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasBrowserAuthSessionGetApiError > >",
+      "rust": "async fn auth_alias_browser_auth_session_get (& self) -> Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasBrowserAuthSessionGetApiError > >"
+    },
+    "variants": []
+  }
+]

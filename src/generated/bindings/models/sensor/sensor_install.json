@@ -1,0 +1,290 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "sensor_fleet_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "sensor_fleet_id"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "sensor_fleet_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "sensor_fleet_name"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "sensor_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "sensor_id"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "sensor_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "sensor_name"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "station_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "station_id"
+      },
+      {
+        "attributes": [],
+        "index": 13,
+        "name": "station_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "station_name"
+      },
+      {
+        "attributes": [
+          "# [serde (default)]"
+        ],
+        "index": 14,
+        "name": "status",
+        "public": true,
+        "rust_type": "SensorInstallStatus",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [],
+        "index": 15,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [],
+        "index": 16,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < SensorInstallUninstallUser >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "SensorInstall",
+    "operation": null,
+    "path": "types::SensorInstall",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SensorInstallStatus",
+    "operation": null,
+    "path": "types::SensorInstallStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::SensorInstallStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SensorInstallUninstallUser",
+    "operation": null,
+    "path": "types::SensorInstallUninstallUser",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SensorInstallUninstallUserInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "SensorInstallUninstallUserInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "SensorInstallUninstallUserInlineVariant",
+    "operation": null,
+    "path": "types::SensorInstallUninstallUserInlineVariant",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

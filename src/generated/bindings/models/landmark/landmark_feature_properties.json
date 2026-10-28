@@ -1,0 +1,194 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "can_delete",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_delete"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "can_write",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_write"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "collection",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "collection"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "collection_color",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "collection_color"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "collection_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "collection_name"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "collection_type",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "collection_type"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "Option < chrono :: DateTime < chrono :: Utc > >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "icon",
+        "public": true,
+        "rust_type": "LandmarkFeaturePropertiesIcon",
+        "wire_name": "icon"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "is_personal_collection",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "is_personal_collection"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "LandmarkFeatureProperties",
+    "operation": null,
+    "path": "types::LandmarkFeatureProperties",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "LandmarkFeaturePropertiesIcon",
+    "operation": null,
+    "path": "types::LandmarkFeaturePropertiesIcon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"DEFAULT\")]"
+        ],
+        "fields": [],
+        "name": "Default",
+        "wire_name": "DEFAULT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CAVE\")]"
+        ],
+        "fields": [],
+        "name": "Cave",
+        "wire_name": "CAVE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UNKNOWN\")]"
+        ],
+        "fields": [],
+        "name": "Unknown",
+        "wire_name": "UNKNOWN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ATTENTION\")]"
+        ],
+        "fields": [],
+        "name": "Attention",
+        "wire_name": "ATTENTION"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NOGO\")]"
+        ],
+        "fields": [],
+        "name": "Nogo",
+        "wire_name": "NOGO"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::LandmarkFeaturePropertiesIcon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

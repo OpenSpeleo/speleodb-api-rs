@@ -1,0 +1,277 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "can_delete",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_delete"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "can_write",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_write"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "code",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "end_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "end_date"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "experiment_fields",
+        "public": true,
+        "rust_type": "Vec < ExperimentExperimentFieldsItem >",
+        "wire_name": "experiment_fields"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "gis_token",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "gis_token"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "is_active",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "is_active"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 13,
+        "name": "start_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "start_date"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "Experiment",
+    "operation": null,
+    "path": "types::Experiment",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 2,
+        "name": "options",
+        "public": true,
+        "rust_type": "Option < Option < Vec < String > > >",
+        "wire_name": "options"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "order",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "order"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "required",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "required"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "ExperimentExperimentFieldsItemType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ExperimentExperimentFieldsItem",
+    "operation": null,
+    "path": "types::ExperimentExperimentFieldsItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ExperimentExperimentFieldsItemType",
+    "operation": null,
+    "path": "types::ExperimentExperimentFieldsItemType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"text\")]"
+        ],
+        "fields": [],
+        "name": "Text",
+        "wire_name": "text"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"number\")]"
+        ],
+        "fields": [],
+        "name": "Number",
+        "wire_name": "number"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"date\")]"
+        ],
+        "fields": [],
+        "name": "Date",
+        "wire_name": "date"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"boolean\")]"
+        ],
+        "fields": [],
+        "name": "Boolean",
+        "wire_name": "boolean"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"select\")]"
+        ],
+        "fields": [],
+        "name": "Select",
+        "wire_name": "select"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::ExperimentExperimentFieldsItemType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,60 @@
+[package]
+name = "speleodb-api"
+version = "0.1.0"
+edition = "2024"
+license = "AGPL-3.0-only"
+description = "Generated async Rust client and models for the SpeleoDB API"
+repository = "https://github.com/OpenSpeleo/speleodb-api-rs"
+homepage = "https://www.speleodb.org"
+documentation = "https://docs.rs/speleodb-api"
+readme = "README.md"
+keywords = ["speleodb", "openapi", "sdk", "caving"]
+categories = ["api-bindings", "web-programming::http-client"]
+include = [
+  "/src/**",
+  "/OpenAPI.yaml",
+  "/openapi-source.json",
+  "/README.md",
+  "/docs/**",
+  "/LICENSE",
+  "/Cargo.lock",
+  "/tests/**",
+]
+
+[lib]
+test = false
+
+[profile.dev]
+debug = 0
+
+[profile.test]
+debug = 0
+
+[dependencies]
+bytes = { version = "1", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+futures-util = "0.3"
+mime = "0.3"
+reqwest = { version = "0.13", default-features = false, features = [
+  "multipart",
+  "query",
+  "rustls",
+  "stream",
+] }
+reqwest-middleware = { version = "0.5", features = ["multipart", "query"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_urlencoded = "0.7"
+thiserror = "2"
+url = { version = "2", features = ["serde"] }
+uuid = { version = "1", features = ["serde"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = [
+  "macros",
+  "rt-multi-thread",
+  "net",
+  "io-util",
+  "time",
+  "test-util",
+] }

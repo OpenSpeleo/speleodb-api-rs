@@ -1,0 +1,408 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_exports_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_exports_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2UserExportsCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < UserExport , ApiOpError < V2UserExportsCreateApiError > >",
+      "rust": "async fn v2_user_exports_create (& self , format : Option < V2UserExportsCreateFormat > , x_csrf_token : Option < impl AsRef < str > >) -> Result < UserExport , ApiOpError < V2UserExportsCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_exports_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_exports_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2UserExportsCreateBuilder < '_ >",
+      "rust": "fn v2_user_exports_create_builder (& self) -> V2UserExportsCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserExportsCreateApiError",
+    "operation": null,
+    "path": "client::V2UserExportsCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status503",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2UserExportsCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2UserExportsCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::V2UserExportsCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::V2UserExportsCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2UserExportsCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2UserExportsCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::V2UserExportsCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < UserExport , ApiOpError < V2UserExportsCreateApiError > >",
+      "rust": "async fn send (self) -> Result < UserExport , ApiOpError < V2UserExportsCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_exports_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "503"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "202"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1exports~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_exports_create",
+      "source_path": "/api/v2/user/exports/",
+      "webhook": false
+    },
+    "path": "client::V2UserExportsCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserExportsCreateFormat",
+    "operation": null,
+    "path": "client::V2UserExportsCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2UserExportsCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

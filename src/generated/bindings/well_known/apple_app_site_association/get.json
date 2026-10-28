@@ -1,0 +1,482 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_apple_app_site_association",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_apple_app_site_association",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1apple-app-site-association/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_apple_app_site_association",
+      "source_path": "/.well-known/apple-app-site-association",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_apple_app_site_association",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < WellKnownAppleAppSiteAssociationFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < WellKnownAppleAppSiteAssociationResponse , ApiOpError < WellKnownAppleAppSiteAssociationApiError > >",
+      "rust": "async fn well_known_apple_app_site_association (& self , format : Option < WellKnownAppleAppSiteAssociationFormat >) -> Result < WellKnownAppleAppSiteAssociationResponse , ApiOpError < WellKnownAppleAppSiteAssociationApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "well_known_apple_app_site_association_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_apple_app_site_association",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1apple-app-site-association/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_apple_app_site_association",
+      "source_path": "/.well-known/apple-app-site-association",
+      "webhook": false
+    },
+    "path": "client::HttpClient::well_known_apple_app_site_association_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "WellKnownAppleAppSiteAssociationBuilder < '_ >",
+      "rust": "fn well_known_apple_app_site_association_builder (& self) -> WellKnownAppleAppSiteAssociationBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownAppleAppSiteAssociationApiError",
+    "operation": null,
+    "path": "client::WellKnownAppleAppSiteAssociationApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < WellKnownAppleAppSiteAssociationFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_apple_app_site_association",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1apple-app-site-association/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_apple_app_site_association",
+      "source_path": "/.well-known/apple-app-site-association",
+      "webhook": false
+    },
+    "path": "client::WellKnownAppleAppSiteAssociationBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_apple_app_site_association",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1apple-app-site-association/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_apple_app_site_association",
+      "source_path": "/.well-known/apple-app-site-association",
+      "webhook": false
+    },
+    "path": "client::WellKnownAppleAppSiteAssociationBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "WellKnownAppleAppSiteAssociationFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : WellKnownAppleAppSiteAssociationFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "well_known_apple_app_site_association",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1.well-known~1apple-app-site-association/get",
+      "source_method": "GET",
+      "source_operation_id": "well_known_apple_app_site_association",
+      "source_path": "/.well-known/apple-app-site-association",
+      "webhook": false
+    },
+    "path": "client::WellKnownAppleAppSiteAssociationBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < WellKnownAppleAppSiteAssociationResponse , ApiOpError < WellKnownAppleAppSiteAssociationApiError > >",
+      "rust": "async fn send (self) -> Result < WellKnownAppleAppSiteAssociationResponse , ApiOpError < WellKnownAppleAppSiteAssociationApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "WellKnownAppleAppSiteAssociationFormat",
+    "operation": null,
+    "path": "client::WellKnownAppleAppSiteAssociationFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::WellKnownAppleAppSiteAssociationFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "applinks",
+        "public": true,
+        "rust_type": "WellKnownAppleAppSiteAssociationResponseApplinks",
+        "wire_name": "applinks"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "webcredentials",
+        "public": true,
+        "rust_type": "WellKnownAppleAppSiteAssociationResponseWebcredentials",
+        "wire_name": "webcredentials"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationResponse",
+    "operation": null,
+    "path": "types::WellKnownAppleAppSiteAssociationResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "details",
+        "public": true,
+        "rust_type": "Vec < WellKnownAppleAppSiteAssociationResponseApplinksDetailsItem >",
+        "wire_name": "details"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationResponseApplinks",
+    "operation": null,
+    "path": "types::WellKnownAppleAppSiteAssociationResponseApplinks",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (rename = \"appIDs\")]"
+        ],
+        "index": 0,
+        "name": "app_ids",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "appIDs"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "components",
+        "public": true,
+        "rust_type": "Vec < WellKnownAppleAppSiteAssociationResponseApplinksDetailsItemComponentsItem >",
+        "wire_name": "components"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationResponseApplinksDetailsItem",
+    "operation": null,
+    "path": "types::WellKnownAppleAppSiteAssociationResponseApplinksDetailsItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (rename = \"/\")]"
+        ],
+        "index": 0,
+        "name": "field",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "/"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "comment",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "comment"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationResponseApplinksDetailsItemComponentsItem",
+    "operation": null,
+    "path": "types::WellKnownAppleAppSiteAssociationResponseApplinksDetailsItemComponentsItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "apps",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "apps"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "WellKnownAppleAppSiteAssociationResponseWebcredentials",
+    "operation": null,
+    "path": "types::WellKnownAppleAppSiteAssociationResponseWebcredentials",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

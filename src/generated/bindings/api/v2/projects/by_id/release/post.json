@@ -1,0 +1,1685 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsReleaseCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2ProjectsReleaseCreateWithFormDataRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithFormDataApiError > >",
+      "rust": "async fn v2_projects_release_create_with_form_data (& self , id : impl AsRef < str > , format : Option < V2ProjectsReleaseCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2ProjectsReleaseCreateWithFormDataRequest >) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsReleaseCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_projects_release_create_with_form_data_builder (& self , id : impl Into < String >) -> V2ProjectsReleaseCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsReleaseCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < ProjectReleaseRequestRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithJsonApiError > >",
+      "rust": "async fn v2_projects_release_create_with_json (& self , id : impl AsRef < str > , format : Option < V2ProjectsReleaseCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < ProjectReleaseRequestRequest >) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsReleaseCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_projects_release_create_with_json_builder (& self , id : impl Into < String >) -> V2ProjectsReleaseCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsReleaseCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < ProjectReleaseRequestRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_projects_release_create_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2ProjectsReleaseCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < ProjectReleaseRequestRequest >) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_release_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_release_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsReleaseCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_projects_release_create_with_url_encoded_builder (& self , id : impl Into < String >) -> V2ProjectsReleaseCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsReleaseCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2ProjectsReleaseCreateWithFormDataRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsReleaseCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "comment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder::comment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "comment",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn comment (mut self , comment : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsReleaseCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsReleaseCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ProjectsReleaseCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ProjectsReleaseCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsReleaseCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < ProjectReleaseRequestRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsReleaseCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "comment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder::comment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "comment",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn comment (mut self , comment : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsReleaseCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsReleaseCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "ProjectReleaseRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : ProjectReleaseRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsReleaseCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < ProjectReleaseRequestRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsReleaseCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "comment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder::comment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "comment",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn comment (mut self , comment : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsReleaseCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsReleaseCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "ProjectReleaseRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : ProjectReleaseRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Project , ApiOpError < V2ProjectsReleaseCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < Project , ApiOpError < V2ProjectsReleaseCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_release_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1release~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_release_create",
+      "source_path": "/api/v2/projects/{id}/release/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsReleaseCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsReleaseCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "comment",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "comment"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsReleaseCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2ProjectsReleaseCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,1617 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithFormDataApiError > >",
+      "rust": "async fn v2_gis_geometries_permissions_destroy_with_form_data (& self , id : impl AsRef < str > , format : Option < V2GisGeometriesPermissionsDestroyWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2GisGeometriesPermissionsDestroyWithFormDataRequest) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesPermissionsDestroyWithFormDataBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_permissions_destroy_with_form_data_builder (& self , id : impl Into < String > , request : V2GisGeometriesPermissionsDestroyWithFormDataRequest) -> V2GisGeometriesPermissionsDestroyWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithJsonApiError > >",
+      "rust": "async fn v2_gis_geometries_permissions_destroy_with_json (& self , id : impl AsRef < str > , format : Option < V2GisGeometriesPermissionsDestroyWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : UserRequestRequest) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesPermissionsDestroyWithJsonBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_permissions_destroy_with_json_builder (& self , id : impl Into < String > , request : UserRequestRequest) -> V2GisGeometriesPermissionsDestroyWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError > >",
+      "rust": "async fn v2_gis_geometries_permissions_destroy_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : UserRequestRequest) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_permissions_destroy_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_permissions_destroy_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_permissions_destroy_with_url_encoded_builder (& self , id : impl Into < String > , request : UserRequestRequest) -> V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2GisGeometriesPermissionsDestroyWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesPermissionsDestroyWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesPermissionsDestroyWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2GisGeometriesPermissionsDestroyWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithJsonApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "UserRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesPermissionsDestroyWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesPermissionsDestroyWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : UserRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithJsonFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "UserRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "UserRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : UserRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < Message , ApiOpError < V2GisGeometriesPermissionsDestroyWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_permissions_destroy_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1{id}~1permissions~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_gis_geometries_permissions_destroy",
+      "source_path": "/api/v2/gis-geometries/{id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesPermissionsDestroyWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesPermissionsDestroyWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2GisGeometriesPermissionsDestroyWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

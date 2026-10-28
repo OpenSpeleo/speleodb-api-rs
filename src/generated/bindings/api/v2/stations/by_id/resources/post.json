@@ -1,0 +1,4490 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_form_data_variant_1",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_form_data_variant_1",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant1Format >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1Request"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant1ApiError > >",
+      "rust": "async fn v2_stations_resources_create_with_form_data_variant_1 (& self , id : impl AsRef < str > , format : Option < V2StationsResourcesCreateWithFormDataVariant1Format > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsResourcesCreateWithFormDataVariant1Request) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant1ApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_form_data_variant_1_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_form_data_variant_1_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant1Builder < '_ >",
+      "rust": "fn v2_stations_resources_create_with_form_data_variant_1_builder (& self , id : impl Into < String > , resource_type : V2StationsResourcesCreateWithFormDataVariant1RequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithFormDataVariant1Builder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_form_data_variant_2",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_form_data_variant_2",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant2Format >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2Request"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant2ApiError > >",
+      "rust": "async fn v2_stations_resources_create_with_form_data_variant_2 (& self , id : impl AsRef < str > , format : Option < V2StationsResourcesCreateWithFormDataVariant2Format > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsResourcesCreateWithFormDataVariant2Request) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant2ApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_form_data_variant_2_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_form_data_variant_2_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant2Builder < '_ >",
+      "rust": "fn v2_stations_resources_create_with_form_data_variant_2_builder (& self , id : impl Into < String > , file : MultipartFile , resource_type : V2StationsResourcesCreateWithFormDataVariant2RequestResourceType , title : String) -> V2StationsResourcesCreateWithFormDataVariant2Builder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsResourcesCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithJsonApiError > >",
+      "rust": "async fn v2_stations_resources_create_with_json (& self , id : impl AsRef < str > , format : Option < V2StationsResourcesCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsResourcesCreateWithJsonRequest) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsResourcesCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_stations_resources_create_with_json_builder (& self , id : impl Into < String > , resource_type : V2StationsResourcesCreateWithJsonRequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsResourcesCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_stations_resources_create_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2StationsResourcesCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsResourcesCreateWithUrlEncodedRequest) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_resources_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_resources_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsResourcesCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_stations_resources_create_with_url_encoded_builder (& self , id : impl Into < String > , resource_type : V2StationsResourcesCreateWithUrlEncodedRequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1ApiError",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1ApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant1Format >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant1Request",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1Builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithFormDataVariant1RequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1Format"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsResourcesCreateWithFormDataVariant1Format) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithFormDataVariant1RequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1Request"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsResourcesCreateWithFormDataVariant1Request) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant1ApiError > >",
+      "rust": "async fn send (self) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant1ApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_1",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Builder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1Format",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Format",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant1Format::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2ApiError",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2ApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant2Format >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant2Request",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2Builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2Format"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsResourcesCreateWithFormDataVariant2Format) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : MultipartFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2Request"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsResourcesCreateWithFormDataVariant2Request) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant2ApiError > >",
+      "rust": "async fn send (self) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithFormDataVariant2ApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "text_content",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::text_content",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn text_content (mut self , text_content : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_form_data_variant_2",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Builder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2Format",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Format",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithFormDataVariant2Format::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsResourcesCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithJsonRequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::file_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::file_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsResourcesCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsResourcesCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithJsonRequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::miniature_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::miniature_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsResourcesCreateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsResourcesCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithUrlEncodedRequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsResourcesCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithUrlEncodedRequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsResourcesCreateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationResource , ApiOpError < V2StationsResourcesCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < StationResource , ApiOpError < V2StationsResourcesCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_resources_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1resources~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_resources_create",
+      "source_path": "/api/v2/stations/{id}/resources/",
+      "webhook": false
+    },
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsResourcesCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "file",
+        "public": true,
+        "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant1RequestFile >",
+        "wire_name": "file"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "miniature",
+        "public": true,
+        "rust_type": "Option < V2StationsResourcesCreateWithFormDataVariant1RequestMiniature >",
+        "wire_name": "miniature"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "resource_type",
+        "public": true,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType",
+        "wire_name": "resource_type"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "text_content",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "text_content"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1Request",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1Request",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1Request::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant1RequestBuilder",
+      "rust": "fn builder (resource_type : V2StationsResourcesCreateWithFormDataVariant1RequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithFormDataVariant1RequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1Request::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithFormDataVariant1RequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant1Request",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1RequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant1Request",
+      "rust": "fn build (self) -> V2StationsResourcesCreateWithFormDataVariant1Request"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithFormDataVariant1RequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithFormDataVariant1RequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithFormDataVariant1RequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1RequestFile",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestFile",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1RequestMiniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestMiniature",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant1RequestResourceType",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestResourceType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"note\")]"
+        ],
+        "fields": [],
+        "name": "Note",
+        "wire_name": "note"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant1RequestResourceType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "file",
+        "public": true,
+        "rust_type": "MultipartFile",
+        "wire_name": "file"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "miniature",
+        "public": true,
+        "rust_type": "Option < MultipartFile >",
+        "wire_name": "miniature"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "resource_type",
+        "public": true,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType",
+        "wire_name": "resource_type"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "text_content",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "text_content"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2Request",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2Request",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2Request::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant2RequestBuilder",
+      "rust": "fn builder (file : MultipartFile , resource_type : V2StationsResourcesCreateWithFormDataVariant2RequestResourceType , title : String) -> V2StationsResourcesCreateWithFormDataVariant2RequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2Request::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (file : MultipartFile , resource_type : V2StationsResourcesCreateWithFormDataVariant2RequestResourceType , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithFormDataVariant2Request",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2RequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsResourcesCreateWithFormDataVariant2Request",
+      "rust": "fn build (self) -> V2StationsResourcesCreateWithFormDataVariant2Request"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : MultipartFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        },
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (file : MultipartFile , resource_type : V2StationsResourcesCreateWithFormDataVariant2RequestResourceType , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "text_content",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestBuilder::text_content",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn text_content (mut self , text_content : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2RequestMiniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestMiniature",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithFormDataVariant2RequestResourceType",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestResourceType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"photo\")]"
+        ],
+        "fields": [],
+        "name": "Photo",
+        "wire_name": "photo"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"video\")]"
+        ],
+        "fields": [],
+        "name": "Video",
+        "wire_name": "video"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"document\")]"
+        ],
+        "fields": [],
+        "name": "Document",
+        "wire_name": "document"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithFormDataVariant2RequestResourceType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 1,
+        "name": "file",
+        "public": true,
+        "rust_type": "Option < Option < V2StationsResourcesCreateWithJsonRequestFile > >",
+        "wire_name": "file"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 2,
+        "name": "miniature",
+        "public": true,
+        "rust_type": "Option < Option < V2StationsResourcesCreateWithJsonRequestMiniature > >",
+        "wire_name": "miniature"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "resource_type",
+        "public": true,
+        "rust_type": "V2StationsResourcesCreateWithJsonRequestResourceType",
+        "wire_name": "resource_type"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "text_content",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "text_content"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsResourcesCreateWithJsonRequestBuilder",
+      "rust": "fn builder (resource_type : V2StationsResourcesCreateWithJsonRequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithJsonRequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsResourcesCreateWithJsonRequest",
+      "rust": "fn build (self) -> V2StationsResourcesCreateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithJsonRequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file_absent",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::file_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file_null",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::file_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithJsonRequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature_absent",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::miniature_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature_null",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::miniature_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithJsonRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithJsonRequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithJsonRequestFile",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestFile",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"null\")]"
+        ],
+        "fields": [],
+        "name": "NullValue",
+        "wire_name": "null"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestFile::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithJsonRequestMiniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestMiniature",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"null\")]"
+        ],
+        "fields": [],
+        "name": "NullValue",
+        "wire_name": "null"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestMiniature::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithJsonRequestResourceType",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestResourceType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"note\")]"
+        ],
+        "fields": [],
+        "name": "Note",
+        "wire_name": "note"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithJsonRequestResourceType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "file",
+        "public": true,
+        "rust_type": "Option < V2StationsResourcesCreateWithUrlEncodedRequestFile >",
+        "wire_name": "file"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "miniature",
+        "public": true,
+        "rust_type": "Option < V2StationsResourcesCreateWithUrlEncodedRequestMiniature >",
+        "wire_name": "miniature"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "resource_type",
+        "public": true,
+        "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType",
+        "wire_name": "resource_type"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "text_content",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "text_content"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsResourcesCreateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (resource_type : V2StationsResourcesCreateWithUrlEncodedRequestResourceType , text_content : String , title : String) -> V2StationsResourcesCreateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithUrlEncodedRequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsResourcesCreateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsResourcesCreateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2StationsResourcesCreateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "file",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder::file",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn file (mut self , file : V2StationsResourcesCreateWithUrlEncodedRequestFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "miniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder::miniature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "miniature",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestMiniature"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn miniature (mut self , miniature : V2StationsResourcesCreateWithUrlEncodedRequestMiniature) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "resource_type",
+          "rust_type": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType"
+        },
+        {
+          "name": "text_content",
+          "rust_type": "String"
+        },
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (resource_type : V2StationsResourcesCreateWithUrlEncodedRequestResourceType , text_content : String , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsResourcesCreateWithUrlEncodedRequestFile",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestFile",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsResourcesCreateWithUrlEncodedRequestMiniature",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestMiniature",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsResourcesCreateWithUrlEncodedRequestResourceType",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestResourceType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"note\")]"
+        ],
+        "fields": [],
+        "name": "Note",
+        "wire_name": "note"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsResourcesCreateWithUrlEncodedRequestResourceType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

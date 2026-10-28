@@ -1,0 +1,2281 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LogsPartialUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2LogsPartialUpdateWithFormDataRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_logs_partial_update_with_form_data (& self , id : impl AsRef < str > , format : Option < V2LogsPartialUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2LogsPartialUpdateWithFormDataRequest >) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LogsPartialUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_logs_partial_update_with_form_data_builder (& self , id : impl Into < String >) -> V2LogsPartialUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LogsPartialUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2LogsPartialUpdateWithJsonRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn v2_logs_partial_update_with_json (& self , id : impl AsRef < str > , format : Option < V2LogsPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2LogsPartialUpdateWithJsonRequest >) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LogsPartialUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_logs_partial_update_with_json_builder (& self , id : impl Into < String >) -> V2LogsPartialUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LogsPartialUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2LogsPartialUpdateWithUrlEncodedRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_logs_partial_update_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2LogsPartialUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2LogsPartialUpdateWithUrlEncodedRequest >) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_logs_partial_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_logs_partial_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LogsPartialUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_logs_partial_update_with_url_encoded_builder (& self , id : impl Into < String >) -> V2LogsPartialUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithFormDataRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "attachment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::attachment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "attachment",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn attachment (mut self , attachment : MultipartFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LogsPartialUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LogsPartialUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LogsPartialUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LogsPartialUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "title",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::title",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn title (mut self , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithJsonRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "attachment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::attachment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "attachment",
+          "rust_type": "V2LogsPartialUpdateWithJsonRequestAttachment"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn attachment (mut self , attachment : V2LogsPartialUpdateWithJsonRequestAttachment) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "attachment_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::attachment_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn attachment_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "attachment_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::attachment_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn attachment_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LogsPartialUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LogsPartialUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LogsPartialUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LogsPartialUpdateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "title",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::title",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn title (mut self , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2LogsPartialUpdateWithUrlEncodedRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "attachment",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::attachment",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "attachment",
+          "rust_type": "V2LogsPartialUpdateWithUrlEncodedRequestAttachment"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn attachment (mut self , attachment : V2LogsPartialUpdateWithUrlEncodedRequestAttachment) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LogsPartialUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LogsPartialUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LogsPartialUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LogsPartialUpdateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < StationLogEntry , ApiOpError < V2LogsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "title",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::title",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "title",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn title (mut self , title : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_logs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1logs~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_logs_partial_update",
+      "source_path": "/api/v2/logs/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LogsPartialUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "attachment",
+        "public": true,
+        "rust_type": "Option < MultipartFile >",
+        "wire_name": "attachment"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "title",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2LogsPartialUpdateWithFormDataRequestAttachment",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithFormDataRequestAttachment",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "attachment",
+        "public": true,
+        "rust_type": "Option < Option < V2LogsPartialUpdateWithJsonRequestAttachment > >",
+        "wire_name": "attachment"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "title",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithJsonRequestAttachment",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithJsonRequestAttachment",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"null\")]"
+        ],
+        "fields": [],
+        "name": "NullValue",
+        "wire_name": "null"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithJsonRequestAttachment::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "attachment",
+        "public": true,
+        "rust_type": "Option < V2LogsPartialUpdateWithUrlEncodedRequestAttachment >",
+        "wire_name": "attachment"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "title",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LogsPartialUpdateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LogsPartialUpdateWithUrlEncodedRequestAttachment",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithUrlEncodedRequestAttachment",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"\")]"
+        ],
+        "fields": [],
+        "name": "Value",
+        "wire_name": ""
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2LogsPartialUpdateWithUrlEncodedRequestAttachment::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

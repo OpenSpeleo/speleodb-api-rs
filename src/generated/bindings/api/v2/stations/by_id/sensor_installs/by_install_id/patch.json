@@ -1,0 +1,3910 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_partial_update_with_form_data (& self , id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2StationsSensorInstallsPartialUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequest >) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsPartialUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_partial_update_with_form_data_builder (& self , id : impl Into < String > , install_id : impl Into < String >) -> V2StationsSensorInstallsPartialUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithJsonRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_partial_update_with_json (& self , id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2StationsSensorInstallsPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2StationsSensorInstallsPartialUpdateWithJsonRequest >) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsPartialUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_partial_update_with_json_builder (& self , id : impl Into < String > , install_id : impl Into < String >) -> V2StationsSensorInstallsPartialUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_partial_update_with_url_encoded (& self , id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest >) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_partial_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_partial_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_partial_update_with_url_encoded_builder (& self , id : impl Into < String > , install_id : impl Into < String >) -> V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsPartialUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::install_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::install_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_user (mut self , install_user : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsPartialUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "sensor",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::sensor",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn sensor (mut self , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithJsonRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_battery_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_battery_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_memory_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::expiracy_memory_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsPartialUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::install_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::install_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_user (mut self , install_user : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsPartialUpdateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "sensor",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::sensor",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn sensor (mut self , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_user_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::uninstall_user_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::install_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::install_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install_user (mut self , install_user : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "sensor",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::sensor",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn sensor (mut self , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1{install_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_stations_sensor_installs_partial_update",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsPartialUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyBatteryDate >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyMemoryDate >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 8,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyBatteryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyBatteryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyMemoryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestExpiracyMemoryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithFormDataRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 8,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < Option < V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUser > >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithJsonRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUser",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUserInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUserInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUserInlineVariant",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithJsonRequestUninstallUserInlineVariant",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyBatteryDate >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyMemoryDate >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 8,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyBatteryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyBatteryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyMemoryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestExpiracyMemoryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsPartialUpdateWithUrlEncodedRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,3077 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithFormDataApiError > >",
+      "rust": "async fn v2_gis_geometries_create_with_form_data (& self , format : Option < V2GisGeometriesCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2GisGeometriesCreateWithFormDataRequest) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_create_with_form_data_builder (& self , geojson : String , name : String) -> V2GisGeometriesCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithJsonApiError > >",
+      "rust": "async fn v2_gis_geometries_create_with_json (& self , format : Option < V2GisGeometriesCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2GisGeometriesCreateWithJsonRequest) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojson"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_create_with_json_builder (& self , geojson : V2GisGeometriesCreateWithJsonRequestGeojson , name : String) -> V2GisGeometriesCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisGeometriesCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_gis_geometries_create_with_url_encoded (& self , format : Option < V2GisGeometriesCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2GisGeometriesCreateWithUrlEncodedRequest) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_geometries_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_geometries_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisGeometriesCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_gis_geometries_create_with_url_encoded_builder (& self , geojson : String , name : String) -> V2GisGeometriesCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2GisGeometriesCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2GisGeometriesCreateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisGeometriesCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisGeometriesCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisGeometriesCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2GisGeometriesCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2GisGeometriesCreateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < GISGeometry , ApiOpError < V2GisGeometriesCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_geometries_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-geometries~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_gis_geometries_create",
+      "source_path": "/api/v2/gis-geometries/",
+      "webhook": false
+    },
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisGeometriesCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "alias",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "alias"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "color",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "color"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "geojson",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2GisGeometriesCreateWithFormDataRequestBuilder",
+      "rust": "fn builder (geojson : String , name : String) -> V2GisGeometriesCreateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : String , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2GisGeometriesCreateWithFormDataRequest",
+      "rust": "fn build (self) -> V2GisGeometriesCreateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : String , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "alias",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "alias"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "color",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "color"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "geojson",
+        "public": true,
+        "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojson",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojson"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2GisGeometriesCreateWithJsonRequestBuilder",
+      "rust": "fn builder (geojson : V2GisGeometriesCreateWithJsonRequestGeojson , name : String) -> V2GisGeometriesCreateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojson"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : V2GisGeometriesCreateWithJsonRequestGeojson , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2GisGeometriesCreateWithJsonRequest",
+      "rust": "fn build (self) -> V2GisGeometriesCreateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojson"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : V2GisGeometriesCreateWithJsonRequestGeojson , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonRequestGeojson",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojson",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant2",
+            "wire_name": null
+          }
+        ],
+        "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant2",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (deny_unknown_fields)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "coordinates",
+        "public": true,
+        "rust_type": "Vec < Vec < f64 > >",
+        "wire_name": "coordinates"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojsonVariantType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (deny_unknown_fields)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "coordinates",
+        "public": true,
+        "rust_type": "Vec < Vec < Vec < f64 > > >",
+        "wire_name": "coordinates"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant2Type",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant2",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariant2",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariant2Type",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariant2Type",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Polygon\")]"
+        ],
+        "fields": [],
+        "name": "Polygon",
+        "wire_name": "Polygon"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariant2Type::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonRequestGeojsonVariantType",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariantType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"LineString\")]"
+        ],
+        "fields": [],
+        "name": "LineString",
+        "wire_name": "LineString"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestGeojsonVariantType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonRequestType",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"LineString\")]"
+        ],
+        "fields": [],
+        "name": "LineString",
+        "wire_name": "LineString"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisGeometriesCreateWithJsonRequestTypePolygon",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestTypePolygon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Polygon\")]"
+        ],
+        "fields": [],
+        "name": "Polygon",
+        "wire_name": "Polygon"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithJsonRequestTypePolygon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "alias",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "alias"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "color",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "color"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "geojson",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2GisGeometriesCreateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (geojson : String , name : String) -> V2GisGeometriesCreateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : String , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2GisGeometriesCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisGeometriesCreateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "alias",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder::alias",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "alias",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn alias (mut self , alias : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2GisGeometriesCreateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2GisGeometriesCreateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "color",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder::color",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "color",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2GisGeometriesCreateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "geojson",
+          "rust_type": "String"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (geojson : String , name : String) -> Self"
+    },
+    "variants": []
+  }
+]

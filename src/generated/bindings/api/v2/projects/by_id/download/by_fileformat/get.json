@@ -1,0 +1,689 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >",
+      "rust": "async fn v2_projects_download_retrieve_by_format (& self , fileformat : impl AsRef < str > , id : impl AsRef < str > , format : Option < V2ProjectsDownloadRetrieveByFormatFormat >) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "id",
+          "rust_type": "__Param1"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 > , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >",
+      "rust": "async fn v2_projects_download_retrieve_by_format_binary_stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > > (& self , fileformat : __Param0 , id : __Param1 , format : Option < V2ProjectsDownloadRetrieveByFormatFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 > , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_projects_download_retrieve_by_format_binary_stream_builder (& self , fileformat : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadRetrieveByFormatBuilder < '_ >",
+      "rust": "fn v2_projects_download_retrieve_by_format_builder (& self , fileformat : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadRetrieveByFormatBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadRetrieveByFormatApiError",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status422",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fileformat",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadRetrieveByFormatFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadRetrieveByFormatFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fileformat",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadRetrieveByFormatBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadRetrieveByFormatFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadRetrieveByFormatFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadRetrieveByFormatFormat",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

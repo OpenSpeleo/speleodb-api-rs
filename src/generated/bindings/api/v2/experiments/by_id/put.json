@@ -1,0 +1,4481 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ExperimentsUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_experiments_update_with_form_data (& self , id : impl AsRef < str > , format : Option < V2ExperimentsUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ExperimentsUpdateWithFormDataRequest) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ExperimentsUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_experiments_update_with_form_data_builder (& self , id : impl Into < String > , name : String) -> V2ExperimentsUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ExperimentsUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithJsonApiError > >",
+      "rust": "async fn v2_experiments_update_with_json (& self , id : impl AsRef < str > , format : Option < V2ExperimentsUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ExperimentsUpdateWithJsonRequest) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ExperimentsUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_experiments_update_with_json_builder (& self , id : impl Into < String > , name : String) -> V2ExperimentsUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ExperimentsUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_experiments_update_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2ExperimentsUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ExperimentsUpdateWithUrlEncodedRequest) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiments_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiments_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ExperimentsUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_experiments_update_with_url_encoded_builder (& self , id : impl Into < String > , name : String) -> V2ExperimentsUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ExperimentsUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithFormDataRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ExperimentsUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ExperimentsUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ExperimentsUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithFormDataRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ExperimentsUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithJsonRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::end_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::end_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "experiment_fields",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::experiment_fields",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "experiment_fields",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestExperimentFields"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn experiment_fields (mut self , experiment_fields : V2ExperimentsUpdateWithJsonRequestExperimentFields) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ExperimentsUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ExperimentsUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ExperimentsUpdateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithJsonRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::start_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::start_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ExperimentsUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithUrlEncodedRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ExperimentsUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ExperimentsUpdateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Experiment , ApiOpError < V2ExperimentsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < Experiment , ApiOpError < V2ExperimentsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithUrlEncodedRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiments_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiments~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_experiments_update",
+      "source_path": "/api/v2/experiments/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ExperimentsUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "end_date",
+        "public": true,
+        "rust_type": "Option < V2ExperimentsUpdateWithFormDataRequestEndDate >",
+        "wire_name": "end_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "gis_token",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "gis_token"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "is_active",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "is_active"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "start_date",
+        "public": true,
+        "rust_type": "Option < V2ExperimentsUpdateWithFormDataRequestStartDate >",
+        "wire_name": "start_date"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2ExperimentsUpdateWithFormDataRequestBuilder",
+      "rust": "fn builder (name : String) -> V2ExperimentsUpdateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2ExperimentsUpdateWithFormDataRequest",
+      "rust": "fn build (self) -> V2ExperimentsUpdateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithFormDataRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithFormDataRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithFormDataRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataRequestEndDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestEndDate",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithFormDataRequestEndDateInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithFormDataRequestEndDateInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataRequestEndDateInlineVariant",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestEndDateInlineVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [],
+        "name": "Value",
+        "wire_name": ""
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Custom",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestEndDateInlineVariant::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& str",
+      "rust": "fn as_str (& self) -> & str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataRequestStartDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestStartDate",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithFormDataRequestStartDateInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithFormDataRequestStartDateInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithFormDataRequestStartDateInlineVariant",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestStartDateInlineVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [],
+        "name": "Value",
+        "wire_name": ""
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Custom",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithFormDataRequestStartDateInlineVariant::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& str",
+      "rust": "fn as_str (& self) -> & str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 2,
+        "name": "end_date",
+        "public": true,
+        "rust_type": "Option < Option < V2ExperimentsUpdateWithJsonRequestEndDate > >",
+        "wire_name": "end_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "experiment_fields",
+        "public": true,
+        "rust_type": "Option < V2ExperimentsUpdateWithJsonRequestExperimentFields >",
+        "wire_name": "experiment_fields"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "gis_token",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "gis_token"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "is_active",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "is_active"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 7,
+        "name": "start_date",
+        "public": true,
+        "rust_type": "Option < Option < V2ExperimentsUpdateWithJsonRequestStartDate > >",
+        "wire_name": "start_date"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2ExperimentsUpdateWithJsonRequestBuilder",
+      "rust": "fn builder (name : String) -> V2ExperimentsUpdateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2ExperimentsUpdateWithJsonRequest",
+      "rust": "fn build (self) -> V2ExperimentsUpdateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithJsonRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date_absent",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::end_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date_null",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::end_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "experiment_fields",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::experiment_fields",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "experiment_fields",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestExperimentFields"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn experiment_fields (mut self , experiment_fields : V2ExperimentsUpdateWithJsonRequestExperimentFields) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithJsonRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithJsonRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date_absent",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::start_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date_null",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestBuilder::start_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2ExperimentsUpdateWithJsonRequestEndDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestEndDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithJsonRequestExperimentFields",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestExperimentFields",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithJsonRequestExperimentFieldsArray",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithJsonRequestExperimentFieldsArray",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithJsonRequestVariant2",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithJsonRequestVariant2",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2ExperimentsUpdateWithJsonRequestExperimentFieldsArray",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestExperimentFieldsArray",
+    "rust_type": "Vec < V2ExperimentsUpdateWithJsonRequestExperimentFieldsItemUnion >",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithJsonRequestExperimentFieldsItemUnion",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestExperimentFieldsItemUnion",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "NameBlock",
+            "wire_name": null
+          }
+        ],
+        "name": "NameBlock",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "NameBlockInline",
+            "wire_name": null
+          }
+        ],
+        "name": "NameBlockInline",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "OmittedContent",
+            "wire_name": null
+          }
+        ],
+        "name": "OmittedContent",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2ExperimentsUpdateWithJsonRequestStartDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestStartDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithJsonRequestVariant2",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithJsonRequestVariant2",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "end_date",
+        "public": true,
+        "rust_type": "Option < V2ExperimentsUpdateWithUrlEncodedRequestEndDate >",
+        "wire_name": "end_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "gis_token",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "gis_token"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "is_active",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "is_active"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "start_date",
+        "public": true,
+        "rust_type": "Option < V2ExperimentsUpdateWithUrlEncodedRequestStartDate >",
+        "wire_name": "start_date"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2ExperimentsUpdateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (name : String) -> V2ExperimentsUpdateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2ExperimentsUpdateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2ExperimentsUpdateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "code",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::code",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "code",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn code (mut self , code : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "end_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::end_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "end_date",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestEndDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn end_date (mut self , end_date : V2ExperimentsUpdateWithUrlEncodedRequestEndDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "gis_token",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::gis_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn gis_token (mut self , gis_token : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_active",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::is_active",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "is_active",
+          "rust_type": "bool"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn is_active (mut self , is_active : bool) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "start_date",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestBuilder::start_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "start_date",
+          "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestStartDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn start_date (mut self , start_date : V2ExperimentsUpdateWithUrlEncodedRequestStartDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequestEndDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestEndDate",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestEndDateInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithUrlEncodedRequestEndDateInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequestEndDateInlineVariant",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestEndDateInlineVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [],
+        "name": "Value",
+        "wire_name": ""
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Custom",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestEndDateInlineVariant::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& str",
+      "rust": "fn as_str (& self) -> & str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequestStartDate",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestStartDate",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ExperimentsUpdateWithUrlEncodedRequestStartDateInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ExperimentsUpdateWithUrlEncodedRequestStartDateInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentsUpdateWithUrlEncodedRequestStartDateInlineVariant",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestStartDateInlineVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [],
+        "name": "Value",
+        "wire_name": ""
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Custom",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ExperimentsUpdateWithUrlEncodedRequestStartDateInlineVariant::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& str",
+      "rust": "fn as_str (& self) -> & str"
+    },
+    "variants": []
+  }
+]

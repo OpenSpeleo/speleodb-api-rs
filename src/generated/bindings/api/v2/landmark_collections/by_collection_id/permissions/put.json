@@ -1,0 +1,1625 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_landmark_collections_permissions_update_with_form_data (& self , collection_id : impl AsRef < str > , format : Option < V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_landmark_collections_permissions_update_with_form_data_builder (& self , collection_id : impl Into < String > , request : V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest) -> V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithJsonApiError > >",
+      "rust": "async fn v2_landmark_collections_permissions_update_with_json (& self , collection_id : impl AsRef < str > , format : Option < V2LandmarkCollectionsPermissionsUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : NonWebViewerPermissionRequestRequest) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_landmark_collections_permissions_update_with_json_builder (& self , collection_id : impl Into < String > , request : NonWebViewerPermissionRequestRequest) -> V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_landmark_collections_permissions_update_with_url_encoded (& self , collection_id : impl AsRef < str > , format : Option < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : NonWebViewerPermissionRequestRequest) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_permissions_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_permissions_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_landmark_collections_permissions_update_with_url_encoded_builder (& self , collection_id : impl Into < String > , request : NonWebViewerPermissionRequestRequest) -> V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "NonWebViewerPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionsPermissionsUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : NonWebViewerPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "NonWebViewerPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : NonWebViewerPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkCollectionUserPermission , ApiOpError < V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_permissions_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1permissions~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_landmark_collections_permissions_update",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsPermissionsUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "level",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "level"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2LandmarkCollectionsPermissionsUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

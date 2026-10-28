@@ -1,0 +1,97 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Error)]"
+    ],
+    "fields": [],
+    "generics": "< E : std :: fmt :: Debug >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ApiOpError",
+    "operation": null,
+    "path": "client::ApiOpError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [error (transparent)]"
+        ],
+        "fields": [
+          {
+            "attributes": [
+              "# [from]"
+            ],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "HttpError",
+            "wire_name": null
+          }
+        ],
+        "name": "Transport",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (transparent)]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "ApiError < E >",
+            "wire_name": null
+          }
+        ],
+        "name": "Api",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E : std :: fmt :: Debug >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "api",
+    "operation": null,
+    "path": "client::ApiOpError::api",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Option < & ApiError < E > >",
+      "rust": "fn api (& self) -> Option < & ApiError < E > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E : std :: fmt :: Debug >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_api_error",
+    "operation": null,
+    "path": "client::ApiOpError::is_api_error",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "bool",
+      "rust": "fn is_api_error (& self) -> bool"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,607 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gps_track_export_gpx",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gps_track_export_gpx",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GpsTrackExportGpxFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2GpsTrackExportGpxApiError > >",
+      "rust": "async fn v2_gps_track_export_gpx (& self , id : impl AsRef < str > , format : Option < V2GpsTrackExportGpxFormat >) -> Result < bytes :: Bytes , ApiOpError < V2GpsTrackExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gps_track_export_gpx_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gps_track_export_gpx_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GpsTrackExportGpxFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2GpsTrackExportGpxApiError > >",
+      "rust": "async fn v2_gps_track_export_gpx_binary_stream < __Param0 : AsRef < str > > (& self , id : __Param0 , format : Option < V2GpsTrackExportGpxFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2GpsTrackExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gps_track_export_gpx_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gps_track_export_gpx_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GpsTrackExportGpxBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_gps_track_export_gpx_binary_stream_builder (& self , id : impl Into < String >) -> V2GpsTrackExportGpxBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gps_track_export_gpx_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gps_track_export_gpx_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GpsTrackExportGpxBuilder < '_ >",
+      "rust": "fn v2_gps_track_export_gpx_builder (& self , id : impl Into < String >) -> V2GpsTrackExportGpxBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GpsTrackExportGpxApiError",
+    "operation": null,
+    "path": "client::V2GpsTrackExportGpxApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GpsTrackExportGpxFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GpsTrackExportGpxBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GpsTrackExportGpxFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GpsTrackExportGpxFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2GpsTrackExportGpxApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2GpsTrackExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GpsTrackExportGpxFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GpsTrackExportGpxBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GpsTrackExportGpxFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GpsTrackExportGpxFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gps_track_export_gpx",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gps_tracks~1{id}~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gps_track_export_gpx",
+      "source_path": "/api/v2/gps_tracks/{id}/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2GpsTrackExportGpxBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2GpsTrackExportGpxApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2GpsTrackExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GpsTrackExportGpxFormat",
+    "operation": null,
+    "path": "client::V2GpsTrackExportGpxFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GpsTrackExportGpxFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,2342 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SurfaceNetworksStationsCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithFormDataApiError > >",
+      "rust": "async fn v2_surface_networks_stations_create_with_form_data (& self , network_id : impl AsRef < str > , format : Option < V2SurfaceNetworksStationsCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2SurfaceNetworksStationsCreateWithFormDataRequest) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SurfaceNetworksStationsCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_surface_networks_stations_create_with_form_data_builder (& self , network_id : impl Into < String > , latitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude , name : String) -> V2SurfaceNetworksStationsCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SurfaceNetworksStationsCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "SurfaceStationRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithJsonApiError > >",
+      "rust": "async fn v2_surface_networks_stations_create_with_json (& self , network_id : impl AsRef < str > , format : Option < V2SurfaceNetworksStationsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : SurfaceStationRequest) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "SurfaceStationRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "SurfaceStationRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SurfaceNetworksStationsCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_surface_networks_stations_create_with_json_builder (& self , network_id : impl Into < String > , latitude : SurfaceStationRequestLatitude , longitude : SurfaceStationRequestLongitude , name : String) -> V2SurfaceNetworksStationsCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SurfaceNetworksStationsCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_surface_networks_stations_create_with_url_encoded (& self , network_id : impl AsRef < str > , format : Option < V2SurfaceNetworksStationsCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2SurfaceNetworksStationsCreateWithUrlEncodedRequest) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_stations_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_stations_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "network_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_surface_networks_stations_create_with_url_encoded_builder (& self , network_id : impl Into < String > , latitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude , name : String) -> V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "network_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SurfaceNetworksStationsCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SurfaceNetworksStationsCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2SurfaceNetworksStationsCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "network_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SurfaceNetworksStationsCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "SurfaceStationRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SurfaceNetworksStationsCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SurfaceStationRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : SurfaceStationRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "network_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SurfaceNetworksStationsCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SurfaceNetworksStationsCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2SurfaceNetworksStationsCreateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SurfaceStation , ApiOpError < V2SurfaceNetworksStationsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_stations_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1{network_id}~1stations~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_surface_networks_stations_create",
+      "source_path": "/api/v2/surface-networks/{network_id}/stations/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksStationsCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder",
+      "rust": "fn builder (latitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude , name : String) -> V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2SurfaceNetworksStationsCreateWithFormDataRequest",
+      "rust": "fn build (self) -> V2SurfaceNetworksStationsCreateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithFormDataRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (latitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude , name : String) -> V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2SurfaceNetworksStationsCreateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude , longitude : V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksStationsCreateWithUrlEncodedRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  }
+]

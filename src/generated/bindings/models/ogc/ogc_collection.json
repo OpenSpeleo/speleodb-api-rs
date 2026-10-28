@@ -1,0 +1,134 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "crs",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "crs"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "extent",
+        "public": true,
+        "rust_type": "OGCExtent",
+        "wire_name": "extent"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "id",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"itemType\")]"
+        ],
+        "index": 4,
+        "name": "item_type",
+        "public": true,
+        "rust_type": "OGCCollectionItemType",
+        "wire_name": "itemType"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "links",
+        "public": true,
+        "rust_type": "Vec < OGCLink >",
+        "wire_name": "links"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"storageCrs\")]"
+        ],
+        "index": 6,
+        "name": "storage_crs",
+        "public": true,
+        "rust_type": "OGCCollectionStorageCrs",
+        "wire_name": "storageCrs"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCCollection",
+    "operation": null,
+    "path": "types::OGCCollection",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OGCCollectionItemType",
+    "operation": null,
+    "path": "types::OGCCollectionItemType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"feature\")]"
+        ],
+        "fields": [],
+        "name": "Feature",
+        "wire_name": "feature"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::OGCCollectionItemType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

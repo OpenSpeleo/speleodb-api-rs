@@ -1,0 +1,1625 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_projects_permission_user_detail_update_with_form_data (& self , id : impl AsRef < str > , format : Option < V2ProjectsPermissionUserDetailUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ProjectsPermissionUserDetailUpdateWithFormDataRequest) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_projects_permission_user_detail_update_with_form_data_builder (& self , id : impl Into < String > , request : V2ProjectsPermissionUserDetailUpdateWithFormDataRequest) -> V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithJsonApiError > >",
+      "rust": "async fn v2_projects_permission_user_detail_update_with_json (& self , id : impl AsRef < str > , format : Option < V2ProjectsPermissionUserDetailUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : DirectUserPermissionRequestRequest) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsPermissionUserDetailUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_projects_permission_user_detail_update_with_json_builder (& self , id : impl Into < String > , request : DirectUserPermissionRequestRequest) -> V2ProjectsPermissionUserDetailUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_projects_permission_user_detail_update_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : DirectUserPermissionRequestRequest) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_permission_user_detail_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_permission_user_detail_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_projects_permission_user_detail_update_with_url_encoded_builder (& self , id : impl Into < String > , request : DirectUserPermissionRequestRequest) -> V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsPermissionUserDetailUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ProjectsPermissionUserDetailUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "DirectUserPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsPermissionUserDetailUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : DirectUserPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "DirectUserPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DirectUserPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : DirectUserPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < ProjectUserPermissionSpecificApiViewPutResponse , ApiOpError < V2ProjectsPermissionUserDetailUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_permission_user_detail_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1permission~1user~1detail~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_projects_permission_user_detail_update",
+      "source_path": "/api/v2/projects/{id}/permission/user/detail/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsPermissionUserDetailUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "level",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "level"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsPermissionUserDetailUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2ProjectsPermissionUserDetailUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

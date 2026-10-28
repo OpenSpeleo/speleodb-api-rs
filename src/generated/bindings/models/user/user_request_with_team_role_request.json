@@ -1,0 +1,90 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "role",
+        "public": true,
+        "rust_type": "UserRequestWithTeamRoleRequestRole",
+        "wire_name": "role"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "UserRequestWithTeamRoleRequest",
+    "operation": null,
+    "path": "types::UserRequestWithTeamRoleRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "UserRequestWithTeamRoleRequestRole",
+    "operation": null,
+    "path": "types::UserRequestWithTeamRoleRequestRole",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"MEMBER\")]"
+        ],
+        "fields": [],
+        "name": "Member",
+        "wire_name": "MEMBER"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LEADER\")]"
+        ],
+        "fields": [],
+        "name": "Leader",
+        "wire_name": "LEADER"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::UserRequestWithTeamRoleRequestRole::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

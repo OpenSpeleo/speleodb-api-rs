@@ -1,0 +1,82 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "features",
+        "public": true,
+        "rust_type": "Vec < ExperimentRecordGIS >",
+        "wire_name": "features"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "ExperimentRecordGISCollectionType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ExperimentRecordGISCollection",
+    "operation": null,
+    "path": "types::ExperimentRecordGISCollection",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ExperimentRecordGISCollectionType",
+    "operation": null,
+    "path": "types::ExperimentRecordGISCollectionType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"FeatureCollection\")]"
+        ],
+        "fields": [],
+        "name": "FeatureCollection",
+        "wire_name": "FeatureCollection"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::ExperimentRecordGISCollectionType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

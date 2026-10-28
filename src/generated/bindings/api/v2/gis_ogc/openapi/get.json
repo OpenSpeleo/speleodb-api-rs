@@ -1,0 +1,428 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "ogc_service_description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::ogc_service_description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < OgcServiceDescriptionFormat >"
+        },
+        {
+          "name": "if_none_match",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < OgcServiceDescriptionResponse , ApiOpError < OgcServiceDescriptionApiError > >",
+      "rust": "async fn ogc_service_description (& self , format : Option < OgcServiceDescriptionFormat > , if_none_match : Option < impl AsRef < str > >) -> Result < OgcServiceDescriptionResponse , ApiOpError < OgcServiceDescriptionApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "ogc_service_description_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::ogc_service_description_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "OgcServiceDescriptionBuilder < '_ >",
+      "rust": "fn ogc_service_description_builder (& self) -> OgcServiceDescriptionBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OgcServiceDescriptionApiError",
+    "operation": null,
+    "path": "client::OgcServiceDescriptionApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < OgcServiceDescriptionFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "if_none_match",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OgcServiceDescriptionBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::OgcServiceDescriptionBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::OgcServiceDescriptionBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "OgcServiceDescriptionFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : OgcServiceDescriptionFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "if_none_match",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::OgcServiceDescriptionBuilder::if_none_match",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "if_none_match",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn if_none_match (mut self , if_none_match : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "ogc_service_description",
+      "response_excluded_statuses": [
+        "304",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1openapi~1/get",
+      "source_method": "GET",
+      "source_operation_id": "ogc_service_description",
+      "source_path": "/api/v2/gis-ogc/openapi/",
+      "webhook": false
+    },
+    "path": "client::OgcServiceDescriptionBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < OgcServiceDescriptionResponse , ApiOpError < OgcServiceDescriptionApiError > >",
+      "rust": "async fn send (self) -> Result < OgcServiceDescriptionResponse , ApiOpError < OgcServiceDescriptionApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OgcServiceDescriptionFormat",
+    "operation": null,
+    "path": "client::OgcServiceDescriptionFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"openapi-json\")]"
+        ],
+        "fields": [],
+        "name": "OpenapiJson",
+        "wire_name": "openapi-json"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::OgcServiceDescriptionFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OgcServiceDescriptionResponse",
+    "operation": null,
+    "path": "types::OgcServiceDescriptionResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

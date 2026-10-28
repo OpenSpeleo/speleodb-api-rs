@@ -1,0 +1,274 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "Option < PatchedSubSurfaceStationRequestLatitude >",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "Option < PatchedSubSurfaceStationRequestLongitude >",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "Option < PatchedSubSurfaceStationRequestType >",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "PatchedSubSurfaceStationRequest",
+    "operation": null,
+    "path": "types::PatchedSubSurfaceStationRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "PatchedSubSurfaceStationRequestLatitude",
+    "operation": null,
+    "path": "types::PatchedSubSurfaceStationRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "PatchedSubSurfaceStationRequestLongitude",
+    "operation": null,
+    "path": "types::PatchedSubSurfaceStationRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "PatchedSubSurfaceStationRequestType",
+    "operation": null,
+    "path": "types::PatchedSubSurfaceStationRequestType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"artifact\")]"
+        ],
+        "fields": [],
+        "name": "Artifact",
+        "wire_name": "artifact"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"biology\")]"
+        ],
+        "fields": [],
+        "name": "Biology",
+        "wire_name": "biology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"bone\")]"
+        ],
+        "fields": [],
+        "name": "Bone",
+        "wire_name": "bone"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"geology\")]"
+        ],
+        "fields": [],
+        "name": "Geology",
+        "wire_name": "geology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"sensor\")]"
+        ],
+        "fields": [],
+        "name": "Sensor",
+        "wire_name": "sensor"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::PatchedSubSurfaceStationRequestType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "geometry",
+        "public": true,
+        "rust_type": "PointGeometry",
+        "wire_name": "geometry"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "properties",
+        "public": true,
+        "rust_type": "StationFeatureProperties",
+        "wire_name": "properties"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "StationGeoJSONType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "StationGeoJSON",
+    "operation": null,
+    "path": "types::StationGeoJSON",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "StationGeoJSONType",
+    "operation": null,
+    "path": "types::StationGeoJSONType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Feature\")]"
+        ],
+        "fields": [],
+        "name": "Feature",
+        "wire_name": "Feature"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::StationGeoJSONType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

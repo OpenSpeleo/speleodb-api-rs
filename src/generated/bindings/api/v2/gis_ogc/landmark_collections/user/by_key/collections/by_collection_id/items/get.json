@@ -1,0 +1,703 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "landmark_collections_items",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::HttpClient::landmark_collections_items",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "key",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "bbox",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "datetime",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "limit",
+          "rust_type": "Option < i64 >"
+        },
+        {
+          "name": "offset",
+          "rust_type": "Option < i64 >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < LandmarkCollectionsItemsFormat >"
+        },
+        {
+          "name": "if_none_match",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < OGCLandmarkFeatureCollection , ApiOpError < LandmarkCollectionsItemsApiError > >",
+      "rust": "async fn landmark_collections_items (& self , key : impl AsRef < str > , collection_id : impl AsRef < str > , bbox : Option < impl AsRef < str > > , datetime : Option < impl AsRef < str > > , limit : Option < i64 > , offset : Option < i64 > , format : Option < LandmarkCollectionsItemsFormat > , if_none_match : Option < impl AsRef < str > >) -> Result < OGCLandmarkFeatureCollection , ApiOpError < LandmarkCollectionsItemsApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "landmark_collections_items_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::HttpClient::landmark_collections_items_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "key",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "LandmarkCollectionsItemsBuilder < '_ >",
+      "rust": "fn landmark_collections_items_builder (& self , key : impl Into < String > , collection_id : impl Into < String >) -> LandmarkCollectionsItemsBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "LandmarkCollectionsItemsApiError",
+    "operation": null,
+    "path": "client::LandmarkCollectionsItemsApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "OGCException",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "key",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "bbox",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "datetime",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "limit",
+        "public": false,
+        "rust_type": "Option < i64 >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "offset",
+        "public": false,
+        "rust_type": "Option < i64 >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < LandmarkCollectionsItemsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "if_none_match",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "LandmarkCollectionsItemsBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "bbox",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::bbox",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "bbox",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn bbox (mut self , bbox : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "datetime",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::datetime",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "datetime",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn datetime (mut self , datetime : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "LandmarkCollectionsItemsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : LandmarkCollectionsItemsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "if_none_match",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::if_none_match",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "if_none_match",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn if_none_match (mut self , if_none_match : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "limit",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::limit",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "limit",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn limit (mut self , limit : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "offset",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::offset",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "offset",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn offset (mut self , offset : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "landmarkCollectionsItems",
+      "response_excluded_statuses": [
+        "304",
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1landmark-collections~1user~1{key}~1collections~1{collection_id}~1items/get",
+      "source_method": "GET",
+      "source_operation_id": "landmarkCollectionsItems",
+      "source_path": "/api/v2/gis-ogc/landmark-collections/user/{key}/collections/{collection_id}/items",
+      "webhook": false
+    },
+    "path": "client::LandmarkCollectionsItemsBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < OGCLandmarkFeatureCollection , ApiOpError < LandmarkCollectionsItemsApiError > >",
+      "rust": "async fn send (self) -> Result < OGCLandmarkFeatureCollection , ApiOpError < LandmarkCollectionsItemsApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "LandmarkCollectionsItemsFormat",
+    "operation": null,
+    "path": "client::LandmarkCollectionsItemsFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"geojson\")]"
+        ],
+        "fields": [],
+        "name": "Geojson",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"geojson-legacy\")]"
+        ],
+        "fields": [],
+        "name": "GeojsonLegacy",
+        "wire_name": "geojson-legacy"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::LandmarkCollectionsItemsFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

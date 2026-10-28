@@ -1,0 +1,138 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "fleet",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "fleet"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < PatchedSensorRequestStatus >",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "PatchedSensorRequest",
+    "operation": null,
+    "path": "types::PatchedSensorRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "PatchedSensorRequestStatus",
+    "operation": null,
+    "path": "types::PatchedSensorRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"functional\")]"
+        ],
+        "fields": [],
+        "name": "Functional",
+        "wire_name": "functional"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"needs_service\")]"
+        ],
+        "fields": [],
+        "name": "NeedsService",
+        "wire_name": "needs_service"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"broken\")]"
+        ],
+        "fields": [],
+        "name": "Broken",
+        "wire_name": "broken"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::PatchedSensorRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

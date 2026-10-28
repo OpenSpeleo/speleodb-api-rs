@@ -1,0 +1,848 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_dmp_doctor_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_dmp_doctor_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsDmpDoctorCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsDmpDoctorCreateApiError > >",
+      "rust": "async fn v2_tools_dmp_doctor_create (& self , format : Option < V2ToolsDmpDoctorCreateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : DMPDoctorRequestRequest) -> Result < bytes :: Bytes , ApiOpError < V2ToolsDmpDoctorCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_dmp_doctor_create_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_dmp_doctor_create_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsDmpDoctorCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < __Param0 >"
+        },
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsDmpDoctorCreateApiError > >",
+      "rust": "async fn v2_tools_dmp_doctor_create_binary_stream < __Param0 : AsRef < str > > (& self , format : Option < V2ToolsDmpDoctorCreateFormat > , x_csrf_token : Option < __Param0 > , request : DMPDoctorRequestRequest) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsDmpDoctorCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_dmp_doctor_create_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_dmp_doctor_create_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsDmpDoctorCreateBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_tools_dmp_doctor_create_binary_stream_builder (& self , request : DMPDoctorRequestRequest) -> V2ToolsDmpDoctorCreateBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_dmp_doctor_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_dmp_doctor_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsDmpDoctorCreateBuilder < '_ >",
+      "rust": "fn v2_tools_dmp_doctor_create_builder (& self , request : DMPDoctorRequestRequest) -> V2ToolsDmpDoctorCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsDmpDoctorCreateApiError",
+    "operation": null,
+    "path": "client::V2ToolsDmpDoctorCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsDmpDoctorCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "DMPDoctorRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsDmpDoctorCreateBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsDmpDoctorCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsDmpDoctorCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBinaryStreamBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : DMPDoctorRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsDmpDoctorCreateApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsDmpDoctorCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBinaryStreamBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsDmpDoctorCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "DMPDoctorRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsDmpDoctorCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsDmpDoctorCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsDmpDoctorCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "DMPDoctorRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : DMPDoctorRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsDmpDoctorCreateApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ToolsDmpDoctorCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_dmp_doctor_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1dmp-doctor~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_dmp_doctor_create",
+      "source_path": "/api/v2/tools/dmp-doctor/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsDmpDoctorCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsDmpDoctorCreateFormat",
+    "operation": null,
+    "path": "client::V2ToolsDmpDoctorCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ToolsDmpDoctorCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

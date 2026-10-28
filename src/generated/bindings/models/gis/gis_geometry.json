@@ -1,0 +1,466 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "alias",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "alias"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "bbox_area_m2",
+        "public": true,
+        "rust_type": "f64",
+        "wire_name": "bbox_area_m2"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "can_delete",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_delete"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "can_manage_permissions",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_manage_permissions"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "can_write",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "can_write"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "color",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "color"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "geojson",
+        "public": true,
+        "rust_type": "GISGeometryGeojson",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "geometry_type",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "geometry_type"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 13,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 14,
+        "name": "revision",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "revision"
+      },
+      {
+        "attributes": [],
+        "index": 15,
+        "name": "user_permission_level",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "user_permission_level"
+      },
+      {
+        "attributes": [],
+        "index": 16,
+        "name": "user_permission_level_label",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "user_permission_level_label"
+      },
+      {
+        "attributes": [],
+        "index": 17,
+        "name": "vertex_count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "vertex_count"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISGeometry",
+    "operation": null,
+    "path": "types::GISGeometry",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISGeometryGeojson",
+    "operation": null,
+    "path": "types::GISGeometryGeojson",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "GISGeometryGeojsonVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "GISGeometryGeojsonVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "GISGeometryGeojsonVariant2",
+            "wire_name": null
+          }
+        ],
+        "name": "GISGeometryGeojsonVariant2",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (deny_unknown_fields)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "coordinates",
+        "public": true,
+        "rust_type": "Vec < Vec < f64 > >",
+        "wire_name": "coordinates"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "GISGeometryGeojsonVariantType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISGeometryGeojsonVariant",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (deny_unknown_fields)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "coordinates",
+        "public": true,
+        "rust_type": "Vec < Vec < Vec < f64 > > >",
+        "wire_name": "coordinates"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "GISGeometryGeojsonVariant2Type",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISGeometryGeojsonVariant2",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariant2",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISGeometryGeojsonVariant2Type",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariant2Type",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Polygon\")]"
+        ],
+        "fields": [],
+        "name": "Polygon",
+        "wire_name": "Polygon"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariant2Type::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISGeometryGeojsonVariantType",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariantType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"LineString\")]"
+        ],
+        "fields": [],
+        "name": "LineString",
+        "wire_name": "LineString"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GISGeometryGeojsonVariantType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISGeometryType",
+    "operation": null,
+    "path": "types::GISGeometryType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"LineString\")]"
+        ],
+        "fields": [],
+        "name": "LineString",
+        "wire_name": "LineString"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GISGeometryType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISGeometryTypePolygon",
+    "operation": null,
+    "path": "types::GISGeometryTypePolygon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Polygon\")]"
+        ],
+        "fields": [],
+        "name": "Polygon",
+        "wire_name": "Polygon"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GISGeometryTypePolygon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

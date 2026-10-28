@@ -1,0 +1,3561 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarksCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithFormDataApiError > >",
+      "rust": "async fn v2_landmarks_create_with_form_data (& self , format : Option < V2LandmarksCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2LandmarksCreateWithFormDataRequest) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarksCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_landmarks_create_with_form_data_builder (& self , latitude : V2LandmarksCreateWithFormDataRequestLatitude , longitude : V2LandmarksCreateWithFormDataRequestLongitude , name : String) -> V2LandmarksCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarksCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithJsonApiError > >",
+      "rust": "async fn v2_landmarks_create_with_json (& self , format : Option < V2LandmarksCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2LandmarksCreateWithJsonRequest) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarksCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_landmarks_create_with_json_builder (& self , latitude : V2LandmarksCreateWithJsonRequestLatitude , longitude : V2LandmarksCreateWithJsonRequestLongitude , name : String) -> V2LandmarksCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarksCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_landmarks_create_with_url_encoded (& self , format : Option < V2LandmarksCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2LandmarksCreateWithUrlEncodedRequest) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmarks_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmarks_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarksCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_landmarks_create_with_url_encoded_builder (& self , latitude : V2LandmarksCreateWithUrlEncodedRequestLatitude , longitude : V2LandmarksCreateWithUrlEncodedRequestLongitude , name : String) -> V2LandmarksCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarksCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestCollection"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : V2LandmarksCreateWithFormDataRequestCollection) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarksCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarksCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithFormDataRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LandmarksCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarksCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::collection_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::collection_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarksCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarksCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithJsonRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithJsonRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LandmarksCreateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarksCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestCollection"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : V2LandmarksCreateWithUrlEncodedRequestCollection) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarksCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithUrlEncodedRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2LandmarksCreateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkAPIViewPostResponse , ApiOpError < V2LandmarksCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmarks_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmarks~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_landmarks_create",
+      "source_path": "/api/v2/landmarks/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarksCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarksCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "collection",
+        "public": true,
+        "rust_type": "Option < V2LandmarksCreateWithFormDataRequestCollection >",
+        "wire_name": "collection"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "icon",
+        "public": true,
+        "rust_type": "Option < V2LandmarksCreateWithFormDataRequestIcon >",
+        "wire_name": "icon"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithFormDataRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithFormDataRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2LandmarksCreateWithFormDataRequestBuilder",
+      "rust": "fn builder (latitude : V2LandmarksCreateWithFormDataRequestLatitude , longitude : V2LandmarksCreateWithFormDataRequestLongitude , name : String) -> V2LandmarksCreateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithFormDataRequestLatitude , longitude : V2LandmarksCreateWithFormDataRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2LandmarksCreateWithFormDataRequest",
+      "rust": "fn build (self) -> V2LandmarksCreateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestCollection"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : V2LandmarksCreateWithFormDataRequestCollection) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithFormDataRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithFormDataRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithFormDataRequestLatitude , longitude : V2LandmarksCreateWithFormDataRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2LandmarksCreateWithFormDataRequestCollection",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestCollection",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithFormDataRequestIcon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestIcon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"DEFAULT\")]"
+        ],
+        "fields": [],
+        "name": "Default",
+        "wire_name": "DEFAULT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CAVE\")]"
+        ],
+        "fields": [],
+        "name": "Cave",
+        "wire_name": "CAVE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UNKNOWN\")]"
+        ],
+        "fields": [],
+        "name": "Unknown",
+        "wire_name": "UNKNOWN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ATTENTION\")]"
+        ],
+        "fields": [],
+        "name": "Attention",
+        "wire_name": "ATTENTION"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NOGO\")]"
+        ],
+        "fields": [],
+        "name": "Nogo",
+        "wire_name": "NOGO"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestIcon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithFormDataRequestLatitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithFormDataRequestLongitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithFormDataRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "collection",
+        "public": true,
+        "rust_type": "Option < Option < uuid :: Uuid > >",
+        "wire_name": "collection"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "icon",
+        "public": true,
+        "rust_type": "Option < V2LandmarksCreateWithJsonRequestIcon >",
+        "wire_name": "icon"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithJsonRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithJsonRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2LandmarksCreateWithJsonRequestBuilder",
+      "rust": "fn builder (latitude : V2LandmarksCreateWithJsonRequestLatitude , longitude : V2LandmarksCreateWithJsonRequestLongitude , name : String) -> V2LandmarksCreateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithJsonRequestLatitude , longitude : V2LandmarksCreateWithJsonRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2LandmarksCreateWithJsonRequest",
+      "rust": "fn build (self) -> V2LandmarksCreateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection_absent",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::collection_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection_null",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::collection_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithJsonRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithJsonRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithJsonRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithJsonRequestLatitude , longitude : V2LandmarksCreateWithJsonRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithJsonRequestIcon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestIcon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"DEFAULT\")]"
+        ],
+        "fields": [],
+        "name": "Default",
+        "wire_name": "DEFAULT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CAVE\")]"
+        ],
+        "fields": [],
+        "name": "Cave",
+        "wire_name": "CAVE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UNKNOWN\")]"
+        ],
+        "fields": [],
+        "name": "Unknown",
+        "wire_name": "UNKNOWN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ATTENTION\")]"
+        ],
+        "fields": [],
+        "name": "Attention",
+        "wire_name": "ATTENTION"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NOGO\")]"
+        ],
+        "fields": [],
+        "name": "Nogo",
+        "wire_name": "NOGO"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestIcon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithJsonRequestLatitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithJsonRequestLongitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithJsonRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "collection",
+        "public": true,
+        "rust_type": "Option < V2LandmarksCreateWithUrlEncodedRequestCollection >",
+        "wire_name": "collection"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "icon",
+        "public": true,
+        "rust_type": "Option < V2LandmarksCreateWithUrlEncodedRequestIcon >",
+        "wire_name": "icon"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2LandmarksCreateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (latitude : V2LandmarksCreateWithUrlEncodedRequestLatitude , longitude : V2LandmarksCreateWithUrlEncodedRequestLongitude , name : String) -> V2LandmarksCreateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithUrlEncodedRequestLatitude , longitude : V2LandmarksCreateWithUrlEncodedRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2LandmarksCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarksCreateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2LandmarksCreateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2LandmarksCreateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestCollection"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : V2LandmarksCreateWithUrlEncodedRequestCollection) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "icon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder::icon",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "icon",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestIcon"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn icon (mut self , icon : V2LandmarksCreateWithUrlEncodedRequestIcon) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2LandmarksCreateWithUrlEncodedRequestLongitude"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2LandmarksCreateWithUrlEncodedRequestLatitude , longitude : V2LandmarksCreateWithUrlEncodedRequestLongitude , name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2LandmarksCreateWithUrlEncodedRequestCollection",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestCollection",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithUrlEncodedRequestIcon",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestIcon",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"DEFAULT\")]"
+        ],
+        "fields": [],
+        "name": "Default",
+        "wire_name": "DEFAULT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CAVE\")]"
+        ],
+        "fields": [],
+        "name": "Cave",
+        "wire_name": "CAVE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UNKNOWN\")]"
+        ],
+        "fields": [],
+        "name": "Unknown",
+        "wire_name": "UNKNOWN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ATTENTION\")]"
+        ],
+        "fields": [],
+        "name": "Attention",
+        "wire_name": "ATTENTION"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NOGO\")]"
+        ],
+        "fields": [],
+        "name": "Nogo",
+        "wire_name": "NOGO"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestIcon::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithUrlEncodedRequestLatitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarksCreateWithUrlEncodedRequestLongitude",
+    "operation": null,
+    "path": "types::V2LandmarksCreateWithUrlEncodedRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  }
+]

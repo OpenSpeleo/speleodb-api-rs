@@ -1,0 +1,213 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAccountEmailPutApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAccountEmailPutApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthForbiddenResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthBrowserAccountEmailPutResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_email_put",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_email_put",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1email/put",
+      "source_method": "PUT",
+      "source_operation_id": "auth_browser_account_email_put",
+      "source_path": "/_allauth/browser/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_email_put",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthBrowserAccountEmailPutRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthBrowserAccountEmailPutResponse , ApiOpError < AuthBrowserAccountEmailPutApiError > >",
+      "rust": "async fn auth_browser_account_email_put (& self , x_csrf_token : impl AsRef < str > , request : AuthBrowserAccountEmailPutRequest) -> Result < AuthBrowserAccountEmailPutResponse , ApiOpError < AuthBrowserAccountEmailPutApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "email",
+        "public": true,
+        "rust_type": "AuthEmail",
+        "wire_name": "email"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountEmailPutRequest",
+    "operation": null,
+    "path": "types::AuthBrowserAccountEmailPutRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountEmailPutResponse",
+    "operation": null,
+    "path": "types::AuthBrowserAccountEmailPutResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountEmailPutResponse429",
+    "operation": null,
+    "path": "types::AuthBrowserAccountEmailPutResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

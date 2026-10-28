@@ -1,0 +1,55 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "count",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "count"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 1,
+        "name": "next",
+        "public": true,
+        "rust_type": "Option < Option < url :: Url > >",
+        "wire_name": "next"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 2,
+        "name": "previous",
+        "public": true,
+        "rust_type": "Option < Option < url :: Url > >",
+        "wire_name": "previous"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "results",
+        "public": true,
+        "rust_type": "Vec < UserExport >",
+        "wire_name": "results"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "PaginatedUserExportList",
+    "operation": null,
+    "path": "types::PaginatedUserExportList",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

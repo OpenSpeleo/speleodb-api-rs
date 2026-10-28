@@ -1,0 +1,303 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "network",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "network"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "project",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "project"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "station_type",
+        "public": true,
+        "rust_type": "StationFeaturePropertiesStationType",
+        "wire_name": "station_type"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "tag",
+        "public": true,
+        "rust_type": "Option < StationFeaturePropertiesTag >",
+        "wire_name": "tag"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "Option < StationFeaturePropertiesType >",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "StationFeatureProperties",
+    "operation": null,
+    "path": "types::StationFeatureProperties",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "StationFeaturePropertiesStationType",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesStationType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"subsurface\")]"
+        ],
+        "fields": [],
+        "name": "Subsurface",
+        "wire_name": "subsurface"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"surface\")]"
+        ],
+        "fields": [],
+        "name": "Surface",
+        "wire_name": "surface"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesStationType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "StationFeaturePropertiesTag",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesTag",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "StationFeaturePropertiesTagInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "StationFeaturePropertiesTagInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "StationFeaturePropertiesTagInlineVariant",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesTagInlineVariant",
+    "rust_type": "StationTagSummary",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "StationFeaturePropertiesType",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"artifact\")]"
+        ],
+        "fields": [],
+        "name": "Artifact",
+        "wire_name": "artifact"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"biology\")]"
+        ],
+        "fields": [],
+        "name": "Biology",
+        "wire_name": "biology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"bone\")]"
+        ],
+        "fields": [],
+        "name": "Bone",
+        "wire_name": "bone"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"geology\")]"
+        ],
+        "fields": [],
+        "name": "Geology",
+        "wire_name": "geology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"sensor\")]"
+        ],
+        "fields": [],
+        "name": "Sensor",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"null\")]"
+        ],
+        "fields": [],
+        "name": "NullValue",
+        "wire_name": "null"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::StationFeaturePropertiesType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

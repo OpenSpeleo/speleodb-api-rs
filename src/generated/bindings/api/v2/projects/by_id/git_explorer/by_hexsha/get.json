@@ -1,0 +1,382 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_git_explorer_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_git_explorer_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1git_explorer~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_git_explorer_retrieve",
+      "source_path": "/api/v2/projects/{id}/git_explorer/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_git_explorer_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsGitExplorerRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ProjectGitExplorerResponse , ApiOpError < V2ProjectsGitExplorerRetrieveApiError > >",
+      "rust": "async fn v2_projects_git_explorer_retrieve (& self , hexsha : impl AsRef < str > , id : impl AsRef < str > , format : Option < V2ProjectsGitExplorerRetrieveFormat >) -> Result < ProjectGitExplorerResponse , ApiOpError < V2ProjectsGitExplorerRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_git_explorer_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_git_explorer_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1git_explorer~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_git_explorer_retrieve",
+      "source_path": "/api/v2/projects/{id}/git_explorer/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_git_explorer_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsGitExplorerRetrieveBuilder < '_ >",
+      "rust": "fn v2_projects_git_explorer_retrieve_builder (& self , hexsha : impl Into < String > , id : impl Into < String >) -> V2ProjectsGitExplorerRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsGitExplorerRetrieveApiError",
+    "operation": null,
+    "path": "client::V2ProjectsGitExplorerRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "hexsha",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsGitExplorerRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsGitExplorerRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_git_explorer_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1git_explorer~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_git_explorer_retrieve",
+      "source_path": "/api/v2/projects/{id}/git_explorer/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsGitExplorerRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_git_explorer_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1git_explorer~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_git_explorer_retrieve",
+      "source_path": "/api/v2/projects/{id}/git_explorer/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsGitExplorerRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsGitExplorerRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsGitExplorerRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_git_explorer_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1git_explorer~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_git_explorer_retrieve",
+      "source_path": "/api/v2/projects/{id}/git_explorer/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsGitExplorerRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ProjectGitExplorerResponse , ApiOpError < V2ProjectsGitExplorerRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < ProjectGitExplorerResponse , ApiOpError < V2ProjectsGitExplorerRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsGitExplorerRetrieveFormat",
+    "operation": null,
+    "path": "client::V2ProjectsGitExplorerRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsGitExplorerRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

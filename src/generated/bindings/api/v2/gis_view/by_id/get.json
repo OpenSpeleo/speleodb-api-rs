@@ -1,0 +1,425 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_view_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_view_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "expires_in",
+          "rust_type": "Option < i64 >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisViewRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < GISViewData , ApiOpError < V2GisViewRetrieveApiError > >",
+      "rust": "async fn v2_gis_view_retrieve (& self , id : impl AsRef < str > , expires_in : Option < i64 > , format : Option < V2GisViewRetrieveFormat >) -> Result < GISViewData , ApiOpError < V2GisViewRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_view_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_view_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisViewRetrieveBuilder < '_ >",
+      "rust": "fn v2_gis_view_retrieve_builder (& self , id : impl Into < String >) -> V2GisViewRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisViewRetrieveApiError",
+    "operation": null,
+    "path": "client::V2GisViewRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "expires_in",
+        "public": false,
+        "rust_type": "Option < i64 >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisViewRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisViewRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2GisViewRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expires_in",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2GisViewRetrieveBuilder::expires_in",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expires_in",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expires_in (mut self , expires_in : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2GisViewRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisViewRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisViewRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_view_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis_view~1{id}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_view_retrieve",
+      "source_path": "/api/v2/gis_view/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2GisViewRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < GISViewData , ApiOpError < V2GisViewRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < GISViewData , ApiOpError < V2GisViewRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisViewRetrieveFormat",
+    "operation": null,
+    "path": "client::V2GisViewRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisViewRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "coordinates",
+        "public": true,
+        "rust_type": "Option < serde_json :: Value >",
+        "wire_name": "coordinates"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "OGCGeometryType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCGeometry",
+    "operation": null,
+    "path": "types::OGCGeometry",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OGCGeometryType",
+    "operation": null,
+    "path": "types::OGCGeometryType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"Point\")]"
+        ],
+        "fields": [],
+        "name": "Point",
+        "wire_name": "Point"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MultiPoint\")]"
+        ],
+        "fields": [],
+        "name": "MultiPoint",
+        "wire_name": "MultiPoint"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LineString\")]"
+        ],
+        "fields": [],
+        "name": "LineString",
+        "wire_name": "LineString"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MultiLineString\")]"
+        ],
+        "fields": [],
+        "name": "MultiLineString",
+        "wire_name": "MultiLineString"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::OGCGeometryType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

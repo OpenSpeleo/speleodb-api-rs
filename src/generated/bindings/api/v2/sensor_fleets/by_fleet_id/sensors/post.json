@@ -1,0 +1,2301 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsSensorsCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithFormDataApiError > >",
+      "rust": "async fn v2_sensor_fleets_sensors_create_with_form_data (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsSensorsCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2SensorFleetsSensorsCreateWithFormDataRequest) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsSensorsCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_sensors_create_with_form_data_builder (& self , fleet_id : impl Into < String > , name : String) -> V2SensorFleetsSensorsCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsSensorsCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "SensorRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithJsonApiError > >",
+      "rust": "async fn v2_sensor_fleets_sensors_create_with_json (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsSensorsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : SensorRequest) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsSensorsCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_sensors_create_with_json_builder (& self , fleet_id : impl Into < String > , name : String) -> V2SensorFleetsSensorsCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsSensorsCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "SensorRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_sensor_fleets_sensors_create_with_url_encoded (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsSensorsCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : SensorRequest) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsSensorsCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_sensors_create_with_url_encoded_builder (& self , fleet_id : impl Into < String > , name : String) -> V2SensorFleetsSensorsCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsSensorsCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "fleet",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::fleet",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn fleet (mut self , fleet : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsSensorsCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsSensorsCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2SensorFleetsSensorsCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2SensorFleetsSensorsCreateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsSensorsCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "SensorRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "fleet",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::fleet",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn fleet (mut self , fleet : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsSensorsCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsSensorsCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SensorRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : SensorRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "SensorRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : SensorRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsSensorsCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "SensorRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "fleet",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::fleet",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn fleet (mut self , fleet : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsSensorsCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsSensorsCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SensorRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : SensorRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < Sensor , ApiOpError < V2SensorFleetsSensorsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "SensorRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : SensorRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_sensors_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "fleet",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "fleet"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2SensorFleetsSensorsCreateWithFormDataRequestStatus >",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2SensorFleetsSensorsCreateWithFormDataRequestBuilder",
+      "rust": "fn builder (name : String) -> V2SensorFleetsSensorsCreateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2SensorFleetsSensorsCreateWithFormDataRequest",
+      "rust": "fn build (self) -> V2SensorFleetsSensorsCreateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "fleet",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder::fleet",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn fleet (mut self , fleet : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2SensorFleetsSensorsCreateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2SensorFleetsSensorsCreateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsCreateWithFormDataRequestStatus",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"functional\")]"
+        ],
+        "fields": [],
+        "name": "Functional",
+        "wire_name": "functional"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"needs_service\")]"
+        ],
+        "fields": [],
+        "name": "NeedsService",
+        "wire_name": "needs_service"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"broken\")]"
+        ],
+        "fields": [],
+        "name": "Broken",
+        "wire_name": "broken"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2SensorFleetsSensorsCreateWithFormDataRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "error",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "error"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "error_code",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "error_code"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "generation_commit_sha",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "generation_commit_sha"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "geojson_commit_sha",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "geojson_commit_sha"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "geojson_revision",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "geojson_revision"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "source_commit_sha",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "source_commit_sha"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "state",
+        "public": true,
+        "rust_type": "ProjectGeoJSONStatusState",
+        "wire_name": "state"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "updated_at",
+        "public": true,
+        "rust_type": "Option < chrono :: DateTime < chrono :: Utc > >",
+        "wire_name": "updated_at"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ProjectGeoJSONStatus",
+    "operation": null,
+    "path": "types::ProjectGeoJSONStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ProjectGeoJSONStatusState",
+    "operation": null,
+    "path": "types::ProjectGeoJSONStatusState",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"pending\")]"
+        ],
+        "fields": [],
+        "name": "Pending",
+        "wire_name": "pending"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"queued\")]"
+        ],
+        "fields": [],
+        "name": "Queued",
+        "wire_name": "queued"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"running\")]"
+        ],
+        "fields": [],
+        "name": "Running",
+        "wire_name": "running"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ready\")]"
+        ],
+        "fields": [],
+        "name": "Ready",
+        "wire_name": "ready"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"skipped\")]"
+        ],
+        "fields": [],
+        "name": "Skipped",
+        "wire_name": "skipped"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"failed\")]"
+        ],
+        "fields": [],
+        "name": "Failed",
+        "wire_name": "failed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"not_requested\")]"
+        ],
+        "fields": [],
+        "name": "NotRequested",
+        "wire_name": "not_requested"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::ProjectGeoJSONStatusState::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "attributes": [
+      "# [derive (Error , Debug)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "HttpError",
+    "operation": null,
+    "path": "client::HttpError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [error (\"Network error: {0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [
+              "# [from]"
+            ],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "reqwest :: Error",
+            "wire_name": null
+          }
+        ],
+        "name": "Network",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Middleware error: {0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [
+              "# [from]"
+            ],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "reqwest_middleware :: Error",
+            "wire_name": null
+          }
+        ],
+        "name": "Middleware",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Failed to serialize request: {0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Serialization",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Authentication error: {0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Auth",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Request timeout\")]"
+        ],
+        "fields": [],
+        "name": "Timeout",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Response body exceeded configured limit of {limit} bytes\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": "limit",
+            "public": true,
+            "rust_type": "usize",
+            "wire_name": null
+          }
+        ],
+        "name": "ResponseTooLarge",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"Configuration error: {0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Config",
+        "wire_name": null
+      },
+      {
+        "attributes": [
+          "# [error (\"{0}\")]"
+        ],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "Other",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_retryable",
+    "operation": null,
+    "path": "client::HttpError::is_retryable",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "bool",
+      "rust": "fn is_retryable (& self) -> bool"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "serialization_error",
+    "operation": null,
+    "path": "client::HttpError::serialization_error",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "error",
+          "rust_type": "impl std :: fmt :: Display"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn serialization_error (error : impl std :: fmt :: Display) -> Self"
+    },
+    "variants": []
+  }
+]

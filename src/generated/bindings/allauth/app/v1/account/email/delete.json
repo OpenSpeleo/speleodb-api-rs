@@ -1,0 +1,460 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAccountEmailDeleteApiError",
+    "operation": null,
+    "path": "client::AuthAppAccountEmailDeleteApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAppAccountEmailDeleteResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthAppAccountEmailDeleteRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailDeleteBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailDeleteBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailDeleteBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailDeleteRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthAppAccountEmailDeleteRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailDeleteBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthAppAccountEmailDeleteResponse , ApiOpError < AuthAppAccountEmailDeleteApiError > >",
+      "rust": "async fn send (self) -> Result < AuthAppAccountEmailDeleteResponse , ApiOpError < AuthAppAccountEmailDeleteApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailDeleteBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_account_email_delete",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_account_email_delete",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailDeleteRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAppAccountEmailDeleteResponse , ApiOpError < AuthAppAccountEmailDeleteApiError > >",
+      "rust": "async fn auth_app_account_email_delete (& self , x_session_token : Option < impl AsRef < str > > , request : AuthAppAccountEmailDeleteRequest) -> Result < AuthAppAccountEmailDeleteResponse , ApiOpError < AuthAppAccountEmailDeleteApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_account_email_delete_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_delete",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_account_email_delete",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_account_email_delete_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailDeleteRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppAccountEmailDeleteBuilder < '_ >",
+      "rust": "fn auth_app_account_email_delete_builder (& self , request : AuthAppAccountEmailDeleteRequest) -> AuthAppAccountEmailDeleteBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "email",
+        "public": true,
+        "rust_type": "AuthEmail",
+        "wire_name": "email"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailDeleteRequest",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailDeleteRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "Vec < AuthEmailAddress >",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailDeleteResponse",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailDeleteResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailDeleteResponse429",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailDeleteResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

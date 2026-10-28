@@ -1,0 +1,5604 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_cylinder_installs_update_with_form_data (& self , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2CylinderInstallsUpdateWithFormDataRequest) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_update_with_form_data_builder (& self , install_id : impl Into < String > , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithFormDataRequestLatitude , longitude : V2CylinderInstallsUpdateWithFormDataRequestLongitude) -> V2CylinderInstallsUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithJsonApiError > >",
+      "rust": "async fn v2_cylinder_installs_update_with_json (& self , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2CylinderInstallsUpdateWithJsonRequest) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_update_with_json_builder (& self , install_id : impl Into < String > , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithJsonRequestLatitude , longitude : V2CylinderInstallsUpdateWithJsonRequestLongitude) -> V2CylinderInstallsUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_cylinder_installs_update_with_url_encoded (& self , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2CylinderInstallsUpdateWithUrlEncodedRequest) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_update_with_url_encoded_builder (& self , install_id : impl Into < String > , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude) -> V2CylinderInstallsUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2CylinderInstallsUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2CylinderInstallsUpdateWithFormDataRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithFormDataRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithFormDataRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::distance_from_entry_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::distance_from_entry_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2CylinderInstallsUpdateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithJsonRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithJsonRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_user_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::uninstall_user_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithJsonRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2CylinderInstallsUpdateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderInstall , ApiOpError < V2CylinderInstallsUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithUrlEncodedRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_cylinder_installs_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "cylinder",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "cylinder"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "distance_from_entry",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry >",
+        "wire_name": "distance_from_entry"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "location_name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "location_name"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 8,
+        "name": "project",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "project"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 9,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 10,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 11,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 12,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithFormDataRequestUnitSystem >",
+        "wire_name": "unit_system"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2CylinderInstallsUpdateWithFormDataRequestBuilder",
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithFormDataRequestLatitude , longitude : V2CylinderInstallsUpdateWithFormDataRequestLongitude) -> V2CylinderInstallsUpdateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithFormDataRequestLatitude , longitude : V2CylinderInstallsUpdateWithFormDataRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2CylinderInstallsUpdateWithFormDataRequest",
+      "rust": "fn build (self) -> V2CylinderInstallsUpdateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithFormDataRequestLatitude , longitude : V2CylinderInstallsUpdateWithFormDataRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2CylinderInstallsUpdateWithFormDataRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithFormDataRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithFormDataRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithFormDataRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestDistanceFromEntry",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "i64",
+            "wire_name": null
+          }
+        ],
+        "name": "Integer",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestLatitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestLongitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestStatus",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithFormDataRequestUnitSystem",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithFormDataRequestUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "cylinder",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "cylinder"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 1,
+        "name": "distance_from_entry",
+        "public": true,
+        "rust_type": "Option < Option < i64 > >",
+        "wire_name": "distance_from_entry"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "location_name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "location_name"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 8,
+        "name": "project",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "project"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 9,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithJsonRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 10,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 11,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < Option < V2CylinderInstallsUpdateWithJsonRequestUninstallUser > >",
+        "wire_name": "uninstall_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 12,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithJsonRequestUnitSystem >",
+        "wire_name": "unit_system"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2CylinderInstallsUpdateWithJsonRequestBuilder",
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithJsonRequestLatitude , longitude : V2CylinderInstallsUpdateWithJsonRequestLongitude) -> V2CylinderInstallsUpdateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithJsonRequestLatitude , longitude : V2CylinderInstallsUpdateWithJsonRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2CylinderInstallsUpdateWithJsonRequest",
+      "rust": "fn build (self) -> V2CylinderInstallsUpdateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry_absent",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::distance_from_entry_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry_null",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::distance_from_entry_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithJsonRequestLatitude , longitude : V2CylinderInstallsUpdateWithJsonRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithJsonRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_absent",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_null",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithJsonRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_absent",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_user_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_null",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::uninstall_user_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithJsonRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithJsonRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestLatitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestLongitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestStatus",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestUninstallUser",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2CylinderInstallsUpdateWithJsonRequestUninstallUserInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2CylinderInstallsUpdateWithJsonRequestUninstallUserInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestUninstallUserInlineVariant",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestUninstallUserInlineVariant",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithJsonRequestUnitSystem",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithJsonRequestUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "cylinder",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "cylinder"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "distance_from_entry",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry >",
+        "wire_name": "distance_from_entry"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "install_user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "install_user"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "location_name",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "location_name"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 8,
+        "name": "project",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "project"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 9,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 10,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 11,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 12,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem >",
+        "wire_name": "unit_system"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude) -> V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2CylinderInstallsUpdateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2CylinderInstallsUpdateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "distance_from_entry",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::distance_from_entry",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "distance_from_entry",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn distance_from_entry (mut self , distance_from_entry : V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "location_name",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::location_name",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "location_name",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn location_name (mut self , location_name : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cylinder",
+          "rust_type": "uuid :: Uuid"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "install_user",
+          "rust_type": "String"
+        },
+        {
+          "name": "latitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , install_user : String , latitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "project",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::project",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "project",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn project (mut self , project : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2CylinderInstallsUpdateWithUrlEncodedRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestDistanceFromEntry",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "i64",
+            "wire_name": null
+          }
+        ],
+        "name": "Integer",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestStatus",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsUpdateWithUrlEncodedRequestUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,157 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAuthPasswordRequestPostApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAuthPasswordRequestPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthBrowserAuthPasswordRequestPostResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_auth_password_request_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_auth_password_request_post",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1auth~1password~1request/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_auth_password_request_post",
+      "source_path": "/_allauth/browser/v1/auth/password/request",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_auth_password_request_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthRequestPassword"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthBrowserAuthPasswordRequestPostResponse , ApiOpError < AuthBrowserAuthPasswordRequestPostApiError > >",
+      "rust": "async fn auth_browser_auth_password_request_post (& self , x_csrf_token : impl AsRef < str > , request : AuthRequestPassword) -> Result < AuthBrowserAuthPasswordRequestPostResponse , ApiOpError < AuthBrowserAuthPasswordRequestPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAuthPasswordRequestPostResponse",
+    "operation": null,
+    "path": "types::AuthBrowserAuthPasswordRequestPostResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAuthPasswordRequestPostResponse429",
+    "operation": null,
+    "path": "types::AuthBrowserAuthPasswordRequestPostResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

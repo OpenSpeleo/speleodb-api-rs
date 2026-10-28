@@ -1,0 +1,528 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAccountEmailPostApiError",
+    "operation": null,
+    "path": "client::AuthAppAccountEmailPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAppAccountEmailPostResponse401",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthConflictResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAppAccountEmailPostResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthAppAccountEmailPostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailPostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailPostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailPostBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailPostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthAppAccountEmailPostRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailPostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthAppAccountEmailPostResponse , ApiOpError < AuthAppAccountEmailPostApiError > >",
+      "rust": "async fn send (self) -> Result < AuthAppAccountEmailPostResponse , ApiOpError < AuthAppAccountEmailPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAppAccountEmailPostBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_account_email_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_account_email_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailPostRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAppAccountEmailPostResponse , ApiOpError < AuthAppAccountEmailPostApiError > >",
+      "rust": "async fn auth_app_account_email_post (& self , x_session_token : Option < impl AsRef < str > > , request : AuthAppAccountEmailPostRequest) -> Result < AuthAppAccountEmailPostResponse , ApiOpError < AuthAppAccountEmailPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_account_email_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_account_email_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1account~1email/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_account_email_post",
+      "source_path": "/_allauth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_account_email_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAppAccountEmailPostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppAccountEmailPostBuilder < '_ >",
+      "rust": "fn auth_app_account_email_post_builder (& self , request : AuthAppAccountEmailPostRequest) -> AuthAppAccountEmailPostBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "email",
+        "public": true,
+        "rust_type": "AuthEmail",
+        "wire_name": "email"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailPostRequest",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailPostRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "Vec < AuthEmailAddress >",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailPostResponse",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailPostResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAccountEmailPostResponse401",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailPostResponse401",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "AuthAuthenticationResponse",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthReauthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "AuthReauthenticationResponse",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAccountEmailPostResponse429",
+    "operation": null,
+    "path": "types::AuthAppAccountEmailPostResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_list",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_list",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_surface_networks_list",
+      "source_path": "/api/v2/surface-networks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_list",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2SurfaceNetworksListFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2SurfaceNetworksListResponse , ApiOpError < V2SurfaceNetworksListApiError > >",
+      "rust": "async fn v2_surface_networks_list (& self , format : Option < V2SurfaceNetworksListFormat >) -> Result < V2SurfaceNetworksListResponse , ApiOpError < V2SurfaceNetworksListApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_surface_networks_list_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_list",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_surface_networks_list",
+      "source_path": "/api/v2/surface-networks/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_surface_networks_list_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SurfaceNetworksListBuilder < '_ >",
+      "rust": "fn v2_surface_networks_list_builder (& self) -> V2SurfaceNetworksListBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksListApiError",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksListApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SurfaceNetworksListFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SurfaceNetworksListBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_list",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_surface_networks_list",
+      "source_path": "/api/v2/surface-networks/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksListBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_list",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_surface_networks_list",
+      "source_path": "/api/v2/surface-networks/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksListBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SurfaceNetworksListFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SurfaceNetworksListFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_surface_networks_list",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1surface-networks~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_surface_networks_list",
+      "source_path": "/api/v2/surface-networks/",
+      "webhook": false
+    },
+    "path": "client::V2SurfaceNetworksListBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2SurfaceNetworksListResponse , ApiOpError < V2SurfaceNetworksListApiError > >",
+      "rust": "async fn send (self) -> Result < V2SurfaceNetworksListResponse , ApiOpError < V2SurfaceNetworksListApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SurfaceNetworksListFormat",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksListFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SurfaceNetworksListFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2SurfaceNetworksListResponse",
+    "operation": null,
+    "path": "types::V2SurfaceNetworksListResponse",
+    "rust_type": "Vec < SurfaceMonitoringNetworkWithPerm >",
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,591 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiment_records_partial_update",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiment_records_partial_update",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ExperimentRecordsPartialUpdateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2ExperimentRecordsPartialUpdateRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ExperimentRecord , ApiOpError < V2ExperimentRecordsPartialUpdateApiError > >",
+      "rust": "async fn v2_experiment_records_partial_update (& self , id : impl AsRef < str > , format : Option < V2ExperimentRecordsPartialUpdateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2ExperimentRecordsPartialUpdateRequest >) -> Result < ExperimentRecord , ApiOpError < V2ExperimentRecordsPartialUpdateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_experiment_records_partial_update_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_experiment_records_partial_update_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ExperimentRecordsPartialUpdateBuilder < '_ >",
+      "rust": "fn v2_experiment_records_partial_update_builder (& self , id : impl Into < String >) -> V2ExperimentRecordsPartialUpdateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentRecordsPartialUpdateApiError",
+    "operation": null,
+    "path": "client::V2ExperimentRecordsPartialUpdateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ExperimentRecordsPartialUpdateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2ExperimentRecordsPartialUpdateRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentRecordsPartialUpdateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "field_00000000_0000_0000_0000_000000000001",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder::field_00000000_0000_0000_0000_000000000001",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "field_00000000_0000_0000_0000_000000000001",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn field_00000000_0000_0000_0000_000000000001 (mut self , field_00000000_0000_0000_0000_000000000001 : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ExperimentRecordsPartialUpdateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ExperimentRecordsPartialUpdateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ExperimentRecordsPartialUpdateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ExperimentRecordsPartialUpdateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ExperimentRecord , ApiOpError < V2ExperimentRecordsPartialUpdateApiError > >",
+      "rust": "async fn send (self) -> Result < ExperimentRecord , ApiOpError < V2ExperimentRecordsPartialUpdateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_experiment_records_partial_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1experiment_records~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_experiment_records_partial_update",
+      "source_path": "/api/v2/experiment_records/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExperimentRecordsPartialUpdateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExperimentRecordsPartialUpdateFormat",
+    "operation": null,
+    "path": "client::V2ExperimentRecordsPartialUpdateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ExperimentRecordsPartialUpdateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (rename = \"00000000-0000-0000-0000-000000000001\" , skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "field_00000000_0000_0000_0000_000000000001",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "00000000-0000-0000-0000-000000000001"
+      },
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 1,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , Option < serde_json :: Value > >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExperimentRecordsPartialUpdateRequest",
+    "operation": null,
+    "path": "types::V2ExperimentRecordsPartialUpdateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "commit_sha",
+        "public": true,
+        "rust_type": "Option < Option < String > >",
+        "wire_name": "commit_sha"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "project_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "project_id"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "use_latest",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "use_latest"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISProjectViewInputRequest",
+    "operation": null,
+    "path": "types::GISProjectViewInputRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "check_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "check_date"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "cylinder_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "cylinder_id"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "cylinder_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "cylinder_name"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "install_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "install_id"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "location_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "location_name"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "notes",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "pressure",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "pressure"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "CylinderPressureCheckUnitSystem",
+        "wire_name": "unit_system"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "user",
+        "public": true,
+        "rust_type": "CylinderPressureCheckUser",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "CylinderPressureCheck",
+    "operation": null,
+    "path": "types::CylinderPressureCheck",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "CylinderPressureCheckUnitSystem",
+    "operation": null,
+    "path": "types::CylinderPressureCheckUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::CylinderPressureCheckUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "CylinderPressureCheckUser",
+    "operation": null,
+    "path": "types::CylinderPressureCheckUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

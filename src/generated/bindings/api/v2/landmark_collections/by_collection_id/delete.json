@@ -1,0 +1,425 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_destroy",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_destroy",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionsDestroyFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < LandmarkCollectionSpecificApiViewDeleteResponse , ApiOpError < V2LandmarkCollectionsDestroyApiError > >",
+      "rust": "async fn v2_landmark_collections_destroy (& self , collection_id : impl AsRef < str > , format : Option < V2LandmarkCollectionsDestroyFormat > , x_csrf_token : Option < impl AsRef < str > >) -> Result < LandmarkCollectionSpecificApiViewDeleteResponse , ApiOpError < V2LandmarkCollectionsDestroyApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collections_destroy_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collections_destroy_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionsDestroyBuilder < '_ >",
+      "rust": "fn v2_landmark_collections_destroy_builder (& self , collection_id : impl Into < String >) -> V2LandmarkCollectionsDestroyBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsDestroyApiError",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsDestroyApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionsDestroyFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionsDestroyBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsDestroyBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsDestroyBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionsDestroyFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionsDestroyFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsDestroyBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < LandmarkCollectionSpecificApiViewDeleteResponse , ApiOpError < V2LandmarkCollectionsDestroyApiError > >",
+      "rust": "async fn send (self) -> Result < LandmarkCollectionSpecificApiViewDeleteResponse , ApiOpError < V2LandmarkCollectionsDestroyApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collections_destroy",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_landmark_collections_destroy",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionsDestroyBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionsDestroyFormat",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsDestroyFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionsDestroyFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

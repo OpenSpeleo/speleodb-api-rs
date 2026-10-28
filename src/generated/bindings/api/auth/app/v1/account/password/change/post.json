@@ -1,0 +1,588 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasAppAccountPasswordChangePostApiError",
+    "operation": null,
+    "path": "client::AuthAliasAppAccountPasswordChangePostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAliasAppAccountPasswordChangePostResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthAliasAppAccountPasswordChangePostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountPasswordChangePostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountPasswordChangePostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "current_password",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountPasswordChangePostBuilder::current_password",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "current_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn current_password (mut self , current_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountPasswordChangePostBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAliasAppAccountPasswordChangePostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthAliasAppAccountPasswordChangePostRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountPasswordChangePostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < AuthAliasAppAccountPasswordChangePostApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < AuthAliasAppAccountPasswordChangePostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountPasswordChangePostBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_account_password_change_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_account_password_change_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthAliasAppAccountPasswordChangePostRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAliasAppAccountPasswordChangePostApiError > >",
+      "rust": "async fn auth_alias_app_account_password_change_post (& self , x_session_token : Option < impl AsRef < str > > , request : AuthAliasAppAccountPasswordChangePostRequest) -> Result < () , ApiOpError < AuthAliasAppAccountPasswordChangePostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_account_password_change_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_account_password_change_post",
+      "source_path": "/api/auth/app/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_account_password_change_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAliasAppAccountPasswordChangePostBuilder < '_ >",
+      "rust": "fn auth_alias_app_account_password_change_post_builder (& self , new_password : String) -> AuthAliasAppAccountPasswordChangePostBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "current_password",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "current_password"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "new_password",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "new_password"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountPasswordChangePostRequest",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "AuthAliasAppAccountPasswordChangePostRequestBuilder",
+      "rust": "fn builder (new_password : String) -> AuthAliasAppAccountPasswordChangePostRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (new_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "AuthAliasAppAccountPasswordChangePostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountPasswordChangePostRequestBuilder",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "AuthAliasAppAccountPasswordChangePostRequest",
+      "rust": "fn build (self) -> AuthAliasAppAccountPasswordChangePostRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "current_password",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequestBuilder::current_password",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "current_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn current_password (mut self , current_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (new_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountPasswordChangePostResponse429",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountPasswordChangePostResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,4511 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithFormDataApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_create_with_form_data (& self , id : impl AsRef < str > , format : Option < V2StationsSensorInstallsCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsSensorInstallsCreateWithFormDataRequest) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_create_with_form_data_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithJsonApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_create_with_json (& self , id : impl AsRef < str > , format : Option < V2StationsSensorInstallsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsSensorInstallsCreateWithJsonRequest) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_create_with_json_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_stations_sensor_installs_create_with_url_encoded (& self , id : impl AsRef < str > , format : Option < V2StationsSensorInstallsCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2StationsSensorInstallsCreateWithUrlEncodedRequest) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_sensor_installs_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_sensor_installs_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSensorInstallsCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_stations_sensor_installs_create_with_url_encoded_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_battery_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_battery_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_memory_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::expiracy_memory_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsCreateWithJsonRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithJsonRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithJsonRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_absent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_user_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_null",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::uninstall_user_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSensorInstallsCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2StationsSensorInstallsCreateWithUrlEncodedRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SensorInstall , ApiOpError < V2StationsSensorInstallsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_sensor_installs_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1sensor-installs~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_stations_sensor_installs_create",
+      "source_path": "/api/v2/stations/{id}/sensor-installs/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSensorInstallsCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsSensorInstallsCreateWithFormDataRequestBuilder",
+      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsSensorInstallsCreateWithFormDataRequest",
+      "rust": "fn build (self) -> V2StationsSensorInstallsCreateWithFormDataRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithFormDataRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestExpiracyBatteryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestExpiracyMemoryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithFormDataRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithJsonRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 6,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < Option < V2StationsSensorInstallsCreateWithJsonRequestUninstallUser > >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsSensorInstallsCreateWithJsonRequestBuilder",
+      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsSensorInstallsCreateWithJsonRequest",
+      "rust": "fn build (self) -> V2StationsSensorInstallsCreateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_absent",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_battery_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date_null",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_battery_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_absent",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_memory_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date_null",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::expiracy_memory_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithJsonRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_absent",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_date_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date_null",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_date_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithJsonRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_absent",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_user_absent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_absent (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user_null",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestBuilder::uninstall_user_null",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user_null (mut self) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithJsonRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestUninstallUser",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUserInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUserInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithJsonRequestUninstallUserInlineVariant",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithJsonRequestUninstallUserInlineVariant",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "expiracy_battery_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate >",
+        "wire_name": "expiracy_battery_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "expiracy_memory_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate >",
+        "wire_name": "expiracy_memory_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "install_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "sensor",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "sensor"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "station",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "station"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "status",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus >",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "uninstall_date",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate >",
+        "wire_name": "uninstall_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 7,
+        "name": "uninstall_user",
+        "public": true,
+        "rust_type": "Option < V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser >",
+        "wire_name": "uninstall_user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequest",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder",
+      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequest",
+      "rust": "fn build (self) -> V2StationsSensorInstallsCreateWithUrlEncodedRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_battery_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::expiracy_battery_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_battery_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "expiracy_memory_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::expiracy_memory_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "expiracy_memory_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "sensor",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "station",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::station",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "station",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn station (mut self , station : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "status",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "status",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn status (mut self , status : V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_date",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::uninstall_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_date",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_date (mut self , uninstall_date : V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "uninstall_user",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder::uninstall_user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "uninstall_user",
+          "rust_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn uninstall_user (mut self , uninstall_user : V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyBatteryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestExpiracyMemoryDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"installed\")]"
+        ],
+        "fields": [],
+        "name": "Installed",
+        "wire_name": "installed"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retrieved\")]"
+        ],
+        "fields": [],
+        "name": "Retrieved",
+        "wire_name": "retrieved"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallDate",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser",
+    "operation": null,
+    "path": "types::V2StationsSensorInstallsCreateWithUrlEncodedRequestUninstallUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

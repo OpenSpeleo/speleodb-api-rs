@@ -1,0 +1,1625 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPermissionsCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithFormDataApiError > >",
+      "rust": "async fn v2_sensor_fleets_permissions_create_with_form_data (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPermissionsCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2SensorFleetsPermissionsCreateWithFormDataRequest) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPermissionsCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_permissions_create_with_form_data_builder (& self , fleet_id : impl Into < String > , request : V2SensorFleetsPermissionsCreateWithFormDataRequest) -> V2SensorFleetsPermissionsCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPermissionsCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithJsonApiError > >",
+      "rust": "async fn v2_sensor_fleets_permissions_create_with_json (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPermissionsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : NonWebViewerPermissionRequestRequest) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPermissionsCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_permissions_create_with_json_builder (& self , fleet_id : impl Into < String > , request : NonWebViewerPermissionRequestRequest) -> V2SensorFleetsPermissionsCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsPermissionsCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_sensor_fleets_permissions_create_with_url_encoded (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsPermissionsCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : NonWebViewerPermissionRequestRequest) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_permissions_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_permissions_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_permissions_create_with_url_encoded_builder (& self , fleet_id : impl Into < String > , request : NonWebViewerPermissionRequestRequest) -> V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPermissionsCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2SensorFleetsPermissionsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPermissionsCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPermissionsCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2SensorFleetsPermissionsCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPermissionsCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "NonWebViewerPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPermissionsCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPermissionsCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : NonWebViewerPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsPermissionsCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "request",
+        "public": false,
+        "rust_type": "NonWebViewerPermissionRequestRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsPermissionsCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsPermissionsCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "NonWebViewerPermissionRequestRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : NonWebViewerPermissionRequestRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SensorFleetPermissionApiViewPostResponse , ApiOpError < V2SensorFleetsPermissionsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_permissions_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1permissions~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_sensor_fleets_permissions_create",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsPermissionsCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsPermissionsCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "level",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "level"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsPermissionsCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2SensorFleetsPermissionsCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

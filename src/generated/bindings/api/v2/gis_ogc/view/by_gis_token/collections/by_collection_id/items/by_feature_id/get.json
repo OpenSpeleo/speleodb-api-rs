@@ -1,0 +1,414 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "view_feature",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "viewFeature",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1collections~1{collection_id}~1items~1{feature_id}/get",
+      "source_method": "GET",
+      "source_operation_id": "viewFeature",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/collections/{collection_id}/items/{feature_id}",
+      "webhook": false
+    },
+    "path": "client::HttpClient::view_feature",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "feature_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < ViewFeatureFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < OGCFeatureResponse , ApiOpError < ViewFeatureApiError > >",
+      "rust": "async fn view_feature (& self , gis_token : impl AsRef < str > , collection_id : impl AsRef < str > , feature_id : impl AsRef < str > , format : Option < ViewFeatureFormat >) -> Result < OGCFeatureResponse , ApiOpError < ViewFeatureApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "view_feature_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "viewFeature",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1collections~1{collection_id}~1items~1{feature_id}/get",
+      "source_method": "GET",
+      "source_operation_id": "viewFeature",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/collections/{collection_id}/items/{feature_id}",
+      "webhook": false
+    },
+    "path": "client::HttpClient::view_feature_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "feature_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "ViewFeatureBuilder < '_ >",
+      "rust": "fn view_feature_builder (& self , gis_token : impl Into < String > , collection_id : impl Into < String > , feature_id : impl Into < String >) -> ViewFeatureBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ViewFeatureApiError",
+    "operation": null,
+    "path": "client::ViewFeatureApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb2eca1cd9c11adb6",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse57239bf832492eb1",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "gis_token",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "feature_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < ViewFeatureFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ViewFeatureBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "viewFeature",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1collections~1{collection_id}~1items~1{feature_id}/get",
+      "source_method": "GET",
+      "source_operation_id": "viewFeature",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/collections/{collection_id}/items/{feature_id}",
+      "webhook": false
+    },
+    "path": "client::ViewFeatureBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "viewFeature",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1collections~1{collection_id}~1items~1{feature_id}/get",
+      "source_method": "GET",
+      "source_operation_id": "viewFeature",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/collections/{collection_id}/items/{feature_id}",
+      "webhook": false
+    },
+    "path": "client::ViewFeatureBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "ViewFeatureFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : ViewFeatureFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "viewFeature",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/geo+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1collections~1{collection_id}~1items~1{feature_id}/get",
+      "source_method": "GET",
+      "source_operation_id": "viewFeature",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/collections/{collection_id}/items/{feature_id}",
+      "webhook": false
+    },
+    "path": "client::ViewFeatureBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < OGCFeatureResponse , ApiOpError < ViewFeatureApiError > >",
+      "rust": "async fn send (self) -> Result < OGCFeatureResponse , ApiOpError < ViewFeatureApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ViewFeatureFormat",
+    "operation": null,
+    "path": "client::ViewFeatureFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"geojson\")]"
+        ],
+        "fields": [],
+        "name": "Geojson",
+        "wire_name": "geojson"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"geojson-legacy\")]"
+        ],
+        "fields": [],
+        "name": "GeojsonLegacy",
+        "wire_name": "geojson-legacy"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::ViewFeatureFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

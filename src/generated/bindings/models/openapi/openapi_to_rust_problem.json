@@ -1,0 +1,138 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "module",
+    "name": "openapi_to_rust_problem",
+    "operation": null,
+    "path": "client::openapi_to_rust_problem",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "location",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "location"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "message",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "message"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "InvalidParameter",
+    "operation": null,
+    "path": "client::openapi_to_rust_problem::InvalidParameter",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (rename = \"type\")]"
+        ],
+        "index": 0,
+        "name": "type_uri",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "type"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "title",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "title"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "status",
+        "public": true,
+        "rust_type": "u16",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "code",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [
+          "# [serde (default)]"
+        ],
+        "index": 4,
+        "name": "errors",
+        "public": true,
+        "rust_type": "Vec < InvalidParameter >",
+        "wire_name": "errors"
+      },
+      {
+        "attributes": [
+          "# [serde (default , skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "detail",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "detail"
+      },
+      {
+        "attributes": [
+          "# [serde (default , skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 6,
+        "name": "instance",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "instance"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ProblemDetails",
+    "operation": null,
+    "path": "client::openapi_to_rust_problem::ProblemDetails",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

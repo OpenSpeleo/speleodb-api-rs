@@ -1,0 +1,360 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_fleets_permissions_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-fleets~1{fleet_id}~1permissions~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "source_path": "/api/v2/cylinder-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_fleets_permissions_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderFleetsPermissionsRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2CylinderFleetsPermissionsRetrieveResponse , ApiOpError < V2CylinderFleetsPermissionsRetrieveApiError > >",
+      "rust": "async fn v2_cylinder_fleets_permissions_retrieve (& self , fleet_id : impl AsRef < str > , format : Option < V2CylinderFleetsPermissionsRetrieveFormat >) -> Result < V2CylinderFleetsPermissionsRetrieveResponse , ApiOpError < V2CylinderFleetsPermissionsRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_fleets_permissions_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-fleets~1{fleet_id}~1permissions~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "source_path": "/api/v2/cylinder-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_fleets_permissions_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderFleetsPermissionsRetrieveBuilder < '_ >",
+      "rust": "fn v2_cylinder_fleets_permissions_retrieve_builder (& self , fleet_id : impl Into < String >) -> V2CylinderFleetsPermissionsRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderFleetsPermissionsRetrieveApiError",
+    "operation": null,
+    "path": "client::V2CylinderFleetsPermissionsRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderFleetsPermissionsRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderFleetsPermissionsRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-fleets~1{fleet_id}~1permissions~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "source_path": "/api/v2/cylinder-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderFleetsPermissionsRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-fleets~1{fleet_id}~1permissions~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "source_path": "/api/v2/cylinder-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderFleetsPermissionsRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderFleetsPermissionsRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderFleetsPermissionsRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-fleets~1{fleet_id}~1permissions~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_cylinder_fleets_permissions_retrieve",
+      "source_path": "/api/v2/cylinder-fleets/{fleet_id}/permissions/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderFleetsPermissionsRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2CylinderFleetsPermissionsRetrieveResponse , ApiOpError < V2CylinderFleetsPermissionsRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < V2CylinderFleetsPermissionsRetrieveResponse , ApiOpError < V2CylinderFleetsPermissionsRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderFleetsPermissionsRetrieveFormat",
+    "operation": null,
+    "path": "client::V2CylinderFleetsPermissionsRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderFleetsPermissionsRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderFleetsPermissionsRetrieveResponse",
+    "operation": null,
+    "path": "types::V2CylinderFleetsPermissionsRetrieveResponse",
+    "rust_type": "Vec < CylinderFleetUserPermission >",
+    "signature": null,
+    "variants": []
+  }
+]

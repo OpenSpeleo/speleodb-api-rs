@@ -1,0 +1,343 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_plugin_releases_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_plugin_releases_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1plugin_releases~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_plugin_releases_retrieve",
+      "source_path": "/api/v2/plugin_releases/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_plugin_releases_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2PluginReleasesRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2PluginReleasesRetrieveResponse , ApiOpError < V2PluginReleasesRetrieveApiError > >",
+      "rust": "async fn v2_plugin_releases_retrieve (& self , format : Option < V2PluginReleasesRetrieveFormat >) -> Result < V2PluginReleasesRetrieveResponse , ApiOpError < V2PluginReleasesRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_plugin_releases_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_plugin_releases_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1plugin_releases~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_plugin_releases_retrieve",
+      "source_path": "/api/v2/plugin_releases/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_plugin_releases_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2PluginReleasesRetrieveBuilder < '_ >",
+      "rust": "fn v2_plugin_releases_retrieve_builder (& self) -> V2PluginReleasesRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2PluginReleasesRetrieveApiError",
+    "operation": null,
+    "path": "client::V2PluginReleasesRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2PluginReleasesRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2PluginReleasesRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_plugin_releases_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1plugin_releases~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_plugin_releases_retrieve",
+      "source_path": "/api/v2/plugin_releases/",
+      "webhook": false
+    },
+    "path": "client::V2PluginReleasesRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_plugin_releases_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1plugin_releases~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_plugin_releases_retrieve",
+      "source_path": "/api/v2/plugin_releases/",
+      "webhook": false
+    },
+    "path": "client::V2PluginReleasesRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2PluginReleasesRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2PluginReleasesRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_plugin_releases_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1plugin_releases~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_plugin_releases_retrieve",
+      "source_path": "/api/v2/plugin_releases/",
+      "webhook": false
+    },
+    "path": "client::V2PluginReleasesRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2PluginReleasesRetrieveResponse , ApiOpError < V2PluginReleasesRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < V2PluginReleasesRetrieveResponse , ApiOpError < V2PluginReleasesRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2PluginReleasesRetrieveFormat",
+    "operation": null,
+    "path": "client::V2PluginReleasesRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2PluginReleasesRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2PluginReleasesRetrieveResponse",
+    "operation": null,
+    "path": "types::V2PluginReleasesRetrieveResponse",
+    "rust_type": "Vec < PluginRelease >",
+    "signature": null,
+    "variants": []
+  }
+]

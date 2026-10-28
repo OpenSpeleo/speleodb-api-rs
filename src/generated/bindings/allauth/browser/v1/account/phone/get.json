@@ -1,0 +1,67 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAccountPhoneGetApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAccountPhoneGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse08f6c31c2be2e2b8",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_phone_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_phone_get",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1phone/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_browser_account_phone_get",
+      "source_path": "/_allauth/browser/v1/account/phone",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_phone_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAccountPhoneGetApiError > >",
+      "rust": "async fn auth_browser_account_phone_get (& self) -> Result < () , ApiOpError < AuthBrowserAccountPhoneGetApiError > >"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,396 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_experiment_records_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_experiment_records_retrieve",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1experiment~1{exp_id}~1records~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_experiment_records_retrieve",
+      "source_path": "/api/v2/stations/{id}/experiment/{exp_id}/records/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_experiment_records_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "exp_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsExperimentRecordsRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2StationsExperimentRecordsRetrieveResponse , ApiOpError < V2StationsExperimentRecordsRetrieveApiError > >",
+      "rust": "async fn v2_stations_experiment_records_retrieve (& self , exp_id : impl AsRef < str > , id : impl AsRef < str > , format : Option < V2StationsExperimentRecordsRetrieveFormat >) -> Result < V2StationsExperimentRecordsRetrieveResponse , ApiOpError < V2StationsExperimentRecordsRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_experiment_records_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_experiment_records_retrieve",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1experiment~1{exp_id}~1records~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_experiment_records_retrieve",
+      "source_path": "/api/v2/stations/{id}/experiment/{exp_id}/records/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_experiment_records_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "exp_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsExperimentRecordsRetrieveBuilder < '_ >",
+      "rust": "fn v2_stations_experiment_records_retrieve_builder (& self , exp_id : impl Into < String > , id : impl Into < String >) -> V2StationsExperimentRecordsRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsExperimentRecordsRetrieveApiError",
+    "operation": null,
+    "path": "client::V2StationsExperimentRecordsRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "exp_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsExperimentRecordsRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsExperimentRecordsRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_experiment_records_retrieve",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1experiment~1{exp_id}~1records~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_experiment_records_retrieve",
+      "source_path": "/api/v2/stations/{id}/experiment/{exp_id}/records/",
+      "webhook": false
+    },
+    "path": "client::V2StationsExperimentRecordsRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_experiment_records_retrieve",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1experiment~1{exp_id}~1records~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_experiment_records_retrieve",
+      "source_path": "/api/v2/stations/{id}/experiment/{exp_id}/records/",
+      "webhook": false
+    },
+    "path": "client::V2StationsExperimentRecordsRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsExperimentRecordsRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsExperimentRecordsRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_experiment_records_retrieve",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1{id}~1experiment~1{exp_id}~1records~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_experiment_records_retrieve",
+      "source_path": "/api/v2/stations/{id}/experiment/{exp_id}/records/",
+      "webhook": false
+    },
+    "path": "client::V2StationsExperimentRecordsRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2StationsExperimentRecordsRetrieveResponse , ApiOpError < V2StationsExperimentRecordsRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < V2StationsExperimentRecordsRetrieveResponse , ApiOpError < V2StationsExperimentRecordsRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsExperimentRecordsRetrieveFormat",
+    "operation": null,
+    "path": "client::V2StationsExperimentRecordsRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsExperimentRecordsRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsExperimentRecordsRetrieveResponse",
+    "operation": null,
+    "path": "types::V2StationsExperimentRecordsRetrieveResponse",
+    "rust_type": "Vec < ExperimentRecord >",
+    "signature": null,
+    "variants": []
+  }
+]

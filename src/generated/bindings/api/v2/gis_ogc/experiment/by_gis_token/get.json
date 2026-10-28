@@ -1,0 +1,346 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_ogc_experiment_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_experiment_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1experiment~1{gis_token}/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_experiment_retrieve",
+      "source_path": "/api/v2/gis-ogc/experiment/{gis_token}",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_ogc_experiment_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisOgcExperimentRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ExperimentRecordGISCollection , ApiOpError < V2GisOgcExperimentRetrieveApiError > >",
+      "rust": "async fn v2_gis_ogc_experiment_retrieve (& self , gis_token : impl AsRef < str > , format : Option < V2GisOgcExperimentRetrieveFormat >) -> Result < ExperimentRecordGISCollection , ApiOpError < V2GisOgcExperimentRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_ogc_experiment_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_experiment_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1experiment~1{gis_token}/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_experiment_retrieve",
+      "source_path": "/api/v2/gis-ogc/experiment/{gis_token}",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_ogc_experiment_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisOgcExperimentRetrieveBuilder < '_ >",
+      "rust": "fn v2_gis_ogc_experiment_retrieve_builder (& self , gis_token : impl Into < String >) -> V2GisOgcExperimentRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisOgcExperimentRetrieveApiError",
+    "operation": null,
+    "path": "client::V2GisOgcExperimentRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "gis_token",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisOgcExperimentRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisOgcExperimentRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_experiment_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1experiment~1{gis_token}/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_experiment_retrieve",
+      "source_path": "/api/v2/gis-ogc/experiment/{gis_token}",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcExperimentRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_experiment_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1experiment~1{gis_token}/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_experiment_retrieve",
+      "source_path": "/api/v2/gis-ogc/experiment/{gis_token}",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcExperimentRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisOgcExperimentRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisOgcExperimentRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_experiment_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1experiment~1{gis_token}/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_experiment_retrieve",
+      "source_path": "/api/v2/gis-ogc/experiment/{gis_token}",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcExperimentRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ExperimentRecordGISCollection , ApiOpError < V2GisOgcExperimentRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < ExperimentRecordGISCollection , ApiOpError < V2GisOgcExperimentRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisOgcExperimentRetrieveFormat",
+    "operation": null,
+    "path": "client::V2GisOgcExperimentRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisOgcExperimentRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

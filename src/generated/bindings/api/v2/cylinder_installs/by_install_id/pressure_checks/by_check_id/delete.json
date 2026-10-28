@@ -1,0 +1,420 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_destroy",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_destroy",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsPressureChecksDestroyFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderPressureCheckSpecificApiViewDeleteResponse , ApiOpError < V2CylinderInstallsPressureChecksDestroyApiError > >",
+      "rust": "async fn v2_cylinder_installs_pressure_checks_destroy (& self , check_id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsPressureChecksDestroyFormat > , x_csrf_token : Option < impl AsRef < str > >) -> Result < CylinderPressureCheckSpecificApiViewDeleteResponse , ApiOpError < V2CylinderInstallsPressureChecksDestroyApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_destroy_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_destroy_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsPressureChecksDestroyBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_pressure_checks_destroy_builder (& self , check_id : impl Into < String > , install_id : impl Into < String >) -> V2CylinderInstallsPressureChecksDestroyBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksDestroyApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksDestroyApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "check_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksDestroyFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsPressureChecksDestroyBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksDestroyBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksDestroyBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsPressureChecksDestroyFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsPressureChecksDestroyFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksDestroyBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderPressureCheckSpecificApiViewDeleteResponse , ApiOpError < V2CylinderInstallsPressureChecksDestroyApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderPressureCheckSpecificApiViewDeleteResponse , ApiOpError < V2CylinderInstallsPressureChecksDestroyApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_destroy",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksDestroyBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksDestroyFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksDestroyFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksDestroyFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

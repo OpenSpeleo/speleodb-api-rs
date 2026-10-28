@@ -1,0 +1,240 @@
+[
+  {
+    "attributes": [
+      "# [derive (Clone)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "base_url",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "api_key",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "http_client",
+        "public": false,
+        "rust_type": "ClientWithMiddleware",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "custom_headers",
+        "public": false,
+        "rust_type": "BTreeMap < String , String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "max_response_body_bytes",
+        "public": false,
+        "rust_type": "usize",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "HttpClient",
+    "operation": null,
+    "path": "client::HttpClient",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "client::HttpClient::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new () -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_api_key",
+    "operation": null,
+    "path": "client::HttpClient::with_api_key",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "api_key",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn with_api_key (mut self , api_key : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_base_url",
+    "operation": null,
+    "path": "client::HttpClient::with_base_url",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "base_url",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn with_base_url (mut self , base_url : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_client",
+    "operation": null,
+    "path": "client::HttpClient::with_client",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "client",
+          "rust_type": "reqwest :: Client"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn with_client (client : reqwest :: Client) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_header",
+    "operation": null,
+    "path": "client::HttpClient::with_header",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "name",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "value",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn with_header (mut self , name : impl Into < String > , value : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_headers",
+    "operation": null,
+    "path": "client::HttpClient::with_headers",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headers",
+          "rust_type": "BTreeMap < String , String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn with_headers (mut self , headers : BTreeMap < String , String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "with_max_response_body_bytes",
+    "operation": null,
+    "path": "client::HttpClient::with_max_response_body_bytes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "limit",
+          "rust_type": "usize"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn with_max_response_body_bytes (mut self , limit : usize) -> Self"
+    },
+    "variants": []
+  }
+]

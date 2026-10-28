@@ -1,0 +1,121 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "allow_precise_zoom",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "allow_precise_zoom"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "geographic_bound",
+        "public": true,
+        "rust_type": "Option < PublicGISViewGeographicBound >",
+        "wire_name": "geographic_bound"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "projects",
+        "public": true,
+        "rust_type": "Vec < PublicGISProjectView >",
+        "wire_name": "projects"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "view_description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "view_description"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "view_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "view_name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "PublicGISView",
+    "operation": null,
+    "path": "types::PublicGISView",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "PublicGISViewGeographicBound",
+    "operation": null,
+    "path": "types::PublicGISViewGeographicBound",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "PublicGISViewGeographicBoundInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "PublicGISViewGeographicBoundInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "PublicGISViewGeographicBoundInlineVariant",
+    "operation": null,
+    "path": "types::PublicGISViewGeographicBoundInlineVariant",
+    "rust_type": "PublicGISGeographicBound",
+    "signature": null,
+    "variants": []
+  }
+]

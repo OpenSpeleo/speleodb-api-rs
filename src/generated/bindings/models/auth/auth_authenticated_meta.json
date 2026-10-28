@@ -1,0 +1,47 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "access_token",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "access_token"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "is_authenticated",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "is_authenticated"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "session_token",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "session_token"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAuthenticatedMeta",
+    "operation": null,
+    "path": "types::AuthAuthenticatedMeta",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "artifact",
+        "public": true,
+        "rust_type": "Option < UserExportArtifact >",
+        "wire_name": "artifact"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "completed_items",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "completed_items"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "created_at",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "created_at"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "download_url",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "download_url"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "expired",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "expired"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "notification_state",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "notification_state"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "stage",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "stage"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "state",
+        "public": true,
+        "rust_type": "UserExportState",
+        "wire_name": "state"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "summary",
+        "public": true,
+        "rust_type": "UserExportSummary",
+        "wire_name": "summary"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "total_items",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "total_items"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "updated_at",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "updated_at"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "UserExport",
+    "operation": null,
+    "path": "types::UserExport",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "UserExportArtifact",
+    "operation": null,
+    "path": "types::UserExportArtifact",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "UserExportArtifactInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "UserExportArtifactInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "UserExportArtifactInlineVariant",
+    "operation": null,
+    "path": "types::UserExportArtifactInlineVariant",
+    "rust_type": "ExportArtifact",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "UserExportState",
+    "operation": null,
+    "path": "types::UserExportState",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"queued\")]"
+        ],
+        "fields": [],
+        "name": "Queued",
+        "wire_name": "queued"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"running\")]"
+        ],
+        "fields": [],
+        "name": "Running",
+        "wire_name": "running"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"retry_wait\")]"
+        ],
+        "fields": [],
+        "name": "RetryWait",
+        "wire_name": "retry_wait"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ready\")]"
+        ],
+        "fields": [],
+        "name": "Ready",
+        "wire_name": "ready"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"partial\")]"
+        ],
+        "fields": [],
+        "name": "Partial",
+        "wire_name": "partial"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"failed\")]"
+        ],
+        "fields": [],
+        "name": "Failed",
+        "wire_name": "failed"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::UserExportState::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "UserExportSummary",
+    "operation": null,
+    "path": "types::UserExportSummary",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "UserExportVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "UserExportVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "CompletedExportSummary",
+            "wire_name": null
+          }
+        ],
+        "name": "CompletedExportSummary",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "FailedExportSummary",
+            "wire_name": null
+          }
+        ],
+        "name": "FailedExportSummary",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "UserExportVariant",
+    "operation": null,
+    "path": "types::UserExportVariant",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

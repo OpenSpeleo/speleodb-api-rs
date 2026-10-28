@@ -1,0 +1,582 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collection_landmarks_export_gpx",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collection_landmarks_export_gpx",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionLandmarksExportGpxFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >",
+      "rust": "async fn v2_landmark_collection_landmarks_export_gpx (& self , collection_id : impl AsRef < str > , format : Option < V2LandmarkCollectionLandmarksExportGpxFormat >) -> Result < bytes :: Bytes , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collection_landmarks_export_gpx_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collection_landmarks_export_gpx_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2LandmarkCollectionLandmarksExportGpxFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >",
+      "rust": "async fn v2_landmark_collection_landmarks_export_gpx_binary_stream < __Param0 : AsRef < str > > (& self , collection_id : __Param0 , format : Option < V2LandmarkCollectionLandmarksExportGpxFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collection_landmarks_export_gpx_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collection_landmarks_export_gpx_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_landmark_collection_landmarks_export_gpx_binary_stream_builder (& self , collection_id : impl Into < String >) -> V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_landmark_collection_landmarks_export_gpx_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_landmark_collection_landmarks_export_gpx_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2LandmarkCollectionLandmarksExportGpxBuilder < '_ >",
+      "rust": "fn v2_landmark_collection_landmarks_export_gpx_builder (& self , collection_id : impl Into < String >) -> V2LandmarkCollectionLandmarksExportGpxBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionLandmarksExportGpxApiError",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionLandmarksExportGpxFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionLandmarksExportGpxFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionLandmarksExportGpxFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2LandmarkCollectionLandmarksExportGpxFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2LandmarkCollectionLandmarksExportGpxBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2LandmarkCollectionLandmarksExportGpxFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2LandmarkCollectionLandmarksExportGpxFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/gpx+xml",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1landmark-collections~1{collection_id}~1landmarks~1export~1gpx~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_landmark_collection_landmarks_export_gpx",
+      "source_path": "/api/v2/landmark-collections/{collection_id}/landmarks/export/gpx/",
+      "webhook": false
+    },
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2LandmarkCollectionLandmarksExportGpxApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2LandmarkCollectionLandmarksExportGpxFormat",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2LandmarkCollectionLandmarksExportGpxFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "commits_over_time",
+        "public": true,
+        "rust_type": "Vec < DashboardCommitMonth >",
+        "wire_name": "commits_over_time"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "contribution_calendar",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "contribution_calendar"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "projects_by_level",
+        "public": true,
+        "rust_type": "DashboardProjectsByLevel",
+        "wire_name": "projects_by_level"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "projects_by_type",
+        "public": true,
+        "rust_type": "DashboardStatsResponseProjectsByType",
+        "wire_name": "projects_by_type"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "recent_activity",
+        "public": true,
+        "rust_type": "Vec < DashboardActivity >",
+        "wire_name": "recent_activity"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "summary",
+        "public": true,
+        "rust_type": "DashboardSummary",
+        "wire_name": "summary"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "DashboardStatsResponse",
+    "operation": null,
+    "path": "types::DashboardStatsResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , i64 >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "DashboardStatsResponseProjectsByType",
+    "operation": null,
+    "path": "types::DashboardStatsResponseProjectsByType",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

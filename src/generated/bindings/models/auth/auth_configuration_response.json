@@ -1,0 +1,90 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "AuthConfigurationResponseData",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthConfigurationResponse",
+    "operation": null,
+    "path": "types::AuthConfigurationResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "account",
+        "public": true,
+        "rust_type": "AuthAccountConfiguration",
+        "wire_name": "account"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "mfa",
+        "public": true,
+        "rust_type": "Option < AuthMFAConfiguration >",
+        "wire_name": "mfa"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "socialaccount",
+        "public": true,
+        "rust_type": "Option < AuthSocialAccountConfiguration >",
+        "wire_name": "socialaccount"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "usersessions",
+        "public": true,
+        "rust_type": "Option < AuthUserSessionsConfiguration >",
+        "wire_name": "usersessions"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthConfigurationResponseData",
+    "operation": null,
+    "path": "types::AuthConfigurationResponseData",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

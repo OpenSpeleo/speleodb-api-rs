@@ -1,0 +1,21 @@
+exclude = ["target/**", "xtask/target/**", "src/generated/**"]
+
+[[rule]]
+include = ["Cargo.toml", "xtask/Cargo.toml"]
+[rule.schema]
+path = "https://www.schemastore.org/cargo.json"
+
+[[rule]]
+include = [".cargo/config.toml"]
+[rule.schema]
+path = "https://www.schemastore.org/cargo-config.json"
+
+[[rule]]
+include = ["rust-toolchain.toml"]
+[rule.schema]
+path = "https://www.schemastore.org/rust-toolchain.json"
+
+[[rule]]
+include = [".taplo.toml"]
+[rule.schema]
+path = "taplo://taplo.toml"

@@ -1,0 +1,366 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_ogc_view_geojson_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1geojson/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/geojson",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_ogc_view_geojson_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2GisOgcViewGeojsonRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < PublicGISView , ApiOpError < V2GisOgcViewGeojsonRetrieveApiError > >",
+      "rust": "async fn v2_gis_ogc_view_geojson_retrieve (& self , gis_token : impl AsRef < str > , format : Option < V2GisOgcViewGeojsonRetrieveFormat >) -> Result < PublicGISView , ApiOpError < V2GisOgcViewGeojsonRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_gis_ogc_view_geojson_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1geojson/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/geojson",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_gis_ogc_view_geojson_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "gis_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2GisOgcViewGeojsonRetrieveBuilder < '_ >",
+      "rust": "fn v2_gis_ogc_view_geojson_retrieve_builder (& self , gis_token : impl Into < String >) -> V2GisOgcViewGeojsonRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisOgcViewGeojsonRetrieveApiError",
+    "operation": null,
+    "path": "client::V2GisOgcViewGeojsonRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "gis_token",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2GisOgcViewGeojsonRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2GisOgcViewGeojsonRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1geojson/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/geojson",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcViewGeojsonRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1geojson/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/geojson",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcViewGeojsonRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2GisOgcViewGeojsonRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2GisOgcViewGeojsonRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1gis-ogc~1view~1{gis_token}~1geojson/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_gis_ogc_view_geojson_retrieve",
+      "source_path": "/api/v2/gis-ogc/view/{gis_token}/geojson",
+      "webhook": false
+    },
+    "path": "client::V2GisOgcViewGeojsonRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < PublicGISView , ApiOpError < V2GisOgcViewGeojsonRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < PublicGISView , ApiOpError < V2GisOgcViewGeojsonRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2GisOgcViewGeojsonRetrieveFormat",
+    "operation": null,
+    "path": "client::V2GisOgcViewGeojsonRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2GisOgcViewGeojsonRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

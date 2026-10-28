@@ -1,0 +1,76 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAuthEmailVerifyGetApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAuthEmailVerifyGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_auth_email_verify_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_browser_auth_email_verify_get",
+      "source_path": "/_allauth/browser/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_auth_email_verify_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_email_verification_key",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthEmailVerificationInfo , ApiOpError < AuthBrowserAuthEmailVerifyGetApiError > >",
+      "rust": "async fn auth_browser_auth_email_verify_get (& self , x_email_verification_key : impl AsRef < str >) -> Result < AuthEmailVerificationInfo , ApiOpError < AuthBrowserAuthEmailVerifyGetApiError > >"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,116 @@
+---
+name: Verify and publish
+
+"on":
+  pull_request:
+  push:
+    branches: [master]
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rust-sdk-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_BUILD_JOBS: "1"
+
+jobs:
+  pre-commit:
+    name: Pre-commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            . -> target
+            xtask -> target
+
+      - name: Install cargo-binstall
+        uses: cargo-bins/cargo-binstall@v1.26.1
+
+      - name: Install pinned cargo-audit
+        run: cargo binstall --locked --no-confirm cargo-audit@0.22.2
+
+      - name: Install prek and restore hook environments
+        uses: j178/prek-action@v2
+        with:
+          install-only: true
+
+      - name: Prepare prek hook environments
+        # Rust hook tools have their own lockfiles and dependency graphs.
+        run: prek prepare-hooks
+
+      - name: Run prek
+        run: prek run --show-diff-on-failure --color=always --all-files
+
+  test:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            . -> target
+            xtask -> target
+
+      - run: cargo xtask release-check
+      - run: cargo test --manifest-path xtask/Cargo.toml --locked
+      - run: cargo test --locked --all-targets --all-features
+      - run: cargo test --locked --doc
+      - run: cargo doc --locked --no-deps
+        env:
+          RUSTDOCFLAGS: -D warnings
+
+      - run: cargo publish --locked --dry-run
+      - run: cargo xtask check
+
+  publish:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: test
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 30
+
+    environment: publish
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: |
+            . -> target
+            xtask -> target
+
+      - name: Authenticate to crates.io using OIDC
+        id: auth
+        uses: rust-lang/crates-io-auth-action@v1
+
+      - run: cargo publish --locked
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ steps.auth.outputs.token }}

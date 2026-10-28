@@ -1,0 +1,2572 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn v2_cylinder_installs_pressure_checks_partial_update_with_form_data (& self , check_id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest >) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_pressure_checks_partial_update_with_form_data_builder (& self , check_id : impl Into < String > , install_id : impl Into < String >) -> V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < PatchedCylinderPressureCheckRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError > >",
+      "rust": "async fn v2_cylinder_installs_pressure_checks_partial_update_with_json (& self , check_id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < PatchedCylinderPressureCheckRequest >) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_pressure_checks_partial_update_with_json_builder (& self , check_id : impl Into < String > , install_id : impl Into < String >) -> V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "Option < PatchedCylinderPressureCheckRequest >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded (& self , check_id : impl AsRef < str > , install_id : impl AsRef < str > , format : Option < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < PatchedCylinderPressureCheckRequest >) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "install_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded_builder (& self , check_id : impl Into < String > , install_id : impl Into < String >) -> V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "check_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "check_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::check_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::install",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install (mut self , install : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pressure",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::pressure",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pressure (mut self , pressure : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user (mut self , user : V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "check_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < PatchedCylinderPressureCheckRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "check_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::check_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::install",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install (mut self , install : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pressure",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::pressure",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pressure (mut self , pressure : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "PatchedCylinderPressureCheckRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : PatchedCylinderPressureCheckRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "PatchedCylinderPressureCheckRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : PatchedCylinderPressureCheckRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user",
+          "rust_type": "PatchedCylinderPressureCheckRequestUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user (mut self , user : PatchedCylinderPressureCheckRequestUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponseb53c3ead92c67efd",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "check_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "install_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "request",
+        "public": false,
+        "rust_type": "Option < PatchedCylinderPressureCheckRequest >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "check_date",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::check_date",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::install",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install (mut self , install : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pressure",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::pressure",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pressure (mut self , pressure : i64) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "PatchedCylinderPressureCheckRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : PatchedCylinderPressureCheckRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < CylinderPressureCheck , ApiOpError < V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "unit_system",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::unit_system",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "unit_system",
+          "rust_type": "PatchedCylinderPressureCheckRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn unit_system (mut self , unit_system : PatchedCylinderPressureCheckRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user",
+          "rust_type": "PatchedCylinderPressureCheckRequestUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user (mut self , user : PatchedCylinderPressureCheckRequestUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_cylinder_installs_pressure_checks_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1cylinder-installs~1{install_id}~1pressure-checks~1{check_id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_cylinder_installs_pressure_checks_partial_update",
+      "source_path": "/api/v2/cylinder-installs/{install_id}/pressure-checks/{check_id}/",
+      "webhook": false
+    },
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "check_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "check_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "install",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "install"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "pressure",
+        "public": true,
+        "rust_type": "Option < i64 >",
+        "wire_name": "pressure"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem >",
+        "wire_name": "unit_system"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "user",
+        "public": true,
+        "rust_type": "Option < V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUser >",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem",
+    "operation": null,
+    "path": "types::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUser",
+    "operation": null,
+    "path": "types::V2CylinderInstallsPressureChecksPartialUpdateWithFormDataRequestUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

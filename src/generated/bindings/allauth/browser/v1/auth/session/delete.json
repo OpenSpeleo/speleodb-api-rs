@@ -1,0 +1,72 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAuthSessionDeleteApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAuthSessionDeleteApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_auth_session_delete",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_browser_auth_session_delete",
+      "source_path": "/_allauth/browser/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_auth_session_delete",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAuthSessionDeleteApiError > >",
+      "rust": "async fn auth_browser_auth_session_delete (& self , x_csrf_token : impl AsRef < str >) -> Result < () , ApiOpError < AuthBrowserAuthSessionDeleteApiError > >"
+    },
+    "variants": []
+  }
+]

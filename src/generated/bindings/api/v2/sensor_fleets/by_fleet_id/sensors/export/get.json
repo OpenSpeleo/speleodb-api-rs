@@ -1,0 +1,582 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_export_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_export_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsSensorsExportRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >",
+      "rust": "async fn v2_sensor_fleets_sensors_export_retrieve (& self , fleet_id : impl AsRef < str > , format : Option < V2SensorFleetsSensorsExportRetrieveFormat >) -> Result < bytes :: Bytes , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_export_retrieve_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_export_retrieve_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2SensorFleetsSensorsExportRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >",
+      "rust": "async fn v2_sensor_fleets_sensors_export_retrieve_binary_stream < __Param0 : AsRef < str > > (& self , fleet_id : __Param0 , format : Option < V2SensorFleetsSensorsExportRetrieveFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_export_retrieve_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_export_retrieve_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_sensors_export_retrieve_binary_stream_builder (& self , fleet_id : impl Into < String >) -> V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_sensor_fleets_sensors_export_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_sensor_fleets_sensors_export_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fleet_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2SensorFleetsSensorsExportRetrieveBuilder < '_ >",
+      "rust": "fn v2_sensor_fleets_sensors_export_retrieve_builder (& self , fleet_id : impl Into < String >) -> V2SensorFleetsSensorsExportRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsExportRetrieveApiError",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsExportRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsSensorsExportRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsSensorsExportRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsSensorsExportRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fleet_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2SensorFleetsSensorsExportRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2SensorFleetsSensorsExportRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2SensorFleetsSensorsExportRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2SensorFleetsSensorsExportRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1sensor-fleets~1{fleet_id}~1sensors~1export~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_sensor_fleets_sensors_export_retrieve",
+      "source_path": "/api/v2/sensor-fleets/{fleet_id}/sensors/export/",
+      "webhook": false
+    },
+    "path": "client::V2SensorFleetsSensorsExportRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2SensorFleetsSensorsExportRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2SensorFleetsSensorsExportRetrieveFormat",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsExportRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2SensorFleetsSensorsExportRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

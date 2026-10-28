@@ -1,0 +1,72 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasBrowserAuthCodeConfirmPostApiError",
+    "operation": null,
+    "path": "client::AuthAliasBrowserAuthCodeConfirmPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthConflictResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_browser_auth_code_confirm_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_browser_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1api~1auth~1browser~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_browser_auth_code_confirm_post",
+      "source_path": "/api/auth/browser/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_browser_auth_code_confirm_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAliasBrowserAuthCodeConfirmPostApiError > >",
+      "rust": "async fn auth_alias_browser_auth_code_confirm_post (& self , x_csrf_token : impl AsRef < str >) -> Result < () , ApiOpError < AuthAliasBrowserAuthCodeConfirmPostApiError > >"
+    },
+    "variants": []
+  }
+]

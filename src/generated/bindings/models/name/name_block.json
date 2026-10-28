@@ -1,0 +1,83 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 0,
+        "name": "id",
+        "public": true,
+        "rust_type": "Option < Option < String > >",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "options",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "options"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "order",
+        "public": true,
+        "rust_type": "Option < NameBlockOrder >",
+        "wire_name": "order"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
+        "name": "required",
+        "public": true,
+        "rust_type": "Option < NameBlockRequired >",
+        "wire_name": "required"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "NameBlockType",
+        "wire_name": "type"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 6,
+        "name": "uuid",
+        "public": true,
+        "rust_type": "Option < Option < String > >",
+        "wire_name": "uuid"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "NameBlock",
+    "operation": null,
+    "path": "types::NameBlock",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

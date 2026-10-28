@@ -1,0 +1,27 @@
+[generator]
+spec_path = "OpenAPI.yaml"
+output_dir = "src/generated"
+module_name = "speleodb_api"
+bindings_metadata = "bindings.json"
+
+[generator.builders]
+enabled = true
+threshold = 0
+
+[features]
+enable_async_client = true
+
+[client]
+prune_models = true
+
+[http_client]
+base_url = "https://www.speleodb.org"
+timeout_seconds = 30
+max_response_body_bytes = 8388608
+
+[http_client.tracing]
+enabled = false
+
+[http_client.auth]
+type = "Bearer"
+header_name = "Authorization"

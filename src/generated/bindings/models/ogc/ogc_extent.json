@@ -1,0 +1,107 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "spatial",
+        "public": true,
+        "rust_type": "OGCExtentSpatial",
+        "wire_name": "spatial"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCExtent",
+    "operation": null,
+    "path": "types::OGCExtent",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "bbox",
+        "public": true,
+        "rust_type": "Vec < Vec < f64 > >",
+        "wire_name": "bbox"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "crs",
+        "public": true,
+        "rust_type": "OGCExtentSpatialCrs",
+        "wire_name": "crs"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCExtentSpatial",
+    "operation": null,
+    "path": "types::OGCExtentSpatial",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OGCExtentSpatialCrs",
+    "operation": null,
+    "path": "types::OGCExtentSpatialCrs",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"http://www.opengis.net/def/crs/OGC/1.3/CRS84\")]"
+        ],
+        "fields": [],
+        "name": "HttpWwwOpengisNetDefCrsOgc13Crs84",
+        "wire_name": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::OGCExtentSpatialCrs::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

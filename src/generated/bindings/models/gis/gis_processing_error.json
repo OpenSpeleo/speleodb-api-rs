@@ -1,0 +1,269 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "code",
+        "public": true,
+        "rust_type": "GISProcessingErrorCode",
+        "wire_name": "code"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "details",
+        "public": true,
+        "rust_type": "GISProcessingErrorDetails",
+        "wire_name": "details"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "error",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "error"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISProcessingError",
+    "operation": null,
+    "path": "types::GISProcessingError",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GISProcessingErrorCode",
+    "operation": null,
+    "path": "types::GISProcessingErrorCode",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"FORMAT_UNSUPPORTED\")]"
+        ],
+        "fields": [],
+        "name": "FormatUnsupported",
+        "wire_name": "FORMAT_UNSUPPORTED"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FORMAT_MISMATCH\")]"
+        ],
+        "fields": [],
+        "name": "FormatMismatch",
+        "wire_name": "FORMAT_MISMATCH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"JSON_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "JsonInvalid",
+        "wire_name": "JSON_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GEOJSON_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "GeojsonInvalid",
+        "wire_name": "GEOJSON_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZIP_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "ZipInvalid",
+        "wire_name": "ZIP_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZIP_UNSAFE_ENTRY\")]"
+        ],
+        "fields": [],
+        "name": "ZipUnsafeEntry",
+        "wire_name": "ZIP_UNSAFE_ENTRY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZIP_AMBIGUOUS_MAIN_KML\")]"
+        ],
+        "fields": [],
+        "name": "ZipAmbiguousMainKml",
+        "wire_name": "ZIP_AMBIGUOUS_MAIN_KML"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"XML_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "XmlInvalid",
+        "wire_name": "XML_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"XML_UNSAFE\")]"
+        ],
+        "fields": [],
+        "name": "XmlUnsafe",
+        "wire_name": "XML_UNSAFE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KML_INVALID_GEOMETRY\")]"
+        ],
+        "fields": [],
+        "name": "KmlInvalidGeometry",
+        "wire_name": "KML_INVALID_GEOMETRY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TOPOJSON_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "TopojsonInvalid",
+        "wire_name": "TOPOJSON_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SHAPEFILE_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "ShapefileInvalid",
+        "wire_name": "SHAPEFILE_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SHAPEFILE_CRS_INVALID\")]"
+        ],
+        "fields": [],
+        "name": "ShapefileCrsInvalid",
+        "wire_name": "SHAPEFILE_CRS_INVALID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SOURCE_TOO_LARGE\")]"
+        ],
+        "fields": [],
+        "name": "SourceTooLarge",
+        "wire_name": "SOURCE_TOO_LARGE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZIP_ENTRY_LIMIT\")]"
+        ],
+        "fields": [],
+        "name": "ZipEntryLimit",
+        "wire_name": "ZIP_ENTRY_LIMIT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"XML_DEPTH_LIMIT\")]"
+        ],
+        "fields": [],
+        "name": "XmlDepthLimit",
+        "wire_name": "XML_DEPTH_LIMIT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KML_FEATURE_LIMIT\")]"
+        ],
+        "fields": [],
+        "name": "KmlFeatureLimit",
+        "wire_name": "KML_FEATURE_LIMIT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KML_COORDINATE_LIMIT\")]"
+        ],
+        "fields": [],
+        "name": "KmlCoordinateLimit",
+        "wire_name": "KML_COORDINATE_LIMIT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GEOJSON_TOO_LARGE\")]"
+        ],
+        "fields": [],
+        "name": "GeojsonTooLarge",
+        "wire_name": "GEOJSON_TOO_LARGE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KML_NO_RENDERABLE_GEOMETRY\")]"
+        ],
+        "fields": [],
+        "name": "KmlNoRenderableGeometry",
+        "wire_name": "KML_NO_RENDERABLE_GEOMETRY"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GISProcessingErrorCode::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GISProcessingErrorDetails",
+    "operation": null,
+    "path": "types::GISProcessingErrorDetails",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

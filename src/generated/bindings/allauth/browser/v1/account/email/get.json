@@ -1,0 +1,104 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAccountEmailGetApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAccountEmailGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_email_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_email_get",
+      "response_excluded_statuses": [
+        "401"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1email/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_browser_account_email_get",
+      "source_path": "/_allauth/browser/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_email_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthBrowserAccountEmailGetResponse , ApiOpError < AuthBrowserAccountEmailGetApiError > >",
+      "rust": "async fn auth_browser_account_email_get (& self) -> Result < AuthBrowserAccountEmailGetResponse , ApiOpError < AuthBrowserAccountEmailGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "Vec < AuthEmailAddress >",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountEmailGetResponse",
+    "operation": null,
+    "path": "types::AuthBrowserAccountEmailGetResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

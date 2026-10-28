@@ -1,0 +1,218 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "active_installs",
+        "public": true,
+        "rust_type": "Vec < SensorActiveInstall >",
+        "wire_name": "active_installs"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "fleet_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "fleet_id"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "fleet_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "fleet_name"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "latest_install_battery_expiry",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "latest_install_battery_expiry"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "latest_install_lat",
+        "public": true,
+        "rust_type": "Option < f64 >",
+        "wire_name": "latest_install_lat"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "latest_install_long",
+        "public": true,
+        "rust_type": "Option < f64 >",
+        "wire_name": "latest_install_long"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "latest_install_memory_expiry",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "latest_install_memory_expiry"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "latest_install_project",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "latest_install_project"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 13,
+        "name": "notes",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [],
+        "index": 14,
+        "name": "status",
+        "public": true,
+        "rust_type": "SensorStatus",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "Sensor",
+    "operation": null,
+    "path": "types::Sensor",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SensorStatus",
+    "operation": null,
+    "path": "types::SensorStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"functional\")]"
+        ],
+        "fields": [],
+        "name": "Functional",
+        "wire_name": "functional"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"needs_service\")]"
+        ],
+        "fields": [],
+        "name": "NeedsService",
+        "wire_name": "needs_service"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"broken\")]"
+        ],
+        "fields": [],
+        "name": "Broken",
+        "wire_name": "broken"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::SensorStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

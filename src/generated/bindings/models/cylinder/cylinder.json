@@ -1,0 +1,361 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "active_installs",
+        "public": true,
+        "rust_type": "Vec < CylinderActiveInstall >",
+        "wire_name": "active_installs"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "brand",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "brand"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "fleet_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "fleet_id"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "fleet_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "fleet_name"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "he_percentage",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "he_percentage"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "last_hydrostatic_test_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "last_hydrostatic_test_date"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "last_visual_inspection_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "last_visual_inspection_date"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "latest_install_date",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "latest_install_date"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "latest_install_lat",
+        "public": true,
+        "rust_type": "Option < f64 >",
+        "wire_name": "latest_install_lat"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "latest_install_location",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "latest_install_location"
+      },
+      {
+        "attributes": [],
+        "index": 13,
+        "name": "latest_install_long",
+        "public": true,
+        "rust_type": "Option < f64 >",
+        "wire_name": "latest_install_long"
+      },
+      {
+        "attributes": [],
+        "index": 14,
+        "name": "manufactured_date",
+        "public": true,
+        "rust_type": "Option < chrono :: NaiveDate >",
+        "wire_name": "manufactured_date"
+      },
+      {
+        "attributes": [],
+        "index": 15,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 16,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 17,
+        "name": "notes",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [],
+        "index": 18,
+        "name": "o2_percentage",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "o2_percentage"
+      },
+      {
+        "attributes": [],
+        "index": 19,
+        "name": "owner",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "owner"
+      },
+      {
+        "attributes": [],
+        "index": 20,
+        "name": "pressure",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "pressure"
+      },
+      {
+        "attributes": [],
+        "index": 21,
+        "name": "serial",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "serial"
+      },
+      {
+        "attributes": [],
+        "index": 22,
+        "name": "status",
+        "public": true,
+        "rust_type": "CylinderStatus",
+        "wire_name": "status"
+      },
+      {
+        "attributes": [],
+        "index": 23,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "type"
+      },
+      {
+        "attributes": [],
+        "index": 24,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "CylinderUnitSystem",
+        "wire_name": "unit_system"
+      },
+      {
+        "attributes": [],
+        "index": 25,
+        "name": "use_anode",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "use_anode"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "Cylinder",
+    "operation": null,
+    "path": "types::Cylinder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "CylinderStatus",
+    "operation": null,
+    "path": "types::CylinderStatus",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"functional\")]"
+        ],
+        "fields": [],
+        "name": "Functional",
+        "wire_name": "functional"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"needs_service\")]"
+        ],
+        "fields": [],
+        "name": "NeedsService",
+        "wire_name": "needs_service"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"broken\")]"
+        ],
+        "fields": [],
+        "name": "Broken",
+        "wire_name": "broken"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"lost\")]"
+        ],
+        "fields": [],
+        "name": "Lost",
+        "wire_name": "lost"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"abandoned\")]"
+        ],
+        "fields": [],
+        "name": "Abandoned",
+        "wire_name": "abandoned"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::CylinderStatus::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "CylinderUnitSystem",
+    "operation": null,
+    "path": "types::CylinderUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::CylinderUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

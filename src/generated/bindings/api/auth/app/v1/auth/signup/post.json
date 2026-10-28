@@ -1,0 +1,444 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasAppAuthSignupPostApiError",
+    "operation": null,
+    "path": "client::AuthAliasAppAuthSignupPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthForbiddenResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthConflictResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAliasAppAuthSignupPostResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthSignup",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAuthSignupPostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthSignupPostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthSignupPostBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthSignup"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthSignup) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthSignupPostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasAppAuthSignupPostApiError > >",
+      "rust": "async fn send (self) -> Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasAppAuthSignupPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthSignupPostBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_auth_signup_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_auth_signup_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthSignup"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasAppAuthSignupPostApiError > >",
+      "rust": "async fn auth_alias_app_auth_signup_post (& self , x_session_token : Option < impl AsRef < str > > , request : AuthSignup) -> Result < AuthAuthenticatedResponse , ApiOpError < AuthAliasAppAuthSignupPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_auth_signup_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_signup_post",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "403",
+        "409",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1signup/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_alias_app_auth_signup_post",
+      "source_path": "/api/auth/app/v1/auth/signup",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_auth_signup_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthSignup"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAliasAppAuthSignupPostBuilder < '_ >",
+      "rust": "fn auth_alias_app_auth_signup_post_builder (& self , request : AuthSignup) -> AuthAliasAppAuthSignupPostBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAuthSignupPostResponse429",
+    "operation": null,
+    "path": "types::AuthAliasAppAuthSignupPostResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

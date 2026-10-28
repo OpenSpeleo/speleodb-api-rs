@@ -1,0 +1,67 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAuthPhoneVerifyResendPostApiError",
+    "operation": null,
+    "path": "client::AuthAppAuthPhoneVerifyResendPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse08f6c31c2be2e2b8",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_phone_verify_resend_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_phone_verify_resend_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1phone~1verify~1resend/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_phone_verify_resend_post",
+      "source_path": "/_allauth/app/v1/auth/phone/verify/resend",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_phone_verify_resend_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAppAuthPhoneVerifyResendPostApiError > >",
+      "rust": "async fn auth_app_auth_phone_verify_resend_post (& self) -> Result < () , ApiOpError < AuthAppAuthPhoneVerifyResendPostApiError > >"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_subsurface_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_subsurface_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1subsurface~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_subsurface_retrieve",
+      "source_path": "/api/v2/stations/subsurface/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_subsurface_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2StationsSubsurfaceRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2StationsSubsurfaceRetrieveResponse , ApiOpError < V2StationsSubsurfaceRetrieveApiError > >",
+      "rust": "async fn v2_stations_subsurface_retrieve (& self , format : Option < V2StationsSubsurfaceRetrieveFormat >) -> Result < V2StationsSubsurfaceRetrieveResponse , ApiOpError < V2StationsSubsurfaceRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_stations_subsurface_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_subsurface_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1subsurface~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_subsurface_retrieve",
+      "source_path": "/api/v2/stations/subsurface/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_stations_subsurface_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2StationsSubsurfaceRetrieveBuilder < '_ >",
+      "rust": "fn v2_stations_subsurface_retrieve_builder (& self) -> V2StationsSubsurfaceRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSubsurfaceRetrieveApiError",
+    "operation": null,
+    "path": "client::V2StationsSubsurfaceRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2StationsSubsurfaceRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2StationsSubsurfaceRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_subsurface_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1subsurface~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_subsurface_retrieve",
+      "source_path": "/api/v2/stations/subsurface/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSubsurfaceRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_subsurface_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1subsurface~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_subsurface_retrieve",
+      "source_path": "/api/v2/stations/subsurface/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSubsurfaceRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2StationsSubsurfaceRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2StationsSubsurfaceRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_stations_subsurface_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1stations~1subsurface~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_stations_subsurface_retrieve",
+      "source_path": "/api/v2/stations/subsurface/",
+      "webhook": false
+    },
+    "path": "client::V2StationsSubsurfaceRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2StationsSubsurfaceRetrieveResponse , ApiOpError < V2StationsSubsurfaceRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < V2StationsSubsurfaceRetrieveResponse , ApiOpError < V2StationsSubsurfaceRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2StationsSubsurfaceRetrieveFormat",
+    "operation": null,
+    "path": "client::V2StationsSubsurfaceRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2StationsSubsurfaceRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2StationsSubsurfaceRetrieveResponse",
+    "operation": null,
+    "path": "types::V2StationsSubsurfaceRetrieveResponse",
+    "rust_type": "Vec < Station >",
+    "signature": null,
+    "variants": []
+  }
+]

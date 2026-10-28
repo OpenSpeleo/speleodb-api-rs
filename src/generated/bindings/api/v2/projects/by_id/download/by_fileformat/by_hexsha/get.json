@@ -1,0 +1,721 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_at_hash",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_at_hash",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "hexsha",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >",
+      "rust": "async fn v2_projects_download_retrieve_by_format_at_hash (& self , fileformat : impl AsRef < str > , hexsha : impl AsRef < str > , id : impl AsRef < str > , format : Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_at_hash_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_at_hash_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "hexsha",
+          "rust_type": "__Param1"
+        },
+        {
+          "name": "id",
+          "rust_type": "__Param2"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 > , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >",
+      "rust": "async fn v2_projects_download_retrieve_by_format_at_hash_binary_stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > > (& self , fileformat : __Param0 , hexsha : __Param1 , id : __Param2 , format : Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 > , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_at_hash_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_at_hash_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "hexsha",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_projects_download_retrieve_by_format_at_hash_binary_stream_builder (& self , fileformat : impl Into < String > , hexsha : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_retrieve_by_format_at_hash_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_retrieve_by_format_at_hash_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "fileformat",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "hexsha",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadRetrieveByFormatAtHashBuilder < '_ >",
+      "rust": "fn v2_projects_download_retrieve_by_format_at_hash_builder (& self , fileformat : impl Into < String > , hexsha : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadRetrieveByFormatAtHashBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadRetrieveByFormatAtHashApiError",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status422",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fileformat",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "hexsha",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadRetrieveByFormatAtHashFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadRetrieveByFormatAtHashFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "fileformat",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "hexsha",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadRetrieveByFormatAtHashFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadRetrieveByFormatAtHashBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadRetrieveByFormatAtHashFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadRetrieveByFormatAtHashFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "422",
+        "500"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1{fileformat}~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_retrieve_by_format_at_hash",
+      "source_path": "/api/v2/projects/{id}/download/{fileformat}/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadRetrieveByFormatAtHashApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadRetrieveByFormatAtHashFormat",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadRetrieveByFormatAtHashFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

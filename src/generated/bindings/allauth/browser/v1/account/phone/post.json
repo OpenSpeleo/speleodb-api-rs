@@ -1,0 +1,72 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAccountPhonePostApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAccountPhonePostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse08f6c31c2be2e2b8",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_phone_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_phone_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1phone/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_phone_post",
+      "source_path": "/_allauth/browser/v1/account/phone",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_phone_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAccountPhonePostApiError > >",
+      "rust": "async fn auth_browser_account_phone_post (& self , x_csrf_token : impl AsRef < str >) -> Result < () , ApiOpError < AuthBrowserAccountPhonePostApiError > >"
+    },
+    "variants": []
+  }
+]

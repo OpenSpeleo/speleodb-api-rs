@@ -1,0 +1,238 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAuthCodeConfirmPostApiError",
+    "operation": null,
+    "path": "client::AuthAppAuthCodeConfirmPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthConflictResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAuthCodeConfirmPostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_code_confirm_post",
+      "source_path": "/_allauth/app/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthCodeConfirmPostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_code_confirm_post",
+      "source_path": "/_allauth/app/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthCodeConfirmPostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < AuthAppAuthCodeConfirmPostApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < AuthAppAuthCodeConfirmPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_code_confirm_post",
+      "source_path": "/_allauth/app/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthCodeConfirmPostBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_code_confirm_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_code_confirm_post",
+      "source_path": "/_allauth/app/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_code_confirm_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAppAuthCodeConfirmPostApiError > >",
+      "rust": "async fn auth_app_auth_code_confirm_post (& self , x_session_token : Option < impl AsRef < str > >) -> Result < () , ApiOpError < AuthAppAuthCodeConfirmPostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_code_confirm_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_code_confirm_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1code~1confirm/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_app_auth_code_confirm_post",
+      "source_path": "/_allauth/app/v1/auth/code/confirm",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_code_confirm_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppAuthCodeConfirmPostBuilder < '_ >",
+      "rust": "fn auth_app_auth_code_confirm_post_builder (& self) -> AuthAppAuthCodeConfirmPostBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "project",
+        "public": true,
+        "rust_type": "Option < SensorStationSummaryProject >",
+        "wire_name": "project"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "SensorStationSummary",
+    "operation": null,
+    "path": "types::SensorStationSummary",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SensorStationSummaryProject",
+    "operation": null,
+    "path": "types::SensorStationSummaryProject",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SensorStationSummaryProjectInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "SensorStationSummaryProjectInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "SensorStationSummaryProjectInlineVariant",
+    "operation": null,
+    "path": "types::SensorStationSummaryProjectInlineVariant",
+    "rust_type": "NamedProjectSummary",
+    "signature": null,
+    "variants": []
+  }
+]

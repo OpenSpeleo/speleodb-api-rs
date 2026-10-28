@@ -1,0 +1,151 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "status",
+        "public": true,
+        "rust_type": "u16",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "headers",
+        "public": true,
+        "rust_type": "reqwest :: header :: HeaderMap",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "body",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "raw_body",
+        "public": true,
+        "rust_type": "Vec < u8 >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "typed",
+        "public": true,
+        "rust_type": "Option < E >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "parse_error",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< E >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ApiError",
+    "operation": null,
+    "path": "client::ApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_client_error",
+    "operation": null,
+    "path": "client::ApiError::is_client_error",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "bool",
+      "rust": "fn is_client_error (& self) -> bool"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_retryable",
+    "operation": null,
+    "path": "client::ApiError::is_retryable",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "bool",
+      "rust": "fn is_retryable (& self) -> bool"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "is_server_error",
+    "operation": null,
+    "path": "client::ApiError::is_server_error",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "bool",
+      "rust": "fn is_server_error (& self) -> bool"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< E >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "problem_details",
+    "operation": null,
+    "path": "client::ApiError::problem_details",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Option < openapi_to_rust_problem :: ProblemDetails >",
+      "rust": "fn problem_details (& self) -> Option < openapi_to_rust_problem :: ProblemDetails >"
+    },
+    "variants": []
+  }
+]

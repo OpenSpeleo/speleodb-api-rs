@@ -1,0 +1,55 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "display",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "display"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "email",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "email"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "has_usable_password",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "has_usable_password"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "id",
+        "public": true,
+        "rust_type": "Option < i64 >",
+        "wire_name": "id"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthUser",
+    "operation": null,
+    "path": "types::AuthUser",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

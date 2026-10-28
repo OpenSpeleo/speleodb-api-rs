@@ -1,0 +1,833 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_import_kml_kmz_update",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_import_kml_kmz_update",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ImportKmlKmzUpdateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ImportKmlKmzUpdateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < V2ImportKmlKmzUpdateResponse , ApiOpError < V2ImportKmlKmzUpdateApiError > >",
+      "rust": "async fn v2_import_kml_kmz_update (& self , format : Option < V2ImportKmlKmzUpdateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ImportKmlKmzUpdateRequest) -> Result < V2ImportKmlKmzUpdateResponse , ApiOpError < V2ImportKmlKmzUpdateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_import_kml_kmz_update_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_import_kml_kmz_update_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ImportKmlKmzUpdateBuilder < '_ >",
+      "rust": "fn v2_import_kml_kmz_update_builder (& self , file : MultipartFile) -> V2ImportKmlKmzUpdateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzUpdateApiError",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzUpdateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "KMLImportError",
+            "wire_name": null
+          }
+        ],
+        "name": "Status422",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status500",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ImportKmlKmzUpdateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ImportKmlKmzUpdateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzUpdateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ImportKmlKmzUpdateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ImportKmlKmzUpdateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ImportKmlKmzUpdateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ImportKmlKmzUpdateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < V2ImportKmlKmzUpdateResponse , ApiOpError < V2ImportKmlKmzUpdateApiError > >",
+      "rust": "async fn send (self) -> Result < V2ImportKmlKmzUpdateResponse , ApiOpError < V2ImportKmlKmzUpdateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_import_kml_kmz_update",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415",
+        "422",
+        "500"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1import~1kml_kmz~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_import_kml_kmz_update",
+      "source_path": "/api/v2/import/kml_kmz/",
+      "webhook": false
+    },
+    "path": "client::V2ImportKmlKmzUpdateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ImportKmlKmzUpdateFormat",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzUpdateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ImportKmlKmzUpdateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "collection",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "collection"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "file",
+        "public": true,
+        "rust_type": "MultipartFile",
+        "wire_name": "file"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzUpdateRequest",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2ImportKmlKmzUpdateRequestBuilder",
+      "rust": "fn builder (file : MultipartFile) -> V2ImportKmlKmzUpdateRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (file : MultipartFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2ImportKmlKmzUpdateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzUpdateRequestBuilder",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2ImportKmlKmzUpdateRequest",
+      "rust": "fn build (self) -> V2ImportKmlKmzUpdateRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "collection",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequestBuilder::collection",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "collection",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn collection (mut self , collection : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "file",
+          "rust_type": "MultipartFile"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (file : MultipartFile) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "bounds",
+        "public": true,
+        "rust_type": "Option < Vec < f64 > >",
+        "wire_name": "bounds"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "collection_id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "collection_id"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "duplicates_in_file",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "duplicates_in_file"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "landmarks_created",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "landmarks_created"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "landmarks_skipped",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "landmarks_skipped"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ImportKmlKmzUpdateResponse",
+    "operation": null,
+    "path": "types::V2ImportKmlKmzUpdateResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

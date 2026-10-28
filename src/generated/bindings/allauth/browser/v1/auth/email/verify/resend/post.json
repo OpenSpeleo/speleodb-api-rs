@@ -1,0 +1,72 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAuthEmailVerifyResendPostApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAuthEmailVerifyResendPostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthConflictResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status409",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_auth_email_verify_resend_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_auth_email_verify_resend_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1auth~1email~1verify~1resend/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_auth_email_verify_resend_post",
+      "source_path": "/_allauth/browser/v1/auth/email/verify/resend",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_auth_email_verify_resend_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAuthEmailVerifyResendPostApiError > >",
+      "rust": "async fn auth_browser_auth_email_verify_resend_post (& self , x_csrf_token : impl AsRef < str >) -> Result < () , ApiOpError < AuthBrowserAuthEmailVerifyResendPostApiError > >"
+    },
+    "variants": []
+  }
+]

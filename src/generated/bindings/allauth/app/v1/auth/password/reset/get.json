@@ -1,0 +1,340 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAuthPasswordResetGetApiError",
+    "operation": null,
+    "path": "client::AuthAppAuthPasswordResetGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_password_reset_key",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAuthPasswordResetGetBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_app_auth_password_reset_get",
+      "source_path": "/_allauth/app/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthPasswordResetGetBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_app_auth_password_reset_get",
+      "source_path": "/_allauth/app/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthPasswordResetGetBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthAppAuthPasswordResetGetResponse , ApiOpError < AuthAppAuthPasswordResetGetApiError > >",
+      "rust": "async fn send (self) -> Result < AuthAppAuthPasswordResetGetResponse , ApiOpError < AuthAppAuthPasswordResetGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_app_auth_password_reset_get",
+      "source_path": "/_allauth/app/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthPasswordResetGetBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_password_reset_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_app_auth_password_reset_get",
+      "source_path": "/_allauth/app/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_password_reset_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_password_reset_key",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAppAuthPasswordResetGetResponse , ApiOpError < AuthAppAuthPasswordResetGetApiError > >",
+      "rust": "async fn auth_app_auth_password_reset_get (& self , x_password_reset_key : impl AsRef < str > , x_session_token : Option < impl AsRef < str > >) -> Result < AuthAppAuthPasswordResetGetResponse , ApiOpError < AuthAppAuthPasswordResetGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_password_reset_get_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_app_auth_password_reset_get",
+      "source_path": "/_allauth/app/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_password_reset_get_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_password_reset_key",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppAuthPasswordResetGetBuilder < '_ >",
+      "rust": "fn auth_app_auth_password_reset_get_builder (& self , x_password_reset_key : impl Into < String >) -> AuthAppAuthPasswordResetGetBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "AuthAppAuthPasswordResetGetResponseData",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAuthPasswordResetGetResponse",
+    "operation": null,
+    "path": "types::AuthAppAuthPasswordResetGetResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "user",
+        "public": true,
+        "rust_type": "Option < AuthUser >",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAuthPasswordResetGetResponseData",
+    "operation": null,
+    "path": "types::AuthAppAuthPasswordResetGetResponseData",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

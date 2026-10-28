@@ -1,0 +1,1165 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2compass_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2compass_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsXls2compassCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsXls2compassCreateApiError > >",
+      "rust": "async fn v2_tools_xls2compass_create (& self , format : Option < V2ToolsXls2compassCreateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ToolsXls2compassCreateRequest) -> Result < bytes :: Bytes , ApiOpError < V2ToolsXls2compassCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2compass_create_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2compass_create_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsXls2compassCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < __Param0 >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsXls2compassCreateApiError > >",
+      "rust": "async fn v2_tools_xls2compass_create_binary_stream < __Param0 : AsRef < str > > (& self , format : Option < V2ToolsXls2compassCreateFormat > , x_csrf_token : Option < __Param0 > , request : V2ToolsXls2compassCreateRequest) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsXls2compassCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2compass_create_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2compass_create_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsXls2compassCreateBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_tools_xls2compass_create_binary_stream_builder (& self , request : V2ToolsXls2compassCreateRequest) -> V2ToolsXls2compassCreateBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2compass_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2compass_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsXls2compassCreateBuilder < '_ >",
+      "rust": "fn v2_tools_xls2compass_create_builder (& self , request : V2ToolsXls2compassCreateRequest) -> V2ToolsXls2compassCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateApiError",
+    "operation": null,
+    "path": "client::V2ToolsXls2compassCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsXls2compassCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ToolsXls2compassCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2compassCreateBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsXls2compassCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsXls2compassCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBinaryStreamBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ToolsXls2compassCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsXls2compassCreateApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsXls2compassCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBinaryStreamBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsXls2compassCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ToolsXls2compassCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2compassCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsXls2compassCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsXls2compassCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2compassCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ToolsXls2compassCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsXls2compassCreateApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ToolsXls2compassCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2compass_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2compass~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2compass_create",
+      "source_path": "/api/v2/tools/xls2compass/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2compassCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateFormat",
+    "operation": null,
+    "path": "client::V2ToolsXls2compassCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ToolsXls2compassCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "cave_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "cave_name"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "comment",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "comment"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2ToolsXls2compassCreateRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2ToolsXls2compassCreateRequestLongitude",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "shots",
+        "public": true,
+        "rust_type": "Vec < V2ToolsXls2compassCreateRequestShotsItemUnion >",
+        "wire_name": "shots"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "survey_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "survey_date"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "survey_name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "survey_name"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "survey_team",
+        "public": true,
+        "rust_type": "Vec < String >",
+        "wire_name": "survey_team"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "unit",
+        "public": true,
+        "rust_type": "V2ToolsXls2compassCreateRequestUnit",
+        "wire_name": "unit"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2compassCreateRequest",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateRequestLatitude",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateRequestLongitude",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateRequestShotsItemUnion",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequestShotsItemUnion",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AzimuthBlock",
+            "wire_name": null
+          }
+        ],
+        "name": "AzimuthBlock",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AzimuthBlockInline",
+            "wire_name": null
+          }
+        ],
+        "name": "AzimuthBlockInline",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2compassCreateRequestUnit",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequestUnit",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"feet\")]"
+        ],
+        "fields": [],
+        "name": "Feet",
+        "wire_name": "feet"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"meters\")]"
+        ],
+        "fields": [],
+        "name": "Meters",
+        "wire_name": "meters"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2ToolsXls2compassCreateRequestUnit::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_exploration_leads_geojson_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1geojson~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/geojson/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_exploration_leads_geojson_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsExplorationLeadsGeojsonRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ExplorationLeadGeoJSONCollection , ApiOpError < V2ProjectsExplorationLeadsGeojsonRetrieveApiError > >",
+      "rust": "async fn v2_projects_exploration_leads_geojson_retrieve (& self , id : impl AsRef < str > , format : Option < V2ProjectsExplorationLeadsGeojsonRetrieveFormat >) -> Result < ExplorationLeadGeoJSONCollection , ApiOpError < V2ProjectsExplorationLeadsGeojsonRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_exploration_leads_geojson_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1geojson~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/geojson/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_exploration_leads_geojson_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsExplorationLeadsGeojsonRetrieveBuilder < '_ >",
+      "rust": "fn v2_projects_exploration_leads_geojson_retrieve_builder (& self , id : impl Into < String >) -> V2ProjectsExplorationLeadsGeojsonRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsExplorationLeadsGeojsonRetrieveApiError",
+    "operation": null,
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsExplorationLeadsGeojsonRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsExplorationLeadsGeojsonRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1geojson~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/geojson/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1geojson~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/geojson/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsExplorationLeadsGeojsonRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsExplorationLeadsGeojsonRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1geojson~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_exploration_leads_geojson_retrieve",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/geojson/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ExplorationLeadGeoJSONCollection , ApiOpError < V2ProjectsExplorationLeadsGeojsonRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < ExplorationLeadGeoJSONCollection , ApiOpError < V2ProjectsExplorationLeadsGeojsonRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsExplorationLeadsGeojsonRetrieveFormat",
+    "operation": null,
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsExplorationLeadsGeojsonRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

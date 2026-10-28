@@ -1,0 +1,114 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "level",
+        "public": true,
+        "rust_type": "GPSTrackUserPermissionLevel",
+        "wire_name": "level"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GPSTrackUserPermission",
+    "operation": null,
+    "path": "types::GPSTrackUserPermission",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GPSTrackUserPermissionLevel",
+    "operation": null,
+    "path": "types::GPSTrackUserPermissionLevel",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"READ_ONLY\")]"
+        ],
+        "fields": [],
+        "name": "ReadOnly",
+        "wire_name": "READ_ONLY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"READ_AND_WRITE\")]"
+        ],
+        "fields": [],
+        "name": "ReadAndWrite",
+        "wire_name": "READ_AND_WRITE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ADMIN\")]"
+        ],
+        "fields": [],
+        "name": "Admin",
+        "wire_name": "ADMIN"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::GPSTrackUserPermissionLevel::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

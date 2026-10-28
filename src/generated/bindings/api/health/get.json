@@ -1,0 +1,329 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "HealthStatusApiError",
+    "operation": null,
+    "path": "client::HealthStatusApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < HealthStatusFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "HealthStatusBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "health_status",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1health~1/get",
+      "source_method": "GET",
+      "source_operation_id": "health_status",
+      "source_path": "/api/health/",
+      "webhook": false
+    },
+    "path": "client::HealthStatusBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "health_status",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1health~1/get",
+      "source_method": "GET",
+      "source_operation_id": "health_status",
+      "source_path": "/api/health/",
+      "webhook": false
+    },
+    "path": "client::HealthStatusBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "HealthStatusFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : HealthStatusFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "health_status",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1health~1/get",
+      "source_method": "GET",
+      "source_operation_id": "health_status",
+      "source_path": "/api/health/",
+      "webhook": false
+    },
+    "path": "client::HealthStatusBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < HealthStatusApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < HealthStatusApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "HealthStatusFormat",
+    "operation": null,
+    "path": "client::HealthStatusFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::HealthStatusFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "health_status",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "health_status",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1health~1/get",
+      "source_method": "GET",
+      "source_operation_id": "health_status",
+      "source_path": "/api/health/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::health_status",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < HealthStatusFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < HealthStatusApiError > >",
+      "rust": "async fn health_status (& self , format : Option < HealthStatusFormat >) -> Result < () , ApiOpError < HealthStatusApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "health_status_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "health_status",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1health~1/get",
+      "source_method": "GET",
+      "source_operation_id": "health_status",
+      "source_path": "/api/health/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::health_status_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "HealthStatusBuilder < '_ >",
+      "rust": "fn health_status_builder (& self) -> HealthStatusBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

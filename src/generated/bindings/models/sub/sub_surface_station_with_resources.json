@@ -1,0 +1,264 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "f64",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "f64",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "polymorphic_ctype",
+        "public": true,
+        "rust_type": "Option < i64 >",
+        "wire_name": "polymorphic_ctype"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "project",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "project"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "resources",
+        "public": true,
+        "rust_type": "Vec < StationResource >",
+        "wire_name": "resources"
+      },
+      {
+        "attributes": [],
+        "index": 11,
+        "name": "tag",
+        "public": true,
+        "rust_type": "Option < SubSurfaceStationWithResourcesTag >",
+        "wire_name": "tag"
+      },
+      {
+        "attributes": [],
+        "index": 12,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "SubSurfaceStationWithResourcesType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "SubSurfaceStationWithResources",
+    "operation": null,
+    "path": "types::SubSurfaceStationWithResources",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SubSurfaceStationWithResourcesTag",
+    "operation": null,
+    "path": "types::SubSurfaceStationWithResourcesTag",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SubSurfaceStationWithResourcesTagInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "SubSurfaceStationWithResourcesTagInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "SubSurfaceStationWithResourcesTagInlineVariant",
+    "operation": null,
+    "path": "types::SubSurfaceStationWithResourcesTagInlineVariant",
+    "rust_type": "StationTagSummary",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SubSurfaceStationWithResourcesType",
+    "operation": null,
+    "path": "types::SubSurfaceStationWithResourcesType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"artifact\")]"
+        ],
+        "fields": [],
+        "name": "Artifact",
+        "wire_name": "artifact"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"biology\")]"
+        ],
+        "fields": [],
+        "name": "Biology",
+        "wire_name": "biology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"bone\")]"
+        ],
+        "fields": [],
+        "name": "Bone",
+        "wire_name": "bone"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"geology\")]"
+        ],
+        "fields": [],
+        "name": "Geology",
+        "wire_name": "geology"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"sensor\")]"
+        ],
+        "fields": [],
+        "name": "Sensor",
+        "wire_name": "sensor"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::SubSurfaceStationWithResourcesType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,537 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthBrowserAccountPasswordChangePostApiError",
+    "operation": null,
+    "path": "client::AuthBrowserAccountPasswordChangePostApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthBrowserAccountPasswordChangePostResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthBrowserAccountPasswordChangePostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountPasswordChangePostBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthBrowserAccountPasswordChangePostBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "current_password",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthBrowserAccountPasswordChangePostBuilder::current_password",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "current_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn current_password (mut self , current_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthBrowserAccountPasswordChangePostBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthBrowserAccountPasswordChangePostRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthBrowserAccountPasswordChangePostRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::AuthBrowserAccountPasswordChangePostBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAccountPasswordChangePostApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < AuthBrowserAccountPasswordChangePostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_password_change_post",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_password_change_post",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthBrowserAccountPasswordChangePostRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthBrowserAccountPasswordChangePostApiError > >",
+      "rust": "async fn auth_browser_account_password_change_post (& self , x_csrf_token : impl AsRef < str > , request : AuthBrowserAccountPasswordChangePostRequest) -> Result < () , ApiOpError < AuthBrowserAccountPasswordChangePostApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_browser_account_password_change_post_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_browser_account_password_change_post",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1browser~1v1~1account~1password~1change/post",
+      "source_method": "POST",
+      "source_operation_id": "auth_browser_account_password_change_post",
+      "source_path": "/_allauth/browser/v1/account/password/change",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_browser_account_password_change_post_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthBrowserAccountPasswordChangePostBuilder < '_ >",
+      "rust": "fn auth_browser_account_password_change_post_builder (& self , x_csrf_token : impl Into < String > , new_password : String) -> AuthBrowserAccountPasswordChangePostBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "current_password",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "current_password"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "new_password",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "new_password"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountPasswordChangePostRequest",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "AuthBrowserAccountPasswordChangePostRequestBuilder",
+      "rust": "fn builder (new_password : String) -> AuthBrowserAccountPasswordChangePostRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (new_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "AuthBrowserAccountPasswordChangePostRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountPasswordChangePostRequestBuilder",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "AuthBrowserAccountPasswordChangePostRequest",
+      "rust": "fn build (self) -> AuthBrowserAccountPasswordChangePostRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "current_password",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequestBuilder::current_password",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "current_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn current_password (mut self , current_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "new_password",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (new_password : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthBrowserAccountPasswordChangePostResponse429",
+    "operation": null,
+    "path": "types::AuthBrowserAccountPasswordChangePostResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

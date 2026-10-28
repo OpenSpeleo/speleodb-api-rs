@@ -1,0 +1,61 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "geometry",
+        "public": true,
+        "rust_type": "OGCGeometry",
+        "wire_name": "geometry"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": true,
+        "rust_type": "OGCFeatureId",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "links",
+        "public": true,
+        "rust_type": "Vec < OGCLink >",
+        "wire_name": "links"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+        ],
+        "index": 3,
+        "name": "properties",
+        "public": true,
+        "rust_type": "Option < Option < OGCFeatureProperties > >",
+        "wire_name": "properties"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "r#type",
+        "public": true,
+        "rust_type": "OGCFeatureType",
+        "wire_name": "type"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCFeatureResponse",
+    "operation": null,
+    "path": "types::OGCFeatureResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

@@ -1,0 +1,3060 @@
+[
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBinaryBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBinaryStreamBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < GitInfoRefsFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "service",
+        "public": false,
+        "rust_type": "GitInfoRefsService",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "git_protocol",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "cache_control",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "pragma",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "user_agent",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "GitInfoRefsBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "cache_control",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::cache_control",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "cache_control",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn cache_control (mut self , cache_control : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "GitInfoRefsFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : GitInfoRefsFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_protocol",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::git_protocol",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "git_protocol",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn git_protocol (mut self , git_protocol : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "pragma",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::pragma",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "pragma",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn pragma (mut self , pragma : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user_agent",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::GitInfoRefsBuilder::user_agent",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user_agent",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user_agent (mut self , user_agent : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GitInfoRefsFormat",
+    "operation": null,
+    "path": "client::GitInfoRefsFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"text\")]"
+        ],
+        "fields": [],
+        "name": "Text",
+        "wire_name": "text"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::GitInfoRefsFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "GitInfoRefsService",
+    "operation": null,
+    "path": "client::GitInfoRefsService",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"git-upload-pack\")]"
+        ],
+        "fields": [],
+        "name": "GitUploadPack",
+        "wire_name": "git-upload-pack"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"git-receive-pack\")]"
+        ],
+        "fields": [],
+        "name": "GitReceivePack",
+        "wire_name": "git-receive-pack"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::GitInfoRefsService::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs (& self , id : impl AsRef < str > , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < impl AsRef < str > > , cache_control : Option < impl AsRef < str > > , pragma : Option < impl AsRef < str > > , user_agent : Option < impl AsRef < str > >) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs_binary_ (& self , id : impl AsRef < str > , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < impl AsRef < str > > , cache_control : Option < impl AsRef < str > > , pragma : Option < impl AsRef < str > > , user_agent : Option < impl AsRef < str > >) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary__builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary__builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBinaryBuilder < '_ >",
+      "rust": "fn git_info_refs_binary__builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBinaryBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary__stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary__stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < __Param1 >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < __Param2 >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < __Param3 >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < __Param4 >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs_binary__stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > > (& self , id : __Param0 , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < __Param1 > , cache_control : Option < __Param2 > , pragma : Option < __Param3 > , user_agent : Option < __Param4 >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary__stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "*/*",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary__stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBinaryStreamBuilder < '_ >",
+      "rust": "fn git_info_refs_binary__stream_builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_receive_pack_advertisement_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_receive_pack_advertisement_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < __Param1 >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < __Param2 >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < __Param3 >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < __Param4 >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs_binary_application_x_git_receive_pack_advertisement_stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > > (& self , id : __Param0 , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < __Param1 > , cache_control : Option < __Param2 > , pragma : Option < __Param3 > , user_agent : Option < __Param4 >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_receive_pack_advertisement_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_receive_pack_advertisement_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder < '_ >",
+      "rust": "fn git_info_refs_binary_application_x_git_receive_pack_advertisement_stream_builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBinaryApplicationXGitReceivePackAdvertisementStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_upload_pack_advertisement",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_upload_pack_advertisement",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs_binary_application_x_git_upload_pack_advertisement (& self , id : impl AsRef < str > , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < impl AsRef < str > > , cache_control : Option < impl AsRef < str > > , pragma : Option < impl AsRef < str > > , user_agent : Option < impl AsRef < str > >) -> Result < bytes :: Bytes , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_upload_pack_advertisement_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_upload_pack_advertisement_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder < '_ >",
+      "rust": "fn git_info_refs_binary_application_x_git_upload_pack_advertisement_builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_upload_pack_advertisement_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_upload_pack_advertisement_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < GitInfoRefsFormat >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        },
+        {
+          "name": "git_protocol",
+          "rust_type": "Option < __Param1 >"
+        },
+        {
+          "name": "cache_control",
+          "rust_type": "Option < __Param2 >"
+        },
+        {
+          "name": "pragma",
+          "rust_type": "Option < __Param3 >"
+        },
+        {
+          "name": "user_agent",
+          "rust_type": "Option < __Param4 >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn git_info_refs_binary_application_x_git_upload_pack_advertisement_stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > , __Param2 : AsRef < str > , __Param3 : AsRef < str > , __Param4 : AsRef < str > > (& self , id : __Param0 , format : Option < GitInfoRefsFormat > , service : GitInfoRefsService , git_protocol : Option < __Param1 > , cache_control : Option < __Param2 > , pragma : Option < __Param3 > , user_agent : Option < __Param4 >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 , __Param2 , __Param3 , __Param4 > , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_binary_application_x_git_upload_pack_advertisement_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-upload-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_binary_application_x_git_upload_pack_advertisement_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder < '_ >",
+      "rust": "fn git_info_refs_binary_application_x_git_upload_pack_advertisement_stream_builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBinaryApplicationXGitUploadPackAdvertisementStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "git_info_refs_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "git_info_refs",
+      "response_excluded_statuses": [
+        "401",
+        "403",
+        "404",
+        "502"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/x-git-receive-pack-advertisement",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1git~1{id}.git~1info~1refs/get",
+      "source_method": "GET",
+      "source_operation_id": "git_info_refs",
+      "source_path": "/git/{id}.git/info/refs",
+      "webhook": false
+    },
+    "path": "client::HttpClient::git_info_refs_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "service",
+          "rust_type": "GitInfoRefsService"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "GitInfoRefsBuilder < '_ >",
+      "rust": "fn git_info_refs_builder (& self , id : impl Into < String > , service : GitInfoRefsService) -> GitInfoRefsBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

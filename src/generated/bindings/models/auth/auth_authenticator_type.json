@@ -1,0 +1,65 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAuthenticatorType",
+    "operation": null,
+    "path": "types::AuthAuthenticatorType",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"recovery_codes\")]"
+        ],
+        "fields": [],
+        "name": "RecoveryCodes",
+        "wire_name": "recovery_codes"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"totp\")]"
+        ],
+        "fields": [],
+        "name": "Totp",
+        "wire_name": "totp"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"webauthn\")]"
+        ],
+        "fields": [],
+        "name": "Webauthn",
+        "wire_name": "webauthn"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::AuthAuthenticatorType::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

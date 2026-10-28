@@ -1,0 +1,238 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAppAuthSessionDeleteApiError",
+    "operation": null,
+    "path": "client::AuthAppAuthSessionDeleteApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAppAuthSessionDeleteBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_auth_session_delete",
+      "source_path": "/_allauth/app/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthSessionDeleteBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_auth_session_delete",
+      "source_path": "/_allauth/app/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthSessionDeleteBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < AuthAppAuthSessionDeleteApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < AuthAppAuthSessionDeleteApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_auth_session_delete",
+      "source_path": "/_allauth/app/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::AuthAppAuthSessionDeleteBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_session_delete",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_auth_session_delete",
+      "source_path": "/_allauth/app/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_session_delete",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < AuthAppAuthSessionDeleteApiError > >",
+      "rust": "async fn auth_app_auth_session_delete (& self , x_session_token : Option < impl AsRef < str > >) -> Result < () , ApiOpError < AuthAppAuthSessionDeleteApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_app_auth_session_delete_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_app_auth_session_delete",
+      "response_excluded_statuses": [],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [],
+      "source_json_pointer": "/paths/~1_allauth~1app~1v1~1auth~1session/delete",
+      "source_method": "DELETE",
+      "source_operation_id": "auth_app_auth_session_delete",
+      "source_path": "/_allauth/app/v1/auth/session",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_app_auth_session_delete_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAppAuthSessionDeleteBuilder < '_ >",
+      "rust": "fn auth_app_auth_session_delete_builder (& self) -> AuthAppAuthSessionDeleteBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (rename = \"conformsTo\")]"
+        ],
+        "index": 0,
+        "name": "conforms_to",
+        "public": true,
+        "rust_type": "Vec < OGCConformanceDeclarationConformsToItem >",
+        "wire_name": "conformsTo"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "OGCConformanceDeclaration",
+    "operation": null,
+    "path": "types::OGCConformanceDeclaration",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "OGCConformanceDeclarationConformsToItem",
+    "operation": null,
+    "path": "types::OGCConformanceDeclarationConformsToItem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core\")]"
+        ],
+        "fields": [],
+        "name": "HttpWwwOpengisNetSpecOgcapiFeatures110ConfCore",
+        "wire_name": "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson\")]"
+        ],
+        "fields": [],
+        "name": "HttpWwwOpengisNetSpecOgcapiFeatures110ConfGeojson",
+        "wire_name": "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30\")]"
+        ],
+        "fields": [],
+        "name": "HttpWwwOpengisNetSpecOgcapiFeatures110ConfOas30",
+        "wire_name": "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::OGCConformanceDeclarationConformsToItem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

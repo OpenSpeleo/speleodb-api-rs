@@ -1,0 +1,468 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasAppAccountEmailPatchApiError",
+    "operation": null,
+    "path": "client::AuthAliasAppAccountEmailPatchApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAuthenticationResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status401",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthAliasAppAccountEmailPatchResponse429",
+            "wire_name": null
+          }
+        ],
+        "name": "Status429",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "request",
+        "public": false,
+        "rust_type": "AuthAliasAppAccountEmailPatchRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountEmailPatchBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountEmailPatchBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountEmailPatchBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAliasAppAccountEmailPatchRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : AuthAliasAppAccountEmailPatchRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountEmailPatchBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthAliasAppAccountEmailPatchResponse , ApiOpError < AuthAliasAppAccountEmailPatchApiError > >",
+      "rust": "async fn send (self) -> Result < AuthAliasAppAccountEmailPatchResponse , ApiOpError < AuthAliasAppAccountEmailPatchApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAccountEmailPatchBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_account_email_patch",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_account_email_patch",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "AuthAliasAppAccountEmailPatchRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAliasAppAccountEmailPatchResponse , ApiOpError < AuthAliasAppAccountEmailPatchApiError > >",
+      "rust": "async fn auth_alias_app_account_email_patch (& self , x_session_token : Option < impl AsRef < str > > , request : AuthAliasAppAccountEmailPatchRequest) -> Result < AuthAliasAppAccountEmailPatchResponse , ApiOpError < AuthAliasAppAccountEmailPatchApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_account_email_patch_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_account_email_patch",
+      "response_excluded_statuses": [
+        "400",
+        "401",
+        "410",
+        "429"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1account~1email/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "auth_alias_app_account_email_patch",
+      "source_path": "/api/auth/app/v1/account/email",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_account_email_patch_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "AuthAliasAppAccountEmailPatchRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAliasAppAccountEmailPatchBuilder < '_ >",
+      "rust": "fn auth_alias_app_account_email_patch_builder (& self , request : AuthAliasAppAccountEmailPatchRequest) -> AuthAliasAppAccountEmailPatchBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "email",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "email"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "primary",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "primary"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountEmailPatchRequest",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountEmailPatchRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "Vec < AuthEmailAddress >",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountEmailPatchResponse",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountEmailPatchResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "meta",
+        "public": true,
+        "rust_type": "Option < AuthBaseAuthenticationMeta >",
+        "wire_name": "meta"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAccountEmailPatchResponse429",
+    "operation": null,
+    "path": "types::AuthAliasAppAccountEmailPatchResponse429",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

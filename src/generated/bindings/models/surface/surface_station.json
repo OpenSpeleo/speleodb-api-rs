@@ -1,0 +1,169 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "created_by",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "created_by"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "id",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "id"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "f64",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 5,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "f64",
+        "wire_name": "longitude"
+      },
+      {
+        "attributes": [],
+        "index": 6,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 7,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      },
+      {
+        "attributes": [],
+        "index": 8,
+        "name": "network",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "network"
+      },
+      {
+        "attributes": [],
+        "index": 9,
+        "name": "polymorphic_ctype",
+        "public": true,
+        "rust_type": "Option < i64 >",
+        "wire_name": "polymorphic_ctype"
+      },
+      {
+        "attributes": [],
+        "index": 10,
+        "name": "tag",
+        "public": true,
+        "rust_type": "Option < SurfaceStationTag >",
+        "wire_name": "tag"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "SurfaceStation",
+    "operation": null,
+    "path": "types::SurfaceStation",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SurfaceStationTag",
+    "operation": null,
+    "path": "types::SurfaceStationTag",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SurfaceStationTagInlineVariant",
+            "wire_name": null
+          }
+        ],
+        "name": "SurfaceStationTagInlineVariant",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "SurfaceStationTagInlineVariant",
+    "operation": null,
+    "path": "types::SurfaceStationTagInlineVariant",
+    "rust_type": "StationTagSummary",
+    "signature": null,
+    "variants": []
+  }
+]

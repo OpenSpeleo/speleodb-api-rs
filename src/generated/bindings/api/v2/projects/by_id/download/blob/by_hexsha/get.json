@@ -1,0 +1,614 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_blob_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_blob_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadBlobRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >",
+      "rust": "async fn v2_projects_download_blob_retrieve (& self , hexsha : impl AsRef < str > , id : impl AsRef < str > , format : Option < V2ProjectsDownloadBlobRetrieveFormat >) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_blob_retrieve_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_blob_retrieve_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "__Param0"
+        },
+        {
+          "name": "id",
+          "rust_type": "__Param1"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2ProjectsDownloadBlobRetrieveFormat >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > , __Param1 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 > , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >",
+      "rust": "async fn v2_projects_download_blob_retrieve_binary_stream < __Param0 : AsRef < str > , __Param1 : AsRef < str > > (& self , hexsha : __Param0 , id : __Param1 , format : Option < V2ProjectsDownloadBlobRetrieveFormat >) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 , __Param1 > , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_blob_retrieve_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_blob_retrieve_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_projects_download_blob_retrieve_binary_stream_builder (& self , hexsha : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_projects_download_blob_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_projects_download_blob_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "hexsha",
+          "rust_type": "impl Into < String >"
+        },
+        {
+          "name": "id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ProjectsDownloadBlobRetrieveBuilder < '_ >",
+      "rust": "fn v2_projects_download_blob_retrieve_builder (& self , hexsha : impl Into < String > , id : impl Into < String >) -> V2ProjectsDownloadBlobRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadBlobRetrieveApiError",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadBlobRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "hexsha",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadBlobRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadBlobRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadBlobRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "hexsha",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ProjectsDownloadBlobRetrieveFormat >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsDownloadBlobRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ProjectsDownloadBlobRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ProjectsDownloadBlobRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_download_blob_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1download~1blob~1{hexsha}~1/get",
+      "source_method": "GET",
+      "source_operation_id": "v2_projects_download_blob_retrieve",
+      "source_path": "/api/v2/projects/{id}/download/blob/{hexsha}/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsDownloadBlobRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ProjectsDownloadBlobRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsDownloadBlobRetrieveFormat",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadBlobRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ProjectsDownloadBlobRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

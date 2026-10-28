@@ -1,0 +1,114 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "level",
+        "public": true,
+        "rust_type": "ProjectTeamPermissionLevel",
+        "wire_name": "level"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "team",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "team"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ProjectTeamPermission",
+    "operation": null,
+    "path": "types::ProjectTeamPermission",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ProjectTeamPermissionLevel",
+    "operation": null,
+    "path": "types::ProjectTeamPermissionLevel",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"WEB_VIEWER\")]"
+        ],
+        "fields": [],
+        "name": "WebViewer",
+        "wire_name": "WEB_VIEWER"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"READ_ONLY\")]"
+        ],
+        "fields": [],
+        "name": "ReadOnly",
+        "wire_name": "READ_ONLY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"READ_AND_WRITE\")]"
+        ],
+        "fields": [],
+        "name": "ReadAndWrite",
+        "wire_name": "READ_AND_WRITE"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::ProjectTeamPermissionLevel::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

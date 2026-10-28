@@ -1,0 +1,37 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_browser_config_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_browser_config_get",
+      "response_excluded_statuses": [],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1browser~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_browser_config_get",
+      "source_path": "/api/auth/browser/v1/config",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_browser_config_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthConfigurationResponse , ApiOpError < serde_json :: Value > >",
+      "rust": "async fn auth_alias_browser_config_get (& self) -> Result < AuthConfigurationResponse , ApiOpError < serde_json :: Value > >"
+    },
+    "variants": []
+  }
+]

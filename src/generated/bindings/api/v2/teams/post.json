@@ -1,0 +1,3558 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_form_data",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_form_data",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2TeamsCreateWithFormDataFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2TeamsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithFormDataApiError > >",
+      "rust": "async fn v2_teams_create_with_form_data (& self , format : Option < V2TeamsCreateWithFormDataFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2TeamsCreateWithFormDataRequest) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_form_data_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_form_data_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2TeamsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2TeamsCreateWithFormDataBuilder < '_ >",
+      "rust": "fn v2_teams_create_with_form_data_builder (& self , request : V2TeamsCreateWithFormDataRequest) -> V2TeamsCreateWithFormDataBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2TeamsCreateWithJsonFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithJsonApiError > >",
+      "rust": "async fn v2_teams_create_with_json (& self , format : Option < V2TeamsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : SurveyTeamRequest) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2TeamsCreateWithJsonBuilder < '_ >",
+      "rust": "fn v2_teams_create_with_json_builder (& self , request : SurveyTeamRequest) -> V2TeamsCreateWithJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_url_encoded",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_url_encoded",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2TeamsCreateWithUrlEncodedFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn v2_teams_create_with_url_encoded (& self , format : Option < V2TeamsCreateWithUrlEncodedFormat > , x_csrf_token : Option < impl AsRef < str > > , request : SurveyTeamRequest) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_teams_create_with_url_encoded_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_teams_create_with_url_encoded_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2TeamsCreateWithUrlEncodedBuilder < '_ >",
+      "rust": "fn v2_teams_create_with_url_encoded_builder (& self , request : SurveyTeamRequest) -> V2TeamsCreateWithUrlEncodedBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithFormDataApiError",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithFormDataApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2TeamsCreateWithFormDataFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2TeamsCreateWithFormDataRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2TeamsCreateWithFormDataBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithFormDataBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithFormDataBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2TeamsCreateWithFormDataFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2TeamsCreateWithFormDataFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithFormDataBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2TeamsCreateWithFormDataRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2TeamsCreateWithFormDataRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithFormDataBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithFormDataApiError > >",
+      "rust": "async fn send (self) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithFormDataApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithFormDataBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithFormDataFormat",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithFormDataFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithFormDataFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithJsonApiError",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithJsonApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2TeamsCreateWithJsonFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "SurveyTeamRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2TeamsCreateWithJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2TeamsCreateWithJsonFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2TeamsCreateWithJsonFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithJsonBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : SurveyTeamRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithJsonApiError > >",
+      "rust": "async fn send (self) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithJsonApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithJsonBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithJsonFormat",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithJsonFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithJsonFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithUrlEncodedApiError",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithUrlEncodedApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2TeamsCreateWithUrlEncodedFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "SurveyTeamRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2TeamsCreateWithUrlEncodedBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithUrlEncodedBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithUrlEncodedBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2TeamsCreateWithUrlEncodedFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2TeamsCreateWithUrlEncodedFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithUrlEncodedBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "SurveyTeamRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : SurveyTeamRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithUrlEncodedBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < SurveyTeam , ApiOpError < V2TeamsCreateWithUrlEncodedApiError > >",
+      "rust": "async fn send (self) -> Result < SurveyTeam , ApiOpError < V2TeamsCreateWithUrlEncodedApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_teams_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1teams~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_teams_create",
+      "source_path": "/api/v2/teams/",
+      "webhook": false
+    },
+    "path": "client::V2TeamsCreateWithUrlEncodedBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithUrlEncodedFormat",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithUrlEncodedFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2TeamsCreateWithUrlEncodedFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "country",
+        "public": true,
+        "rust_type": "V2TeamsCreateWithFormDataRequestCountry",
+        "wire_name": "country"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "description",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "name",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "name"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2TeamsCreateWithFormDataRequest",
+    "operation": null,
+    "path": "types::V2TeamsCreateWithFormDataRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2TeamsCreateWithFormDataRequestCountry",
+    "operation": null,
+    "path": "types::V2TeamsCreateWithFormDataRequestCountry",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"US\")]"
+        ],
+        "fields": [],
+        "name": "Us",
+        "wire_name": "US"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MX\")]"
+        ],
+        "fields": [],
+        "name": "Mx",
+        "wire_name": "MX"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FR\")]"
+        ],
+        "fields": [],
+        "name": "Fr",
+        "wire_name": "FR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AF\")]"
+        ],
+        "fields": [],
+        "name": "Af",
+        "wire_name": "AF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AX\")]"
+        ],
+        "fields": [],
+        "name": "Ax",
+        "wire_name": "AX"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AL\")]"
+        ],
+        "fields": [],
+        "name": "Al",
+        "wire_name": "AL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DZ\")]"
+        ],
+        "fields": [],
+        "name": "Dz",
+        "wire_name": "DZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AS\")]"
+        ],
+        "fields": [],
+        "name": "As",
+        "wire_name": "AS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AD\")]"
+        ],
+        "fields": [],
+        "name": "Ad",
+        "wire_name": "AD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AO\")]"
+        ],
+        "fields": [],
+        "name": "Ao",
+        "wire_name": "AO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AI\")]"
+        ],
+        "fields": [],
+        "name": "Ai",
+        "wire_name": "AI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AQ\")]"
+        ],
+        "fields": [],
+        "name": "Aq",
+        "wire_name": "AQ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AG\")]"
+        ],
+        "fields": [],
+        "name": "Ag",
+        "wire_name": "AG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AR\")]"
+        ],
+        "fields": [],
+        "name": "Ar",
+        "wire_name": "AR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AM\")]"
+        ],
+        "fields": [],
+        "name": "Am",
+        "wire_name": "AM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AW\")]"
+        ],
+        "fields": [],
+        "name": "Aw",
+        "wire_name": "AW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AU\")]"
+        ],
+        "fields": [],
+        "name": "Au",
+        "wire_name": "AU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AT\")]"
+        ],
+        "fields": [],
+        "name": "At",
+        "wire_name": "AT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AZ\")]"
+        ],
+        "fields": [],
+        "name": "Az",
+        "wire_name": "AZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BS\")]"
+        ],
+        "fields": [],
+        "name": "Bs",
+        "wire_name": "BS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BH\")]"
+        ],
+        "fields": [],
+        "name": "Bh",
+        "wire_name": "BH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BD\")]"
+        ],
+        "fields": [],
+        "name": "Bd",
+        "wire_name": "BD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BB\")]"
+        ],
+        "fields": [],
+        "name": "Bb",
+        "wire_name": "BB"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BY\")]"
+        ],
+        "fields": [],
+        "name": "By",
+        "wire_name": "BY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BE\")]"
+        ],
+        "fields": [],
+        "name": "Be",
+        "wire_name": "BE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BZ\")]"
+        ],
+        "fields": [],
+        "name": "Bz",
+        "wire_name": "BZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BJ\")]"
+        ],
+        "fields": [],
+        "name": "Bj",
+        "wire_name": "BJ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BM\")]"
+        ],
+        "fields": [],
+        "name": "Bm",
+        "wire_name": "BM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BT\")]"
+        ],
+        "fields": [],
+        "name": "Bt",
+        "wire_name": "BT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BO\")]"
+        ],
+        "fields": [],
+        "name": "Bo",
+        "wire_name": "BO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BQ\")]"
+        ],
+        "fields": [],
+        "name": "Bq",
+        "wire_name": "BQ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BA\")]"
+        ],
+        "fields": [],
+        "name": "Ba",
+        "wire_name": "BA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BW\")]"
+        ],
+        "fields": [],
+        "name": "Bw",
+        "wire_name": "BW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BV\")]"
+        ],
+        "fields": [],
+        "name": "Bv",
+        "wire_name": "BV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BR\")]"
+        ],
+        "fields": [],
+        "name": "Br",
+        "wire_name": "BR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IO\")]"
+        ],
+        "fields": [],
+        "name": "Io",
+        "wire_name": "IO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BN\")]"
+        ],
+        "fields": [],
+        "name": "Bn",
+        "wire_name": "BN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BG\")]"
+        ],
+        "fields": [],
+        "name": "Bg",
+        "wire_name": "BG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BF\")]"
+        ],
+        "fields": [],
+        "name": "Bf",
+        "wire_name": "BF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BI\")]"
+        ],
+        "fields": [],
+        "name": "Bi",
+        "wire_name": "BI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CV\")]"
+        ],
+        "fields": [],
+        "name": "Cv",
+        "wire_name": "CV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KH\")]"
+        ],
+        "fields": [],
+        "name": "Kh",
+        "wire_name": "KH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CM\")]"
+        ],
+        "fields": [],
+        "name": "Cm",
+        "wire_name": "CM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CA\")]"
+        ],
+        "fields": [],
+        "name": "Ca",
+        "wire_name": "CA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KY\")]"
+        ],
+        "fields": [],
+        "name": "Ky",
+        "wire_name": "KY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CF\")]"
+        ],
+        "fields": [],
+        "name": "Cf",
+        "wire_name": "CF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TD\")]"
+        ],
+        "fields": [],
+        "name": "Td",
+        "wire_name": "TD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CL\")]"
+        ],
+        "fields": [],
+        "name": "Cl",
+        "wire_name": "CL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CN\")]"
+        ],
+        "fields": [],
+        "name": "Cn",
+        "wire_name": "CN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CX\")]"
+        ],
+        "fields": [],
+        "name": "Cx",
+        "wire_name": "CX"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CC\")]"
+        ],
+        "fields": [],
+        "name": "Cc",
+        "wire_name": "CC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CO\")]"
+        ],
+        "fields": [],
+        "name": "Co",
+        "wire_name": "CO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KM\")]"
+        ],
+        "fields": [],
+        "name": "Km",
+        "wire_name": "KM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CG\")]"
+        ],
+        "fields": [],
+        "name": "Cg",
+        "wire_name": "CG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CD\")]"
+        ],
+        "fields": [],
+        "name": "Cd",
+        "wire_name": "CD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CK\")]"
+        ],
+        "fields": [],
+        "name": "Ck",
+        "wire_name": "CK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CR\")]"
+        ],
+        "fields": [],
+        "name": "Cr",
+        "wire_name": "CR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CI\")]"
+        ],
+        "fields": [],
+        "name": "Ci",
+        "wire_name": "CI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HR\")]"
+        ],
+        "fields": [],
+        "name": "Hr",
+        "wire_name": "HR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CU\")]"
+        ],
+        "fields": [],
+        "name": "Cu",
+        "wire_name": "CU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CW\")]"
+        ],
+        "fields": [],
+        "name": "Cw",
+        "wire_name": "CW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CY\")]"
+        ],
+        "fields": [],
+        "name": "Cy",
+        "wire_name": "CY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CZ\")]"
+        ],
+        "fields": [],
+        "name": "Cz",
+        "wire_name": "CZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DK\")]"
+        ],
+        "fields": [],
+        "name": "Dk",
+        "wire_name": "DK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DJ\")]"
+        ],
+        "fields": [],
+        "name": "Dj",
+        "wire_name": "DJ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DM\")]"
+        ],
+        "fields": [],
+        "name": "Dm",
+        "wire_name": "DM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DO\")]"
+        ],
+        "fields": [],
+        "name": "Do",
+        "wire_name": "DO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"EC\")]"
+        ],
+        "fields": [],
+        "name": "Ec",
+        "wire_name": "EC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"EG\")]"
+        ],
+        "fields": [],
+        "name": "Eg",
+        "wire_name": "EG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SV\")]"
+        ],
+        "fields": [],
+        "name": "Sv",
+        "wire_name": "SV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GQ\")]"
+        ],
+        "fields": [],
+        "name": "Gq",
+        "wire_name": "GQ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ER\")]"
+        ],
+        "fields": [],
+        "name": "Er",
+        "wire_name": "ER"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"EE\")]"
+        ],
+        "fields": [],
+        "name": "Ee",
+        "wire_name": "EE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SZ\")]"
+        ],
+        "fields": [],
+        "name": "Sz",
+        "wire_name": "SZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ET\")]"
+        ],
+        "fields": [],
+        "name": "Et",
+        "wire_name": "ET"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FK\")]"
+        ],
+        "fields": [],
+        "name": "Fk",
+        "wire_name": "FK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FO\")]"
+        ],
+        "fields": [],
+        "name": "Fo",
+        "wire_name": "FO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FJ\")]"
+        ],
+        "fields": [],
+        "name": "Fj",
+        "wire_name": "FJ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FI\")]"
+        ],
+        "fields": [],
+        "name": "Fi",
+        "wire_name": "FI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GF\")]"
+        ],
+        "fields": [],
+        "name": "Gf",
+        "wire_name": "GF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PF\")]"
+        ],
+        "fields": [],
+        "name": "Pf",
+        "wire_name": "PF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TF\")]"
+        ],
+        "fields": [],
+        "name": "Tf",
+        "wire_name": "TF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GA\")]"
+        ],
+        "fields": [],
+        "name": "Ga",
+        "wire_name": "GA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GM\")]"
+        ],
+        "fields": [],
+        "name": "Gm",
+        "wire_name": "GM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GE\")]"
+        ],
+        "fields": [],
+        "name": "Ge",
+        "wire_name": "GE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"DE\")]"
+        ],
+        "fields": [],
+        "name": "De",
+        "wire_name": "DE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GH\")]"
+        ],
+        "fields": [],
+        "name": "Gh",
+        "wire_name": "GH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GI\")]"
+        ],
+        "fields": [],
+        "name": "Gi",
+        "wire_name": "GI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GB\")]"
+        ],
+        "fields": [],
+        "name": "Gb",
+        "wire_name": "GB"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GR\")]"
+        ],
+        "fields": [],
+        "name": "Gr",
+        "wire_name": "GR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GL\")]"
+        ],
+        "fields": [],
+        "name": "Gl",
+        "wire_name": "GL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GD\")]"
+        ],
+        "fields": [],
+        "name": "Gd",
+        "wire_name": "GD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GP\")]"
+        ],
+        "fields": [],
+        "name": "Gp",
+        "wire_name": "GP"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GU\")]"
+        ],
+        "fields": [],
+        "name": "Gu",
+        "wire_name": "GU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GT\")]"
+        ],
+        "fields": [],
+        "name": "Gt",
+        "wire_name": "GT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GG\")]"
+        ],
+        "fields": [],
+        "name": "Gg",
+        "wire_name": "GG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GN\")]"
+        ],
+        "fields": [],
+        "name": "Gn",
+        "wire_name": "GN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GW\")]"
+        ],
+        "fields": [],
+        "name": "Gw",
+        "wire_name": "GW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GY\")]"
+        ],
+        "fields": [],
+        "name": "Gy",
+        "wire_name": "GY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HT\")]"
+        ],
+        "fields": [],
+        "name": "Ht",
+        "wire_name": "HT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HM\")]"
+        ],
+        "fields": [],
+        "name": "Hm",
+        "wire_name": "HM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HN\")]"
+        ],
+        "fields": [],
+        "name": "Hn",
+        "wire_name": "HN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HK\")]"
+        ],
+        "fields": [],
+        "name": "Hk",
+        "wire_name": "HK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"HU\")]"
+        ],
+        "fields": [],
+        "name": "Hu",
+        "wire_name": "HU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IS\")]"
+        ],
+        "fields": [],
+        "name": "Is",
+        "wire_name": "IS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IN\")]"
+        ],
+        "fields": [],
+        "name": "In",
+        "wire_name": "IN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ID\")]"
+        ],
+        "fields": [],
+        "name": "Id",
+        "wire_name": "ID"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IR\")]"
+        ],
+        "fields": [],
+        "name": "Ir",
+        "wire_name": "IR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IQ\")]"
+        ],
+        "fields": [],
+        "name": "Iq",
+        "wire_name": "IQ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IE\")]"
+        ],
+        "fields": [],
+        "name": "Ie",
+        "wire_name": "IE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IM\")]"
+        ],
+        "fields": [],
+        "name": "Im",
+        "wire_name": "IM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IL\")]"
+        ],
+        "fields": [],
+        "name": "Il",
+        "wire_name": "IL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"IT\")]"
+        ],
+        "fields": [],
+        "name": "It",
+        "wire_name": "IT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"JM\")]"
+        ],
+        "fields": [],
+        "name": "Jm",
+        "wire_name": "JM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"JP\")]"
+        ],
+        "fields": [],
+        "name": "Jp",
+        "wire_name": "JP"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"JE\")]"
+        ],
+        "fields": [],
+        "name": "Je",
+        "wire_name": "JE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"JO\")]"
+        ],
+        "fields": [],
+        "name": "Jo",
+        "wire_name": "JO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KZ\")]"
+        ],
+        "fields": [],
+        "name": "Kz",
+        "wire_name": "KZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KE\")]"
+        ],
+        "fields": [],
+        "name": "Ke",
+        "wire_name": "KE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KI\")]"
+        ],
+        "fields": [],
+        "name": "Ki",
+        "wire_name": "KI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KW\")]"
+        ],
+        "fields": [],
+        "name": "Kw",
+        "wire_name": "KW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KG\")]"
+        ],
+        "fields": [],
+        "name": "Kg",
+        "wire_name": "KG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LA\")]"
+        ],
+        "fields": [],
+        "name": "La",
+        "wire_name": "LA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LV\")]"
+        ],
+        "fields": [],
+        "name": "Lv",
+        "wire_name": "LV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LB\")]"
+        ],
+        "fields": [],
+        "name": "Lb",
+        "wire_name": "LB"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LS\")]"
+        ],
+        "fields": [],
+        "name": "Ls",
+        "wire_name": "LS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LR\")]"
+        ],
+        "fields": [],
+        "name": "Lr",
+        "wire_name": "LR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LY\")]"
+        ],
+        "fields": [],
+        "name": "Ly",
+        "wire_name": "LY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LI\")]"
+        ],
+        "fields": [],
+        "name": "Li",
+        "wire_name": "LI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LT\")]"
+        ],
+        "fields": [],
+        "name": "Lt",
+        "wire_name": "LT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LU\")]"
+        ],
+        "fields": [],
+        "name": "Lu",
+        "wire_name": "LU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MO\")]"
+        ],
+        "fields": [],
+        "name": "Mo",
+        "wire_name": "MO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MG\")]"
+        ],
+        "fields": [],
+        "name": "Mg",
+        "wire_name": "MG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MW\")]"
+        ],
+        "fields": [],
+        "name": "Mw",
+        "wire_name": "MW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MY\")]"
+        ],
+        "fields": [],
+        "name": "My",
+        "wire_name": "MY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MV\")]"
+        ],
+        "fields": [],
+        "name": "Mv",
+        "wire_name": "MV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ML\")]"
+        ],
+        "fields": [],
+        "name": "Ml",
+        "wire_name": "ML"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MT\")]"
+        ],
+        "fields": [],
+        "name": "Mt",
+        "wire_name": "MT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MH\")]"
+        ],
+        "fields": [],
+        "name": "Mh",
+        "wire_name": "MH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MQ\")]"
+        ],
+        "fields": [],
+        "name": "Mq",
+        "wire_name": "MQ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MR\")]"
+        ],
+        "fields": [],
+        "name": "Mr",
+        "wire_name": "MR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MU\")]"
+        ],
+        "fields": [],
+        "name": "Mu",
+        "wire_name": "MU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"YT\")]"
+        ],
+        "fields": [],
+        "name": "Yt",
+        "wire_name": "YT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"FM\")]"
+        ],
+        "fields": [],
+        "name": "Fm",
+        "wire_name": "FM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MD\")]"
+        ],
+        "fields": [],
+        "name": "Md",
+        "wire_name": "MD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MC\")]"
+        ],
+        "fields": [],
+        "name": "Mc",
+        "wire_name": "MC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MN\")]"
+        ],
+        "fields": [],
+        "name": "Mn",
+        "wire_name": "MN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ME\")]"
+        ],
+        "fields": [],
+        "name": "Me",
+        "wire_name": "ME"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MS\")]"
+        ],
+        "fields": [],
+        "name": "Ms",
+        "wire_name": "MS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MA\")]"
+        ],
+        "fields": [],
+        "name": "Ma",
+        "wire_name": "MA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MZ\")]"
+        ],
+        "fields": [],
+        "name": "Mz",
+        "wire_name": "MZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MM\")]"
+        ],
+        "fields": [],
+        "name": "Mm",
+        "wire_name": "MM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NA\")]"
+        ],
+        "fields": [],
+        "name": "Na",
+        "wire_name": "NA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NR\")]"
+        ],
+        "fields": [],
+        "name": "Nr",
+        "wire_name": "NR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NP\")]"
+        ],
+        "fields": [],
+        "name": "Np",
+        "wire_name": "NP"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NL\")]"
+        ],
+        "fields": [],
+        "name": "Nl",
+        "wire_name": "NL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NC\")]"
+        ],
+        "fields": [],
+        "name": "Nc",
+        "wire_name": "NC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NZ\")]"
+        ],
+        "fields": [],
+        "name": "Nz",
+        "wire_name": "NZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NI\")]"
+        ],
+        "fields": [],
+        "name": "Ni",
+        "wire_name": "NI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NE\")]"
+        ],
+        "fields": [],
+        "name": "Ne",
+        "wire_name": "NE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NG\")]"
+        ],
+        "fields": [],
+        "name": "Ng",
+        "wire_name": "NG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NU\")]"
+        ],
+        "fields": [],
+        "name": "Nu",
+        "wire_name": "NU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NF\")]"
+        ],
+        "fields": [],
+        "name": "Nf",
+        "wire_name": "NF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KP\")]"
+        ],
+        "fields": [],
+        "name": "Kp",
+        "wire_name": "KP"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MK\")]"
+        ],
+        "fields": [],
+        "name": "Mk",
+        "wire_name": "MK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MP\")]"
+        ],
+        "fields": [],
+        "name": "Mp",
+        "wire_name": "MP"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"NO\")]"
+        ],
+        "fields": [],
+        "name": "No",
+        "wire_name": "NO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"OM\")]"
+        ],
+        "fields": [],
+        "name": "Om",
+        "wire_name": "OM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PK\")]"
+        ],
+        "fields": [],
+        "name": "Pk",
+        "wire_name": "PK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PW\")]"
+        ],
+        "fields": [],
+        "name": "Pw",
+        "wire_name": "PW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PS\")]"
+        ],
+        "fields": [],
+        "name": "Ps",
+        "wire_name": "PS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PA\")]"
+        ],
+        "fields": [],
+        "name": "Pa",
+        "wire_name": "PA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PG\")]"
+        ],
+        "fields": [],
+        "name": "Pg",
+        "wire_name": "PG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PY\")]"
+        ],
+        "fields": [],
+        "name": "Py",
+        "wire_name": "PY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PE\")]"
+        ],
+        "fields": [],
+        "name": "Pe",
+        "wire_name": "PE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PH\")]"
+        ],
+        "fields": [],
+        "name": "Ph",
+        "wire_name": "PH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PN\")]"
+        ],
+        "fields": [],
+        "name": "Pn",
+        "wire_name": "PN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PL\")]"
+        ],
+        "fields": [],
+        "name": "Pl",
+        "wire_name": "PL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PT\")]"
+        ],
+        "fields": [],
+        "name": "Pt",
+        "wire_name": "PT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PR\")]"
+        ],
+        "fields": [],
+        "name": "Pr",
+        "wire_name": "PR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"QA\")]"
+        ],
+        "fields": [],
+        "name": "Qa",
+        "wire_name": "QA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"RE\")]"
+        ],
+        "fields": [],
+        "name": "Re",
+        "wire_name": "RE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"RO\")]"
+        ],
+        "fields": [],
+        "name": "Ro",
+        "wire_name": "RO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"RU\")]"
+        ],
+        "fields": [],
+        "name": "Ru",
+        "wire_name": "RU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"RW\")]"
+        ],
+        "fields": [],
+        "name": "Rw",
+        "wire_name": "RW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"BL\")]"
+        ],
+        "fields": [],
+        "name": "Bl",
+        "wire_name": "BL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SH\")]"
+        ],
+        "fields": [],
+        "name": "Sh",
+        "wire_name": "SH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KN\")]"
+        ],
+        "fields": [],
+        "name": "Kn",
+        "wire_name": "KN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LC\")]"
+        ],
+        "fields": [],
+        "name": "Lc",
+        "wire_name": "LC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"MF\")]"
+        ],
+        "fields": [],
+        "name": "Mf",
+        "wire_name": "MF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"PM\")]"
+        ],
+        "fields": [],
+        "name": "Pm",
+        "wire_name": "PM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VC\")]"
+        ],
+        "fields": [],
+        "name": "Vc",
+        "wire_name": "VC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"WS\")]"
+        ],
+        "fields": [],
+        "name": "Ws",
+        "wire_name": "WS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SM\")]"
+        ],
+        "fields": [],
+        "name": "Sm",
+        "wire_name": "SM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ST\")]"
+        ],
+        "fields": [],
+        "name": "St",
+        "wire_name": "ST"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SA\")]"
+        ],
+        "fields": [],
+        "name": "Sa",
+        "wire_name": "SA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AB\")]"
+        ],
+        "fields": [],
+        "name": "Ab",
+        "wire_name": "AB"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SN\")]"
+        ],
+        "fields": [],
+        "name": "Sn",
+        "wire_name": "SN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"RS\")]"
+        ],
+        "fields": [],
+        "name": "Rs",
+        "wire_name": "RS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SC\")]"
+        ],
+        "fields": [],
+        "name": "Sc",
+        "wire_name": "SC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SL\")]"
+        ],
+        "fields": [],
+        "name": "Sl",
+        "wire_name": "SL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SG\")]"
+        ],
+        "fields": [],
+        "name": "Sg",
+        "wire_name": "SG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SX\")]"
+        ],
+        "fields": [],
+        "name": "Sx",
+        "wire_name": "SX"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SK\")]"
+        ],
+        "fields": [],
+        "name": "Sk",
+        "wire_name": "SK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SI\")]"
+        ],
+        "fields": [],
+        "name": "Si",
+        "wire_name": "SI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SB\")]"
+        ],
+        "fields": [],
+        "name": "Sb",
+        "wire_name": "SB"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SO\")]"
+        ],
+        "fields": [],
+        "name": "So",
+        "wire_name": "SO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZA\")]"
+        ],
+        "fields": [],
+        "name": "Za",
+        "wire_name": "ZA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"GS\")]"
+        ],
+        "fields": [],
+        "name": "Gs",
+        "wire_name": "GS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"KR\")]"
+        ],
+        "fields": [],
+        "name": "Kr",
+        "wire_name": "KR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SS\")]"
+        ],
+        "fields": [],
+        "name": "Ss",
+        "wire_name": "SS"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ES\")]"
+        ],
+        "fields": [],
+        "name": "Es",
+        "wire_name": "ES"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LK\")]"
+        ],
+        "fields": [],
+        "name": "Lk",
+        "wire_name": "LK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SD\")]"
+        ],
+        "fields": [],
+        "name": "Sd",
+        "wire_name": "SD"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SR\")]"
+        ],
+        "fields": [],
+        "name": "Sr",
+        "wire_name": "SR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SJ\")]"
+        ],
+        "fields": [],
+        "name": "Sj",
+        "wire_name": "SJ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SE\")]"
+        ],
+        "fields": [],
+        "name": "Se",
+        "wire_name": "SE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"CH\")]"
+        ],
+        "fields": [],
+        "name": "Ch",
+        "wire_name": "CH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"SY\")]"
+        ],
+        "fields": [],
+        "name": "Sy",
+        "wire_name": "SY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TW\")]"
+        ],
+        "fields": [],
+        "name": "Tw",
+        "wire_name": "TW"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TJ\")]"
+        ],
+        "fields": [],
+        "name": "Tj",
+        "wire_name": "TJ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TZ\")]"
+        ],
+        "fields": [],
+        "name": "Tz",
+        "wire_name": "TZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TH\")]"
+        ],
+        "fields": [],
+        "name": "Th",
+        "wire_name": "TH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TL\")]"
+        ],
+        "fields": [],
+        "name": "Tl",
+        "wire_name": "TL"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TG\")]"
+        ],
+        "fields": [],
+        "name": "Tg",
+        "wire_name": "TG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TK\")]"
+        ],
+        "fields": [],
+        "name": "Tk",
+        "wire_name": "TK"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TO\")]"
+        ],
+        "fields": [],
+        "name": "To",
+        "wire_name": "TO"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TT\")]"
+        ],
+        "fields": [],
+        "name": "Tt",
+        "wire_name": "TT"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TN\")]"
+        ],
+        "fields": [],
+        "name": "Tn",
+        "wire_name": "TN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TR\")]"
+        ],
+        "fields": [],
+        "name": "Tr",
+        "wire_name": "TR"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TM\")]"
+        ],
+        "fields": [],
+        "name": "Tm",
+        "wire_name": "TM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TC\")]"
+        ],
+        "fields": [],
+        "name": "Tc",
+        "wire_name": "TC"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"TV\")]"
+        ],
+        "fields": [],
+        "name": "Tv",
+        "wire_name": "TV"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UM\")]"
+        ],
+        "fields": [],
+        "name": "Um",
+        "wire_name": "UM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UG\")]"
+        ],
+        "fields": [],
+        "name": "Ug",
+        "wire_name": "UG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UA\")]"
+        ],
+        "fields": [],
+        "name": "Ua",
+        "wire_name": "UA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"AE\")]"
+        ],
+        "fields": [],
+        "name": "Ae",
+        "wire_name": "AE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UY\")]"
+        ],
+        "fields": [],
+        "name": "Uy",
+        "wire_name": "UY"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"UZ\")]"
+        ],
+        "fields": [],
+        "name": "Uz",
+        "wire_name": "UZ"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VU\")]"
+        ],
+        "fields": [],
+        "name": "Vu",
+        "wire_name": "VU"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VA\")]"
+        ],
+        "fields": [],
+        "name": "Va",
+        "wire_name": "VA"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VE\")]"
+        ],
+        "fields": [],
+        "name": "Ve",
+        "wire_name": "VE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VN\")]"
+        ],
+        "fields": [],
+        "name": "Vn",
+        "wire_name": "VN"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VG\")]"
+        ],
+        "fields": [],
+        "name": "Vg",
+        "wire_name": "VG"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"VI\")]"
+        ],
+        "fields": [],
+        "name": "Vi",
+        "wire_name": "VI"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"WF\")]"
+        ],
+        "fields": [],
+        "name": "Wf",
+        "wire_name": "WF"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"EH\")]"
+        ],
+        "fields": [],
+        "name": "Eh",
+        "wire_name": "EH"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"YE\")]"
+        ],
+        "fields": [],
+        "name": "Ye",
+        "wire_name": "YE"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZM\")]"
+        ],
+        "fields": [],
+        "name": "Zm",
+        "wire_name": "ZM"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"ZW\")]"
+        ],
+        "fields": [],
+        "name": "Zw",
+        "wire_name": "ZW"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::V2TeamsCreateWithFormDataRequestCountry::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

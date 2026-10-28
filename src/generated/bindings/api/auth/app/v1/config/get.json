@@ -1,0 +1,243 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasAppConfigGetApiError",
+    "operation": null,
+    "path": "client::AuthAliasAppConfigGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppConfigGetBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_config_get",
+      "response_excluded_statuses": [
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_config_get",
+      "source_path": "/api/auth/app/v1/config",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppConfigGetBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_config_get",
+      "response_excluded_statuses": [
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_config_get",
+      "source_path": "/api/auth/app/v1/config",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppConfigGetBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthConfigurationResponse , ApiOpError < AuthAliasAppConfigGetApiError > >",
+      "rust": "async fn send (self) -> Result < AuthConfigurationResponse , ApiOpError < AuthAliasAppConfigGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_config_get",
+      "response_excluded_statuses": [
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_config_get",
+      "source_path": "/api/auth/app/v1/config",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppConfigGetBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_config_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_config_get",
+      "response_excluded_statuses": [
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_config_get",
+      "source_path": "/api/auth/app/v1/config",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_config_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthConfigurationResponse , ApiOpError < AuthAliasAppConfigGetApiError > >",
+      "rust": "async fn auth_alias_app_config_get (& self , x_session_token : Option < impl AsRef < str > >) -> Result < AuthConfigurationResponse , ApiOpError < AuthAliasAppConfigGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_config_get_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_config_get",
+      "response_excluded_statuses": [
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1config/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_config_get",
+      "source_path": "/api/auth/app/v1/config",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_config_get_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAliasAppConfigGetBuilder < '_ >",
+      "rust": "fn auth_alias_app_config_get_builder (& self) -> AuthAliasAppConfigGetBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

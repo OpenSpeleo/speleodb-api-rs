@@ -1,0 +1,280 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasAppAuthEmailVerifyGetApiError",
+    "operation": null,
+    "path": "client::AuthAliasAppAuthEmailVerifyGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthSessionGoneResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status410",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "x_email_verification_key",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_session_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasAppAuthEmailVerifyGetBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_auth_email_verify_get",
+      "source_path": "/api/auth/app/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthEmailVerifyGetBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_auth_email_verify_get",
+      "source_path": "/api/auth/app/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthEmailVerifyGetBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < AuthEmailVerificationInfo , ApiOpError < AuthAliasAppAuthEmailVerifyGetApiError > >",
+      "rust": "async fn send (self) -> Result < AuthEmailVerificationInfo , ApiOpError < AuthAliasAppAuthEmailVerifyGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_session_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_auth_email_verify_get",
+      "source_path": "/api/auth/app/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::AuthAliasAppAuthEmailVerifyGetBuilder::x_session_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_session_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_session_token (mut self , x_session_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_auth_email_verify_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_auth_email_verify_get",
+      "source_path": "/api/auth/app/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_auth_email_verify_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_email_verification_key",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "x_session_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthEmailVerificationInfo , ApiOpError < AuthAliasAppAuthEmailVerifyGetApiError > >",
+      "rust": "async fn auth_alias_app_auth_email_verify_get (& self , x_email_verification_key : impl AsRef < str > , x_session_token : Option < impl AsRef < str > >) -> Result < AuthEmailVerificationInfo , ApiOpError < AuthAliasAppAuthEmailVerifyGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_app_auth_email_verify_get_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_app_auth_email_verify_get",
+      "response_excluded_statuses": [
+        "400",
+        "410"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1app~1v1~1auth~1email~1verify/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_app_auth_email_verify_get",
+      "source_path": "/api/auth/app/v1/auth/email/verify",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_app_auth_email_verify_get_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_email_verification_key",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "AuthAliasAppAuthEmailVerifyGetBuilder < '_ >",
+      "rust": "fn auth_alias_app_auth_email_verify_get_builder (& self , x_email_verification_key : impl Into < String >) -> AuthAliasAppAuthEmailVerifyGetBuilder < '_ >"
+    },
+    "variants": []
+  }
+]

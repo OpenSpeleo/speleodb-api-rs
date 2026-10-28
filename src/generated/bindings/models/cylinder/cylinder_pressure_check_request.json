@@ -1,0 +1,375 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "check_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "check_date"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "install",
+        "public": true,
+        "rust_type": "Option < uuid :: Uuid >",
+        "wire_name": "install"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "notes",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "notes"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "pressure",
+        "public": true,
+        "rust_type": "i64",
+        "wire_name": "pressure"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "unit_system",
+        "public": true,
+        "rust_type": "CylinderPressureCheckRequestUnitSystem",
+        "wire_name": "unit_system"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 5,
+        "name": "user",
+        "public": true,
+        "rust_type": "Option < CylinderPressureCheckRequestUser >",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "CylinderPressureCheckRequest",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        },
+        {
+          "name": "unit_system",
+          "rust_type": "CylinderPressureCheckRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "CylinderPressureCheckRequestBuilder",
+      "rust": "fn builder (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> CylinderPressureCheckRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        },
+        {
+          "name": "unit_system",
+          "rust_type": "CylinderPressureCheckRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "CylinderPressureCheckRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "CylinderPressureCheckRequestBuilder",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "CylinderPressureCheckRequest",
+      "rust": "fn build (self) -> CylinderPressureCheckRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "install",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder::install",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "install",
+          "rust_type": "uuid :: Uuid"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn install (mut self , install : uuid :: Uuid) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "check_date",
+          "rust_type": "chrono :: NaiveDate"
+        },
+        {
+          "name": "pressure",
+          "rust_type": "i64"
+        },
+        {
+          "name": "unit_system",
+          "rust_type": "CylinderPressureCheckRequestUnitSystem"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "notes",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder::notes",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "notes",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn notes (mut self , notes : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "user",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestBuilder::user",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "user",
+          "rust_type": "CylinderPressureCheckRequestUser"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn user (mut self , user : CylinderPressureCheckRequestUser) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "CylinderPressureCheckRequestUnitSystem",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestUnitSystem",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"metric\")]"
+        ],
+        "fields": [],
+        "name": "Metric",
+        "wire_name": "metric"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"imperial\")]"
+        ],
+        "fields": [],
+        "name": "Imperial",
+        "wire_name": "imperial"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestUnitSystem::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "CylinderPressureCheckRequestUser",
+    "operation": null,
+    "path": "types::CylinderPressureCheckRequestUser",
+    "rust_type": "String",
+    "signature": null,
+    "variants": []
+  }
+]

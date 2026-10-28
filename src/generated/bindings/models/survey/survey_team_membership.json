@@ -1,0 +1,114 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "creation_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "creation_date"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "modified_date",
+        "public": true,
+        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "wire_name": "modified_date"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "role",
+        "public": true,
+        "rust_type": "SurveyTeamMembershipRole",
+        "wire_name": "role"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "team",
+        "public": true,
+        "rust_type": "uuid :: Uuid",
+        "wire_name": "team"
+      },
+      {
+        "attributes": [],
+        "index": 4,
+        "name": "user",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "SurveyTeamMembership",
+    "operation": null,
+    "path": "types::SurveyTeamMembership",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , PartialEq , Eq , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "SurveyTeamMembershipRole",
+    "operation": null,
+    "path": "types::SurveyTeamMembershipRole",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [default]",
+          "# [serde (rename = \"MEMBER\")]"
+        ],
+        "fields": [],
+        "name": "Member",
+        "wire_name": "MEMBER"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"LEADER\")]"
+        ],
+        "fields": [],
+        "name": "Leader",
+        "wire_name": "LEADER"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "types::SurveyTeamMembershipRole::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

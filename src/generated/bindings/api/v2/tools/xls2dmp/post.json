@@ -1,0 +1,1020 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2dmp_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2dmp_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsXls2dmpCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsXls2dmpCreateApiError > >",
+      "rust": "async fn v2_tools_xls2dmp_create (& self , format : Option < V2ToolsXls2dmpCreateFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ToolsXls2dmpCreateRequest) -> Result < bytes :: Bytes , ApiOpError < V2ToolsXls2dmpCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "< __Param0 : AsRef < str > >",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2dmp_create_binary_stream",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2dmp_create_binary_stream",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < V2ToolsXls2dmpCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < __Param0 >"
+        },
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "< __Param0 : AsRef < str > >",
+      "receiver": "& self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsXls2dmpCreateApiError > >",
+      "rust": "async fn v2_tools_xls2dmp_create_binary_stream < __Param0 : AsRef < str > > (& self , format : Option < V2ToolsXls2dmpCreateFormat > , x_csrf_token : Option < __Param0 > , request : V2ToolsXls2dmpCreateRequest) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > + 'static + use < __Param0 > , ApiOpError < V2ToolsXls2dmpCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2dmp_create_binary_stream_builder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2dmp_create_binary_stream_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsXls2dmpCreateBinaryStreamBuilder < '_ >",
+      "rust": "fn v2_tools_xls2dmp_create_binary_stream_builder (& self , request : V2ToolsXls2dmpCreateRequest) -> V2ToolsXls2dmpCreateBinaryStreamBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_tools_xls2dmp_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_tools_xls2dmp_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2ToolsXls2dmpCreateBuilder < '_ >",
+      "rust": "fn v2_tools_xls2dmp_create_builder (& self , request : V2ToolsXls2dmpCreateRequest) -> V2ToolsXls2dmpCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2dmpCreateApiError",
+    "operation": null,
+    "path": "client::V2ToolsXls2dmpCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponsedfb6ec2c0d8b8186",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status415",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsXls2dmpCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ToolsXls2dmpCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2dmpCreateBinaryStreamBuilder",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBinaryStreamBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBinaryStreamBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsXls2dmpCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsXls2dmpCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBinaryStreamBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ToolsXls2dmpCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBinaryStreamBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsXls2dmpCreateApiError > >",
+      "rust": "async fn send (self) -> Result < impl futures_util :: Stream < Item = Result < bytes :: Bytes , reqwest :: Error > > , ApiOpError < V2ToolsXls2dmpCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "binary_stream",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBinaryStreamBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2ToolsXls2dmpCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "request",
+        "public": false,
+        "rust_type": "V2ToolsXls2dmpCreateRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2dmpCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2ToolsXls2dmpCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2ToolsXls2dmpCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "request",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBuilder::request",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "request",
+          "rust_type": "V2ToolsXls2dmpCreateRequest"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn request (mut self , request : V2ToolsXls2dmpCreateRequest) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < bytes :: Bytes , ApiOpError < V2ToolsXls2dmpCreateApiError > >",
+      "rust": "async fn send (self) -> Result < bytes :: Bytes , ApiOpError < V2ToolsXls2dmpCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_tools_xls2dmp_create",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "binary",
+      "response_media_type": "application/octet-stream",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1tools~1xls2dmp~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_tools_xls2dmp_create",
+      "source_path": "/api/v2/tools/xls2dmp/",
+      "webhook": false
+    },
+    "path": "client::V2ToolsXls2dmpCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2dmpCreateFormat",
+    "operation": null,
+    "path": "client::V2ToolsXls2dmpCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2ToolsXls2dmpCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "direction",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "direction"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "shots",
+        "public": true,
+        "rust_type": "V2ToolsXls2dmpCreateRequestShots",
+        "wire_name": "shots"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "survey_date",
+        "public": true,
+        "rust_type": "chrono :: NaiveDate",
+        "wire_name": "survey_date"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "unit",
+        "public": true,
+        "rust_type": "String",
+        "wire_name": "unit"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ToolsXls2dmpCreateRequest",
+    "operation": null,
+    "path": "types::V2ToolsXls2dmpCreateRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2dmpCreateRequestShots",
+    "operation": null,
+    "path": "types::V2ToolsXls2dmpCreateRequestShots",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ToolsXls2dmpCreateRequestShotsArray",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ToolsXls2dmpCreateRequestShotsArray",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "V2ToolsXls2dmpCreateRequestShotsArrayInline",
+            "wire_name": null
+          }
+        ],
+        "name": "V2ToolsXls2dmpCreateRequestShotsArrayInline",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2ToolsXls2dmpCreateRequestShotsArray",
+    "operation": null,
+    "path": "types::V2ToolsXls2dmpCreateRequestShotsArray",
+    "rust_type": "Vec < serde_json :: Value >",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "alias",
+    "name": "V2ToolsXls2dmpCreateRequestShotsArrayInline",
+    "operation": null,
+    "path": "types::V2ToolsXls2dmpCreateRequestShotsArrayInline",
+    "rust_type": "Vec < V2ToolsXls2dmpCreateRequestShotsItemUnion >",
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ToolsXls2dmpCreateRequestShotsItemUnion",
+    "operation": null,
+    "path": "types::V2ToolsXls2dmpCreateRequestShotsItemUnion",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AzimuthBlockInlineD4A9DFC68749C3BD",
+            "wire_name": null
+          }
+        ],
+        "name": "AzimuthBlockInlineD4A9DFC68749C3BD",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "FinalDepthContent",
+            "wire_name": null
+          }
+        ],
+        "name": "FinalDepthContent",
+        "wire_name": null
+      }
+    ]
+  }
+]

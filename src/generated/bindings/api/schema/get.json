@@ -1,0 +1,711 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ApiSchemaRetrieveApiError",
+    "operation": null,
+    "path": "client::ApiSchemaRetrieveApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < ApiSchemaRetrieveFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "version",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ApiSchemaRetrieveBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "ApiSchemaRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : ApiSchemaRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ApiSchemaRetrieveResponse , ApiOpError < ApiSchemaRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < ApiSchemaRetrieveResponse , ApiOpError < ApiSchemaRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "version",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveBuilder::version",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "version",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn version (mut self , version : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "ApiSchemaRetrieveFormat",
+    "operation": null,
+    "path": "client::ApiSchemaRetrieveFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"yaml\")]"
+        ],
+        "fields": [],
+        "name": "Yaml",
+        "wire_name": "yaml"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::ApiSchemaRetrieveFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < ApiSchemaRetrieveFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "version",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "ApiSchemaRetrieveFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : ApiSchemaRetrieveFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson , ApiOpError < ApiSchemaRetrieveApiError > >",
+      "rust": "async fn send (self) -> Result < ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson , ApiOpError < ApiSchemaRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "version",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder::version",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "version",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn version (mut self , version : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "api_schema_retrieve",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::api_schema_retrieve",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < ApiSchemaRetrieveFormat >"
+        },
+        {
+          "name": "version",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ApiSchemaRetrieveResponse , ApiOpError < ApiSchemaRetrieveApiError > >",
+      "rust": "async fn api_schema_retrieve (& self , format : Option < ApiSchemaRetrieveFormat > , version : Option < impl AsRef < str > >) -> Result < ApiSchemaRetrieveResponse , ApiOpError < ApiSchemaRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "api_schema_retrieve_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::api_schema_retrieve_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "ApiSchemaRetrieveBuilder < '_ >",
+      "rust": "fn api_schema_retrieve_builder (& self) -> ApiSchemaRetrieveBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "api_schema_retrieve_json_application_vnd_oai_openapi_json",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::api_schema_retrieve_json_application_vnd_oai_openapi_json",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "Option < ApiSchemaRetrieveFormat >"
+        },
+        {
+          "name": "version",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson , ApiOpError < ApiSchemaRetrieveApiError > >",
+      "rust": "async fn api_schema_retrieve_json_application_vnd_oai_openapi_json (& self , format : Option < ApiSchemaRetrieveFormat > , version : Option < impl AsRef < str > >) -> Result < ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson , ApiOpError < ApiSchemaRetrieveApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "api_schema_retrieve_json_application_vnd_oai_openapi_json_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "api_schema_retrieve",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/vnd.oai.openapi+json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1schema~1/get",
+      "source_method": "GET",
+      "source_operation_id": "api_schema_retrieve",
+      "source_path": "/api/schema/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::api_schema_retrieve_json_application_vnd_oai_openapi_json_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder < '_ >",
+      "rust": "fn api_schema_retrieve_json_application_vnd_oai_openapi_json_builder (& self) -> ApiSchemaRetrieveJsonApplicationVndOaiOpenapiJsonBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ApiSchemaRetrieveResponse",
+    "operation": null,
+    "path": "types::ApiSchemaRetrieveResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (flatten)]"
+        ],
+        "index": 0,
+        "name": "additional_properties",
+        "public": true,
+        "rust_type": "std :: collections :: BTreeMap < String , serde_json :: Value >",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson",
+    "operation": null,
+    "path": "types::ApiSchemaRetrieveResponseapplicationVndOaiOpenapiJson",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]

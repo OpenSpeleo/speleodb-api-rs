@@ -1,0 +1,136 @@
+[
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "AuthAliasBrowserAuthPasswordResetGetApiError",
+    "operation": null,
+    "path": "client::AuthAliasBrowserAuthPasswordResetGetApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "AuthErrorResponse",
+            "wire_name": null
+          }
+        ],
+        "name": "Status400",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "auth_alias_browser_auth_password_reset_get",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "auth_alias_browser_auth_password_reset_get",
+      "response_excluded_statuses": [
+        "400"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1auth~1browser~1v1~1auth~1password~1reset/get",
+      "source_method": "GET",
+      "source_operation_id": "auth_alias_browser_auth_password_reset_get",
+      "source_path": "/api/auth/browser/v1/auth/password/reset",
+      "webhook": false
+    },
+    "path": "client::HttpClient::auth_alias_browser_auth_password_reset_get",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_password_reset_key",
+          "rust_type": "impl AsRef < str >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < AuthAliasBrowserAuthPasswordResetGetResponse , ApiOpError < AuthAliasBrowserAuthPasswordResetGetApiError > >",
+      "rust": "async fn auth_alias_browser_auth_password_reset_get (& self , x_password_reset_key : impl AsRef < str >) -> Result < AuthAliasBrowserAuthPasswordResetGetResponse , ApiOpError < AuthAliasBrowserAuthPasswordResetGetApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "data",
+        "public": true,
+        "rust_type": "AuthAliasBrowserAuthPasswordResetGetResponseData",
+        "wire_name": "data"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "status",
+        "public": true,
+        "rust_type": "AuthStatusOK",
+        "wire_name": "status"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasBrowserAuthPasswordResetGetResponse",
+    "operation": null,
+    "path": "types::AuthAliasBrowserAuthPasswordResetGetResponse",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "user",
+        "public": true,
+        "rust_type": "Option < AuthUser >",
+        "wire_name": "user"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "AuthAliasBrowserAuthPasswordResetGetResponseData",
+    "operation": null,
+    "path": "types::AuthAliasBrowserAuthPasswordResetGetResponseData",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  }
+]
