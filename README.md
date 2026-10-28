@@ -5,10 +5,9 @@ Async Rust SDK for SpeleoDB, generated with
 reviewed, package-local OpenAPI snapshot. Crate name: `speleodb-api`; Rust
 import: `speleodb_api`. License: AGPL-3.0-only.
 
-```toml
-[dependencies]
-speleodb-api = "0.1.1"
-tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+```sh
+cargo add speleodb-api
+cargo add tokio --features macros,rt-multi-thread
 ```
 
 ```rust,no_run
