@@ -116,7 +116,7 @@ impl<'a> V2ProjectsDownloadRetrieveByFormatAtHashBinaryStreamBuilder<'a> {
     }
 }
 impl HttpClient {
-    /// Dedicated view for hexsha route to provide unique operation_id.
+    /// Download the specified revision in the requested format. Accepted fileformat values: dump, ariane_tml, ariane_tmlu, ariane_agr, compass_zip, stalagmight.
     ///
     /// `GET /api/v2/projects/{id}/download/{fileformat}/{hexsha}/`
     pub async fn v2_projects_download_retrieve_by_format_at_hash(
@@ -316,7 +316,7 @@ impl HttpClient {
             )
         }
     }
-    /// Dedicated view for hexsha route to provide unique operation_id.
+    /// Download the specified revision in the requested format. Accepted fileformat values: dump, ariane_tml, ariane_tmlu, ariane_agr, compass_zip, stalagmight.
     ///
     /// `GET /api/v2/projects/{id}/download/{fileformat}/{hexsha}/`
     ///Select `application/octet-stream` as binary_stream; accepts response statuses 200. Other successful statuses and mismatched Content-Type values are returned as inspectable API errors.

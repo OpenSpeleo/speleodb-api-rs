@@ -83,7 +83,7 @@ impl<'a> V2ProjectsUploadBuilder<'a> {
     }
 }
 impl HttpClient {
-    /// Upload repeated artifact file parts with a commit message. Compass ZIP format accepts exactly one .zip file. At most 20 files are accepted; each file is limited to 150 MiB. The current combined-byte limit is 24657920 bytes.
+    /// Upload repeated artifact file parts with a commit message. Compass ZIP format accepts exactly one .zip file. Accepted fileformat values: other, auto, ariane_tml, ariane_tmlu, ariane_agr, compass_zip, compass_manual, walls_srv, walls_wpj, stickmaps, stalagmight. At most 20 files are accepted; each file is limited to 150 MiB. The current combined-byte limit is 24657920 bytes.
     ///
     /// `PUT /api/v2/projects/{id}/upload/{fileformat}/`
     pub async fn v2_projects_upload(

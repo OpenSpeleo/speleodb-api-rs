@@ -548,6 +548,65 @@ async fn multipart_upload_preserves_repeated_files_names_mime_and_binary() {
 }
 
 #[tokio::test]
+async fn stalagmight_upload_and_downloads_preserve_paths_metadata_and_bytes() {
+    // This loopback witness checks transport; the backend owns SQLite validation.
+    let body = b"\0\xff\x80\r\n";
+    let (url, received) = server(304, "application/json", b"").await;
+    let request = ProjectUploadRequestRequest {
+        message: "Stalagmight revision".into(),
+        artifact: vec![
+            MultipartFile::from(bytes::Bytes::from_static(body))
+                .with_file_name("survey.stalx")
+                .with_content_type("application/vnd.sqlite3"),
+        ],
+    };
+    let response = HttpClient::new()
+        .with_base_url(url)
+        .v2_projects_upload("stalagmight", "project", None, None::<&str>, request)
+        .await
+        .expect_err("An unchanged upload retains its 304 response envelope");
+    assert_eq!(response.api().unwrap().status, 304);
+    let request = received.await.unwrap();
+    let text = String::from_utf8_lossy(&request);
+    assert!(text.starts_with("PUT /api/v2/projects/project/upload/stalagmight/ HTTP/1.1"));
+    assert_eq!(text.matches("name=\"artifact\"").count(), 1);
+    assert!(text.contains("filename=\"survey.stalx\""));
+    assert!(
+        text.to_lowercase()
+            .contains("content-type: application/vnd.sqlite3")
+    );
+    assert!(request.windows(body.len()).any(|part| part == body));
+    assert!(text.contains("name=\"message\"\r\n\r\nStalagmight revision"));
+
+    for historical in [false, true] {
+        let (url, received) = server(200, "application/octet-stream", body).await;
+        let client = HttpClient::new().with_base_url(url);
+        let result = if historical {
+            client
+                .v2_projects_download_retrieve_by_format_at_hash(
+                    "stalagmight",
+                    "abcdef01",
+                    "project",
+                    None,
+                )
+                .await
+                .unwrap()
+        } else {
+            client
+                .v2_projects_download_retrieve_by_format("stalagmight", "project", None)
+                .await
+                .unwrap()
+        };
+        assert_eq!(result.as_ref(), body);
+        let request = String::from_utf8(received.await.unwrap()).unwrap();
+        let suffix = if historical { "abcdef01/" } else { "" };
+        assert!(request.starts_with(&format!(
+            "GET /api/v2/projects/project/download/stalagmight/{suffix} HTTP/1.1"
+        )));
+    }
+}
+
+#[tokio::test]
 async fn git_binary_response_and_path_encoding_are_lossless() {
     let body = b"\0\xffpacket";
     let (url, received) = server(200, "application/x-git-upload-pack-advertisement", body).await;
