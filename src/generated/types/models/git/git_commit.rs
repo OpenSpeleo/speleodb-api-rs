@@ -5,10 +5,8 @@ use super::super::super::{Deserialize, GitCommitFormat, Serialize};
 pub struct GitCommit {
     pub author_email: String,
     pub author_name: String,
-    ///Constraint: pattern=`^\d{4}/\d{2}/\d{2} \d{2}:\d{2}$`
-    pub authored_date: String,
-    ///Constraint: pattern=`^\d{4}/\d{2}/\d{2} \d{2}:\d{2}$`
-    pub committed_date: String,
+    pub authored_date: chrono::DateTime<chrono::Utc>,
+    pub committed_date: chrono::DateTime<chrono::Utc>,
     pub committer_email: String,
     pub committer_name: String,
     pub dt_since: String,

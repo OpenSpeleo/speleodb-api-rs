@@ -5,8 +5,7 @@ use super::super::super::{Deserialize, Serialize};
 pub struct ProjectCommit {
     pub author_email: String,
     pub author_name: String,
-    ///Constraint: pattern=`^\d{4}/\d{2}/\d{2} \d{2}:\d{2}$`
-    pub authored_date: String,
+    pub authored_date: chrono::DateTime<chrono::Utc>,
     pub dt_since: String,
     pub formats: Vec<ProjectCommitFormatsItem>,
     ///Specific commit SHA (40 hex chars).

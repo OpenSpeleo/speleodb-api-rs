@@ -64,6 +64,11 @@ contract.
 
 ## Request representations and nested modules
 
+Revision `authored_date` and `committed_date` fields use the schema's
+`date-time` format and decode to UTC datetimes. The backend emits UTC ISO 8601
+timestamps; clients own local display. `tests/revision_timestamps.rs` protects
+instant and fractional-second preservation and rejection of ambiguous dates.
+
 Upstream openapi-to-rust emits one preferred request representation per
 operation and monolithic client/types files. The Cargo xtask adapts its inputs
 and output syntax while retaining its serializers and model generation.
