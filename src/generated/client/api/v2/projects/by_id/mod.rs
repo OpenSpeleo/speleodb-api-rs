@@ -43,11 +43,6 @@ pub use self::geojson::{
     V2ProjectsGeojsonRetrieveApiError, V2ProjectsGeojsonRetrieveBuilder,
     V2ProjectsGeojsonRetrieveFormat,
 };
-pub mod geojson_status;
-pub use self::geojson_status::{
-    V2ProjectGeojsonStatusApiError, V2ProjectGeojsonStatusBuilder,
-    V2ProjectGeojsonStatusFormat,
-};
 pub mod get;
 pub use self::get::{
     V2ProjectRetrieveApiError, V2ProjectRetrieveBuilder, V2ProjectRetrieveFormat,

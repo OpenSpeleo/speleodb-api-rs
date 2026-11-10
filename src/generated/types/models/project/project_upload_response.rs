@@ -4,7 +4,6 @@ use super::super::super::{Deserialize, Project, Serialize};
 pub struct ProjectUploadResponse {
     pub browser_url: Option<String>,
     pub files: Vec<String>,
-    pub geojson_status: String,
     pub hexsha: String,
     pub message: String,
     pub project: Project,

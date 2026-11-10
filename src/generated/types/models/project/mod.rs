@@ -10,8 +10,6 @@ pub use self::project_commit::{
 };
 pub mod project_geo_json_commit;
 pub use self::project_geo_json_commit::ProjectGeoJSONCommit;
-pub mod project_geo_json_status;
-pub use self::project_geo_json_status::{ProjectGeoJSONStatus, ProjectGeoJSONStatusState};
 pub mod project_git_explorer_response;
 pub use self::project_git_explorer_response::ProjectGitExplorerResponse;
 pub mod project_release_request_request;

@@ -1168,7 +1168,7 @@ mod tests {
                 )
             })
             .collect();
-        assert_eq!(expected.len(), 376, "Review contract inventory changes");
+        assert_eq!(expected.len(), 375, "Review contract inventory changes");
         assert_eq!(actual, expected);
     }
 
