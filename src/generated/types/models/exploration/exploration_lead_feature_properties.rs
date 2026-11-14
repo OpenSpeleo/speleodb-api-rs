@@ -5,6 +5,8 @@ pub struct ExplorationLeadFeatureProperties {
     pub created_by: String,
     pub creation_date: chrono::DateTime<chrono::Utc>,
     pub description: String,
+    ///Constraint: maxItems=3
+    pub headings: Vec<f64>,
     pub modified_date: chrono::DateTime<chrono::Utc>,
     pub project: uuid::Uuid,
 }

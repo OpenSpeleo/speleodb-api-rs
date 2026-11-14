@@ -150,14 +150,14 @@
         },
         {
           "name": "request",
-          "rust_type": "Option < PatchedExplorationLeadRequest >"
+          "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithJsonRequest >"
         }
       ],
       "asynchronous": true,
       "generics": "",
       "receiver": "& self",
       "return_type": "Result < ExplorationLead , ApiOpError < V2ExplorationLeadsPartialUpdateWithJsonApiError > >",
-      "rust": "async fn v2_exploration_leads_partial_update_with_json (& self , id : impl AsRef < str > , format : Option < V2ExplorationLeadsPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < PatchedExplorationLeadRequest >) -> Result < ExplorationLead , ApiOpError < V2ExplorationLeadsPartialUpdateWithJsonApiError > >"
+      "rust": "async fn v2_exploration_leads_partial_update_with_json (& self , id : impl AsRef < str > , format : Option < V2ExplorationLeadsPartialUpdateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : Option < V2ExplorationLeadsPartialUpdateWithJsonRequest >) -> Result < ExplorationLead , ApiOpError < V2ExplorationLeadsPartialUpdateWithJsonApiError > >"
     },
     "variants": []
   },
@@ -585,6 +585,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_partial_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_exploration_leads_partial_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsPartialUpdateWithFormDataBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "latitude",
     "operation": {
       "consumption": "buffered",
@@ -989,7 +1037,7 @@
         "index": 4,
         "name": "request",
         "public": false,
-        "rust_type": "Option < PatchedExplorationLeadRequest >",
+        "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithJsonRequest >",
         "wire_name": null
       }
     ],
@@ -1129,6 +1177,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_partial_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_exploration_leads_partial_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsPartialUpdateWithJsonBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "Vec < f64 >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : Vec < f64 >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "latitude",
     "operation": {
       "consumption": "buffered",
@@ -1157,14 +1253,14 @@
       "arguments": [
         {
           "name": "latitude",
-          "rust_type": "PatchedExplorationLeadRequestLatitude"
+          "rust_type": "V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn latitude (mut self , latitude : PatchedExplorationLeadRequestLatitude) -> Self"
+      "rust": "fn latitude (mut self , latitude : V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude) -> Self"
     },
     "variants": []
   },
@@ -1205,14 +1301,14 @@
       "arguments": [
         {
           "name": "longitude",
-          "rust_type": "PatchedExplorationLeadRequestLongitude"
+          "rust_type": "V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn longitude (mut self , longitude : PatchedExplorationLeadRequestLongitude) -> Self"
+      "rust": "fn longitude (mut self , longitude : V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude) -> Self"
     },
     "variants": []
   },
@@ -1253,14 +1349,14 @@
       "arguments": [
         {
           "name": "request",
-          "rust_type": "PatchedExplorationLeadRequest"
+          "rust_type": "V2ExplorationLeadsPartialUpdateWithJsonRequest"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn request (mut self , request : PatchedExplorationLeadRequest) -> Self"
+      "rust": "fn request (mut self , request : V2ExplorationLeadsPartialUpdateWithJsonRequest) -> Self"
     },
     "variants": []
   },
@@ -1673,6 +1769,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_partial_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/patch",
+      "source_method": "PATCH",
+      "source_operation_id": "v2_exploration_leads_partial_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsPartialUpdateWithUrlEncodedBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "latitude",
     "operation": {
       "consumption": "buffered",
@@ -1963,6 +2107,16 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
         "name": "latitude",
         "public": true,
         "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithFormDataRequestLatitude >",
@@ -1972,7 +2126,7 @@
         "attributes": [
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
-        "index": 2,
+        "index": 3,
         "name": "longitude",
         "public": true,
         "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithFormDataRequestLongitude >",
@@ -2106,6 +2260,199 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < Vec < f64 > >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude >",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude >",
+        "wire_name": "longitude"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExplorationLeadsPartialUpdateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2ExplorationLeadsPartialUpdateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude",
+    "operation": null,
+    "path": "types::V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude",
+    "operation": null,
+    "path": "types::V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize , Default)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 2,
         "name": "latitude",
         "public": true,
         "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithUrlEncodedRequestLatitude >",
@@ -2115,7 +2462,7 @@
         "attributes": [
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
-        "index": 2,
+        "index": 3,
         "name": "longitude",
         "public": true,
         "rust_type": "Option < V2ExplorationLeadsPartialUpdateWithUrlEncodedRequestLongitude >",

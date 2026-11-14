@@ -6,6 +6,9 @@ pub struct V2ExplorationLeadsPartialUpdateWithUrlEncodedRequest {
     ///Optional description of the lead
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
+    ///JSON-encoded value.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     #[serde(skip_serializing_if = "Option::is_none")]
     pub latitude: Option<V2ExplorationLeadsPartialUpdateWithUrlEncodedRequestLatitude>,
@@ -29,10 +32,45 @@ pub enum V2ExplorationLeadsPartialUpdateWithUrlEncodedRequestLatitude {
 }
 ///Serializer for ExplorationLead model.
 #[derive(Debug, Clone, Deserialize, Serialize, Default)]
+pub struct V2ExplorationLeadsPartialUpdateWithJsonRequest {
+    ///Optional description of the lead
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
+    ///Constraint: maxItems=3
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<Vec<f64>>,
+    ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub latitude: Option<V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude>,
+    ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub longitude: Option<V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude>,
+}
+///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
+#[derive(Debug, Clone, Deserialize, Serialize)]
+#[serde(untagged)]
+pub enum V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude {
+    Number(f64),
+    Boolean(bool),
+    String(String),
+}
+///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
+#[derive(Debug, Clone, Deserialize, Serialize)]
+#[serde(untagged)]
+pub enum V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude {
+    Number(f64),
+    Boolean(bool),
+    String(String),
+}
+///Serializer for ExplorationLead model.
+#[derive(Debug, Clone, Deserialize, Serialize, Default)]
 pub struct V2ExplorationLeadsPartialUpdateWithFormDataRequest {
     ///Optional description of the lead
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
+    ///JSON-encoded value.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     #[serde(skip_serializing_if = "Option::is_none")]
     pub latitude: Option<V2ExplorationLeadsPartialUpdateWithFormDataRequestLatitude>,

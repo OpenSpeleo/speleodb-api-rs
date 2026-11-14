@@ -6,6 +6,9 @@ pub struct V2ExplorationLeadsUpdateWithUrlEncodedRequest {
     ///Optional description of the lead
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
+    ///JSON-encoded value.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     pub latitude: V2ExplorationLeadsUpdateWithUrlEncodedRequestLatitude,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
@@ -21,6 +24,7 @@ impl V2ExplorationLeadsUpdateWithUrlEncodedRequest {
             latitude,
             longitude,
             description: None,
+            headings: None,
         }
     }
     /// Start a dependency-free builder with every required wire field.
@@ -56,6 +60,12 @@ impl V2ExplorationLeadsUpdateWithUrlEncodedRequestBuilder {
         self.value.description = Some(description);
         self
     }
+    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[must_use]
+    pub fn headings(mut self, headings: String) -> Self {
+        self.value.headings = Some(headings);
+        self
+    }
     /// Finish building the request model.
     pub fn build(self) -> V2ExplorationLeadsUpdateWithUrlEncodedRequest {
         self.value
@@ -77,10 +87,97 @@ pub enum V2ExplorationLeadsUpdateWithUrlEncodedRequestLatitude {
 }
 ///Serializer for ExplorationLead model.
 #[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct V2ExplorationLeadsUpdateWithJsonRequest {
+    ///Optional description of the lead
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
+    ///Constraint: maxItems=3
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<Vec<f64>>,
+    ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
+    pub latitude: V2ExplorationLeadsUpdateWithJsonRequestLatitude,
+    ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
+    pub longitude: V2ExplorationLeadsUpdateWithJsonRequestLongitude,
+}
+impl V2ExplorationLeadsUpdateWithJsonRequest {
+    /// Construct this request with every required wire field.
+    pub fn new(
+        latitude: V2ExplorationLeadsUpdateWithJsonRequestLatitude,
+        longitude: V2ExplorationLeadsUpdateWithJsonRequestLongitude,
+    ) -> Self {
+        Self {
+            latitude,
+            longitude,
+            description: None,
+            headings: None,
+        }
+    }
+    /// Start a dependency-free builder with every required wire field.
+    pub fn builder(
+        latitude: V2ExplorationLeadsUpdateWithJsonRequestLatitude,
+        longitude: V2ExplorationLeadsUpdateWithJsonRequestLongitude,
+    ) -> V2ExplorationLeadsUpdateWithJsonRequestBuilder {
+        V2ExplorationLeadsUpdateWithJsonRequestBuilder::new(latitude, longitude)
+    }
+}
+/// Dependency-free builder for [`#struct_name`].
+#[derive(Debug, Clone)]
+#[must_use]
+pub struct V2ExplorationLeadsUpdateWithJsonRequestBuilder {
+    value: V2ExplorationLeadsUpdateWithJsonRequest,
+}
+impl V2ExplorationLeadsUpdateWithJsonRequestBuilder {
+    /// Start a builder with every required wire field.
+    pub fn new(
+        latitude: V2ExplorationLeadsUpdateWithJsonRequestLatitude,
+        longitude: V2ExplorationLeadsUpdateWithJsonRequestLongitude,
+    ) -> Self {
+        Self {
+            value: V2ExplorationLeadsUpdateWithJsonRequest::new(latitude, longitude),
+        }
+    }
+    #[doc = concat!("Set the optional `", "description", "` request field.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.value.description = Some(description);
+        self
+    }
+    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[must_use]
+    pub fn headings(mut self, headings: Vec<f64>) -> Self {
+        self.value.headings = Some(headings);
+        self
+    }
+    /// Finish building the request model.
+    pub fn build(self) -> V2ExplorationLeadsUpdateWithJsonRequest {
+        self.value
+    }
+}
+///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
+#[derive(Debug, Clone, Deserialize, Serialize)]
+#[serde(untagged)]
+pub enum V2ExplorationLeadsUpdateWithJsonRequestLongitude {
+    Number(f64),
+    Boolean(bool),
+    String(String),
+}
+///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
+#[derive(Debug, Clone, Deserialize, Serialize)]
+#[serde(untagged)]
+pub enum V2ExplorationLeadsUpdateWithJsonRequestLatitude {
+    Number(f64),
+    Boolean(bool),
+    String(String),
+}
+///Serializer for ExplorationLead model.
+#[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct V2ExplorationLeadsUpdateWithFormDataRequest {
     ///Optional description of the lead
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
+    ///JSON-encoded value.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub headings: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     pub latitude: V2ExplorationLeadsUpdateWithFormDataRequestLatitude,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
@@ -96,6 +193,7 @@ impl V2ExplorationLeadsUpdateWithFormDataRequest {
             latitude,
             longitude,
             description: None,
+            headings: None,
         }
     }
     /// Start a dependency-free builder with every required wire field.
@@ -126,6 +224,12 @@ impl V2ExplorationLeadsUpdateWithFormDataRequestBuilder {
     #[must_use]
     pub fn description(mut self, description: String) -> Self {
         self.value.description = Some(description);
+        self
+    }
+    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[must_use]
+    pub fn headings(mut self, headings: String) -> Self {
+        self.value.headings = Some(headings);
         self
     }
     /// Finish building the request model.

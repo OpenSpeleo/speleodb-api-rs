@@ -158,14 +158,14 @@
         },
         {
           "name": "request",
-          "rust_type": "ExplorationLeadRequest"
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequest"
         }
       ],
       "asynchronous": true,
       "generics": "",
       "receiver": "& self",
       "return_type": "Result < ExplorationLead , ApiOpError < V2ProjectsExplorationLeadsCreateWithJsonApiError > >",
-      "rust": "async fn v2_projects_exploration_leads_create_with_json (& self , id : impl AsRef < str > , format : Option < V2ProjectsExplorationLeadsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : ExplorationLeadRequest) -> Result < ExplorationLead , ApiOpError < V2ProjectsExplorationLeadsCreateWithJsonApiError > >"
+      "rust": "async fn v2_projects_exploration_leads_create_with_json (& self , id : impl AsRef < str > , format : Option < V2ProjectsExplorationLeadsCreateWithJsonFormat > , x_csrf_token : Option < impl AsRef < str > > , request : V2ProjectsExplorationLeadsCreateWithJsonRequest) -> Result < ExplorationLead , ApiOpError < V2ProjectsExplorationLeadsCreateWithJsonApiError > >"
     },
     "variants": []
   },
@@ -208,18 +208,18 @@
         },
         {
           "name": "latitude",
-          "rust_type": "ExplorationLeadRequestLatitude"
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude"
         },
         {
           "name": "longitude",
-          "rust_type": "ExplorationLeadRequestLongitude"
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "& self",
       "return_type": "V2ProjectsExplorationLeadsCreateWithJsonBuilder < '_ >",
-      "rust": "fn v2_projects_exploration_leads_create_with_json_builder (& self , id : impl Into < String > , latitude : ExplorationLeadRequestLatitude , longitude : ExplorationLeadRequestLongitude) -> V2ProjectsExplorationLeadsCreateWithJsonBuilder < '_ >"
+      "rust": "fn v2_projects_exploration_leads_create_with_json_builder (& self , id : impl Into < String > , latitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude , longitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude) -> V2ProjectsExplorationLeadsCreateWithJsonBuilder < '_ >"
     },
     "variants": []
   },
@@ -609,6 +609,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_exploration_leads_create",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsCreateWithFormDataBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "request",
     "operation": {
       "consumption": "buffered",
@@ -917,7 +965,7 @@
         "index": 4,
         "name": "request",
         "public": false,
-        "rust_type": "ExplorationLeadRequest",
+        "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequest",
         "wire_name": null
       }
     ],
@@ -1057,6 +1105,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_exploration_leads_create",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsCreateWithJsonBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "Vec < f64 >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : Vec < f64 >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "request",
     "operation": {
       "consumption": "buffered",
@@ -1085,14 +1181,14 @@
       "arguments": [
         {
           "name": "request",
-          "rust_type": "ExplorationLeadRequest"
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequest"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn request (mut self , request : ExplorationLeadRequest) -> Self"
+      "rust": "fn request (mut self , request : V2ProjectsExplorationLeadsCreateWithJsonRequest) -> Self"
     },
     "variants": []
   },
@@ -1505,6 +1601,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "headings",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_exploration_leads_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1{id}~1exploration-leads~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_exploration_leads_create",
+      "source_path": "/api/v2/projects/{id}/exploration-leads/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsExplorationLeadsCreateWithUrlEncodedBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "request",
     "operation": {
       "consumption": "buffered",
@@ -1695,8 +1839,18 @@
         "wire_name": "description"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
         "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [],
+        "index": 2,
         "name": "latitude",
         "public": true,
         "rust_type": "V2ProjectsExplorationLeadsCreateWithFormDataRequestLatitude",
@@ -1704,7 +1858,7 @@
       },
       {
         "attributes": [],
-        "index": 2,
+        "index": 3,
         "name": "longitude",
         "public": true,
         "rust_type": "V2ProjectsExplorationLeadsCreateWithFormDataRequestLongitude",
@@ -1858,6 +2012,34 @@
     "variants": []
   },
   {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "headings",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithFormDataRequestBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
+    },
+    "variants": []
+  },
+  {
     "attributes": [],
     "fields": [],
     "generics": "",
@@ -1999,8 +2181,390 @@
         "wire_name": "description"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
         "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < Vec < f64 > >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "latitude",
+        "public": true,
+        "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude",
+        "wire_name": "latitude"
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "longitude",
+        "public": true,
+        "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude",
+        "wire_name": "longitude"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsExplorationLeadsCreateWithJsonRequest",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequest",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "builder",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequest::builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder",
+      "rust": "fn builder (latitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude , longitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude) -> V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequest::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude , longitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]",
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "value",
+        "public": false,
+        "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequest",
+        "wire_name": null
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "build",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder::build",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "V2ProjectsExplorationLeadsCreateWithJsonRequest",
+      "rust": "fn build (self) -> V2ProjectsExplorationLeadsCreateWithJsonRequest"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "headings",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "Vec < f64 >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : Vec < f64 >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "new",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder::new",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "latitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude"
+        },
+        {
+          "name": "longitude",
+          "rust_type": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": null,
+      "return_type": "Self",
+      "rust": "fn new (latitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude , longitude : V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]",
+      "# [serde (untagged)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "f64",
+            "wire_name": null
+          }
+        ],
+        "name": "Number",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "bool",
+            "wire_name": null
+          }
+        ],
+        "name": "Boolean",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "String",
+            "wire_name": null
+          }
+        ],
+        "name": "String",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 0,
+        "name": "description",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "description"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 1,
+        "name": "headings",
+        "public": true,
+        "rust_type": "Option < String >",
+        "wire_name": "headings"
+      },
+      {
+        "attributes": [],
+        "index": 2,
         "name": "latitude",
         "public": true,
         "rust_type": "V2ProjectsExplorationLeadsCreateWithUrlEncodedRequestLatitude",
@@ -2008,7 +2572,7 @@
       },
       {
         "attributes": [],
-        "index": 2,
+        "index": 3,
         "name": "longitude",
         "public": true,
         "rust_type": "V2ProjectsExplorationLeadsCreateWithUrlEncodedRequestLongitude",
@@ -2158,6 +2722,34 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "headings",
+    "operation": null,
+    "path": "types::V2ProjectsExplorationLeadsCreateWithUrlEncodedRequestBuilder::headings",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "headings",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn headings (mut self , headings : String) -> Self"
     },
     "variants": []
   },

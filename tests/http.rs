@@ -435,6 +435,93 @@ async fn json_is_encoded_once_and_distinguishes_absent_from_null() {
 }
 
 #[tokio::test]
+async fn exploration_lead_heading_reset_and_omission_survive_all_request_encodings() {
+    for headings in [None, Some(vec![]), Some(vec![22.5, 270.0])] {
+        for media in ["json", "form", "urlencoded"] {
+            let mut body = serde_json::json!({"description": "Keep the field notes"});
+            if let Some(values) = &headings {
+                body["headings"] = if media == "json" {
+                    serde_json::json!(values)
+                } else {
+                    serde_json::Value::String(serde_json::to_string(values).unwrap())
+                };
+            }
+            // The fixture observes real serialized bytes; endpoint validation and
+            // persistence are verified by the backend's corresponding regression.
+            let (url, received) = server(400, "application/json", br#"{"detail":"fixture"}"#).await;
+            let client = HttpClient::new().with_base_url(url);
+            match media {
+                "json" => {
+                    let request = serde_json::from_value(body.clone()).unwrap();
+                    let _ = client
+                        .v2_exploration_leads_partial_update_with_json(
+                            "lead",
+                            None,
+                            None::<&str>,
+                            Some(request),
+                        )
+                        .await;
+                }
+                "form" => {
+                    let request = serde_json::from_value(body.clone()).unwrap();
+                    let _ = client
+                        .v2_exploration_leads_partial_update_with_form_data(
+                            "lead",
+                            None,
+                            None::<&str>,
+                            Some(request),
+                        )
+                        .await;
+                }
+                "urlencoded" => {
+                    let request = serde_json::from_value(body.clone()).unwrap();
+                    let _ = client
+                        .v2_exploration_leads_partial_update_with_url_encoded(
+                            "lead",
+                            None,
+                            None::<&str>,
+                            Some(request),
+                        )
+                        .await;
+                }
+                _ => unreachable!(),
+            }
+            let request = received.await.unwrap();
+            let payload = request_body(&request);
+            match media {
+                "json" => assert_eq!(
+                    serde_json::from_slice::<serde_json::Value>(payload).unwrap(),
+                    body
+                ),
+                "form" => {
+                    let form = String::from_utf8_lossy(payload);
+                    if let Some(values) = &headings {
+                        assert!(form.contains(&format!(
+                            "name=\"headings\"\r\n\r\n{}\r\n",
+                            serde_json::to_string(values).unwrap()
+                        )));
+                    } else {
+                        assert!(!form.contains("name=\"headings\""));
+                    }
+                }
+                "urlencoded" => {
+                    let form: std::collections::BTreeMap<_, _> =
+                        url::form_urlencoded::parse(payload).into_owned().collect();
+                    assert_eq!(
+                        form.get("headings"),
+                        headings
+                            .as_ref()
+                            .map(|values| serde_json::to_string(values).unwrap())
+                            .as_ref()
+                    );
+                }
+                _ => unreachable!(),
+            }
+        }
+    }
+}
+
+#[tokio::test]
 async fn urlencoded_variant_uses_the_original_path_and_real_form_encoding() {
     let (url, received) = server(400, "application/json", br#"{"detail":"fixture"}"#).await;
     let body = serde_json::json!({"name":"A & B", "description":"Survey", "country":"US", "type":"COMPASS"});

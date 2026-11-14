@@ -11,10 +11,5 @@ pub mod exploration_lead_geo_json_collection;
 pub use self::exploration_lead_geo_json_collection::{
     ExplorationLeadGeoJSONCollection, ExplorationLeadGeoJSONCollectionType,
 };
-pub mod exploration_lead_request;
-pub use self::exploration_lead_request::{
-    ExplorationLeadRequest, ExplorationLeadRequestBuilder,
-    ExplorationLeadRequestLatitude, ExplorationLeadRequestLongitude,
-};
 pub mod exploration_lead_specific_api_view_delete_response;
 pub use self::exploration_lead_specific_api_view_delete_response::ExplorationLeadSpecificApiViewDeleteResponse;

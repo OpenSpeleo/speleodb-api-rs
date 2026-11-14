@@ -120,9 +120,7 @@ pub mod exploration;
 pub use self::exploration::{
     ExplorationLead, ExplorationLeadFeatureProperties, ExplorationLeadGeoJSON,
     ExplorationLeadGeoJSONCollection, ExplorationLeadGeoJSONCollectionType,
-    ExplorationLeadGeoJSONType, ExplorationLeadRequest, ExplorationLeadRequestBuilder,
-    ExplorationLeadRequestLatitude, ExplorationLeadRequestLongitude,
-    ExplorationLeadSpecificApiViewDeleteResponse,
+    ExplorationLeadGeoJSONType, ExplorationLeadSpecificApiViewDeleteResponse,
 };
 pub mod export;
 pub use self::export::{ExportArtifact, ExportNotice};
@@ -225,16 +223,15 @@ pub mod patched;
 pub use self::patched::{
     PatchedAuthTokenRequest, PatchedCylinderFleetRequest,
     PatchedCylinderPressureCheckRequest, PatchedCylinderPressureCheckRequestUnitSystem,
-    PatchedCylinderPressureCheckRequestUser, PatchedExplorationLeadRequest,
-    PatchedExplorationLeadRequestLatitude, PatchedExplorationLeadRequestLongitude,
-    PatchedGISLayerRequest, PatchedGPSTrackRequest, PatchedLandmarkCollectionRequest,
-    PatchedSensorFleetRequest, PatchedSensorRequest, PatchedSensorRequestStatus,
-    PatchedStationTagRequest, PatchedSubSurfaceStationRequest,
-    PatchedSubSurfaceStationRequestLatitude, PatchedSubSurfaceStationRequestLongitude,
-    PatchedSubSurfaceStationRequestType, PatchedSurfaceMonitoringNetworkRequest,
-    PatchedSurfaceStationRequest, PatchedSurfaceStationRequestLatitude,
-    PatchedSurfaceStationRequestLongitude, PatchedSurveyTeamRequest,
-    PatchedSurveyTeamRequestCountry, PatchedUserRequest, PatchedUserRequestCountry,
+    PatchedCylinderPressureCheckRequestUser, PatchedGISLayerRequest,
+    PatchedGPSTrackRequest, PatchedLandmarkCollectionRequest, PatchedSensorFleetRequest,
+    PatchedSensorRequest, PatchedSensorRequestStatus, PatchedStationTagRequest,
+    PatchedSubSurfaceStationRequest, PatchedSubSurfaceStationRequestLatitude,
+    PatchedSubSurfaceStationRequestLongitude, PatchedSubSurfaceStationRequestType,
+    PatchedSurfaceMonitoringNetworkRequest, PatchedSurfaceStationRequest,
+    PatchedSurfaceStationRequestLatitude, PatchedSurfaceStationRequestLongitude,
+    PatchedSurveyTeamRequest, PatchedSurveyTeamRequestCountry, PatchedUserRequest,
+    PatchedUserRequestCountry,
 };
 pub mod plugin;
 pub use self::plugin::{

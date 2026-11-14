@@ -8,6 +8,8 @@ pub struct ExplorationLead {
     pub creation_date: chrono::DateTime<chrono::Utc>,
     ///Optional description of the lead
     pub description: String,
+    ///Constraint: maxItems=3
+    pub headings: Vec<f64>,
     pub id: uuid::Uuid,
     pub latitude: f64,
     pub longitude: f64,

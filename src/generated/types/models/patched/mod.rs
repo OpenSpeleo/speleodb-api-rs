@@ -8,11 +8,6 @@ pub use self::patched_cylinder_pressure_check_request::{
     PatchedCylinderPressureCheckRequest, PatchedCylinderPressureCheckRequestUnitSystem,
     PatchedCylinderPressureCheckRequestUser,
 };
-pub mod patched_exploration_lead_request;
-pub use self::patched_exploration_lead_request::{
-    PatchedExplorationLeadRequest, PatchedExplorationLeadRequestLatitude,
-    PatchedExplorationLeadRequestLongitude,
-};
 pub mod patched_gis_layer_request;
 pub use self::patched_gis_layer_request::PatchedGISLayerRequest;
 pub mod patched_gps_track_request;
