@@ -5,8 +5,15 @@ pub struct ExplorationLeadFeatureProperties {
     pub created_by: String,
     pub creation_date: chrono::DateTime<chrono::Utc>,
     pub description: String,
-    ///Constraint: maxItems=3
-    pub headings: Vec<f64>,
+    ///Constraint: minItems=1, maxItems=3
+    pub directions: Vec<ExplorationLeadFeaturePropertiesDirectionsItem>,
+    pub is_fully_checked: bool,
     pub modified_date: chrono::DateTime<chrono::Utc>,
     pub project: uuid::Uuid,
+}
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct ExplorationLeadFeaturePropertiesDirectionsItem {
+    pub checked: bool,
+    ///Constraint: minimum=0, maximum=360
+    pub heading: Option<f64>,
 }

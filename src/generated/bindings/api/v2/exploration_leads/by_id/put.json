@@ -561,6 +561,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "directions",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_update_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_exploration_leads_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsUpdateWithFormDataBuilder::directions",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "directions",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn directions (mut self , directions : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "format",
     "operation": {
       "consumption": "buffered",
@@ -597,54 +645,6 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn format (mut self , format : V2ExplorationLeadsUpdateWithFormDataFormat) -> Self"
-    },
-    "variants": []
-  },
-  {
-    "attributes": [
-      "# [must_use]"
-    ],
-    "fields": [],
-    "generics": "",
-    "impl_generics": "< 'a >",
-    "impl_trait": null,
-    "kind": "method",
-    "name": "headings",
-    "operation": {
-      "consumption": "buffered",
-      "operation_id": "v2_exploration_leads_update_with_form_data",
-      "response_excluded_statuses": [
-        "400",
-        "403",
-        "404",
-        "406",
-        "415"
-      ],
-      "response_kind": "json",
-      "response_media_type": "application/json",
-      "response_statuses": [
-        "200"
-      ],
-      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
-      "source_method": "PUT",
-      "source_operation_id": "v2_exploration_leads_update",
-      "source_path": "/api/v2/exploration-leads/{id}/",
-      "webhook": false
-    },
-    "path": "client::V2ExplorationLeadsUpdateWithFormDataBuilder::headings",
-    "rust_type": null,
-    "signature": {
-      "arguments": [
-        {
-          "name": "headings",
-          "rust_type": "String"
-        }
-      ],
-      "asynchronous": false,
-      "generics": "",
-      "receiver": "mut self",
-      "return_type": "Self",
-      "rust": "fn headings (mut self , headings : String) -> Self"
     },
     "variants": []
   },
@@ -1057,6 +1057,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "directions",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_update_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_exploration_leads_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsUpdateWithJsonBuilder::directions",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "directions",
+          "rust_type": "Vec < V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn directions (mut self , directions : Vec < V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "format",
     "operation": {
       "consumption": "buffered",
@@ -1093,54 +1141,6 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn format (mut self , format : V2ExplorationLeadsUpdateWithJsonFormat) -> Self"
-    },
-    "variants": []
-  },
-  {
-    "attributes": [
-      "# [must_use]"
-    ],
-    "fields": [],
-    "generics": "",
-    "impl_generics": "< 'a >",
-    "impl_trait": null,
-    "kind": "method",
-    "name": "headings",
-    "operation": {
-      "consumption": "buffered",
-      "operation_id": "v2_exploration_leads_update_with_json",
-      "response_excluded_statuses": [
-        "400",
-        "403",
-        "404",
-        "406",
-        "415"
-      ],
-      "response_kind": "json",
-      "response_media_type": "application/json",
-      "response_statuses": [
-        "200"
-      ],
-      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
-      "source_method": "PUT",
-      "source_operation_id": "v2_exploration_leads_update",
-      "source_path": "/api/v2/exploration-leads/{id}/",
-      "webhook": false
-    },
-    "path": "client::V2ExplorationLeadsUpdateWithJsonBuilder::headings",
-    "rust_type": null,
-    "signature": {
-      "arguments": [
-        {
-          "name": "headings",
-          "rust_type": "Vec < f64 >"
-        }
-      ],
-      "asynchronous": false,
-      "generics": "",
-      "receiver": "mut self",
-      "return_type": "Self",
-      "rust": "fn headings (mut self , headings : Vec < f64 >) -> Self"
     },
     "variants": []
   },
@@ -1553,6 +1553,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "directions",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_exploration_leads_update_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "200"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
+      "source_method": "PUT",
+      "source_operation_id": "v2_exploration_leads_update",
+      "source_path": "/api/v2/exploration-leads/{id}/",
+      "webhook": false
+    },
+    "path": "client::V2ExplorationLeadsUpdateWithUrlEncodedBuilder::directions",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "directions",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn directions (mut self , directions : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "format",
     "operation": {
       "consumption": "buffered",
@@ -1589,54 +1637,6 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn format (mut self , format : V2ExplorationLeadsUpdateWithUrlEncodedFormat) -> Self"
-    },
-    "variants": []
-  },
-  {
-    "attributes": [
-      "# [must_use]"
-    ],
-    "fields": [],
-    "generics": "",
-    "impl_generics": "< 'a >",
-    "impl_trait": null,
-    "kind": "method",
-    "name": "headings",
-    "operation": {
-      "consumption": "buffered",
-      "operation_id": "v2_exploration_leads_update_with_url_encoded",
-      "response_excluded_statuses": [
-        "400",
-        "403",
-        "404",
-        "406",
-        "415"
-      ],
-      "response_kind": "json",
-      "response_media_type": "application/json",
-      "response_statuses": [
-        "200"
-      ],
-      "source_json_pointer": "/paths/~1api~1v2~1exploration-leads~1{id}~1/put",
-      "source_method": "PUT",
-      "source_operation_id": "v2_exploration_leads_update",
-      "source_path": "/api/v2/exploration-leads/{id}/",
-      "webhook": false
-    },
-    "path": "client::V2ExplorationLeadsUpdateWithUrlEncodedBuilder::headings",
-    "rust_type": null,
-    "signature": {
-      "arguments": [
-        {
-          "name": "headings",
-          "rust_type": "String"
-        }
-      ],
-      "asynchronous": false,
-      "generics": "",
-      "receiver": "mut self",
-      "return_type": "Self",
-      "rust": "fn headings (mut self , headings : String) -> Self"
     },
     "variants": []
   },
@@ -1843,10 +1843,10 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 1,
-        "name": "headings",
+        "name": "directions",
         "public": true,
         "rust_type": "Option < String >",
-        "wire_name": "headings"
+        "wire_name": "directions"
       },
       {
         "attributes": [],
@@ -2020,14 +2020,14 @@
     "impl_generics": "",
     "impl_trait": null,
     "kind": "method",
-    "name": "headings",
+    "name": "directions",
     "operation": null,
-    "path": "types::V2ExplorationLeadsUpdateWithFormDataRequestBuilder::headings",
+    "path": "types::V2ExplorationLeadsUpdateWithFormDataRequestBuilder::directions",
     "rust_type": null,
     "signature": {
       "arguments": [
         {
-          "name": "headings",
+          "name": "directions",
           "rust_type": "String"
         }
       ],
@@ -2035,7 +2035,7 @@
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn headings (mut self , headings : String) -> Self"
+      "rust": "fn directions (mut self , directions : String) -> Self"
     },
     "variants": []
   },
@@ -2185,10 +2185,10 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 1,
-        "name": "headings",
+        "name": "directions",
         "public": true,
-        "rust_type": "Option < Vec < f64 > >",
-        "wire_name": "headings"
+        "rust_type": "Option < Vec < V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem > >",
+        "wire_name": "directions"
       },
       {
         "attributes": [],
@@ -2362,22 +2362,22 @@
     "impl_generics": "",
     "impl_trait": null,
     "kind": "method",
-    "name": "headings",
+    "name": "directions",
     "operation": null,
-    "path": "types::V2ExplorationLeadsUpdateWithJsonRequestBuilder::headings",
+    "path": "types::V2ExplorationLeadsUpdateWithJsonRequestBuilder::directions",
     "rust_type": null,
     "signature": {
       "arguments": [
         {
-          "name": "headings",
-          "rust_type": "Vec < f64 >"
+          "name": "directions",
+          "rust_type": "Vec < V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem >"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn headings (mut self , headings : Vec < f64 >) -> Self"
+      "rust": "fn directions (mut self , directions : Vec < V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem >) -> Self"
     },
     "variants": []
   },
@@ -2409,6 +2409,39 @@
       "return_type": "Self",
       "rust": "fn new (latitude : V2ExplorationLeadsUpdateWithJsonRequestLatitude , longitude : V2ExplorationLeadsUpdateWithJsonRequestLongitude) -> Self"
     },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Deserialize , Serialize)]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "checked",
+        "public": true,
+        "rust_type": "bool",
+        "wire_name": "checked"
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "heading",
+        "public": true,
+        "rust_type": "Option < f64 >",
+        "wire_name": "heading"
+      }
+    ],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem",
+    "operation": null,
+    "path": "types::V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem",
+    "rust_type": null,
+    "signature": null,
     "variants": []
   },
   {
@@ -2557,10 +2590,10 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 1,
-        "name": "headings",
+        "name": "directions",
         "public": true,
         "rust_type": "Option < String >",
-        "wire_name": "headings"
+        "wire_name": "directions"
       },
       {
         "attributes": [],
@@ -2734,14 +2767,14 @@
     "impl_generics": "",
     "impl_trait": null,
     "kind": "method",
-    "name": "headings",
+    "name": "directions",
     "operation": null,
-    "path": "types::V2ExplorationLeadsUpdateWithUrlEncodedRequestBuilder::headings",
+    "path": "types::V2ExplorationLeadsUpdateWithUrlEncodedRequestBuilder::directions",
     "rust_type": null,
     "signature": {
       "arguments": [
         {
-          "name": "headings",
+          "name": "directions",
           "rust_type": "String"
         }
       ],
@@ -2749,7 +2782,7 @@
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn headings (mut self , headings : String) -> Self"
+      "rust": "fn directions (mut self , directions : String) -> Self"
     },
     "variants": []
   },

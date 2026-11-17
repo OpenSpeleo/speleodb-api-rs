@@ -9,6 +9,7 @@ pub use self::post::{
     V2ProjectsExplorationLeadsCreateWithFormDataRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequest,
     V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder,
+    V2ProjectsExplorationLeadsCreateWithJsonRequestDirectionsItem,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithUrlEncodedRequest,

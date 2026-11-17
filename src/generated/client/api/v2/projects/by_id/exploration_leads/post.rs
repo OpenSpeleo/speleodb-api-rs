@@ -6,6 +6,7 @@ use super::super::super::super::super::super::{
     V2ProjectsExplorationLeadsCreateWithFormDataRequestLatitude,
     V2ProjectsExplorationLeadsCreateWithFormDataRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequest,
+    V2ProjectsExplorationLeadsCreateWithJsonRequestDirectionsItem,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithUrlEncodedRequest,
@@ -152,10 +153,10 @@ impl<'a> V2ProjectsExplorationLeadsCreateWithFormDataBuilder<'a> {
         self.request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
-        self.request.headings = Some(headings);
+    pub fn directions(mut self, directions: String) -> Self {
+        self.request.directions = Some(directions);
         self
     }
     /// Send the request through the existing flat operation method.
@@ -218,10 +219,13 @@ impl<'a> V2ProjectsExplorationLeadsCreateWithJsonBuilder<'a> {
         self.request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: Vec<f64>) -> Self {
-        self.request.headings = Some(headings);
+    pub fn directions(
+        mut self,
+        directions: Vec<V2ProjectsExplorationLeadsCreateWithJsonRequestDirectionsItem>,
+    ) -> Self {
+        self.request.directions = Some(directions);
         self
     }
     /// Send the request through the existing flat operation method.
@@ -284,10 +288,10 @@ impl<'a> V2ProjectsExplorationLeadsCreateWithUrlEncodedBuilder<'a> {
         self.request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
-        self.request.headings = Some(headings);
+    pub fn directions(mut self, directions: String) -> Self {
+        self.request.directions = Some(directions);
         self
     }
     /// Send the request through the existing flat operation method.
@@ -330,8 +334,8 @@ impl HttpClient {
         if let Some(value) = &request.description {
             form = form.text("description", value.to_string());
         }
-        if let Some(value) = &request.headings {
-            form = form.text("headings", value.to_string());
+        if let Some(value) = &request.directions {
+            form = form.text("directions", value.to_string());
         }
         let value = &request.latitude;
         form = form.part("latitude", crate::form::multipart_scalar(value)?);

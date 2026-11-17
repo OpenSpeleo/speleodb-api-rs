@@ -8,11 +8,18 @@ pub struct ExplorationLead {
     pub creation_date: chrono::DateTime<chrono::Utc>,
     ///Optional description of the lead
     pub description: String,
-    ///Constraint: maxItems=3
-    pub headings: Vec<f64>,
+    ///Constraint: minItems=1, maxItems=3
+    pub directions: Vec<ExplorationLeadDirectionsItem>,
     pub id: uuid::Uuid,
+    pub is_fully_checked: bool,
     pub latitude: f64,
     pub longitude: f64,
     pub modified_date: chrono::DateTime<chrono::Utc>,
     pub project: uuid::Uuid,
+}
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct ExplorationLeadDirectionsItem {
+    pub checked: bool,
+    ///Constraint: minimum=0, maximum=360
+    pub heading: Option<f64>,
 }

@@ -118,7 +118,8 @@ pub use self::experiment::{
 };
 pub mod exploration;
 pub use self::exploration::{
-    ExplorationLead, ExplorationLeadFeatureProperties, ExplorationLeadGeoJSON,
+    ExplorationLead, ExplorationLeadDirectionsItem, ExplorationLeadFeatureProperties,
+    ExplorationLeadFeaturePropertiesDirectionsItem, ExplorationLeadGeoJSON,
     ExplorationLeadGeoJSONCollection, ExplorationLeadGeoJSONCollectionType,
     ExplorationLeadGeoJSONType, ExplorationLeadSpecificApiViewDeleteResponse,
 };

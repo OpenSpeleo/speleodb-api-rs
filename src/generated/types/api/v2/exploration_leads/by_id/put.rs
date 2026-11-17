@@ -8,7 +8,7 @@ pub struct V2ExplorationLeadsUpdateWithUrlEncodedRequest {
     pub description: Option<String>,
     ///JSON-encoded value.
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub headings: Option<String>,
+    pub directions: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     pub latitude: V2ExplorationLeadsUpdateWithUrlEncodedRequestLatitude,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
@@ -24,7 +24,7 @@ impl V2ExplorationLeadsUpdateWithUrlEncodedRequest {
             latitude,
             longitude,
             description: None,
-            headings: None,
+            directions: None,
         }
     }
     /// Start a dependency-free builder with every required wire field.
@@ -60,10 +60,10 @@ impl V2ExplorationLeadsUpdateWithUrlEncodedRequestBuilder {
         self.value.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[doc = concat!("Set the optional `", "directions", "` request field.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
-        self.value.headings = Some(headings);
+    pub fn directions(mut self, directions: String) -> Self {
+        self.value.directions = Some(directions);
         self
     }
     /// Finish building the request model.
@@ -91,9 +91,9 @@ pub struct V2ExplorationLeadsUpdateWithJsonRequest {
     ///Optional description of the lead
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
-    ///Constraint: maxItems=3
+    ///Constraint: minItems=1, maxItems=3
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub headings: Option<Vec<f64>>,
+    pub directions: Option<Vec<V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem>>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     pub latitude: V2ExplorationLeadsUpdateWithJsonRequestLatitude,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
@@ -109,7 +109,7 @@ impl V2ExplorationLeadsUpdateWithJsonRequest {
             latitude,
             longitude,
             description: None,
-            headings: None,
+            directions: None,
         }
     }
     /// Start a dependency-free builder with every required wire field.
@@ -142,10 +142,13 @@ impl V2ExplorationLeadsUpdateWithJsonRequestBuilder {
         self.value.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[doc = concat!("Set the optional `", "directions", "` request field.")]
     #[must_use]
-    pub fn headings(mut self, headings: Vec<f64>) -> Self {
-        self.value.headings = Some(headings);
+    pub fn directions(
+        mut self,
+        directions: Vec<V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem>,
+    ) -> Self {
+        self.value.directions = Some(directions);
         self
     }
     /// Finish building the request model.
@@ -169,6 +172,12 @@ pub enum V2ExplorationLeadsUpdateWithJsonRequestLatitude {
     Boolean(bool),
     String(String),
 }
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct V2ExplorationLeadsUpdateWithJsonRequestDirectionsItem {
+    pub checked: bool,
+    ///Constraint: minimum=0, maximum=360
+    pub heading: Option<f64>,
+}
 ///Serializer for ExplorationLead model.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct V2ExplorationLeadsUpdateWithFormDataRequest {
@@ -177,7 +186,7 @@ pub struct V2ExplorationLeadsUpdateWithFormDataRequest {
     pub description: Option<String>,
     ///JSON-encoded value.
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub headings: Option<String>,
+    pub directions: Option<String>,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-90, 90].
     pub latitude: V2ExplorationLeadsUpdateWithFormDataRequestLatitude,
     ///Numeric coordinate (booleans become 0/1; numeric strings accept digit-separating underscores), rounded to seven decimal places before validation within [-180, 180].
@@ -193,7 +202,7 @@ impl V2ExplorationLeadsUpdateWithFormDataRequest {
             latitude,
             longitude,
             description: None,
-            headings: None,
+            directions: None,
         }
     }
     /// Start a dependency-free builder with every required wire field.
@@ -226,10 +235,10 @@ impl V2ExplorationLeadsUpdateWithFormDataRequestBuilder {
         self.value.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional `", "headings", "` request field.")]
+    #[doc = concat!("Set the optional `", "directions", "` request field.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
-        self.value.headings = Some(headings);
+    pub fn directions(mut self, directions: String) -> Self {
+        self.value.directions = Some(directions);
         self
     }
     /// Finish building the request model.

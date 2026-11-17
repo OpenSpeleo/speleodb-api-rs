@@ -435,12 +435,19 @@ async fn json_is_encoded_once_and_distinguishes_absent_from_null() {
 }
 
 #[tokio::test]
-async fn exploration_lead_heading_reset_and_omission_survive_all_request_encodings() {
-    for headings in [None, Some(vec![]), Some(vec![22.5, 270.0])] {
+async fn exploration_lead_directions_checked_and_omission_survive_all_request_encodings() {
+    for directions in [
+        None,
+        Some(serde_json::json!([{"heading": null, "checked": true}])),
+        Some(serde_json::json!([
+            {"heading": 22.5, "checked": true},
+            {"heading": 270.0, "checked": false}
+        ])),
+    ] {
         for media in ["json", "form", "urlencoded"] {
             let mut body = serde_json::json!({"description": "Keep the field notes"});
-            if let Some(values) = &headings {
-                body["headings"] = if media == "json" {
+            if let Some(values) = &directions {
+                body["directions"] = if media == "json" {
                     serde_json::json!(values)
                 } else {
                     serde_json::Value::String(serde_json::to_string(values).unwrap())
@@ -495,21 +502,21 @@ async fn exploration_lead_heading_reset_and_omission_survive_all_request_encodin
                 ),
                 "form" => {
                     let form = String::from_utf8_lossy(payload);
-                    if let Some(values) = &headings {
+                    if let Some(values) = &directions {
                         assert!(form.contains(&format!(
-                            "name=\"headings\"\r\n\r\n{}\r\n",
+                            "name=\"directions\"\r\n\r\n{}\r\n",
                             serde_json::to_string(values).unwrap()
                         )));
                     } else {
-                        assert!(!form.contains("name=\"headings\""));
+                        assert!(!form.contains("name=\"directions\""));
                     }
                 }
                 "urlencoded" => {
                     let form: std::collections::BTreeMap<_, _> =
                         url::form_urlencoded::parse(payload).into_owned().collect();
                     assert_eq!(
-                        form.get("headings"),
-                        headings
+                        form.get("directions"),
+                        directions
                             .as_ref()
                             .map(|values| serde_json::to_string(values).unwrap())
                             .as_ref()

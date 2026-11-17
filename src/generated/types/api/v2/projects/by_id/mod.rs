@@ -7,6 +7,7 @@ pub use self::exploration_leads::{
     V2ProjectsExplorationLeadsCreateWithFormDataRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequest,
     V2ProjectsExplorationLeadsCreateWithJsonRequestBuilder,
+    V2ProjectsExplorationLeadsCreateWithJsonRequestDirectionsItem,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLatitude,
     V2ProjectsExplorationLeadsCreateWithJsonRequestLongitude,
     V2ProjectsExplorationLeadsCreateWithUrlEncodedRequest,

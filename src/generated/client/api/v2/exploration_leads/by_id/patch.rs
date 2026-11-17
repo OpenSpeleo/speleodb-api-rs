@@ -6,6 +6,7 @@ use super::super::super::super::super::{
     V2ExplorationLeadsPartialUpdateWithFormDataRequestLatitude,
     V2ExplorationLeadsPartialUpdateWithFormDataRequestLongitude,
     V2ExplorationLeadsPartialUpdateWithJsonRequest,
+    V2ExplorationLeadsPartialUpdateWithJsonRequestDirectionsItem,
     V2ExplorationLeadsPartialUpdateWithJsonRequestLatitude,
     V2ExplorationLeadsPartialUpdateWithJsonRequestLongitude,
     V2ExplorationLeadsPartialUpdateWithUrlEncodedRequest,
@@ -153,11 +154,11 @@ impl<'a> V2ExplorationLeadsPartialUpdateWithFormDataBuilder<'a> {
         request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
+    pub fn directions(mut self, directions: String) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
-        request.headings = Some(headings);
+        request.directions = Some(directions);
         self
     }
     #[doc = concat!("Set the optional request-body field `", "latitude", "`.")]
@@ -241,11 +242,14 @@ impl<'a> V2ExplorationLeadsPartialUpdateWithJsonBuilder<'a> {
         request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: Vec<f64>) -> Self {
+    pub fn directions(
+        mut self,
+        directions: Vec<V2ExplorationLeadsPartialUpdateWithJsonRequestDirectionsItem>,
+    ) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
-        request.headings = Some(headings);
+        request.directions = Some(directions);
         self
     }
     #[doc = concat!("Set the optional request-body field `", "latitude", "`.")]
@@ -329,11 +333,11 @@ impl<'a> V2ExplorationLeadsPartialUpdateWithUrlEncodedBuilder<'a> {
         request.description = Some(description);
         self
     }
-    #[doc = concat!("Set the optional request-body field `", "headings", "`.")]
+    #[doc = concat!("Set the optional request-body field `", "directions", "`.")]
     #[must_use]
-    pub fn headings(mut self, headings: String) -> Self {
+    pub fn directions(mut self, directions: String) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
-        request.headings = Some(headings);
+        request.directions = Some(directions);
         self
     }
     #[doc = concat!("Set the optional request-body field `", "latitude", "`.")]
@@ -397,8 +401,8 @@ impl HttpClient {
             if let Some(value) = &request.description {
                 form = form.text("description", value.to_string());
             }
-            if let Some(value) = &request.headings {
-                form = form.text("headings", value.to_string());
+            if let Some(value) = &request.directions {
+                form = form.text("directions", value.to_string());
             }
             if let Some(value) = &request.latitude {
                 form = form.part("latitude", crate::form::multipart_scalar(value)?);

@@ -136,6 +136,34 @@ regenerate, and reconcile all required dependencies and features from
 `src/generated/REQUIRED_DEPS.toml` into the crate's manifest. The dependency
 regression test enforces that correspondence.
 
+## Exploration lead directions and checked status
+
+Exploration lead responses and GeoJSON properties expose `directions` and the
+derived, read-only `is_fully_checked` value. The former `headings` array is
+replaced by one to three complete objects, each containing a nullable `heading`
+and boolean `checked`. A heading is a finite number in `[0, 360)` or null. An
+undirected entry can be checked independently. Creating a lead without
+directions gives it one unchecked entry with a null heading.
+
+The JSON request types use an optional vector of generated direction items. The
+outer `None` omits `directions` and preserves existing entries on update; `Some`
+replaces the whole ordered list. An item's `heading: None` serializes as JSON
+null, unsetting its bearing while its explicit checked status is retained. An
+empty vector or a null value for the entire directions field is invalid on the
+server. Multipart and URL-encoded request types instead accept a JSON string
+produced with `serde_json::to_string`. Marking all entries checked or unchecked
+sends the complete list with the corresponding booleans. Completion is derived
+by the server when every entry is checked and is not writable.
+
+Consumers must migrate request construction, response reads and local caches
+together with the backend contract. The SDK provides no `headings` alias or
+application-cache migration. Generated Rust types describe serialization; server
+validation remains responsible for list bounds and numeric range.
+`exploration_lead_directions_checked_and_omission_survive_all_request_encodings`
+in `tests/http.rs` verifies actual loopback request bytes for omission, checked
+null bearings and mixed statuses across all three encodings. Backend endpoint
+tests own validation and persistence guarantees.
+
 ## Verification
 
 From this repository:
