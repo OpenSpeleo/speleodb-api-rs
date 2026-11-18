@@ -91,10 +91,6 @@
           "rust_type": "V2ProjectsCreateWithFormDataRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -107,7 +103,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2ProjectsCreateWithFormDataBuilder < '_ >",
-      "rust": "fn v2_projects_create_with_form_data_builder (& self , country : V2ProjectsCreateWithFormDataRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithFormDataBuilder < '_ >"
+      "rust": "fn v2_projects_create_with_form_data_builder (& self , country : V2ProjectsCreateWithFormDataRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithFormDataBuilder < '_ >"
     },
     "variants": []
   },
@@ -203,10 +199,6 @@
           "rust_type": "V2ProjectsCreateWithJsonRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -219,7 +211,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2ProjectsCreateWithJsonBuilder < '_ >",
-      "rust": "fn v2_projects_create_with_json_builder (& self , country : V2ProjectsCreateWithJsonRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithJsonBuilder < '_ >"
+      "rust": "fn v2_projects_create_with_json_builder (& self , country : V2ProjectsCreateWithJsonRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithJsonBuilder < '_ >"
     },
     "variants": []
   },
@@ -315,10 +307,6 @@
           "rust_type": "V2ProjectsCreateWithUrlEncodedRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -331,7 +319,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2ProjectsCreateWithUrlEncodedBuilder < '_ >",
-      "rust": "fn v2_projects_create_with_url_encoded_builder (& self , country : V2ProjectsCreateWithUrlEncodedRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithUrlEncodedBuilder < '_ >"
+      "rust": "fn v2_projects_create_with_url_encoded_builder (& self , country : V2ProjectsCreateWithUrlEncodedRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithUrlEncodedBuilder < '_ >"
     },
     "variants": []
   },
@@ -541,6 +529,54 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_create_with_form_data",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_create",
+      "source_path": "/api/v2/projects/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsCreateWithFormDataBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
     },
     "variants": []
   },
@@ -1269,6 +1305,54 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_create_with_json",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_create",
+      "source_path": "/api/v2/projects/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsCreateWithJsonBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
     },
     "variants": []
   },
@@ -2267,6 +2351,54 @@
     "impl_generics": "< 'a >",
     "impl_trait": null,
     "kind": "method",
+    "name": "description",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_projects_create_with_url_encoded",
+      "response_excluded_statuses": [
+        "400",
+        "403",
+        "404",
+        "406",
+        "415"
+      ],
+      "response_kind": "json",
+      "response_media_type": "application/json",
+      "response_statuses": [
+        "201"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1projects~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_projects_create",
+      "source_path": "/api/v2/projects/",
+      "webhook": false
+    },
+    "path": "client::V2ProjectsCreateWithUrlEncodedBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
     "name": "exclude_geojson",
     "operation": {
       "consumption": "buffered",
@@ -2801,11 +2933,13 @@
         "wire_name": "country"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
         "index": 2,
         "name": "description",
         "public": true,
-        "rust_type": "String",
+        "rust_type": "Option < String >",
         "wire_name": "description"
       },
       {
@@ -2914,10 +3048,6 @@
           "rust_type": "V2ProjectsCreateWithFormDataRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -2930,7 +3060,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2ProjectsCreateWithFormDataRequestBuilder",
-      "rust": "fn builder (country : V2ProjectsCreateWithFormDataRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithFormDataRequestBuilder"
+      "rust": "fn builder (country : V2ProjectsCreateWithFormDataRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithFormDataRequestBuilder"
     },
     "variants": []
   },
@@ -2952,10 +3082,6 @@
           "rust_type": "V2ProjectsCreateWithFormDataRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -2968,7 +3094,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithFormDataRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithFormDataRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },
@@ -3044,6 +3170,34 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ProjectsCreateWithFormDataRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
     },
     "variants": []
   },
@@ -3205,10 +3359,6 @@
           "rust_type": "V2ProjectsCreateWithFormDataRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -3221,7 +3371,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithFormDataRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithFormDataRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },
@@ -5522,11 +5672,13 @@
         "wire_name": "country"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
         "index": 2,
         "name": "description",
         "public": true,
-        "rust_type": "String",
+        "rust_type": "Option < String >",
         "wire_name": "description"
       },
       {
@@ -5635,10 +5787,6 @@
           "rust_type": "V2ProjectsCreateWithJsonRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -5651,7 +5799,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2ProjectsCreateWithJsonRequestBuilder",
-      "rust": "fn builder (country : V2ProjectsCreateWithJsonRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithJsonRequestBuilder"
+      "rust": "fn builder (country : V2ProjectsCreateWithJsonRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithJsonRequestBuilder"
     },
     "variants": []
   },
@@ -5673,10 +5821,6 @@
           "rust_type": "V2ProjectsCreateWithJsonRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -5689,7 +5833,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithJsonRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithJsonRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },
@@ -5765,6 +5909,34 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ProjectsCreateWithJsonRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
     },
     "variants": []
   },
@@ -6064,10 +6236,6 @@
           "rust_type": "V2ProjectsCreateWithJsonRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -6080,7 +6248,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithJsonRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithJsonRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },
@@ -8397,11 +8565,13 @@
         "wire_name": "country"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
         "index": 2,
         "name": "description",
         "public": true,
-        "rust_type": "String",
+        "rust_type": "Option < String >",
         "wire_name": "description"
       },
       {
@@ -8510,10 +8680,6 @@
           "rust_type": "V2ProjectsCreateWithUrlEncodedRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -8526,7 +8692,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2ProjectsCreateWithUrlEncodedRequestBuilder",
-      "rust": "fn builder (country : V2ProjectsCreateWithUrlEncodedRequestCountry , description : String , name : String , r#type : String) -> V2ProjectsCreateWithUrlEncodedRequestBuilder"
+      "rust": "fn builder (country : V2ProjectsCreateWithUrlEncodedRequestCountry , name : String , r#type : String) -> V2ProjectsCreateWithUrlEncodedRequestBuilder"
     },
     "variants": []
   },
@@ -8548,10 +8714,6 @@
           "rust_type": "V2ProjectsCreateWithUrlEncodedRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -8564,7 +8726,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithUrlEncodedRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithUrlEncodedRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },
@@ -8640,6 +8802,34 @@
       "receiver": "mut self",
       "return_type": "Self",
       "rust": "fn color (mut self , color : String) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "description",
+    "operation": null,
+    "path": "types::V2ProjectsCreateWithUrlEncodedRequestBuilder::description",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "description",
+          "rust_type": "String"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn description (mut self , description : String) -> Self"
     },
     "variants": []
   },
@@ -8801,10 +8991,6 @@
           "rust_type": "V2ProjectsCreateWithUrlEncodedRequestCountry"
         },
         {
-          "name": "description",
-          "rust_type": "String"
-        },
-        {
           "name": "name",
           "rust_type": "String"
         },
@@ -8817,7 +9003,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (country : V2ProjectsCreateWithUrlEncodedRequestCountry , description : String , name : String , r#type : String) -> Self"
+      "rust": "fn new (country : V2ProjectsCreateWithUrlEncodedRequestCountry , name : String , r#type : String) -> Self"
     },
     "variants": []
   },

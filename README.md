@@ -30,6 +30,11 @@ endpoint. Keep credentials out of logs and source code. Generated operations
 provide typed request, response, parameter and error types under `types` and
 `client`. Authentication session management remains the application's concern.
 
+Project create and update constructors take country, name, and type. Set the
+optional description with the request builder’s `.description(text)` method.
+Omitting the field on update preserves its value. Sending an empty string clears
+it.
+
 Date/time fields use `time::OffsetDateTime` and calendar dates use `time::Date`.
 Generated Serde codecs keep timestamps as RFC 3339 strings and dates as
 `YYYY-MM-DD`, including optional fields. Timestamps preserve the supplied UTC

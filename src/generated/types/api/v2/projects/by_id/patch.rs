@@ -20,7 +20,6 @@ pub struct V2ProjectsPartialUpdateWithUrlEncodedRequest {
     pub color: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub country: Option<V2ProjectsPartialUpdateWithUrlEncodedRequestCountry>,
-    ///Constraint: minLength=1
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     ///Exclude GeoJSON from the project
@@ -867,7 +866,6 @@ pub struct V2ProjectsPartialUpdateWithJsonRequest {
     pub color: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub country: Option<V2ProjectsPartialUpdateWithJsonRequestCountry>,
-    ///Constraint: minLength=1
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     ///Exclude GeoJSON from the project
@@ -1727,7 +1725,6 @@ pub struct V2ProjectsPartialUpdateWithFormDataRequest {
     pub color: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub country: Option<V2ProjectsPartialUpdateWithFormDataRequestCountry>,
-    ///Constraint: minLength=1
     #[serde(skip_serializing_if = "Option::is_none")]
     pub description: Option<String>,
     ///Exclude GeoJSON from the project

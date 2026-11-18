@@ -144,6 +144,12 @@ impl<'a> V2ProjectsCreateWithFormDataBuilder<'a> {
         self.request.color = Some(color);
         self
     }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
+        self
+    }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
     #[must_use]
     pub fn exclude_geojson(mut self, exclude_geojson: bool) -> Self {
@@ -233,6 +239,12 @@ impl<'a> V2ProjectsCreateWithJsonBuilder<'a> {
     #[must_use]
     pub fn color(mut self, color: String) -> Self {
         self.request.color = Some(color);
+        self
+    }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
         self
     }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
@@ -367,6 +379,12 @@ impl<'a> V2ProjectsCreateWithUrlEncodedBuilder<'a> {
         self.request.color = Some(color);
         self
     }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
+        self
+    }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
     #[must_use]
     pub fn exclude_geojson(mut self, exclude_geojson: bool) -> Self {
@@ -441,8 +459,9 @@ impl HttpClient {
         }
         let value = &request.country;
         form = form.text("country", value.to_string());
-        let value = &request.description;
-        form = form.text("description", value.to_string());
+        if let Some(value) = &request.description {
+            form = form.text("description", value.to_string());
+        }
         if let Some(value) = &request.exclude_geojson {
             form = form.text("exclude_geojson", value.to_string());
         }
@@ -990,7 +1009,6 @@ impl HttpClient {
     pub fn v2_projects_create_with_form_data_builder(
         &self,
         country: V2ProjectsCreateWithFormDataRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsCreateWithFormDataBuilder<'_> {
@@ -998,12 +1016,7 @@ impl HttpClient {
             client: self,
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsCreateWithFormDataRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsCreateWithFormDataRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!(
@@ -1012,7 +1025,6 @@ impl HttpClient {
     pub fn v2_projects_create_with_json_builder(
         &self,
         country: V2ProjectsCreateWithJsonRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsCreateWithJsonBuilder<'_> {
@@ -1020,12 +1032,7 @@ impl HttpClient {
             client: self,
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsCreateWithJsonRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsCreateWithJsonRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!(
@@ -1034,7 +1041,6 @@ impl HttpClient {
     pub fn v2_projects_create_with_url_encoded_builder(
         &self,
         country: V2ProjectsCreateWithUrlEncodedRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsCreateWithUrlEncodedBuilder<'_> {
@@ -1042,12 +1048,7 @@ impl HttpClient {
             client: self,
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsCreateWithUrlEncodedRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsCreateWithUrlEncodedRequest::new(country, name, r#type),
         }
     }
 }

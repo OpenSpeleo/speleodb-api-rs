@@ -19,8 +19,8 @@ pub struct V2ProjectsUpdateWithUrlEncodedRequest {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<String>,
     pub country: V2ProjectsUpdateWithUrlEncodedRequestCountry,
-    ///Constraint: minLength=1
-    pub description: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
     ///Exclude GeoJSON from the project
     #[serde(skip_serializing_if = "Option::is_none")]
     pub exclude_geojson: Option<bool>,
@@ -46,16 +46,15 @@ impl V2ProjectsUpdateWithUrlEncodedRequest {
     /// Construct this request with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithUrlEncodedRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
             country,
-            description,
             name,
             r#type,
             color: None,
+            description: None,
             exclude_geojson: None,
             fork_from: None,
             is_active: None,
@@ -67,16 +66,10 @@ impl V2ProjectsUpdateWithUrlEncodedRequest {
     /// Start a dependency-free builder with every required wire field.
     pub fn builder(
         country: V2ProjectsUpdateWithUrlEncodedRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithUrlEncodedRequestBuilder {
-        V2ProjectsUpdateWithUrlEncodedRequestBuilder::new(
-            country,
-            description,
-            name,
-            r#type,
-        )
+        V2ProjectsUpdateWithUrlEncodedRequestBuilder::new(country, name, r#type)
     }
 }
 /// Dependency-free builder for [`#struct_name`].
@@ -89,23 +82,23 @@ impl V2ProjectsUpdateWithUrlEncodedRequestBuilder {
     /// Start a builder with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithUrlEncodedRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
-            value: V2ProjectsUpdateWithUrlEncodedRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            value: V2ProjectsUpdateWithUrlEncodedRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!("Set the optional `", "color", "` request field.")]
     #[must_use]
     pub fn color(mut self, color: String) -> Self {
         self.value.color = Some(color);
+        self
+    }
+    #[doc = concat!("Set the optional `", "description", "` request field.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.value.description = Some(description);
         self
     }
     #[doc = concat!("Set the optional `", "exclude_geojson", "` request field.")]
@@ -978,8 +971,8 @@ pub struct V2ProjectsUpdateWithJsonRequest {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<String>,
     pub country: V2ProjectsUpdateWithJsonRequestCountry,
-    ///Constraint: minLength=1
-    pub description: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
     ///Exclude GeoJSON from the project
     #[serde(skip_serializing_if = "Option::is_none")]
     pub exclude_geojson: Option<bool>,
@@ -1017,16 +1010,15 @@ impl V2ProjectsUpdateWithJsonRequest {
     /// Construct this request with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithJsonRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
             country,
-            description,
             name,
             r#type,
             color: None,
+            description: None,
             exclude_geojson: None,
             fork_from: None,
             is_active: None,
@@ -1038,11 +1030,10 @@ impl V2ProjectsUpdateWithJsonRequest {
     /// Start a dependency-free builder with every required wire field.
     pub fn builder(
         country: V2ProjectsUpdateWithJsonRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithJsonRequestBuilder {
-        V2ProjectsUpdateWithJsonRequestBuilder::new(country, description, name, r#type)
+        V2ProjectsUpdateWithJsonRequestBuilder::new(country, name, r#type)
     }
 }
 /// Dependency-free builder for [`#struct_name`].
@@ -1055,23 +1046,23 @@ impl V2ProjectsUpdateWithJsonRequestBuilder {
     /// Start a builder with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithJsonRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
-            value: V2ProjectsUpdateWithJsonRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            value: V2ProjectsUpdateWithJsonRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!("Set the optional `", "color", "` request field.")]
     #[must_use]
     pub fn color(mut self, color: String) -> Self {
         self.value.color = Some(color);
+        self
+    }
+    #[doc = concat!("Set the optional `", "description", "` request field.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.value.description = Some(description);
         self
     }
     #[doc = concat!("Set the optional `", "exclude_geojson", "` request field.")]
@@ -1990,8 +1981,8 @@ pub struct V2ProjectsUpdateWithFormDataRequest {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<String>,
     pub country: V2ProjectsUpdateWithFormDataRequestCountry,
-    ///Constraint: minLength=1
-    pub description: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub description: Option<String>,
     ///Exclude GeoJSON from the project
     #[serde(skip_serializing_if = "Option::is_none")]
     pub exclude_geojson: Option<bool>,
@@ -2017,16 +2008,15 @@ impl V2ProjectsUpdateWithFormDataRequest {
     /// Construct this request with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithFormDataRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
             country,
-            description,
             name,
             r#type,
             color: None,
+            description: None,
             exclude_geojson: None,
             fork_from: None,
             is_active: None,
@@ -2038,16 +2028,10 @@ impl V2ProjectsUpdateWithFormDataRequest {
     /// Start a dependency-free builder with every required wire field.
     pub fn builder(
         country: V2ProjectsUpdateWithFormDataRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithFormDataRequestBuilder {
-        V2ProjectsUpdateWithFormDataRequestBuilder::new(
-            country,
-            description,
-            name,
-            r#type,
-        )
+        V2ProjectsUpdateWithFormDataRequestBuilder::new(country, name, r#type)
     }
 }
 /// Dependency-free builder for [`#struct_name`].
@@ -2060,23 +2044,23 @@ impl V2ProjectsUpdateWithFormDataRequestBuilder {
     /// Start a builder with every required wire field.
     pub fn new(
         country: V2ProjectsUpdateWithFormDataRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> Self {
         Self {
-            value: V2ProjectsUpdateWithFormDataRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            value: V2ProjectsUpdateWithFormDataRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!("Set the optional `", "color", "` request field.")]
     #[must_use]
     pub fn color(mut self, color: String) -> Self {
         self.value.color = Some(color);
+        self
+    }
+    #[doc = concat!("Set the optional `", "description", "` request field.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.value.description = Some(description);
         self
     }
     #[doc = concat!("Set the optional `", "exclude_geojson", "` request field.")]

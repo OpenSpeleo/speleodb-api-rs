@@ -417,7 +417,8 @@ async fn declared_errors_and_unexpected_html_keep_status_headers_and_bytes() {
 #[tokio::test]
 async fn json_is_encoded_once_and_distinguishes_absent_from_null() {
     let (url, received) = server(400, "application/json", br#"{"detail":"fixture"}"#).await;
-    let body = serde_json::json!({"name":"Cavern", "description":"Survey", "country":"US", "type":"COMPASS", "latitude":null});
+    let body =
+        serde_json::json!({"name":"Cavern", "country":"US", "type":"COMPASS", "latitude":null});
     let request: V2ProjectsCreateWithJsonRequest = serde_json::from_value(body.clone()).unwrap();
     let _ = HttpClient::new()
         .with_base_url(url)
@@ -553,7 +554,7 @@ async fn urlencoded_variant_uses_the_original_path_and_real_form_encoding() {
 async fn urlencoded_explicit_clear_reaches_the_wire_as_an_empty_value() {
     let (url, received) = server(400, "application/json", br#"{"detail":"fixture"}"#).await;
     let request: V2ProjectsCreateWithUrlEncodedRequest = serde_json::from_value(serde_json::json!({
-        "name":"Cavern", "description":"Survey", "country":"US", "type":"COMPASS", "latitude":"", "longitude":""
+        "name":"Cavern", "description":"", "country":"US", "type":"COMPASS", "latitude":"", "longitude":""
     })).unwrap();
     let _ = HttpClient::new()
         .with_base_url(url)
@@ -566,6 +567,7 @@ async fn urlencoded_explicit_clear_reaches_the_wire_as_an_empty_value() {
             .collect();
     assert_eq!(fields.get("latitude").map(String::as_str), Some(""));
     assert_eq!(fields.get("longitude").map(String::as_str), Some(""));
+    assert_eq!(fields.get("description").map(String::as_str), Some(""));
 }
 
 #[tokio::test]

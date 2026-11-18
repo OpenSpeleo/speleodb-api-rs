@@ -146,6 +146,12 @@ impl<'a> V2ProjectsUpdateWithFormDataBuilder<'a> {
         self.request.color = Some(color);
         self
     }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
+        self
+    }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
     #[must_use]
     pub fn exclude_geojson(mut self, exclude_geojson: bool) -> Self {
@@ -237,6 +243,12 @@ impl<'a> V2ProjectsUpdateWithJsonBuilder<'a> {
     #[must_use]
     pub fn color(mut self, color: String) -> Self {
         self.request.color = Some(color);
+        self
+    }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
         self
     }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
@@ -377,6 +389,12 @@ impl<'a> V2ProjectsUpdateWithUrlEncodedBuilder<'a> {
         self.request.color = Some(color);
         self
     }
+    #[doc = concat!("Set the optional request-body field `", "description", "`.")]
+    #[must_use]
+    pub fn description(mut self, description: String) -> Self {
+        self.request.description = Some(description);
+        self
+    }
     #[doc = concat!("Set the optional request-body field `", "exclude_geojson", "`.")]
     #[must_use]
     pub fn exclude_geojson(mut self, exclude_geojson: bool) -> Self {
@@ -456,8 +474,9 @@ impl HttpClient {
         }
         let value = &request.country;
         form = form.text("country", value.to_string());
-        let value = &request.description;
-        form = form.text("description", value.to_string());
+        if let Some(value) = &request.description {
+            form = form.text("description", value.to_string());
+        }
         if let Some(value) = &request.exclude_geojson {
             form = form.text("exclude_geojson", value.to_string());
         }
@@ -1014,7 +1033,6 @@ impl HttpClient {
         &self,
         id: impl Into<String>,
         country: V2ProjectsUpdateWithFormDataRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithFormDataBuilder<'_> {
@@ -1023,12 +1041,7 @@ impl HttpClient {
             id: id.into(),
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsUpdateWithFormDataRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsUpdateWithFormDataRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!(
@@ -1038,7 +1051,6 @@ impl HttpClient {
         &self,
         id: impl Into<String>,
         country: V2ProjectsUpdateWithJsonRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithJsonBuilder<'_> {
@@ -1047,12 +1059,7 @@ impl HttpClient {
             id: id.into(),
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsUpdateWithJsonRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsUpdateWithJsonRequest::new(country, name, r#type),
         }
     }
     #[doc = concat!(
@@ -1062,7 +1069,6 @@ impl HttpClient {
         &self,
         id: impl Into<String>,
         country: V2ProjectsUpdateWithUrlEncodedRequestCountry,
-        description: String,
         name: String,
         r#type: String,
     ) -> V2ProjectsUpdateWithUrlEncodedBuilder<'_> {
@@ -1071,12 +1077,7 @@ impl HttpClient {
             id: id.into(),
             format: None,
             x_csrf_token: None,
-            request: V2ProjectsUpdateWithUrlEncodedRequest::new(
-                country,
-                description,
-                name,
-                r#type,
-            ),
+            request: V2ProjectsUpdateWithUrlEncodedRequest::new(country, name, r#type),
         }
     }
 }
