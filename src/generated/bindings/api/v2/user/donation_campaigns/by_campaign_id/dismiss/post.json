@@ -1,0 +1,404 @@
+[
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_donation_campaigns_dismiss_create",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_donation_campaigns_dismiss_create",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "campaign_id",
+          "rust_type": "impl AsRef < str >"
+        },
+        {
+          "name": "format",
+          "rust_type": "Option < V2UserDonationCampaignsDismissCreateFormat >"
+        },
+        {
+          "name": "x_csrf_token",
+          "rust_type": "Option < impl AsRef < str > >"
+        }
+      ],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "Result < () , ApiOpError < V2UserDonationCampaignsDismissCreateApiError > >",
+      "rust": "async fn v2_user_donation_campaigns_dismiss_create (& self , campaign_id : impl AsRef < str > , format : Option < V2UserDonationCampaignsDismissCreateFormat > , x_csrf_token : Option < impl AsRef < str > >) -> Result < () , ApiOpError < V2UserDonationCampaignsDismissCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "v2_user_donation_campaigns_dismiss_create_builder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::HttpClient::v2_user_donation_campaigns_dismiss_create_builder",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "campaign_id",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "V2UserDonationCampaignsDismissCreateBuilder < '_ >",
+      "rust": "fn v2_user_donation_campaigns_dismiss_create_builder (& self , campaign_id : impl Into < String >) -> V2UserDonationCampaignsDismissCreateBuilder < '_ >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserDonationCampaignsDismissCreateApiError",
+    "operation": null,
+    "path": "client::V2UserDonationCampaignsDismissCreateApiError",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status403",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status404",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "fields": [
+          {
+            "attributes": [],
+            "index": 0,
+            "name": null,
+            "public": true,
+            "rust_type": "SharedResponse5de440b44dbae0c4",
+            "wire_name": null
+          }
+        ],
+        "name": "Status406",
+        "wire_name": null
+      }
+    ]
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [
+      {
+        "attributes": [],
+        "index": 0,
+        "name": "client",
+        "public": false,
+        "rust_type": "& 'a HttpClient",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 1,
+        "name": "campaign_id",
+        "public": false,
+        "rust_type": "String",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 2,
+        "name": "format",
+        "public": false,
+        "rust_type": "Option < V2UserDonationCampaignsDismissCreateFormat >",
+        "wire_name": null
+      },
+      {
+        "attributes": [],
+        "index": 3,
+        "name": "x_csrf_token",
+        "public": false,
+        "rust_type": "Option < String >",
+        "wire_name": null
+      }
+    ],
+    "generics": "< 'a >",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "struct",
+    "name": "V2UserDonationCampaignsDismissCreateBuilder",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::V2UserDonationCampaignsDismissCreateBuilder",
+    "rust_type": null,
+    "signature": null,
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "format",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::V2UserDonationCampaignsDismissCreateBuilder::format",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "format",
+          "rust_type": "V2UserDonationCampaignsDismissCreateFormat"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn format (mut self , format : V2UserDonationCampaignsDismissCreateFormat) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "send",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::V2UserDonationCampaignsDismissCreateBuilder::send",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": true,
+      "generics": "",
+      "receiver": "self",
+      "return_type": "Result < () , ApiOpError < V2UserDonationCampaignsDismissCreateApiError > >",
+      "rust": "async fn send (self) -> Result < () , ApiOpError < V2UserDonationCampaignsDismissCreateApiError > >"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [must_use]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "< 'a >",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "x_csrf_token",
+    "operation": {
+      "consumption": "buffered",
+      "operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "response_excluded_statuses": [
+        "403",
+        "404",
+        "406"
+      ],
+      "response_kind": "empty",
+      "response_media_type": null,
+      "response_statuses": [
+        "204"
+      ],
+      "source_json_pointer": "/paths/~1api~1v2~1user~1donation-campaigns~1{campaign_id}~1dismiss~1/post",
+      "source_method": "POST",
+      "source_operation_id": "v2_user_donation_campaigns_dismiss_create",
+      "source_path": "/api/v2/user/donation-campaigns/{campaign_id}/dismiss/",
+      "webhook": false
+    },
+    "path": "client::V2UserDonationCampaignsDismissCreateBuilder::x_csrf_token",
+    "rust_type": null,
+    "signature": {
+      "arguments": [
+        {
+          "name": "x_csrf_token",
+          "rust_type": "impl Into < String >"
+        }
+      ],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "mut self",
+      "return_type": "Self",
+      "rust": "fn x_csrf_token (mut self , x_csrf_token : impl Into < String >) -> Self"
+    },
+    "variants": []
+  },
+  {
+    "attributes": [
+      "# [derive (Debug , Clone , Copy , PartialEq , Eq , serde :: Deserialize , serde :: Serialize)]"
+    ],
+    "fields": [],
+    "generics": "",
+    "impl_generics": null,
+    "impl_trait": null,
+    "kind": "enum",
+    "name": "V2UserDonationCampaignsDismissCreateFormat",
+    "operation": null,
+    "path": "client::V2UserDonationCampaignsDismissCreateFormat",
+    "rust_type": null,
+    "signature": null,
+    "variants": [
+      {
+        "attributes": [
+          "# [serde (rename = \"json\")]"
+        ],
+        "fields": [],
+        "name": "Json",
+        "wire_name": "json"
+      }
+    ]
+  },
+  {
+    "attributes": [],
+    "fields": [],
+    "generics": "",
+    "impl_generics": "",
+    "impl_trait": null,
+    "kind": "method",
+    "name": "as_str",
+    "operation": null,
+    "path": "client::V2UserDonationCampaignsDismissCreateFormat::as_str",
+    "rust_type": null,
+    "signature": {
+      "arguments": [],
+      "asynchronous": false,
+      "generics": "",
+      "receiver": "& self",
+      "return_type": "& 'static str",
+      "rust": "fn as_str (& self) -> & 'static str"
+    },
+    "variants": []
+  }
+]

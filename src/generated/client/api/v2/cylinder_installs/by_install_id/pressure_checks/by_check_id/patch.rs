@@ -147,7 +147,7 @@ impl<'a> V2CylinderInstallsPressureChecksPartialUpdateWithFormDataBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "check_date", "`.")]
     #[must_use]
-    pub fn check_date(mut self, check_date: chrono::NaiveDate) -> Self {
+    pub fn check_date(mut self, check_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.check_date = Some(check_date);
         self
@@ -248,7 +248,7 @@ impl<'a> V2CylinderInstallsPressureChecksPartialUpdateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "check_date", "`.")]
     #[must_use]
-    pub fn check_date(mut self, check_date: chrono::NaiveDate) -> Self {
+    pub fn check_date(mut self, check_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.check_date = Some(check_date);
         self
@@ -346,7 +346,7 @@ impl<'a> V2CylinderInstallsPressureChecksPartialUpdateWithUrlEncodedBuilder<'a> 
     }
     #[doc = concat!("Set the optional request-body field `", "check_date", "`.")]
     #[must_use]
-    pub fn check_date(mut self, check_date: chrono::NaiveDate) -> Self {
+    pub fn check_date(mut self, check_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.check_date = Some(check_date);
         self

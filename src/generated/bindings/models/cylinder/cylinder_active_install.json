@@ -21,11 +21,13 @@
         "wire_name": "id"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {

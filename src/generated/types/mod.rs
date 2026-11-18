@@ -22,6 +22,25 @@ mod tri_state_serde {
         T::deserialize(de).map(Some)
     }
 }
+time::serde::format_description!(time_date_format, Date, "[year]-[month]-[day]");
+mod time_date_double_option {
+    use super::time_date_format;
+    use serde::{Deserializer, Serializer};
+    pub fn serialize<S: Serializer>(
+        value: &Option<Option<time::Date>>,
+        ser: S,
+    ) -> Result<S::Ok, S::Error> {
+        match value {
+            Some(value) => time_date_format::option::serialize(value, ser),
+            None => ser.serialize_none(),
+        }
+    }
+    pub fn deserialize<'de, D: Deserializer<'de>>(
+        de: D,
+    ) -> Result<Option<Option<time::Date>>, D::Error> {
+        time_date_format::option::deserialize(de).map(Some)
+    }
+}
 pub mod allauth;
 pub use self::allauth::{
     AuthAppAccountEmailDeleteRequest, AuthAppAccountEmailDeleteResponse,

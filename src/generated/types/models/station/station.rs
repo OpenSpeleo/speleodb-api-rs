@@ -5,13 +5,15 @@ use super::super::super::{Deserialize, Serialize, StationTagUnion2, User};
 pub struct Station {
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the station
     pub description: String,
     pub id: uuid::Uuid,
     pub latitude: f64,
     pub longitude: f64,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Station identifier (e.g., 'A1', 'Station-001')
     ///Constraint: maxLength=100
     pub name: String,

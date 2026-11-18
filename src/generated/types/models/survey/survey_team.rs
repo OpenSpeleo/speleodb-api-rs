@@ -15,10 +15,12 @@ representations — only data flowing *into* the serializer is sanitized.*/
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct SurveyTeam {
     pub country: SurveyTeamCountry,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub description: String,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Constraint: maxLength=255
     pub name: String,
     #[doc = "* `0` - MEMBER\n* `1` - LEADER"]

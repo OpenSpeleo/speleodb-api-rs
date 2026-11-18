@@ -5,19 +5,23 @@
     ],
     "fields": [
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 0,
         "name": "creation_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "creation_date"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 1,
         "name": "expiracy_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "expiracy_date"
       },
       {
@@ -53,11 +57,13 @@
         "wire_name": "message"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 6,
         "name": "modified_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "modified_date"
       },
       {

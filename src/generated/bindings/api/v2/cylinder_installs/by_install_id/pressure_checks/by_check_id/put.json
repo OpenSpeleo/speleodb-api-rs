@@ -104,7 +104,7 @@
         },
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -119,7 +119,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsPressureChecksUpdateWithFormDataBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_form_data_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : chrono :: NaiveDate , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithFormDataBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_form_data_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : time :: Date , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithFormDataBuilder < '_ >"
     },
     "variants": []
   },
@@ -228,7 +228,7 @@
         },
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -243,7 +243,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsPressureChecksUpdateWithJsonBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_json_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithJsonBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_json_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : time :: Date , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithJsonBuilder < '_ >"
     },
     "variants": []
   },
@@ -352,7 +352,7 @@
         },
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -367,7 +367,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsPressureChecksUpdateWithUrlEncodedBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_url_encoded_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithUrlEncodedBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_pressure_checks_update_with_url_encoded_builder (& self , check_id : impl Into < String > , install_id : impl Into < String > , check_date : time :: Date , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithUrlEncodedBuilder < '_ >"
     },
     "variants": []
   },
@@ -2033,11 +2033,13 @@
     ],
     "fields": [
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 0,
         "name": "check_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "check_date"
       },
       {
@@ -2113,7 +2115,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -2128,7 +2130,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2CylinderInstallsPressureChecksUpdateWithFormDataRequestBuilder",
-      "rust": "fn builder (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithFormDataRequestBuilder"
+      "rust": "fn builder (check_date : time :: Date , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> V2CylinderInstallsPressureChecksUpdateWithFormDataRequestBuilder"
     },
     "variants": []
   },
@@ -2147,7 +2149,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -2162,7 +2164,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> Self"
+      "rust": "fn new (check_date : time :: Date , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> Self"
     },
     "variants": []
   },
@@ -2256,7 +2258,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -2271,7 +2273,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> Self"
+      "rust": "fn new (check_date : time :: Date , pressure : i64 , unit_system : V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem) -> Self"
     },
     "variants": []
   },

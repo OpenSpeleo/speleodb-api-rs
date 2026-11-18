@@ -65,9 +65,19 @@ contract.
 ## Request representations and nested modules
 
 Revision `authored_date` and `committed_date` fields use the schema's
-`date-time` format and decode to UTC datetimes. The backend emits UTC ISO 8601
-timestamps; clients own local display. `tests/revision_timestamps.rs` protects
-instant and fractional-second preservation and rejection of ambiguous dates.
+`date-time` format and decode to `time::OffsetDateTime`, preserving the supplied
+offset and fractional seconds. The backend emits UTC ISO 8601 timestamps;
+clients own local display. The native `[generator.types]` strategies in
+`openapi-to-rust.toml` select `time` for both timestamps and calendar dates.
+Generated Serde codecs encode RFC 3339 timestamps and `YYYY-MM-DD` dates,
+including optional fields. Consumers needing UTC normalization explicitly call
+`.to_offset(time::UtcOffset::UTC)`. `tests/revision_timestamps.rs` protects
+instant and fractional-second preservation and rejection of ambiguous dates;
+`tests/date_time.rs` covers nullable timestamps and calendar-date requests. The
+adapter recognizes the date-codec macro's module declaration when importing
+shared helpers into nested models and supplies the missing sibling import in the
+upstream nullable-date helper. Date patches retain distinct omitted, null, and
+replacement values.
 
 Upstream openapi-to-rust emits one preferred request representation per
 operation and monolithic client/types files. The Cargo xtask adapts its inputs

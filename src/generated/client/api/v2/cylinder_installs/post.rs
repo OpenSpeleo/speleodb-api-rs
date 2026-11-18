@@ -305,7 +305,7 @@ impl<'a> V2CylinderInstallsCreateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "uninstall_date", "`.")]
     #[must_use]
-    pub fn uninstall_date(mut self, uninstall_date: chrono::NaiveDate) -> Self {
+    pub fn uninstall_date(mut self, uninstall_date: time::Date) -> Self {
         self.request.uninstall_date = Some(Some(uninstall_date));
         self
     }
@@ -1076,7 +1076,7 @@ impl HttpClient {
     pub fn v2_cylinder_installs_create_with_form_data_builder(
         &self,
         cylinder: uuid::Uuid,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         latitude: V2CylinderInstallsCreateWithFormDataRequestLatitude,
         longitude: V2CylinderInstallsCreateWithFormDataRequestLongitude,
         project: uuid::Uuid,
@@ -1100,7 +1100,7 @@ impl HttpClient {
     pub fn v2_cylinder_installs_create_with_json_builder(
         &self,
         cylinder: uuid::Uuid,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         latitude: V2CylinderInstallsCreateWithJsonRequestLatitude,
         longitude: V2CylinderInstallsCreateWithJsonRequestLongitude,
         project: uuid::Uuid,
@@ -1125,7 +1125,7 @@ impl HttpClient {
     pub fn v2_cylinder_installs_create_with_url_encoded_builder(
         &self,
         cylinder: uuid::Uuid,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         latitude: V2CylinderInstallsCreateWithUrlEncodedRequestLatitude,
         longitude: V2CylinderInstallsCreateWithUrlEncodedRequestLongitude,
         project: uuid::Uuid,

@@ -2,9 +2,11 @@
 use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct ProjectTeamPermission {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub level: ProjectTeamPermissionLevel,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub team: uuid::Uuid,
 }
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize, Default)]

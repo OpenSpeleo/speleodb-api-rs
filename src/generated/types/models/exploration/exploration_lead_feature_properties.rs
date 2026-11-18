@@ -3,12 +3,14 @@ use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct ExplorationLeadFeatureProperties {
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub description: String,
     ///Constraint: minItems=1, maxItems=3
     pub directions: Vec<ExplorationLeadFeaturePropertiesDirectionsItem>,
     pub is_fully_checked: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub project: uuid::Uuid,
 }
 #[derive(Debug, Clone, Deserialize, Serialize)]

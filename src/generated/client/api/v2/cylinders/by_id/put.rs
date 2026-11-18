@@ -288,7 +288,7 @@ impl<'a> V2CylindersUpdateWithJsonBuilder<'a> {
     #[must_use]
     pub fn last_hydrostatic_test_date(
         mut self,
-        last_hydrostatic_test_date: chrono::NaiveDate,
+        last_hydrostatic_test_date: time::Date,
     ) -> Self {
         self.request.last_hydrostatic_test_date = Some(Some(last_hydrostatic_test_date));
         self
@@ -317,7 +317,7 @@ impl<'a> V2CylindersUpdateWithJsonBuilder<'a> {
     #[must_use]
     pub fn last_visual_inspection_date(
         mut self,
-        last_visual_inspection_date: chrono::NaiveDate,
+        last_visual_inspection_date: time::Date,
     ) -> Self {
         self.request.last_visual_inspection_date = Some(
             Some(last_visual_inspection_date),
@@ -344,7 +344,7 @@ impl<'a> V2CylindersUpdateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "manufactured_date", "`.")]
     #[must_use]
-    pub fn manufactured_date(mut self, manufactured_date: chrono::NaiveDate) -> Self {
+    pub fn manufactured_date(mut self, manufactured_date: time::Date) -> Self {
         self.request.manufactured_date = Some(Some(manufactured_date));
         self
     }

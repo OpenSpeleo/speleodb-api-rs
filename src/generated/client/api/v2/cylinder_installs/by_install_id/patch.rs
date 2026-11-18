@@ -180,7 +180,7 @@ impl<'a> V2CylinderInstallsPartialUpdateWithFormDataBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "install_date", "`.")]
     #[must_use]
-    pub fn install_date(mut self, install_date: chrono::NaiveDate) -> Self {
+    pub fn install_date(mut self, install_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.install_date = Some(install_date);
         self
@@ -365,7 +365,7 @@ impl<'a> V2CylinderInstallsPartialUpdateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "install_date", "`.")]
     #[must_use]
-    pub fn install_date(mut self, install_date: chrono::NaiveDate) -> Self {
+    pub fn install_date(mut self, install_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.install_date = Some(install_date);
         self
@@ -430,7 +430,7 @@ impl<'a> V2CylinderInstallsPartialUpdateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "uninstall_date", "`.")]
     #[must_use]
-    pub fn uninstall_date(mut self, uninstall_date: chrono::NaiveDate) -> Self {
+    pub fn uninstall_date(mut self, uninstall_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.uninstall_date = Some(Some(uninstall_date));
         self
@@ -570,7 +570,7 @@ impl<'a> V2CylinderInstallsPartialUpdateWithUrlEncodedBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "install_date", "`.")]
     #[must_use]
-    pub fn install_date(mut self, install_date: chrono::NaiveDate) -> Self {
+    pub fn install_date(mut self, install_date: time::Date) -> Self {
         let request = self.request.get_or_insert_with(Default::default);
         request.install_date = Some(install_date);
         self

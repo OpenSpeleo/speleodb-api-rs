@@ -5,7 +5,8 @@ use super::super::super::{Deserialize, GISProjectView, Serialize};
 pub struct GISView {
     ///If True, allows users to zoom to the precise location of the cave
     pub allow_precise_zoom: bool,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of what this view contains
     pub description: String,
     ///Optional Polygon restricting the public web viewer display only. Raw GeoJSON downloads and OGC access remain unrestricted.
@@ -13,7 +14,8 @@ pub struct GISView {
     ///Unique token for API access to this view
     pub gis_token: String,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Descriptive name for this GIS view
     ///Constraint: maxLength=255
     pub name: String,

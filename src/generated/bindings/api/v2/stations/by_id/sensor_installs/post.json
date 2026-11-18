@@ -96,7 +96,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -107,7 +107,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2StationsSensorInstallsCreateWithFormDataBuilder < '_ >",
-      "rust": "fn v2_stations_sensor_installs_create_with_form_data_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataBuilder < '_ >"
+      "rust": "fn v2_stations_sensor_installs_create_with_form_data_builder (& self , id : impl Into < String > , install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataBuilder < '_ >"
     },
     "variants": []
   },
@@ -208,7 +208,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -219,7 +219,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2StationsSensorInstallsCreateWithJsonBuilder < '_ >",
-      "rust": "fn v2_stations_sensor_installs_create_with_json_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonBuilder < '_ >"
+      "rust": "fn v2_stations_sensor_installs_create_with_json_builder (& self , id : impl Into < String > , install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonBuilder < '_ >"
     },
     "variants": []
   },
@@ -320,7 +320,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -331,7 +331,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2StationsSensorInstallsCreateWithUrlEncodedBuilder < '_ >",
-      "rust": "fn v2_stations_sensor_installs_create_with_url_encoded_builder (& self , id : impl Into < String > , install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedBuilder < '_ >"
+      "rust": "fn v2_stations_sensor_installs_create_with_url_encoded_builder (& self , id : impl Into < String > , install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedBuilder < '_ >"
     },
     "variants": []
   },
@@ -1229,14 +1229,14 @@
       "arguments": [
         {
           "name": "expiracy_battery_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1363,14 +1363,14 @@
       "arguments": [
         {
           "name": "expiracy_memory_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1730,14 +1730,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2769,11 +2769,13 @@
         "wire_name": "expiracy_memory_date"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -2851,7 +2853,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -2862,7 +2864,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2StationsSensorInstallsCreateWithFormDataRequestBuilder",
-      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataRequestBuilder"
+      "rust": "fn builder (install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithFormDataRequestBuilder"
     },
     "variants": []
   },
@@ -2881,7 +2883,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -2892,7 +2894,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3014,7 +3016,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -3025,7 +3027,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3275,30 +3277,32 @@
     "fields": [
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 0,
         "name": "expiracy_battery_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "expiracy_battery_date"
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 1,
         "name": "expiracy_memory_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "expiracy_memory_date"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -3331,12 +3335,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 6,
         "name": "uninstall_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "uninstall_date"
       },
       {
@@ -3376,7 +3380,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -3387,7 +3391,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2StationsSensorInstallsCreateWithJsonRequestBuilder",
-      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonRequestBuilder"
+      "rust": "fn builder (install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithJsonRequestBuilder"
     },
     "variants": []
   },
@@ -3406,7 +3410,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -3417,7 +3421,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3485,14 +3489,14 @@
       "arguments": [
         {
           "name": "expiracy_battery_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -3559,14 +3563,14 @@
       "arguments": [
         {
           "name": "expiracy_memory_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -3631,7 +3635,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -3642,7 +3646,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3719,14 +3723,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -4009,11 +4013,13 @@
         "wire_name": "expiracy_memory_date"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -4091,7 +4097,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -4102,7 +4108,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder",
-      "rust": "fn builder (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder"
+      "rust": "fn builder (install_date : time :: Date , sensor : uuid :: Uuid) -> V2StationsSensorInstallsCreateWithUrlEncodedRequestBuilder"
     },
     "variants": []
   },
@@ -4121,7 +4127,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -4132,7 +4138,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -4254,7 +4260,7 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "sensor",
@@ -4265,7 +4271,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (install_date : chrono :: NaiveDate , sensor : uuid :: Uuid) -> Self"
+      "rust": "fn new (install_date : time :: Date , sensor : uuid :: Uuid) -> Self"
     },
     "variants": []
   },

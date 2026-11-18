@@ -6,11 +6,13 @@
     ],
     "fields": [
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 0,
         "name": "expires_at",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "expires_at"
       },
       {
@@ -22,11 +24,13 @@
         "wire_name": "filename"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 2,
         "name": "ready_at",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "ready_at"
       },
       {

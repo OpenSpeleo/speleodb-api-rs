@@ -13,11 +13,13 @@
         "wire_name": "country"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 1,
         "name": "creation_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "creation_date"
       },
       {
@@ -37,11 +39,13 @@
         "wire_name": "id"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 4,
         "name": "modified_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "modified_date"
       },
       {

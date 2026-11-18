@@ -265,10 +265,7 @@ impl<'a> V2StationsSensorInstallsCreateWithJsonBuilder<'a> {
         "Set the optional request-body field `", "expiracy_battery_date", "`."
     )]
     #[must_use]
-    pub fn expiracy_battery_date(
-        mut self,
-        expiracy_battery_date: chrono::NaiveDate,
-    ) -> Self {
+    pub fn expiracy_battery_date(mut self, expiracy_battery_date: time::Date) -> Self {
         self.request.expiracy_battery_date = Some(Some(expiracy_battery_date));
         self
     }
@@ -293,10 +290,7 @@ impl<'a> V2StationsSensorInstallsCreateWithJsonBuilder<'a> {
         "Set the optional request-body field `", "expiracy_memory_date", "`."
     )]
     #[must_use]
-    pub fn expiracy_memory_date(
-        mut self,
-        expiracy_memory_date: chrono::NaiveDate,
-    ) -> Self {
+    pub fn expiracy_memory_date(mut self, expiracy_memory_date: time::Date) -> Self {
         self.request.expiracy_memory_date = Some(Some(expiracy_memory_date));
         self
     }
@@ -334,7 +328,7 @@ impl<'a> V2StationsSensorInstallsCreateWithJsonBuilder<'a> {
     }
     #[doc = concat!("Set the optional request-body field `", "uninstall_date", "`.")]
     #[must_use]
-    pub fn uninstall_date(mut self, uninstall_date: chrono::NaiveDate) -> Self {
+    pub fn uninstall_date(mut self, uninstall_date: time::Date) -> Self {
         self.request.uninstall_date = Some(Some(uninstall_date));
         self
     }
@@ -1123,7 +1117,7 @@ impl HttpClient {
     pub fn v2_stations_sensor_installs_create_with_form_data_builder(
         &self,
         id: impl Into<String>,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         sensor: uuid::Uuid,
     ) -> V2StationsSensorInstallsCreateWithFormDataBuilder<'_> {
         V2StationsSensorInstallsCreateWithFormDataBuilder {
@@ -1144,7 +1138,7 @@ impl HttpClient {
     pub fn v2_stations_sensor_installs_create_with_json_builder(
         &self,
         id: impl Into<String>,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         sensor: uuid::Uuid,
     ) -> V2StationsSensorInstallsCreateWithJsonBuilder<'_> {
         V2StationsSensorInstallsCreateWithJsonBuilder {
@@ -1165,7 +1159,7 @@ impl HttpClient {
     pub fn v2_stations_sensor_installs_create_with_url_encoded_builder(
         &self,
         id: impl Into<String>,
-        install_date: chrono::NaiveDate,
+        install_date: time::Date,
         sensor: uuid::Uuid,
     ) -> V2StationsSensorInstallsCreateWithUrlEncodedBuilder<'_> {
         V2StationsSensorInstallsCreateWithUrlEncodedBuilder {

@@ -42,12 +42,12 @@
       },
       {
         "attributes": [
-          "# [serde (rename = \"timeStamp\")]"
+          "# [serde (rename = \"timeStamp\" , with = \"time::serde::rfc3339\")]"
         ],
         "index": 4,
         "name": "time_stamp",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "timeStamp"
       },
       {

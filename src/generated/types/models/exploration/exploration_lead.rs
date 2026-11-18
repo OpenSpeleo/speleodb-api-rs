@@ -5,7 +5,8 @@ use super::super::super::{Deserialize, Serialize, User};
 pub struct ExplorationLead {
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the lead
     pub description: String,
     ///Constraint: minItems=1, maxItems=3
@@ -14,7 +15,8 @@ pub struct ExplorationLead {
     pub is_fully_checked: bool,
     pub latitude: f64,
     pub longitude: f64,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub project: uuid::Uuid,
 }
 #[derive(Debug, Clone, Deserialize, Serialize)]

@@ -12,9 +12,15 @@ fn git_revision_timestamps_decode_as_unambiguous_instants() {
         "hexsha_short": "aaaaaaa", "message": "Survey", "parents": [], "url": null
     });
     let commit: GitCommit = serde_json::from_value(wire.clone()).unwrap();
+    assert_eq!(commit.authored_date.offset().whole_seconds(), -5 * 3600);
+    assert_eq!(commit.committed_date.offset().whole_seconds(), 3600);
+    assert_eq!(
+        (commit.committed_date - commit.authored_date).whole_seconds(),
+        82
+    );
     let encoded = serde_json::to_value(commit).unwrap();
-    assert_eq!(encoded["authored_date"], "2026-11-10T08:18:23Z");
-    assert_eq!(encoded["committed_date"], "2026-11-10T08:19:45Z");
+    assert_eq!(encoded["authored_date"], wire["authored_date"]);
+    assert_eq!(encoded["committed_date"], wire["committed_date"]);
     for field in ["authored_date", "committed_date"] {
         let original = wire[field].clone();
         wire[field] = json!("2026/11/10 03:18");
@@ -32,8 +38,9 @@ fn cached_revision_timestamp_preserves_precision_and_rejects_ambiguous_dates() {
         "message": "Survey", "parent_ids": [], "tree": [], "url": null
     });
     let commit: ProjectCommit = serde_json::from_value(wire.clone()).unwrap();
+    assert_eq!(commit.authored_date.nanosecond(), 123_456_000);
     let encoded = serde_json::to_value(commit).unwrap();
-    assert_eq!(encoded["authored_date"], "2026-11-10T08:18:23.123456Z");
+    assert_eq!(encoded["authored_date"], wire["authored_date"]);
     wire["authored_date"] = json!("2026/11/10 03:18");
     assert!(serde_json::from_value::<ProjectCommit>(wire).is_err());
 }

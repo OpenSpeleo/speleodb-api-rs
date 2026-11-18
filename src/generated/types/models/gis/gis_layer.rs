@@ -22,12 +22,14 @@ pub struct GISLayer {
     pub color: String,
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Constraint: maxLength=2000
     pub description: String,
     pub file: String,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///GIS Layer name
     ///Constraint: maxLength=255
     pub name: String,

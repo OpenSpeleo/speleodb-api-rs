@@ -10,7 +10,8 @@ pub struct Landmark {
     pub collection_name: Option<String>,
     ///User who created the landmark.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the landmark
     pub description: String,
     /**Map icon, colored by the landmark collection.
@@ -24,7 +25,8 @@ pub struct Landmark {
     pub id: uuid::Uuid,
     pub latitude: f64,
     pub longitude: f64,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Landmark name
     ///Constraint: maxLength=100
     pub name: String,

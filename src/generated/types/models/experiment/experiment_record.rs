@@ -3,12 +3,14 @@ use super::super::super::{Deserialize, Experiment, Serialize};
 ///Serializer for Experiment model with field processing.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct ExperimentRecord {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Values keyed by experiment field UUID; validated using that experiment's field definitions. Form-created records preserve text values, including the submitter email, as nonempty arrays. Their preserved submitter array causes subsequent PUT/PATCH validation to fail.
     pub data: ExperimentRecordData,
     pub experiment: uuid::Uuid,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub station: uuid::Uuid,
 }
 ///Values keyed by experiment field UUID; validated using that experiment's field definitions. Form-created records preserve text values, including the submitter email, as nonempty arrays. Their preserved submitter array causes subsequent PUT/PATCH validation to fail.

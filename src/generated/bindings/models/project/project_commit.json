@@ -22,11 +22,13 @@
         "wire_name": "author_name"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 2,
         "name": "authored_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "authored_date"
       },
       {

@@ -693,14 +693,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1389,14 +1389,14 @@
       "arguments": [
         {
           "name": "expiracy_battery_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_battery_date (mut self , expiracy_battery_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1523,14 +1523,14 @@
       "arguments": [
         {
           "name": "expiracy_memory_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn expiracy_memory_date (mut self , expiracy_memory_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1705,14 +1705,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2034,14 +2034,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2717,14 +2717,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -3226,12 +3226,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {
@@ -3440,32 +3440,32 @@
     "fields": [
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 0,
         "name": "expiracy_battery_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "expiracy_battery_date"
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 1,
         "name": "expiracy_memory_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "expiracy_memory_date"
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {
@@ -3510,12 +3510,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 7,
         "name": "uninstall_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "uninstall_date"
       },
       {
@@ -3700,12 +3700,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {

@@ -200,11 +200,13 @@
         "wire_name": "created_by"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339::option\" , default)]"
+        ],
         "index": 7,
         "name": "creation_date",
         "public": true,
-        "rust_type": "Option < chrono :: DateTime < chrono :: Utc > >",
+        "rust_type": "Option < time :: OffsetDateTime >",
         "wire_name": "creation_date"
       },
       {

@@ -6,7 +6,8 @@ pub struct GISProjectView {
     ///Specific commit SHA (40 hex chars). Leave empty if using latest.
     ///Constraint: maxLength=40
     pub commit_sha: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub id: i64,
     pub project_id: uuid::Uuid,
     pub project_name: String,

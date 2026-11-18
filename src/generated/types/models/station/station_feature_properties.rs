@@ -3,9 +3,11 @@ use super::super::super::{Deserialize, Sensor, Serialize, StationTagSummary};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct StationFeatureProperties {
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub description: String,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub name: String,
     pub network: Option<uuid::Uuid>,
     pub project: Option<uuid::Uuid>,

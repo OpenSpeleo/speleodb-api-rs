@@ -7,9 +7,11 @@ pub struct StationTag {
     ///Hex color code (e.g., '#FF5733')
     ///Constraint: maxLength=7, pattern=`^#[0-9A-Fa-f]{6}$`
     pub color: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Tag name (e.g., 'Active', 'High Priority', 'Completed')
     ///Constraint: maxLength=50
     pub name: String,

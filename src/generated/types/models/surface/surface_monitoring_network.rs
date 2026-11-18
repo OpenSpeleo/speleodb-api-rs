@@ -5,13 +5,15 @@ use super::super::super::{Deserialize, Serialize, User};
 pub struct SurfaceMonitoringNetwork {
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the network
     pub description: String,
     pub gis_token: String,
     pub id: uuid::Uuid,
     pub is_active: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Constraint: minLength=1, maxLength=100
     pub name: String,
 }

@@ -3,7 +3,8 @@ use super::super::super::{Deserialize, Serialize};
 ///Serializer for SurfaceMonitoringNetworkUserPermission model.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct SurfaceMonitoringNetworkUserPermission {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub deactivated_by: Option<i64>,
     pub id: i64,
     pub is_active: bool,
@@ -11,7 +12,8 @@ pub struct SurfaceMonitoringNetworkUserPermission {
     ///Constraint: minimum=-2147483648, maximum=2147483647
     pub level: i64,
     pub level_label: String,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub network: uuid::Uuid,
     pub network_id: uuid::Uuid,
     pub network_name: String,

@@ -92,7 +92,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -111,7 +111,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsCreateWithFormDataBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_create_with_form_data_builder (& self , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithFormDataBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_create_with_form_data_builder (& self , cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithFormDataBuilder < '_ >"
     },
     "variants": []
   },
@@ -208,7 +208,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -227,7 +227,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsCreateWithJsonBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_create_with_json_builder (& self , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithJsonBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_create_with_json_builder (& self , cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithJsonBuilder < '_ >"
     },
     "variants": []
   },
@@ -324,7 +324,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -343,7 +343,7 @@
       "generics": "",
       "receiver": "& self",
       "return_type": "V2CylinderInstallsCreateWithUrlEncodedBuilder < '_ >",
-      "rust": "fn v2_cylinder_installs_create_with_url_encoded_builder (& self , cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithUrlEncodedBuilder < '_ >"
+      "rust": "fn v2_cylinder_installs_create_with_url_encoded_builder (& self , cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithUrlEncodedBuilder < '_ >"
     },
     "variants": []
   },
@@ -1688,14 +1688,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2813,11 +2813,13 @@
         "wire_name": "distance_from_entry"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -2935,7 +2937,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -2954,7 +2956,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2CylinderInstallsCreateWithFormDataRequestBuilder",
-      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithFormDataRequestBuilder"
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithFormDataRequestBuilder"
     },
     "variants": []
   },
@@ -2977,7 +2979,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -2996,7 +2998,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3122,7 +3124,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -3141,7 +3143,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithFormDataRequestLatitude , longitude : V2CylinderInstallsCreateWithFormDataRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3607,11 +3609,13 @@
         "wire_name": "distance_from_entry"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -3670,12 +3674,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 9,
         "name": "uninstall_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "uninstall_date"
       },
       {
@@ -3729,7 +3733,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -3748,7 +3752,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2CylinderInstallsCreateWithJsonRequestBuilder",
-      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithJsonRequestBuilder"
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithJsonRequestBuilder"
     },
     "variants": []
   },
@@ -3771,7 +3775,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -3790,7 +3794,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -3962,7 +3966,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -3981,7 +3985,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithJsonRequestLatitude , longitude : V2CylinderInstallsCreateWithJsonRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -4058,14 +4062,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -4525,11 +4529,13 @@
         "wire_name": "distance_from_entry"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -4647,7 +4653,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -4666,7 +4672,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "V2CylinderInstallsCreateWithUrlEncodedRequestBuilder",
-      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithUrlEncodedRequestBuilder"
+      "rust": "fn builder (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> V2CylinderInstallsCreateWithUrlEncodedRequestBuilder"
     },
     "variants": []
   },
@@ -4689,7 +4695,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -4708,7 +4714,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },
@@ -4834,7 +4840,7 @@
         },
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "latitude",
@@ -4853,7 +4859,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (cylinder : uuid :: Uuid , install_date : chrono :: NaiveDate , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> Self"
+      "rust": "fn new (cylinder : uuid :: Uuid , install_date : time :: Date , latitude : V2CylinderInstallsCreateWithUrlEncodedRequestLatitude , longitude : V2CylinderInstallsCreateWithUrlEncodedRequestLongitude , project : uuid :: Uuid) -> Self"
     },
     "variants": []
   },

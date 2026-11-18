@@ -5,8 +5,10 @@ use super::super::super::{Deserialize, GitCommitFormat, Serialize};
 pub struct GitCommit {
     pub author_email: String,
     pub author_name: String,
-    pub authored_date: chrono::DateTime<chrono::Utc>,
-    pub committed_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub authored_date: time::OffsetDateTime,
+    #[serde(with = "time::serde::rfc3339")]
+    pub committed_date: time::OffsetDateTime,
     pub committer_email: String,
     pub committer_name: String,
     pub dt_since: String,

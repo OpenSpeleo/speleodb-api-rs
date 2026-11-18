@@ -6,7 +6,8 @@ pub struct Sensor {
     pub active_installs: Vec<SensorActiveInstall>,
     ///User who created the sensor fleet.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub fleet_id: uuid::Uuid,
     pub fleet_name: String,
     pub id: uuid::Uuid,
@@ -20,7 +21,8 @@ pub struct Sensor {
     pub latest_install_memory_expiry: Option<String>,
     ///Get the name of the project where the sensor is currently installed.
     pub latest_install_project: Option<String>,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Sensor name (e.g., 'Flow Meters #023')
     ///Constraint: maxLength=50
     pub name: String,

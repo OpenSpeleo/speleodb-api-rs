@@ -63,6 +63,22 @@ fn declared_name(item: &Item) -> Option<String> {
         Item::Fn(item) => Some(item.sig.ident.to_string()),
         Item::Const(item) => Some(item.ident.to_string()),
         Item::Mod(item) => Some(item.ident.to_string()),
+        // This macro declares a codec module referenced by nested models'
+        // string-valued Serde attributes, just like an ordinary `mod` item.
+        Item::Macro(item)
+            if item
+                .mac
+                .path
+                .segments
+                .iter()
+                .map(|segment| segment.ident.to_string())
+                .eq(["time", "serde", "format_description"]) =>
+        {
+            match item.mac.tokens.clone().into_iter().next() {
+                Some(proc_macro2::TokenTree::Ident(name)) => Some(name.to_string()),
+                _ => None,
+            }
+        }
         Item::Impl(_) => None,
         _ => item_name(item),
     }
@@ -614,6 +630,21 @@ pub fn partition(
             .remove(&PathBuf::from(format!("{name}.rs")))
             .context("Missing generated Rust")?;
         let mut file = syn::parse_file(&original)?;
+        // Upstream's nullable-date helper calls the sibling codec without
+        // importing it. Keep that module dependency explicit before splitting.
+        for item in &mut file.items {
+            if let Item::Mod(module) = item
+                && module.ident == "time_date_double_option"
+                && let Some((_, items)) = &mut module.content
+            {
+                items.insert(
+                    0,
+                    parse_quote!(
+                        use super::time_date_format;
+                    ),
+                );
+            }
+        }
         top_exports.insert(
             name,
             file.items

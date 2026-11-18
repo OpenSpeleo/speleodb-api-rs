@@ -3,9 +3,11 @@ use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
 pub struct ExportArtifact {
-    pub expires_at: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub expires_at: time::OffsetDateTime,
     pub filename: String,
-    pub ready_at: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub ready_at: time::OffsetDateTime,
     pub sha256: String,
     pub size_bytes: i64,
 }

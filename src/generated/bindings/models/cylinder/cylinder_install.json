@@ -13,11 +13,13 @@
         "wire_name": "created_by"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 1,
         "name": "creation_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "creation_date"
       },
       {
@@ -85,11 +87,13 @@
         "wire_name": "id"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 10,
         "name": "install_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "install_date"
       },
       {
@@ -133,11 +137,13 @@
         "wire_name": "longitude"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 16,
         "name": "modified_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "modified_date"
       },
       {
@@ -191,11 +197,13 @@
         "wire_name": "status"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 23,
         "name": "uninstall_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "uninstall_date"
       },
       {

@@ -2,8 +2,10 @@
 use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct SurveyTeamMembership {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub role: SurveyTeamMembershipRole,
     pub team: uuid::Uuid,
     pub user: String,

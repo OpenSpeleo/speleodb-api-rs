@@ -33,6 +33,12 @@ pub use self::dashboard_stats::{
     V2UserDashboardStatsRetrieveApiError, V2UserDashboardStatsRetrieveBuilder,
     V2UserDashboardStatsRetrieveFormat,
 };
+pub mod donation_campaigns;
+pub use self::donation_campaigns::{
+    V2UserDonationCampaignsDismissCreateApiError,
+    V2UserDonationCampaignsDismissCreateBuilder,
+    V2UserDonationCampaignsDismissCreateFormat,
+};
 pub mod exports;
 pub use self::exports::{
     V2UserExportsCreateApiError, V2UserExportsCreateBuilder, V2UserExportsCreateFormat,

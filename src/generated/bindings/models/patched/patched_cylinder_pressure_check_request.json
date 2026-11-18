@@ -6,12 +6,12 @@
     "fields": [
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 0,
         "name": "check_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "check_date"
       },
       {

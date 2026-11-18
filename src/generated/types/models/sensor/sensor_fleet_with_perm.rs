@@ -5,12 +5,14 @@ use super::super::super::{Deserialize, Sensor, Serialize, User};
 pub struct SensorFleetWithPerm {
     ///User who created the sensor fleet.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the station
     pub description: String,
     pub id: uuid::Uuid,
     pub is_active: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Sensor Fleet name (e.g., 'Flow Meters - Yucatan Peninsula')
     pub name: String,
     pub sensor_count: i64,

@@ -30,6 +30,13 @@ endpoint. Keep credentials out of logs and source code. Generated operations
 provide typed request, response, parameter and error types under `types` and
 `client`. Authentication session management remains the application's concern.
 
+Date/time fields use `time::OffsetDateTime` and calendar dates use `time::Date`.
+Generated Serde codecs keep timestamps as RFC 3339 strings and dates as
+`YYYY-MM-DD`, including optional fields. Timestamps preserve the supplied UTC
+offset and fractional seconds. Call `.to_offset(time::UtcOffset::UTC)` when UTC
+normalization is needed. Consumers migrating from Chrono must update typed date
+construction and access; JSON field names and wire formats are unchanged.
+
 Accept defaults include the selected success representation and declared error
 representations. This allows SpeleoDB to negotiate its renderer before returning
 binary data or a redirect, without masking authentication or lookup errors with

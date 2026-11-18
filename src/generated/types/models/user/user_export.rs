@@ -6,7 +6,8 @@ use super::super::super::{
 pub struct UserExport {
     pub artifact: Option<UserExportArtifact>,
     pub completed_items: i64,
-    pub created_at: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub created_at: time::OffsetDateTime,
     pub download_url: Option<String>,
     pub expired: bool,
     pub id: uuid::Uuid,
@@ -16,7 +17,8 @@ pub struct UserExport {
     pub state: UserExportState,
     pub summary: UserExportSummary,
     pub total_items: i64,
-    pub updated_at: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub updated_at: time::OffsetDateTime,
 }
 #[derive(Debug, Clone)]
 pub enum UserExportSummary {

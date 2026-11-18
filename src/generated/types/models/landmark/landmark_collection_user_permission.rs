@@ -6,13 +6,15 @@ pub struct LandmarkCollectionUserPermission {
     pub collection: uuid::Uuid,
     pub collection_id: uuid::Uuid,
     pub collection_name: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub id: i64,
     #[doc = "* `1` - READ_ONLY\n* `2` - READ_AND_WRITE\n* `3` - ADMIN"]
     ///Constraint: minimum=-2147483648, maximum=2147483647
     pub level: i64,
     pub level_label: String,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub user: i64,
     pub user_display_email: String,
     pub user_full_name: String,

@@ -4,12 +4,14 @@ use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct SensorFleet {
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the station
     pub description: String,
     pub id: uuid::Uuid,
     pub is_active: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Constraint: minLength=1, maxLength=50
     pub name: String,
     ///Get the number of sensors in this fleet.

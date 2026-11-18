@@ -16,14 +16,16 @@ representations — only data flowing *into* the serializer is sanitized.*/
 pub struct StationResource {
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the resource
     pub description: String,
     pub file: Option<url::Url>,
     pub id: uuid::Uuid,
     ///Thumbnail/preview image for the resource
     pub miniature: Option<url::Url>,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     #[doc = "* `photo` - Photo\n* `video` - Video\n* `note` - Note\n* `document` - Document"]
     pub resource_type: StationResourceResourceType,
     pub station: uuid::Uuid,

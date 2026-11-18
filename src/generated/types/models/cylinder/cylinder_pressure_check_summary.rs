@@ -2,7 +2,8 @@
 use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct CylinderPressureCheckSummary {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub id: uuid::Uuid,
     ///Constraint: minimum=0
     pub pressure: i64,

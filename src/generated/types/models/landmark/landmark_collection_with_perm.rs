@@ -10,14 +10,16 @@ pub struct LandmarkCollectionWithPerm {
     pub color: String,
     ///User who created the landmark collection.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the landmark collection
     pub description: String,
     pub gis_token: String,
     pub id: uuid::Uuid,
     pub is_personal: bool,
     pub landmark_count: i64,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Landmark collection name
     pub name: String,
     pub personal_owner: Option<i64>,

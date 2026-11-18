@@ -549,14 +549,14 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn check_date (mut self , check_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1245,14 +1245,14 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn check_date (mut self , check_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1941,14 +1941,14 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn check_date (mut self , check_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn check_date (mut self , check_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2430,12 +2430,12 @@
     "fields": [
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 0,
         "name": "check_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "check_date"
       },
       {

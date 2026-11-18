@@ -1685,14 +1685,14 @@
       "arguments": [
         {
           "name": "last_hydrostatic_test_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn last_hydrostatic_test_date (mut self , last_hydrostatic_test_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn last_hydrostatic_test_date (mut self , last_hydrostatic_test_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1819,14 +1819,14 @@
       "arguments": [
         {
           "name": "last_visual_inspection_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn last_visual_inspection_date (mut self , last_visual_inspection_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn last_visual_inspection_date (mut self , last_visual_inspection_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1953,14 +1953,14 @@
       "arguments": [
         {
           "name": "manufactured_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn manufactured_date (mut self , manufactured_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn manufactured_date (mut self , manufactured_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -4422,32 +4422,32 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 3,
         "name": "last_hydrostatic_test_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "last_hydrostatic_test_date"
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 4,
         "name": "last_visual_inspection_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "last_visual_inspection_date"
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 5,
         "name": "manufactured_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "manufactured_date"
       },
       {
@@ -4752,14 +4752,14 @@
       "arguments": [
         {
           "name": "last_hydrostatic_test_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn last_hydrostatic_test_date (mut self , last_hydrostatic_test_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn last_hydrostatic_test_date (mut self , last_hydrostatic_test_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -4826,14 +4826,14 @@
       "arguments": [
         {
           "name": "last_visual_inspection_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn last_visual_inspection_date (mut self , last_visual_inspection_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn last_visual_inspection_date (mut self , last_visual_inspection_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -4900,14 +4900,14 @@
       "arguments": [
         {
           "name": "manufactured_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn manufactured_date (mut self , manufactured_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn manufactured_date (mut self , manufactured_date : time :: Date) -> Self"
     },
     "variants": []
   },

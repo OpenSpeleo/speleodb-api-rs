@@ -24,10 +24,12 @@ pub struct GISGeometryList {
     pub color: String,
     ///Email of the creator; provenance only.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub geometry_type: String,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///GIS Geometry name
     ///Constraint: maxLength=255
     pub name: String,

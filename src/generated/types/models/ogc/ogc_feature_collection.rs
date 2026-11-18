@@ -10,8 +10,8 @@ pub struct OGCFeatureCollection {
     ///Constraint: minimum=0
     #[serde(rename = "numberReturned")]
     pub number_returned: i64,
-    #[serde(rename = "timeStamp")]
-    pub time_stamp: chrono::DateTime<chrono::Utc>,
+    #[serde(rename = "timeStamp", with = "time::serde::rfc3339")]
+    pub time_stamp: time::OffsetDateTime,
     pub r#type: OGCFeatureCollectionType,
 }
 #[derive(Debug, Clone, PartialEq, Eq, Deserialize, Serialize, Default)]

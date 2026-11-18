@@ -10,14 +10,16 @@ pub struct LandmarkCollection {
     ///Constraint: maxLength=7, pattern=`^#[0-9a-fA-F]{6}$`
     pub color: String,
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the landmark collection
     pub description: String,
     pub gis_token: String,
     pub id: uuid::Uuid,
     #[serde(default)]
     pub landmark_count: i64,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Constraint: minLength=1, maxLength=100
     pub name: String,
     pub personal_owner: Option<i64>,

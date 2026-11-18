@@ -661,14 +661,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -1771,14 +1771,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2244,14 +2244,14 @@
       "arguments": [
         {
           "name": "uninstall_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn uninstall_date (mut self , uninstall_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn uninstall_date (mut self , uninstall_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -2967,14 +2967,14 @@
       "arguments": [
         {
           "name": "install_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         }
       ],
       "asynchronous": false,
       "generics": "",
       "receiver": "mut self",
       "return_type": "Self",
-      "rust": "fn install_date (mut self , install_date : chrono :: NaiveDate) -> Self"
+      "rust": "fn install_date (mut self , install_date : time :: Date) -> Self"
     },
     "variants": []
   },
@@ -3668,12 +3668,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {
@@ -4113,12 +4113,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {
@@ -4193,12 +4193,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\" , default , deserialize_with = \"tri_state_serde::deserialize\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_double_option\" , default)]"
         ],
         "index": 10,
         "name": "uninstall_date",
         "public": true,
-        "rust_type": "Option < Option < chrono :: NaiveDate > >",
+        "rust_type": "Option < Option < time :: Date > >",
         "wire_name": "uninstall_date"
       },
       {
@@ -4544,12 +4544,12 @@
       },
       {
         "attributes": [
-          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+          "# [serde (skip_serializing_if = \"Option::is_none\" , with = \"time_date_format::option\" , default)]"
         ],
         "index": 2,
         "name": "install_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "install_date"
       },
       {

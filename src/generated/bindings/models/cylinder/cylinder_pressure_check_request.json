@@ -5,11 +5,13 @@
     ],
     "fields": [
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format\")]"
+        ],
         "index": 0,
         "name": "check_date",
         "public": true,
-        "rust_type": "chrono :: NaiveDate",
+        "rust_type": "time :: Date",
         "wire_name": "check_date"
       },
       {
@@ -85,7 +87,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -100,7 +102,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "CylinderPressureCheckRequestBuilder",
-      "rust": "fn builder (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> CylinderPressureCheckRequestBuilder"
+      "rust": "fn builder (check_date : time :: Date , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> CylinderPressureCheckRequestBuilder"
     },
     "variants": []
   },
@@ -119,7 +121,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -134,7 +136,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
+      "rust": "fn new (check_date : time :: Date , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
     },
     "variants": []
   },
@@ -228,7 +230,7 @@
       "arguments": [
         {
           "name": "check_date",
-          "rust_type": "chrono :: NaiveDate"
+          "rust_type": "time :: Date"
         },
         {
           "name": "pressure",
@@ -243,7 +245,7 @@
       "generics": "",
       "receiver": null,
       "return_type": "Self",
-      "rust": "fn new (check_date : chrono :: NaiveDate , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
+      "rust": "fn new (check_date : time :: Date , pressure : i64 , unit_system : CylinderPressureCheckRequestUnitSystem) -> Self"
     },
     "variants": []
   },

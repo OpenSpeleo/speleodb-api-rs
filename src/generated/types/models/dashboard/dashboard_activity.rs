@@ -4,7 +4,8 @@ use super::super::super::{Deserialize, Serialize};
 pub struct DashboardActivity {
     pub author_email: String,
     pub author_name: String,
-    pub authored_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub authored_date: time::OffsetDateTime,
     pub commit_id: String,
     pub message: String,
     pub project_id: uuid::Uuid,

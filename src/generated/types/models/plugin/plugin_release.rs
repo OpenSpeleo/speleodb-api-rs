@@ -3,14 +3,16 @@ use super::super::super::{Deserialize, Serialize};
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct PluginRelease {
     pub changelog: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Constraint: maxLength=500
     pub download_url: url::Url,
     pub id: i64,
     pub is_active: bool,
     pub max_software_version: Option<String>,
     pub min_software_version: Option<String>,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub operating_system: String,
     ///Constraint: maxLength=50, pattern=`(^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)$)|(^(?:2[0-9]{3})\.(?:1[0-2]|0?[1-9])(\.(?:3[0-1]|[1-2][0-9]|0?[1-9]))?$)`
     pub plugin_version: String,

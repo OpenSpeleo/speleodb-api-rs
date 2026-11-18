@@ -5,12 +5,14 @@ use super::super::super::{Deserialize, Serialize, User};
 pub struct SurfaceMonitoringNetworkWithPerm {
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Optional description of the network
     pub description: String,
     pub id: uuid::Uuid,
     pub is_active: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Monitoring network identifier (e.g., 'A1', 'Network-001')
     pub name: String,
     pub user_permission_level: i64,

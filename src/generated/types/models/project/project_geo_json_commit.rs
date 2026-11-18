@@ -8,7 +8,8 @@ Does not include signed URLs or file data.*/
 pub struct ProjectGeoJSONCommit {
     pub commit_author_email: String,
     pub commit_author_name: String,
-    pub commit_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub commit_date: time::OffsetDateTime,
     pub commit_message: String,
     pub commit_sha: String,
 }

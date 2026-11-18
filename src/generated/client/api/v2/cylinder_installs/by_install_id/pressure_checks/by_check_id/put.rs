@@ -957,7 +957,7 @@ impl HttpClient {
         &self,
         check_id: impl Into<String>,
         install_id: impl Into<String>,
-        check_date: chrono::NaiveDate,
+        check_date: time::Date,
         pressure: i64,
         unit_system: V2CylinderInstallsPressureChecksUpdateWithFormDataRequestUnitSystem,
     ) -> V2CylinderInstallsPressureChecksUpdateWithFormDataBuilder<'_> {
@@ -982,7 +982,7 @@ impl HttpClient {
         &self,
         check_id: impl Into<String>,
         install_id: impl Into<String>,
-        check_date: chrono::NaiveDate,
+        check_date: time::Date,
         pressure: i64,
         unit_system: CylinderPressureCheckRequestUnitSystem,
     ) -> V2CylinderInstallsPressureChecksUpdateWithJsonBuilder<'_> {
@@ -1003,7 +1003,7 @@ impl HttpClient {
         &self,
         check_id: impl Into<String>,
         install_id: impl Into<String>,
-        check_date: chrono::NaiveDate,
+        check_date: time::Date,
         pressure: i64,
         unit_system: CylinderPressureCheckRequestUnitSystem,
     ) -> V2CylinderInstallsPressureChecksUpdateWithUrlEncodedBuilder<'_> {

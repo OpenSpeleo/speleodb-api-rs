@@ -37,11 +37,13 @@
         "wire_name": "created_by"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 4,
         "name": "creation_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "creation_date"
       },
       {
@@ -53,11 +55,13 @@
         "wire_name": "description"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 6,
         "name": "end_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "end_date"
       },
       {
@@ -93,11 +97,13 @@
         "wire_name": "is_active"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time::serde::rfc3339\")]"
+        ],
         "index": 11,
         "name": "modified_date",
         "public": true,
-        "rust_type": "chrono :: DateTime < chrono :: Utc >",
+        "rust_type": "time :: OffsetDateTime",
         "wire_name": "modified_date"
       },
       {
@@ -109,11 +115,13 @@
         "wire_name": "name"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 13,
         "name": "start_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "start_date"
       }
     ],

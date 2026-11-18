@@ -24,7 +24,8 @@ pub struct Project {
     pub commit_count: i64,
     pub country: ProjectCountry,
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub description: String,
     ///Exclude GeoJSON from the project
     pub exclude_geojson: bool,
@@ -36,7 +37,8 @@ pub struct Project {
     pub latitude: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub longitude: Option<f64>,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     #[serde(
         skip_serializing_if = "Option::is_none",
         default,

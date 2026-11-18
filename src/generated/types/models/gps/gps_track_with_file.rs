@@ -20,11 +20,13 @@ pub struct GPSTrackWithFile {
     pub color: String,
     ///User who created or submitted the entry.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     ///Retrieve the signed URL for the GeoJSON file
     pub file: String,
     pub id: uuid::Uuid,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Track name
     pub name: String,
     pub user_permission_level: i64,

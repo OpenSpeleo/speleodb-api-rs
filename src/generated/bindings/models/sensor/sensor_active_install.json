@@ -5,19 +5,23 @@
     ],
     "fields": [
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 0,
         "name": "expiracy_battery_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "expiracy_battery_date"
       },
       {
-        "attributes": [],
+        "attributes": [
+          "# [serde (with = \"time_date_format::option\" , default)]"
+        ],
         "index": 1,
         "name": "expiracy_memory_date",
         "public": true,
-        "rust_type": "Option < chrono :: NaiveDate >",
+        "rust_type": "Option < time :: Date >",
         "wire_name": "expiracy_memory_date"
       },
       {

@@ -3,7 +3,8 @@ use super::super::super::{Deserialize, Serialize};
 ///Serializer for CylinderFleetUserPermission model.
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct CylinderFleetUserPermission {
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub cylinder_fleet: uuid::Uuid,
     pub deactivated_by: Option<i64>,
     pub fleet_id: uuid::Uuid,
@@ -14,7 +15,8 @@ pub struct CylinderFleetUserPermission {
     ///Constraint: minimum=-2147483648, maximum=2147483647
     pub level: i64,
     pub level_label: String,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     pub user: i64,
     pub user_display_email: String,
     ///Get user's full name or email.

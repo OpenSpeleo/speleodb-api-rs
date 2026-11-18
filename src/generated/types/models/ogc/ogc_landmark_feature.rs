@@ -41,7 +41,8 @@ pub struct OGCLandmarkFeatureProperties {
     pub collection_name: String,
     pub collection_type: OGCLandmarkFeaturePropertiesCollectionType,
     pub created_by: String,
-    pub creation_date: Option<chrono::DateTime<chrono::Utc>>,
+    #[serde(with = "time::serde::rfc3339::option", default)]
+    pub creation_date: Option<time::OffsetDateTime>,
     pub description: String,
     pub icon: OGCLandmarkFeaturePropertiesIcon,
     pub is_personal_collection: bool,

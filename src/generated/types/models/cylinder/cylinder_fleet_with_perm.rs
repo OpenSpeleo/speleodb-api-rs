@@ -5,13 +5,15 @@ use super::super::super::{Cylinder, Deserialize, Project, Serialize, User};
 pub struct CylinderFleetWithPerm {
     ///User who created the cylinder fleet.
     pub created_by: String,
-    pub creation_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub creation_date: time::OffsetDateTime,
     pub cylinder_count: i64,
     ///Optional description of the cylinder fleet
     pub description: String,
     pub id: uuid::Uuid,
     pub is_active: bool,
-    pub modified_date: chrono::DateTime<chrono::Utc>,
+    #[serde(with = "time::serde::rfc3339")]
+    pub modified_date: time::OffsetDateTime,
     ///Cylinder Fleet name (e.g., 'Wakulla Project Cylinders')
     pub name: String,
     pub user_permission_level: i64,
