@@ -35,10 +35,14 @@ pub mod auth_base_authentication_meta;
 pub use self::auth_base_authentication_meta::AuthBaseAuthenticationMeta;
 pub mod auth_base_signup;
 pub use self::auth_base_signup::AuthBaseSignup;
+pub mod auth_code;
+pub use self::auth_code::AuthCode;
 pub mod auth_configuration_response;
 pub use self::auth_configuration_response::{
     AuthConfigurationResponse, AuthConfigurationResponseData,
 };
+pub mod auth_confirm_login_code;
+pub use self::auth_confirm_login_code::AuthConfirmLoginCode;
 pub mod auth_conflict_response;
 pub use self::auth_conflict_response::AuthConflictResponse;
 pub mod auth_email;
@@ -74,6 +78,11 @@ pub mod auth_provider_list;
 pub use self::auth_provider_list::AuthProviderList;
 pub mod auth_reauthenticate;
 pub use self::auth_reauthenticate::AuthReauthenticate;
+pub mod auth_reauthentication_code_recipient;
+pub use self::auth_reauthentication_code_recipient::{
+    AuthReauthenticationCodeRecipient, AuthReauthenticationCodeRecipientVariant,
+    AuthReauthenticationCodeRecipientVariant2,
+};
 pub mod auth_reauthentication_required;
 pub use self::auth_reauthentication_required::AuthReauthenticationRequired;
 pub mod auth_reauthentication_response;
@@ -82,6 +91,11 @@ pub mod auth_refresh_token;
 pub use self::auth_refresh_token::AuthRefreshToken;
 pub mod auth_request_password;
 pub use self::auth_request_password::AuthRequestPassword;
+pub mod auth_request_reauthentication_code;
+pub use self::auth_request_reauthentication_code::{
+    AuthRequestReauthenticationCode, AuthRequestReauthenticationCodeVariant,
+    AuthRequestReauthenticationCodeVariant2,
+};
 pub mod auth_reset_password;
 pub use self::auth_reset_password::AuthResetPassword;
 pub mod auth_session_gone_response;

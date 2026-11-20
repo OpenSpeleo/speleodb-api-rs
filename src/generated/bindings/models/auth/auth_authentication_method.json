@@ -525,6 +525,16 @@
         "public": true,
         "rust_type": "AuthAuthenticationMethodVariant3Method",
         "wire_name": "method"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "reauthenticated",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "reauthenticated"
       }
     ],
     "generics": "",
@@ -613,6 +623,16 @@
         "public": true,
         "rust_type": "AuthPhone",
         "wire_name": "phone"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 3,
+        "name": "reauthenticated",
+        "public": true,
+        "rust_type": "Option < bool >",
+        "wire_name": "reauthenticated"
       }
     ],
     "generics": "",

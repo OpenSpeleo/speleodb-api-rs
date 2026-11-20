@@ -16,6 +16,10 @@ pub use self::v1::{
     AuthAliasAppAuthPasswordResetGetResponse,
     AuthAliasAppAuthPasswordResetGetResponseData,
     AuthAliasAppAuthPasswordResetPostResponse429,
+    AuthAliasAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAliasAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAliasAppAuthReauthenticateCodeResendPostResponse,
+    AuthAliasAppAuthReauthenticateCodeResendPostResponse429,
     AuthAliasAppAuthReauthenticatePostResponse429, AuthAliasAppAuthSignupPostResponse429,
     AuthAliasAppTokensRefreshPostRequest,
 };

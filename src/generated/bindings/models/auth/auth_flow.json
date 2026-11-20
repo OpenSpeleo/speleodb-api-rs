@@ -37,6 +37,16 @@
           "# [serde (skip_serializing_if = \"Option::is_none\")]"
         ],
         "index": 3,
+        "name": "recipients",
+        "public": true,
+        "rust_type": "Option < Vec < AuthReauthenticationCodeRecipient > >",
+        "wire_name": "recipients"
+      },
+      {
+        "attributes": [
+          "# [serde (skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "index": 4,
         "name": "types",
         "public": true,
         "rust_type": "Option < Vec < AuthAuthenticatorType > >",
@@ -133,6 +143,14 @@
         "fields": [],
         "name": "Reauthenticate",
         "wire_name": "reauthenticate"
+      },
+      {
+        "attributes": [
+          "# [serde (rename = \"reauthenticate_by_code\")]"
+        ],
+        "fields": [],
+        "name": "ReauthenticateByCode",
+        "wire_name": "reauthenticate_by_code"
       },
       {
         "attributes": [

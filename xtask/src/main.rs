@@ -20,9 +20,10 @@ fn sha256_hex(bytes: impl AsRef<[u8]>) -> String {
 }
 
 fn root() -> PathBuf {
-    Path::new(env!("CARGO_MANIFEST_DIR"))
+    // A shared Cargo target can reuse this executable across checkouts.
+    PathBuf::from(std::env::var_os("CARGO_MANIFEST_DIR").expect("run xtask with Cargo"))
         .parent()
-        .unwrap()
+        .expect("xtask is a subdirectory of the SDK")
         .to_owned()
 }
 
@@ -1168,7 +1169,7 @@ mod tests {
                 )
             })
             .collect();
-        assert_eq!(expected.len(), 376, "Review contract inventory changes");
+        assert_eq!(expected.len(), 388, "Review contract inventory changes");
         assert_eq!(actual, expected);
     }
 

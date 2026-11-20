@@ -30,6 +30,10 @@ endpoint. Keep credentials out of logs and source code. Generated operations
 provide typed request, response, parameter and error types under `types` and
 `client`. Authentication session management remains the application's concern.
 
+A website using Sign in with SpeleoDB can pass its delegated access token to
+`with_api_key`. The `data:read` scope grants GET access to the v2 API within the
+user's permissions, except for the personal-token endpoint.
+
 Project create and update constructors take country, name, and type. Set the
 optional description with the request builder’s `.description(text)` method.
 Omitting the field on update preserves its value. Sending an empty string clears

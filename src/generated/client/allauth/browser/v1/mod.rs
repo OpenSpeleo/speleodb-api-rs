@@ -14,6 +14,9 @@ pub use self::auth::{
     AuthBrowserAuthLoginPostApiError, AuthBrowserAuthPasswordRequestPostApiError,
     AuthBrowserAuthPasswordResetGetApiError, AuthBrowserAuthPasswordResetPostApiError,
     AuthBrowserAuthPhoneVerifyPostApiError, AuthBrowserAuthPhoneVerifyResendPostApiError,
+    AuthBrowserAuthReauthenticateCodeConfirmPostApiError,
+    AuthBrowserAuthReauthenticateCodeRequestPostApiError,
+    AuthBrowserAuthReauthenticateCodeResendPostApiError,
     AuthBrowserAuthReauthenticatePostApiError, AuthBrowserAuthSessionDeleteApiError,
     AuthBrowserAuthSessionGetApiError, AuthBrowserAuthSignupPostApiError,
 };

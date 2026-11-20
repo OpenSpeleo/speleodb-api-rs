@@ -11,6 +11,9 @@ pub use self::v1::{
     AuthBrowserAuthPasswordRequestPostApiError, AuthBrowserAuthPasswordResetGetApiError,
     AuthBrowserAuthPasswordResetPostApiError, AuthBrowserAuthPhoneVerifyPostApiError,
     AuthBrowserAuthPhoneVerifyResendPostApiError,
+    AuthBrowserAuthReauthenticateCodeConfirmPostApiError,
+    AuthBrowserAuthReauthenticateCodeRequestPostApiError,
+    AuthBrowserAuthReauthenticateCodeResendPostApiError,
     AuthBrowserAuthReauthenticatePostApiError, AuthBrowserAuthSessionDeleteApiError,
     AuthBrowserAuthSessionGetApiError, AuthBrowserAuthSignupPostApiError,
 };

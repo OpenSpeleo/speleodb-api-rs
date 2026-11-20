@@ -13,8 +13,13 @@ pub use self::app::{
     AuthAppAccountPasswordChangePostResponse429, AuthAppAuthLoginPostResponse429,
     AuthAppAuthPasswordRequestPostResponse, AuthAppAuthPasswordRequestPostResponse429,
     AuthAppAuthPasswordResetGetResponse, AuthAppAuthPasswordResetGetResponseData,
-    AuthAppAuthPasswordResetPostResponse429, AuthAppAuthReauthenticatePostResponse429,
-    AuthAppAuthSignupPostResponse429, AuthAppTokensRefreshPostRequest,
+    AuthAppAuthPasswordResetPostResponse429,
+    AuthAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAppAuthReauthenticateCodeResendPostResponse,
+    AuthAppAuthReauthenticateCodeResendPostResponse429,
+    AuthAppAuthReauthenticatePostResponse429, AuthAppAuthSignupPostResponse429,
+    AuthAppTokensRefreshPostRequest,
 };
 pub mod browser;
 pub use self::browser::{
@@ -32,5 +37,9 @@ pub use self::browser::{
     AuthBrowserAuthPasswordRequestPostResponse429,
     AuthBrowserAuthPasswordResetGetResponse, AuthBrowserAuthPasswordResetGetResponseData,
     AuthBrowserAuthPasswordResetPostResponse429,
+    AuthBrowserAuthReauthenticateCodeRequestPostResponse,
+    AuthBrowserAuthReauthenticateCodeRequestPostResponse429,
+    AuthBrowserAuthReauthenticateCodeResendPostResponse,
+    AuthBrowserAuthReauthenticateCodeResendPostResponse429,
     AuthBrowserAuthReauthenticatePostResponse429, AuthBrowserAuthSignupPostResponse429,
 };

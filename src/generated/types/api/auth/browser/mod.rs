@@ -20,6 +20,10 @@ pub use self::v1::{
     AuthAliasBrowserAuthPasswordResetGetResponse,
     AuthAliasBrowserAuthPasswordResetGetResponseData,
     AuthAliasBrowserAuthPasswordResetPostResponse429,
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse429,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse429,
     AuthAliasBrowserAuthReauthenticatePostResponse429,
     AuthAliasBrowserAuthSignupPostResponse429,
 };

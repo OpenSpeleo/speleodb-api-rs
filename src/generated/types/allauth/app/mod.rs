@@ -13,6 +13,11 @@ pub use self::v1::{
     AuthAppAccountPasswordChangePostResponse429, AuthAppAuthLoginPostResponse429,
     AuthAppAuthPasswordRequestPostResponse, AuthAppAuthPasswordRequestPostResponse429,
     AuthAppAuthPasswordResetGetResponse, AuthAppAuthPasswordResetGetResponseData,
-    AuthAppAuthPasswordResetPostResponse429, AuthAppAuthReauthenticatePostResponse429,
-    AuthAppAuthSignupPostResponse429, AuthAppTokensRefreshPostRequest,
+    AuthAppAuthPasswordResetPostResponse429,
+    AuthAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAppAuthReauthenticateCodeResendPostResponse,
+    AuthAppAuthReauthenticateCodeResendPostResponse429,
+    AuthAppAuthReauthenticatePostResponse429, AuthAppAuthSignupPostResponse429,
+    AuthAppTokensRefreshPostRequest,
 };

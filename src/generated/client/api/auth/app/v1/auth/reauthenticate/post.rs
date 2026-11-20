@@ -2,14 +2,15 @@
 use super::super::super::super::super::super::super::{
     ApiError, ApiOpError, AuthAliasAppAuthReauthenticatePostResponse429,
     AuthAuthenticatedResponse, AuthAuthenticationResponse, AuthErrorResponse,
-    AuthReauthenticate, AuthSessionGoneResponse, HttpClient, HttpError,
-    __read_bounded_response_body,
+    AuthForbiddenResponse, AuthReauthenticate, AuthSessionGoneResponse, HttpClient,
+    HttpError, __read_bounded_response_body,
 };
 ///Typed error responses for `auth_alias_app_auth_reauthenticate_post`. One variant per declared non-2xx response.
 #[derive(Debug, Clone)]
 pub enum AuthAliasAppAuthReauthenticatePostApiError {
     Status400(AuthErrorResponse),
     Status401(AuthAuthenticationResponse),
+    Status403(AuthForbiddenResponse),
     Status410(AuthSessionGoneResponse),
     Status429(AuthAliasAppAuthReauthenticatePostResponse429),
 }
@@ -155,6 +156,20 @@ impl HttpClient {
                         Ok(v) => {
                             typed = Some(
                                 AuthAliasAppAuthReauthenticatePostApiError::Status401(v),
+                            );
+                            parse_error = None;
+                        }
+                        Err(e) => {
+                            typed = None;
+                            parse_error = Some(e.to_string());
+                        }
+                    }
+                }
+                403u16 => {
+                    match serde_json::from_str::<AuthForbiddenResponse>(&body_text) {
+                        Ok(v) => {
+                            typed = Some(
+                                AuthAliasAppAuthReauthenticatePostApiError::Status403(v),
                             );
                             parse_error = None;
                         }

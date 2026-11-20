@@ -15,5 +15,9 @@ pub use self::v1::{
     AuthBrowserAuthPasswordRequestPostResponse429,
     AuthBrowserAuthPasswordResetGetResponse, AuthBrowserAuthPasswordResetGetResponseData,
     AuthBrowserAuthPasswordResetPostResponse429,
+    AuthBrowserAuthReauthenticateCodeRequestPostResponse,
+    AuthBrowserAuthReauthenticateCodeRequestPostResponse429,
+    AuthBrowserAuthReauthenticateCodeResendPostResponse,
+    AuthBrowserAuthReauthenticateCodeResendPostResponse429,
     AuthBrowserAuthReauthenticatePostResponse429, AuthBrowserAuthSignupPostResponse429,
 };

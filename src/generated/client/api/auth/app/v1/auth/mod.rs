@@ -28,6 +28,12 @@ pub use self::phone::{
 };
 pub mod reauthenticate;
 pub use self::reauthenticate::{
+    AuthAliasAppAuthReauthenticateCodeConfirmPostApiError,
+    AuthAliasAppAuthReauthenticateCodeConfirmPostBuilder,
+    AuthAliasAppAuthReauthenticateCodeRequestPostApiError,
+    AuthAliasAppAuthReauthenticateCodeRequestPostBuilder,
+    AuthAliasAppAuthReauthenticateCodeResendPostApiError,
+    AuthAliasAppAuthReauthenticateCodeResendPostBuilder,
     AuthAliasAppAuthReauthenticatePostApiError, AuthAliasAppAuthReauthenticatePostBuilder,
 };
 pub mod session;

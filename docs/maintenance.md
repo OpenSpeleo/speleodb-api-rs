@@ -37,7 +37,10 @@ edit by copying it into generation input or weakening the comparison.
 ## Importing a reviewed contract
 
 Copy the reviewed export into `OpenAPI.yaml` explicitly, preserving its bytes.
-Review the schema diff before recording its new digest:
+Run Cargo from the SDK checkout whose snapshot and generated code you intend to
+update. The xtask uses Cargo's runtime manifest directory to identify that
+checkout when several copies share a target directory. Review the schema diff
+before recording its new digest:
 
 ```sh
 cargo xtask source-hash

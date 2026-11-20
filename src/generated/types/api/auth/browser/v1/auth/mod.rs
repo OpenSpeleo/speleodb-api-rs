@@ -10,6 +10,12 @@ pub use self::password::{
     AuthAliasBrowserAuthPasswordResetPostResponse429,
 };
 pub mod reauthenticate;
-pub use self::reauthenticate::AuthAliasBrowserAuthReauthenticatePostResponse429;
+pub use self::reauthenticate::{
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse429,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse429,
+    AuthAliasBrowserAuthReauthenticatePostResponse429,
+};
 pub mod signup;
 pub use self::signup::AuthAliasBrowserAuthSignupPostResponse429;

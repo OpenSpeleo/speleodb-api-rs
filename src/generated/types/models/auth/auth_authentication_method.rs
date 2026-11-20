@@ -33,12 +33,16 @@ pub struct AuthAuthenticationMethodVariant4 {
     pub at: AuthTimestamp,
     pub method: AuthAuthenticationMethodVariant4Method,
     pub phone: AuthPhone,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reauthenticated: Option<bool>,
 }
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct AuthAuthenticationMethodVariant3 {
     pub at: AuthTimestamp,
     pub email: AuthEmail,
     pub method: AuthAuthenticationMethodVariant3Method,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub reauthenticated: Option<bool>,
 }
 #[derive(Debug, Clone, Deserialize, Serialize)]
 pub struct AuthAuthenticationMethodVariant2 {
@@ -293,6 +297,12 @@ impl<'de> Deserialize<'de> for AuthAuthenticationMethod {
                             value.is_null()
                                 || matches!(value.to_string().as_str(), "\"code\"")
                         })
+                    && object
+                        .get("reauthenticated")
+                        .is_none_or(|value| {
+                            value.is_null()
+                                || matches!(value.to_string().as_str(), "true")
+                        })
             })
         {
             if let Ok(candidate) = serde_json::from_value::<
@@ -342,6 +352,12 @@ impl<'de> Deserialize<'de> for AuthAuthenticationMethod {
                         .is_some_and(|value| {
                             value.is_null()
                                 || matches!(value.to_string().as_str(), "\"code\"")
+                        })
+                    && object
+                        .get("reauthenticated")
+                        .is_none_or(|value| {
+                            value.is_null()
+                                || matches!(value.to_string().as_str(), "true")
                         })
             })
         {

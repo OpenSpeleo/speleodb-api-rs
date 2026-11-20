@@ -18,7 +18,12 @@ pub use self::phone::{
     AuthBrowserAuthPhoneVerifyPostApiError, AuthBrowserAuthPhoneVerifyResendPostApiError,
 };
 pub mod reauthenticate;
-pub use self::reauthenticate::AuthBrowserAuthReauthenticatePostApiError;
+pub use self::reauthenticate::{
+    AuthBrowserAuthReauthenticateCodeConfirmPostApiError,
+    AuthBrowserAuthReauthenticateCodeRequestPostApiError,
+    AuthBrowserAuthReauthenticateCodeResendPostApiError,
+    AuthBrowserAuthReauthenticatePostApiError,
+};
 pub mod session;
 pub use self::session::{
     AuthBrowserAuthSessionDeleteApiError, AuthBrowserAuthSessionGetApiError,

@@ -8,6 +8,12 @@ pub use self::password::{
     AuthAppAuthPasswordResetPostResponse429,
 };
 pub mod reauthenticate;
-pub use self::reauthenticate::AuthAppAuthReauthenticatePostResponse429;
+pub use self::reauthenticate::{
+    AuthAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAppAuthReauthenticateCodeResendPostResponse,
+    AuthAppAuthReauthenticateCodeResendPostResponse429,
+    AuthAppAuthReauthenticatePostResponse429,
+};
 pub mod signup;
 pub use self::signup::AuthAppAuthSignupPostResponse429;

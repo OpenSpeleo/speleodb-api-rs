@@ -17,6 +17,10 @@ pub use self::auth::{
     AuthAppAuthLoginPostResponse429, AuthAppAuthPasswordRequestPostResponse,
     AuthAppAuthPasswordRequestPostResponse429, AuthAppAuthPasswordResetGetResponse,
     AuthAppAuthPasswordResetGetResponseData, AuthAppAuthPasswordResetPostResponse429,
+    AuthAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAppAuthReauthenticateCodeResendPostResponse,
+    AuthAppAuthReauthenticateCodeResendPostResponse429,
     AuthAppAuthReauthenticatePostResponse429, AuthAppAuthSignupPostResponse429,
 };
 pub mod tokens;

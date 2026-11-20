@@ -2,13 +2,15 @@
 use super::super::super::super::super::super::super::{
     ApiError, ApiOpError, AuthAliasBrowserAuthReauthenticatePostResponse429,
     AuthAuthenticatedResponse, AuthAuthenticationResponse, AuthErrorResponse,
-    AuthReauthenticate, HttpClient, HttpError, __read_bounded_response_body,
+    AuthForbiddenResponse, AuthReauthenticate, HttpClient, HttpError,
+    __read_bounded_response_body,
 };
 ///Typed error responses for `auth_alias_browser_auth_reauthenticate_post`. One variant per declared non-2xx response.
 #[derive(Debug, Clone)]
 pub enum AuthAliasBrowserAuthReauthenticatePostApiError {
     Status400(AuthErrorResponse),
     Status401(AuthAuthenticationResponse),
+    Status403(AuthForbiddenResponse),
     Status429(AuthAliasBrowserAuthReauthenticatePostResponse429),
 }
 impl HttpClient {
@@ -117,6 +119,20 @@ impl HttpClient {
                         Ok(v) => {
                             typed = Some(
                                 AuthAliasBrowserAuthReauthenticatePostApiError::Status401(v),
+                            );
+                            parse_error = None;
+                        }
+                        Err(e) => {
+                            typed = None;
+                            parse_error = Some(e.to_string());
+                        }
+                    }
+                }
+                403u16 => {
+                    match serde_json::from_str::<AuthForbiddenResponse>(&body_text) {
+                        Ok(v) => {
+                            typed = Some(
+                                AuthAliasBrowserAuthReauthenticatePostApiError::Status403(v),
                             );
                             parse_error = None;
                         }

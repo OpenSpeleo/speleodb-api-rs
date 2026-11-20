@@ -16,6 +16,10 @@ pub use self::app::{
     AuthAliasAppAuthPasswordResetGetResponse,
     AuthAliasAppAuthPasswordResetGetResponseData,
     AuthAliasAppAuthPasswordResetPostResponse429,
+    AuthAliasAppAuthReauthenticateCodeRequestPostResponse,
+    AuthAliasAppAuthReauthenticateCodeRequestPostResponse429,
+    AuthAliasAppAuthReauthenticateCodeResendPostResponse,
+    AuthAliasAppAuthReauthenticateCodeResendPostResponse429,
     AuthAliasAppAuthReauthenticatePostResponse429, AuthAliasAppAuthSignupPostResponse429,
     AuthAliasAppTokensRefreshPostRequest,
 };
@@ -40,6 +44,10 @@ pub use self::browser::{
     AuthAliasBrowserAuthPasswordResetGetResponse,
     AuthAliasBrowserAuthPasswordResetGetResponseData,
     AuthAliasBrowserAuthPasswordResetPostResponse429,
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeRequestPostResponse429,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse,
+    AuthAliasBrowserAuthReauthenticateCodeResendPostResponse429,
     AuthAliasBrowserAuthReauthenticatePostResponse429,
     AuthAliasBrowserAuthSignupPostResponse429,
 };
